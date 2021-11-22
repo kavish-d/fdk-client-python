@@ -1,0 +1,55 @@
+"""Platform Models."""
+
+from marshmallow import fields, Schema
+from marshmallow.validate import OneOf
+from ..platform_enums import *
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class StoreDetail(Schema):
+
+    
+    additional_contacts = fields.List(fields.Dict(required=False), required=False)
+    
+    uid = fields.Int(required=False)
+    
+    modified_on = fields.Str(required=False)
+    
+    company_id = fields.Int(required=False)
+    
+    store_type = fields.Str(required=False)
+    
+    documents = fields.List(fields.Dict(required=False), required=False)
+    
+    store_code = fields.Str(required=False)
+    
+    display_name = fields.Str(required=False)
+    
+    timing = fields.Dict(required=False)
+    
+    created_on = fields.Str(required=False)
+    
+    name = fields.Str(required=False)
+    
+

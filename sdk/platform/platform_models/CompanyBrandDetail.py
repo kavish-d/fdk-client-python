@@ -1,0 +1,27 @@
+"""Platform Models."""
+
+from marshmallow import fields, Schema
+from marshmallow.validate import OneOf
+from ..platform_enums import *
+
+
+
+
+
+
+
+
+
+
+class CompanyBrandDetail(Schema):
+
+    
+    brand_name = fields.Str(required=False)
+    
+    total_article = fields.Int(required=False)
+    
+    brand_id = fields.Int(required=False)
+    
+    company_id = fields.Int(required=False)
+    
+

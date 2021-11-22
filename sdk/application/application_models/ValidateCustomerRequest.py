@@ -1,0 +1,31 @@
+"""Application Models."""
+
+from marshmallow import fields, Schema
+from marshmallow.validate import OneOf
+from ..application_enums import *
+
+
+
+
+
+
+
+
+
+
+
+
+class ValidateCustomerRequest(Schema):
+
+    
+    aggregator = fields.Str(required=False)
+    
+    transaction_amount_in_paise = fields.Int(required=False)
+    
+    merchant_params = fields.Dict(required=False)
+    
+    payload = fields.Str(required=False)
+    
+    phone_number = fields.Str(required=False)
+    
+

@@ -1,0 +1,4 @@
+ujson==4.0.1
+aiohttp==3.7.3
+pytz==2021.3
+marshmallow==3.12.2
