@@ -3,10 +3,11 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 class ThemeValidator:
     
-    class getAllPages(Schema):
+    class getAllPages(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -15,7 +16,7 @@ class ThemeValidator:
         theme_id = fields.Str(required=False)
          
     
-    class createPage(Schema):
+    class createPage(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -24,7 +25,7 @@ class ThemeValidator:
         theme_id = fields.Str(required=False)
          
     
-    class updateMultiplePages(Schema):
+    class updateMultiplePages(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -33,18 +34,7 @@ class ThemeValidator:
         theme_id = fields.Str(required=False)
          
     
-    class getPage(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        theme_id = fields.Str(required=False)
-        
-        page_value = fields.Str(required=False)
-         
-    
-    class updatePage(Schema):
+    class getPage(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -55,7 +45,7 @@ class ThemeValidator:
         page_value = fields.Str(required=False)
          
     
-    class deletePage(Schema):
+    class updatePage(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -66,7 +56,18 @@ class ThemeValidator:
         page_value = fields.Str(required=False)
          
     
-    class getThemeLibrary(Schema):
+    class deletePage(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        theme_id = fields.Str(required=False)
+        
+        page_value = fields.Str(required=False)
+         
+    
+    class getThemeLibrary(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -77,30 +78,21 @@ class ThemeValidator:
         page_no = fields.Int(required=False)
          
     
-    class addToThemeLibrary(Schema):
+    class addToThemeLibrary(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class applyTheme(Schema):
+    class applyTheme(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class isUpgradable(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        theme_id = fields.Str(required=False)
-         
-    
-    class upgradeTheme(Schema):
+    class isUpgradable(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -109,7 +101,16 @@ class ThemeValidator:
         theme_id = fields.Str(required=False)
          
     
-    class getPublicThemes(Schema):
+    class upgradeTheme(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        theme_id = fields.Str(required=False)
+         
+    
+    class getPublicThemes(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -120,37 +121,28 @@ class ThemeValidator:
         page_no = fields.Int(required=False)
          
     
-    class createTheme(Schema):
+    class createTheme(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getAppliedTheme(Schema):
+    class getAppliedTheme(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getFonts(Schema):
+    class getFonts(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getThemeById(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        theme_id = fields.Str(required=False)
-         
-    
-    class updateTheme(Schema):
+    class getThemeById(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -159,7 +151,7 @@ class ThemeValidator:
         theme_id = fields.Str(required=False)
          
     
-    class deleteTheme(Schema):
+    class updateTheme(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -168,7 +160,7 @@ class ThemeValidator:
         theme_id = fields.Str(required=False)
          
     
-    class getThemeForPreview(Schema):
+    class deleteTheme(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -177,7 +169,7 @@ class ThemeValidator:
         theme_id = fields.Str(required=False)
          
     
-    class publishTheme(Schema):
+    class getThemeForPreview(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -186,7 +178,7 @@ class ThemeValidator:
         theme_id = fields.Str(required=False)
          
     
-    class unpublishTheme(Schema):
+    class publishTheme(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -195,7 +187,7 @@ class ThemeValidator:
         theme_id = fields.Str(required=False)
          
     
-    class archiveTheme(Schema):
+    class unpublishTheme(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -204,7 +196,16 @@ class ThemeValidator:
         theme_id = fields.Str(required=False)
          
     
-    class unarchiveTheme(Schema):
+    class archiveTheme(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        theme_id = fields.Str(required=False)
+         
+    
+    class unarchiveTheme(BaseSchema):
         
         company_id = fields.Str(required=False)
         

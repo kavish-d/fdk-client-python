@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -11,13 +12,13 @@ from ..platform_enums import *
 
 
 
-class InventoryDeleteData(Schema):
+class InventoryDeleteData(BaseSchema):
 
-    
-    item_id = fields.Int(required=False)
     
     size = fields.Str(required=False)
     
     location_id = fields.Int(required=False)
+    
+    item_id = fields.Int(required=False)
     
 

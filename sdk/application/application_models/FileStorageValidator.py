@@ -3,15 +3,16 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 class FileStorageValidator:
     
-    class startUpload(Schema):
+    class startUpload(BaseSchema):
         
         namespace = fields.Str(required=False)
          
     
-    class completeUpload(Schema):
+    class completeUpload(BaseSchema):
         
         namespace = fields.Str(required=False)
          

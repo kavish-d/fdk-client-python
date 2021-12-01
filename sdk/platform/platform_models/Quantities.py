@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .NotAvailable import NotAvailable
 
@@ -13,7 +14,7 @@ from .OrderCommitted import OrderCommitted
 from .Damaged import Damaged
 
 
-class Quantities(Schema):
+class Quantities(BaseSchema):
 
     
     not_available = fields.Nested(NotAvailable, required=False)

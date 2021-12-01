@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .PlatformShipmentDetailsStatus import PlatformShipmentDetailsStatus
 
@@ -60,10 +61,14 @@ from .ShipmentTrackingDetails import ShipmentTrackingDetails
 
 
 
+
+
+
+
 from .ShipmentDates import ShipmentDates
 
 
-class PlatformShipmentDetails(Schema):
+class PlatformShipmentDetails(BaseSchema):
 
     
     status = fields.Nested(PlatformShipmentDetailsStatus, required=False)
@@ -113,6 +118,10 @@ class PlatformShipmentDetails(Schema):
     pod = fields.Dict(required=False)
     
     lock_status = fields.Boolean(required=False)
+    
+    priority = fields.Float(required=False)
+    
+    priority_text = fields.Str(required=False)
     
     ordering_channel = fields.Str(required=False)
     

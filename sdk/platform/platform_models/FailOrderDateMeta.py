@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -13,7 +14,7 @@ from ..platform_enums import *
 
 
 
-class FailOrderDateMeta(Schema):
+class FailOrderDateMeta(BaseSchema):
 
     
     added_on_store = fields.Str(required=False)

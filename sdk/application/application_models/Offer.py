@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .Schedule import Schedule
 
@@ -33,7 +34,7 @@ from .ShareMessages import ShareMessages
 
 
 
-class Offer(Schema):
+class Offer(BaseSchema):
 
     
     _schedule = fields.Nested(Schedule, required=False)

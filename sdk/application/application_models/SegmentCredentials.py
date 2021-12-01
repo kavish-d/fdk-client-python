@@ -3,11 +3,12 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
 
-class SegmentCredentials(Schema):
+class SegmentCredentials(BaseSchema):
 
     
     write_key = fields.Str(required=False)

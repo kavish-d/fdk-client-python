@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -29,7 +30,7 @@ from .InvoiceDetailsPaymentMethodsDataNetworks import InvoiceDetailsPaymentMetho
 from .InvoiceDetailsPaymentMethodsDataThreeDSecureUsage import InvoiceDetailsPaymentMethodsDataThreeDSecureUsage
 
 
-class InvoiceDetailsPaymentMethodsData(Schema):
+class InvoiceDetailsPaymentMethodsData(BaseSchema):
 
     
     brand = fields.Str(required=False)

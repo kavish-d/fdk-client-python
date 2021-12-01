@@ -3,31 +3,32 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 class PaymentValidator:
     
-    class getBrandPaymentGatewayConfig(Schema):
+    class getBrandPaymentGatewayConfig(BaseSchema):
         
         company_id = fields.Int(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class saveBrandPaymentGatewayConfig(Schema):
+    class saveBrandPaymentGatewayConfig(BaseSchema):
         
         company_id = fields.Int(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class updateBrandPaymentGatewayConfig(Schema):
+    class updateBrandPaymentGatewayConfig(BaseSchema):
         
         company_id = fields.Int(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getPaymentModeRoutes(Schema):
+    class getPaymentModeRoutes(BaseSchema):
         
         company_id = fields.Int(required=False)
         
@@ -38,47 +39,47 @@ class PaymentValidator:
         request_type = fields.Str(required=False)
          
     
-    class getAllPayouts(Schema):
+    class getAllPayouts(BaseSchema):
         
         company_id = fields.Int(required=False)
         
         unique_external_id = fields.Str(required=False)
          
     
-    class savePayout(Schema):
+    class savePayout(BaseSchema):
         
         company_id = fields.Int(required=False)
          
     
-    class updatePayout(Schema):
-        
-        company_id = fields.Int(required=False)
-        
-        unique_transfer_no = fields.Str(required=False)
-         
-    
-    class activateAndDectivatePayout(Schema):
+    class updatePayout(BaseSchema):
         
         company_id = fields.Int(required=False)
         
         unique_transfer_no = fields.Str(required=False)
          
     
-    class deletePayout(Schema):
+    class activateAndDectivatePayout(BaseSchema):
         
         company_id = fields.Int(required=False)
         
         unique_transfer_no = fields.Str(required=False)
          
     
-    class getSubscriptionPaymentMethod(Schema):
+    class deletePayout(BaseSchema):
+        
+        company_id = fields.Int(required=False)
+        
+        unique_transfer_no = fields.Str(required=False)
+         
+    
+    class getSubscriptionPaymentMethod(BaseSchema):
         
         company_id = fields.Int(required=False)
         
         unique_external_id = fields.Str(required=False)
          
     
-    class deleteSubscriptionPaymentMethod(Schema):
+    class deleteSubscriptionPaymentMethod(BaseSchema):
         
         company_id = fields.Int(required=False)
         
@@ -87,31 +88,31 @@ class PaymentValidator:
         payment_method_id = fields.Str(required=False)
          
     
-    class getSubscriptionConfig(Schema):
+    class getSubscriptionConfig(BaseSchema):
         
         company_id = fields.Int(required=False)
          
     
-    class saveSubscriptionSetupIntent(Schema):
+    class saveSubscriptionSetupIntent(BaseSchema):
         
         company_id = fields.Int(required=False)
          
     
-    class addBeneficiaryDetails(Schema):
+    class addBeneficiaryDetails(BaseSchema):
         
         company_id = fields.Int(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class verifyIfscCode(Schema):
+    class verifyIfscCode(BaseSchema):
         
         company_id = fields.Int(required=False)
         
         ifsc_code = fields.Str(required=False)
          
     
-    class getUserOrderBeneficiaries(Schema):
+    class getUserOrderBeneficiaries(BaseSchema):
         
         order_id = fields.Str(required=False)
         
@@ -120,7 +121,7 @@ class PaymentValidator:
         application_id = fields.Str(required=False)
          
     
-    class getUserBeneficiaries(Schema):
+    class getUserBeneficiaries(BaseSchema):
         
         order_id = fields.Str(required=False)
         
@@ -129,7 +130,7 @@ class PaymentValidator:
         application_id = fields.Str(required=False)
          
     
-    class confirmPayment(Schema):
+    class confirmPayment(BaseSchema):
         
         company_id = fields.Int(required=False)
         

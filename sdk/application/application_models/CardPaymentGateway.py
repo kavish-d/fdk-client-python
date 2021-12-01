@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -11,13 +12,13 @@ from ..application_enums import *
 
 
 
-class CardPaymentGateway(Schema):
+class CardPaymentGateway(BaseSchema):
 
-    
-    aggregator = fields.Str(required=False)
     
     api = fields.Str(required=False)
     
     customer_id = fields.Str(required=False)
+    
+    aggregator = fields.Str(required=False)
     
 

@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .Medium import Medium
 
@@ -15,7 +16,7 @@ from .Light import Light
 from .Regular import Regular
 
 
-class Variants(Schema):
+class Variants(BaseSchema):
 
     
     medium = fields.Nested(Medium, required=False)

@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -11,13 +12,13 @@ from ..application_enums import *
 
 
 
-class WrongOtpError(Schema):
+class WrongOtpError(BaseSchema):
 
     
-    success = fields.Str(required=False)
+    is_verified_flag = fields.Boolean(required=False)
     
     description = fields.Str(required=False)
     
-    is_verified_flag = fields.Boolean(required=False)
+    success = fields.Str(required=False)
     
 

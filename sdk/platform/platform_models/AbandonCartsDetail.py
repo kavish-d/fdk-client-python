@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -21,7 +22,7 @@ from ..platform_enums import *
 from .ReceivedAt import ReceivedAt
 
 
-class AbandonCartsDetail(Schema):
+class AbandonCartsDetail(BaseSchema):
 
     
     properties_cart_id = fields.Str(required=False)

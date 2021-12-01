@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -23,7 +24,7 @@ from .Domain import Domain
 
 
 
-class ApplicationDetail(Schema):
+class ApplicationDetail(BaseSchema):
 
     
     name = fields.Str(required=False)

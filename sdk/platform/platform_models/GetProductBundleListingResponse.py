@@ -3,13 +3,14 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .Page import Page
 
 from .GetProductBundleCreateResponse import GetProductBundleCreateResponse
 
 
-class GetProductBundleListingResponse(Schema):
+class GetProductBundleListingResponse(BaseSchema):
 
     
     page = fields.Nested(Page, required=False)

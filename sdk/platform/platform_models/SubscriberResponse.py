@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -25,7 +26,7 @@ from .AuthMeta import AuthMeta
 from .EventConfig import EventConfig
 
 
-class SubscriberResponse(Schema):
+class SubscriberResponse(BaseSchema):
 
     
     id = fields.Int(required=False)

@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -31,7 +32,7 @@ from ..platform_enums import *
 
 
 
-class SendOtpResponse(Schema):
+class SendOtpResponse(BaseSchema):
 
     
     resend_timer = fields.Int(required=False)

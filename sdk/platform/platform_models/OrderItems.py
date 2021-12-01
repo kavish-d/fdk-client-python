@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .PlatformOrderUserInfo import PlatformOrderUserInfo
 
@@ -21,7 +22,7 @@ from .PlatformShipment import PlatformShipment
 
 
 
-class OrderItems(Schema):
+class OrderItems(BaseSchema):
 
     
     user = fields.Nested(PlatformOrderUserInfo, required=False)

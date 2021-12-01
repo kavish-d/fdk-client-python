@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -31,7 +32,7 @@ from .SecureUrl import SecureUrl
 
 
 
-class ApplicationInfo(Schema):
+class ApplicationInfo(BaseSchema):
 
     
     _id = fields.Str(required=False)

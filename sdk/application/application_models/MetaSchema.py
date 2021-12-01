@@ -3,11 +3,12 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
 
-class MetaSchema(Schema):
+class MetaSchema(BaseSchema):
 
     
     fynd_default = fields.Boolean(required=False)

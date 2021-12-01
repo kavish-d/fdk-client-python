@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .PlatformShipmentStatus import PlatformShipmentStatus
 
@@ -19,7 +20,13 @@ from .ShipmentBreakupValues import ShipmentBreakupValues
 
 
 
-class PlatformShipment(Schema):
+
+
+
+
+
+
+class PlatformShipment(BaseSchema):
 
     
     status = fields.Nested(PlatformShipmentStatus, required=False)
@@ -33,6 +40,12 @@ class PlatformShipment(Schema):
     gst = fields.Nested(ShipmentGst, required=False)
     
     breakup_values = fields.Nested(ShipmentBreakupValues, required=False)
+    
+    priority = fields.Float(required=False)
+    
+    priority_text = fields.Str(required=False)
+    
+    lock_status = fields.Boolean(required=False)
     
     total_shipment_bags = fields.Int(required=False)
     

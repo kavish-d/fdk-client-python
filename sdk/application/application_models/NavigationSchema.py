@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -27,7 +28,7 @@ from .Orientation import Orientation
 from .NavigationReference import NavigationReference
 
 
-class NavigationSchema(Schema):
+class NavigationSchema(BaseSchema):
 
     
     _id = fields.Str(required=False)

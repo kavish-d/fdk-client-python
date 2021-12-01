@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .CallbackUrl import CallbackUrl
 
@@ -21,7 +22,7 @@ from .PaymentSelectionLock import PaymentSelectionLock
 
 
 
-class AppPaymentConfig(Schema):
+class AppPaymentConfig(BaseSchema):
 
     
     callback_url = fields.Nested(CallbackUrl, required=False)

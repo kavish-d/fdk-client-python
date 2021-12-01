@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -21,7 +22,7 @@ from .FeedbackResponseItem import FeedbackResponseItem
 
 
 
-class TicketFeedback(Schema):
+class TicketFeedback(BaseSchema):
 
     
     _id = fields.Str(required=False)

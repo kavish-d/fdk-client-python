@@ -3,10 +3,11 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 class ConfigurationValidator:
     
-    class getBuildConfig(Schema):
+    class getBuildConfig(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -15,7 +16,7 @@ class ConfigurationValidator:
         platform_type = fields.Str(required=False)
          
     
-    class updateBuildConfig(Schema):
+    class updateBuildConfig(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -24,7 +25,7 @@ class ConfigurationValidator:
         platform_type = fields.Str(required=False)
          
     
-    class getPreviousVersions(Schema):
+    class getPreviousVersions(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -33,63 +34,63 @@ class ConfigurationValidator:
         platform_type = fields.Str(required=False)
          
     
-    class getAppFeatures(Schema):
+    class getAppFeatures(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class updateAppFeatures(Schema):
+    class updateAppFeatures(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getAppBasicDetails(Schema):
+    class getAppBasicDetails(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class updateAppBasicDetails(Schema):
+    class updateAppBasicDetails(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getAppContactInfo(Schema):
+    class getAppContactInfo(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class updateAppContactInfo(Schema):
+    class updateAppContactInfo(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getAppApiTokens(Schema):
+    class getAppApiTokens(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class updateAppApiTokens(Schema):
+    class updateAppApiTokens(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getAppCompanies(Schema):
+    class getAppCompanies(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -100,7 +101,7 @@ class ConfigurationValidator:
         page_size = fields.Int(required=False)
          
     
-    class getAppStores(Schema):
+    class getAppStores(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -111,49 +112,49 @@ class ConfigurationValidator:
         page_size = fields.Int(required=False)
          
     
-    class getInventoryConfig(Schema):
+    class getInventoryConfig(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class updateInventoryConfig(Schema):
+    class updateInventoryConfig(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class partiallyUpdateInventoryConfig(Schema):
+    class partiallyUpdateInventoryConfig(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getAppCurrencyConfig(Schema):
+    class getAppCurrencyConfig(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class updateAppCurrencyConfig(Schema):
+    class updateAppCurrencyConfig(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getAppSupportedCurrency(Schema):
+    class getAppSupportedCurrency(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getOrderingStoresByFilter(Schema):
+    class getOrderingStoresByFilter(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -164,14 +165,14 @@ class ConfigurationValidator:
         page_size = fields.Int(required=False)
          
     
-    class updateOrderingStoreConfig(Schema):
+    class updateOrderingStoreConfig(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getStaffOrderingStores(Schema):
+    class getStaffOrderingStores(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -184,21 +185,21 @@ class ConfigurationValidator:
         q = fields.Str(required=False)
          
     
-    class getDomains(Schema):
+    class getDomains(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class addDomain(Schema):
+    class addDomain(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class removeDomainById(Schema):
+    class removeDomainById(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -207,26 +208,26 @@ class ConfigurationValidator:
         id = fields.Str(required=False)
          
     
-    class changeDomainType(Schema):
+    class changeDomainType(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getDomainStatus(Schema):
+    class getDomainStatus(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class createApplication(Schema):
+    class createApplication(BaseSchema):
         
         company_id = fields.Str(required=False)
          
     
-    class getApplications(Schema):
+    class getApplications(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -237,31 +238,31 @@ class ConfigurationValidator:
         q = fields.Str(required=False)
          
     
-    class getApplicationById(Schema):
+    class getApplicationById(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getCurrencies(Schema):
+    class getCurrencies(BaseSchema):
         
         company_id = fields.Str(required=False)
          
     
-    class getDomainAvailibility(Schema):
+    class getDomainAvailibility(BaseSchema):
         
         company_id = fields.Str(required=False)
          
     
-    class getIntegrationById(Schema):
+    class getIntegrationById(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         id = fields.Int(required=False)
          
     
-    class getAvailableOptIns(Schema):
+    class getAvailableOptIns(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -270,7 +271,7 @@ class ConfigurationValidator:
         page_size = fields.Int(required=False)
          
     
-    class getSelectedOptIns(Schema):
+    class getSelectedOptIns(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -283,7 +284,7 @@ class ConfigurationValidator:
         page_size = fields.Int(required=False)
          
     
-    class getIntegrationLevelConfig(Schema):
+    class getIntegrationLevelConfig(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -296,7 +297,7 @@ class ConfigurationValidator:
         check_permission = fields.Boolean(required=False)
          
     
-    class getIntegrationByLevelId(Schema):
+    class getIntegrationByLevelId(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -307,7 +308,7 @@ class ConfigurationValidator:
         uid = fields.Int(required=False)
          
     
-    class updateLevelUidIntegration(Schema):
+    class updateLevelUidIntegration(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -318,7 +319,7 @@ class ConfigurationValidator:
         uid = fields.Int(required=False)
          
     
-    class getLevelActiveIntegrations(Schema):
+    class getLevelActiveIntegrations(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -329,7 +330,7 @@ class ConfigurationValidator:
         uid = fields.Int(required=False)
          
     
-    class updateLevelIntegration(Schema):
+    class updateLevelIntegration(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -338,14 +339,14 @@ class ConfigurationValidator:
         level = fields.Str(required=False)
          
     
-    class getBrandsByCompany(Schema):
+    class getBrandsByCompany(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         q = fields.Str(required=False)
          
     
-    class getCompanyByBrands(Schema):
+    class getCompanyByBrands(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -354,7 +355,7 @@ class ConfigurationValidator:
         page_size = fields.Int(required=False)
          
     
-    class getStoreByBrands(Schema):
+    class getStoreByBrands(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -363,7 +364,7 @@ class ConfigurationValidator:
         page_size = fields.Int(required=False)
          
     
-    class getOtherSellerApplications(Schema):
+    class getOtherSellerApplications(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -372,14 +373,14 @@ class ConfigurationValidator:
         page_size = fields.Int(required=False)
          
     
-    class getOtherSellerApplicationById(Schema):
+    class getOtherSellerApplicationById(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         id = fields.Str(required=False)
          
     
-    class optOutFromApplication(Schema):
+    class optOutFromApplication(BaseSchema):
         
         company_id = fields.Str(required=False)
         

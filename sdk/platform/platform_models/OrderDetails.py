@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .OrderPicklistListing import OrderPicklistListing
 
@@ -15,7 +16,7 @@ from .Filters import Filters
 from .AppliedFilters import AppliedFilters
 
 
-class OrderDetails(Schema):
+class OrderDetails(BaseSchema):
 
     
     items = fields.List(fields.Nested(OrderPicklistListing, required=False), required=False)

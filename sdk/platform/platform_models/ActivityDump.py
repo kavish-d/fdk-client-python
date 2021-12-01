@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .Activity import Activity
 
@@ -15,7 +16,7 @@ from .DateMeta import DateMeta
 
 
 
-class ActivityDump(Schema):
+class ActivityDump(BaseSchema):
 
     
     activity = fields.Nested(Activity, required=False)

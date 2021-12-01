@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -11,12 +12,12 @@ from ..application_enums import *
 
 
 
-class ProductStockPrice(Schema):
+class ProductStockPrice(BaseSchema):
 
-    
-    effective = fields.Float(required=False)
     
     marked = fields.Float(required=False)
+    
+    effective = fields.Float(required=False)
     
     currency = fields.Str(required=False)
     

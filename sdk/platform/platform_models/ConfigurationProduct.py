@@ -3,17 +3,18 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
-
-from .ConfigurationProductSimilar import ConfigurationProductSimilar
+from ..platform_models.BaseSchema import BaseSchema
 
 from .ConfigurationProductVariant import ConfigurationProductVariant
 
+from .ConfigurationProductSimilar import ConfigurationProductSimilar
 
-class ConfigurationProduct(Schema):
 
-    
-    similar = fields.Nested(ConfigurationProductSimilar, required=False)
+class ConfigurationProduct(BaseSchema):
+
     
     variant = fields.Nested(ConfigurationProductVariant, required=False)
+    
+    similar = fields.Nested(ConfigurationProductSimilar, required=False)
     
 

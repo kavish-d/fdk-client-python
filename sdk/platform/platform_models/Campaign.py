@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .RecipientHeaders import RecipientHeaders
 
@@ -33,7 +34,7 @@ from .CampaignEmail import CampaignEmail
 
 
 
-class Campaign(Schema):
+class Campaign(BaseSchema):
 
     
     recipient_headers = fields.Nested(RecipientHeaders, required=False)

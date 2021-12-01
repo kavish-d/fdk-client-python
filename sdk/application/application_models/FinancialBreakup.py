@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -59,7 +60,7 @@ from .Identifiers import Identifiers
 
 
 
-class FinancialBreakup(Schema):
+class FinancialBreakup(BaseSchema):
 
     
     brand_calculated_amount = fields.Float(required=False)

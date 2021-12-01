@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -11,12 +12,12 @@ from ..platform_enums import *
 
 
 
-class UpdatePayoutRequest(Schema):
+class UpdatePayoutRequest(BaseSchema):
 
-    
-    unique_external_id = fields.Str(required=False)
     
     is_active = fields.Boolean(required=False)
+    
+    unique_external_id = fields.Str(required=False)
     
     is_default = fields.Boolean(required=False)
     

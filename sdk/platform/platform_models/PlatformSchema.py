@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -47,7 +48,7 @@ from .SocialTokens import SocialTokens
 
 
 
-class PlatformSchema(Schema):
+class PlatformSchema(BaseSchema):
 
     
     display = fields.Str(required=False)

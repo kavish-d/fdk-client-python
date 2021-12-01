@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .ProductDetailFeature import ProductDetailFeature
 
@@ -33,7 +34,7 @@ from .OrderFeature import OrderFeature
 
 
 
-class AppFeature(Schema):
+class AppFeature(BaseSchema):
 
     
     product_detail = fields.Nested(ProductDetailFeature, required=False)

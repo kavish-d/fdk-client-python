@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .SystemNotification import SystemNotification
 
@@ -11,7 +12,7 @@ from .SystemNotification import SystemNotification
 from .Page import Page
 
 
-class SystemNotifications(Schema):
+class SystemNotifications(BaseSchema):
 
     
     items = fields.List(fields.Nested(SystemNotification, required=False), required=False)

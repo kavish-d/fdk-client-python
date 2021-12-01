@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -25,7 +26,7 @@ from .AvailablePageSeo import AvailablePageSeo
 
 
 
-class AvailablePageSchema(Schema):
+class AvailablePageSchema(BaseSchema):
 
     
     value = fields.Str(required=False)

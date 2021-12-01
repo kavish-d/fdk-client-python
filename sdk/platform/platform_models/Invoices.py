@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .InvoicesData import InvoicesData
 
@@ -17,7 +18,7 @@ from .InvoicesData import InvoicesData
 
 
 
-class Invoices(Schema):
+class Invoices(BaseSchema):
 
     
     data = fields.List(fields.Nested(InvoicesData, required=False), required=False)

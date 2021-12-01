@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .InvoiceDetailsPeriod import InvoiceDetailsPeriod
 
@@ -53,7 +54,7 @@ from .InvoiceDetailsStatusTrail import InvoiceDetailsStatusTrail
 from .InvoicePaymentMethod import InvoicePaymentMethod
 
 
-class InvoiceDetails(Schema):
+class InvoiceDetails(BaseSchema):
 
     
     period = fields.Nested(InvoiceDetailsPeriod, required=False)

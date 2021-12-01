@@ -3,13 +3,14 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
 
 
 
-class PromiseFormatted(Schema):
+class PromiseFormatted(BaseSchema):
 
     
     min = fields.Str(required=False)

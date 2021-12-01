@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .ApplicationWebsite import ApplicationWebsite
 
@@ -55,7 +56,7 @@ from .SecureUrl import SecureUrl
 from .Domain import Domain
 
 
-class Application(Schema):
+class Application(BaseSchema):
 
     
     website = fields.Nested(ApplicationWebsite, required=False)

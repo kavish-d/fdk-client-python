@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -31,7 +32,7 @@ from ..application_enums import *
 
 
 
-class RegisterFormSuccess(Schema):
+class RegisterFormSuccess(BaseSchema):
 
     
     email = fields.Str(required=False)

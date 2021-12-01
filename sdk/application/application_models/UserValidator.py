@@ -3,136 +3,130 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 class UserValidator:
     
-    class loginWithFacebook(Schema):
+    class loginWithFacebook(BaseSchema):
         
         platform = fields.Str(required=False)
          
     
-    class loginWithGoogle(Schema):
+    class loginWithGoogle(BaseSchema):
         
         platform = fields.Str(required=False)
          
     
-    class loginWithGoogleOauth(Schema):
-        
-        platform = fields.Str(required=False)
-        
-        redirect_url = fields.Str(required=False)
-         
-    
-    class loginWithGoogleAndroid(Schema):
+    class loginWithGoogleAndroid(BaseSchema):
         
         platform = fields.Str(required=False)
          
     
-    class loginWithGoogleIOS(Schema):
+    class loginWithGoogleIOS(BaseSchema):
         
         platform = fields.Str(required=False)
          
     
-    class loginWithAppleIOS(Schema):
+    class loginWithAppleIOS(BaseSchema):
         
         platform = fields.Str(required=False)
          
     
-    class loginWithOTP(Schema):
+    class loginWithOTP(BaseSchema):
         
         platform = fields.Str(required=False)
          
     
-    class loginWithEmailAndPassword(Schema):
+    class loginWithEmailAndPassword(BaseSchema):
         
         pass 
     
-    class sendResetPasswordEmail(Schema):
+    class sendResetPasswordEmail(BaseSchema):
         
         platform = fields.Str(required=False)
          
     
-    class forgotPassword(Schema):
+    class forgotPassword(BaseSchema):
         
         pass 
     
-    class sendResetToken(Schema):
+    class sendResetToken(BaseSchema):
         
         pass 
     
-    class loginWithToken(Schema):
+    class loginWithToken(BaseSchema):
         
         pass 
     
-    class registerWithForm(Schema):
+    class registerWithForm(BaseSchema):
         
         platform = fields.Str(required=False)
          
     
-    class verifyEmail(Schema):
+    class verifyEmail(BaseSchema):
         
         pass 
     
-    class verifyMobile(Schema):
+    class verifyMobile(BaseSchema):
         
         pass 
     
-    class hasPassword(Schema):
+    class hasPassword(BaseSchema):
         
         pass 
     
-    class updatePassword(Schema):
+    class updatePassword(BaseSchema):
         
         pass 
     
-    class logout(Schema):
+    class logout(BaseSchema):
         
         pass 
     
-    class sendOTPOnMobile(Schema):
+    class sendOTPOnMobile(BaseSchema):
         
         platform = fields.Str(required=False)
          
     
-    class verifyMobileOTP(Schema):
+    class verifyMobileOTP(BaseSchema):
         
         platform = fields.Str(required=False)
          
     
-    class sendOTPOnEmail(Schema):
+    class sendOTPOnEmail(BaseSchema):
         
         platform = fields.Str(required=False)
          
     
-    class verifyEmailOTP(Schema):
+    class verifyEmailOTP(BaseSchema):
         
         platform = fields.Str(required=False)
          
     
-    class getLoggedInUser(Schema):
+    class getLoggedInUser(BaseSchema):
         
         pass 
     
-    class getListOfActiveSessions(Schema):
+    class getListOfActiveSessions(BaseSchema):
         
         pass 
     
-    class getPlatformConfig(Schema):
+    class getPlatformConfig(BaseSchema):
         
         name = fields.Str(required=False)
          
     
-    class updateProfile(Schema):
+    class updateProfile(BaseSchema):
         
         platform = fields.Str(required=False)
          
     
-    class addMobileNumber(Schema):
+    class addMobileNumber(BaseSchema):
         
         platform = fields.Str(required=False)
          
     
-    class deleteMobileNumber(Schema):
+    class deleteMobileNumber(BaseSchema):
         
         platform = fields.Str(required=False)
         
@@ -147,21 +141,21 @@ class UserValidator:
         phone = fields.Str(required=False)
          
     
-    class setMobileNumberAsPrimary(Schema):
+    class setMobileNumberAsPrimary(BaseSchema):
         
         pass 
     
-    class sendVerificationLinkToMobile(Schema):
+    class sendVerificationLinkToMobile(BaseSchema):
         
         platform = fields.Str(required=False)
          
     
-    class addEmail(Schema):
+    class addEmail(BaseSchema):
         
         platform = fields.Str(required=False)
          
     
-    class deleteEmail(Schema):
+    class deleteEmail(BaseSchema):
         
         platform = fields.Str(required=False)
         
@@ -174,11 +168,11 @@ class UserValidator:
         email = fields.Str(required=False)
          
     
-    class setEmailAsPrimary(Schema):
+    class setEmailAsPrimary(BaseSchema):
         
         pass 
     
-    class sendVerificationLinkToEmail(Schema):
+    class sendVerificationLinkToEmail(BaseSchema):
         
         platform = fields.Str(required=False)
          

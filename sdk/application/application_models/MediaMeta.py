@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .Cloud import Cloud
 
@@ -17,7 +18,7 @@ from .Cloud import Cloud
 from .Url import Url
 
 
-class MediaMeta(Schema):
+class MediaMeta(BaseSchema):
 
     
     cloud = fields.Nested(Cloud, required=False)

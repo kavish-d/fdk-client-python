@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -11,7 +12,7 @@ from .OAuthRequestSchemaOauth2 import OAuthRequestSchemaOauth2
 from .OAuthRequestSchemaProfile import OAuthRequestSchemaProfile
 
 
-class OAuthRequestSchema(Schema):
+class OAuthRequestSchema(BaseSchema):
 
     
     is_signed_in = fields.Boolean(required=False)

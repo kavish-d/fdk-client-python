@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .AdditionalContactDetails import AdditionalContactDetails
 
@@ -21,7 +22,7 @@ from .ProductReturnConfig import ProductReturnConfig
 from .Timing import Timing
 
 
-class FulfillingStoreMeta(Schema):
+class FulfillingStoreMeta(BaseSchema):
 
     
     additional_contact_details = fields.Nested(AdditionalContactDetails, required=False)

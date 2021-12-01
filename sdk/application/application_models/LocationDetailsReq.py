@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -11,7 +12,7 @@ from .TatReqProductArticles import TatReqProductArticles
 
 
 
-class LocationDetailsReq(Schema):
+class LocationDetailsReq(BaseSchema):
 
     
     from_pincode = fields.Str(required=False)

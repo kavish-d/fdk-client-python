@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -11,7 +12,7 @@ from .LogisticResponseCategory import LogisticResponseCategory
 from .LogisticPromise import LogisticPromise
 
 
-class TatProductArticles(Schema):
+class TatProductArticles(BaseSchema):
 
     
     error = fields.Dict(required=False)

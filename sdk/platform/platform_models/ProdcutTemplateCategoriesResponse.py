@@ -3,13 +3,14 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .Page import Page
 
 
 
 
-class ProdcutTemplateCategoriesResponse(Schema):
+class ProdcutTemplateCategoriesResponse(BaseSchema):
 
     
     page = fields.Nested(Page, required=False)

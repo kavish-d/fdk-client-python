@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -19,7 +20,7 @@ from .FormRegisterRequestSchemaPhone import FormRegisterRequestSchemaPhone
 
 
 
-class FormRegisterRequestSchema(Schema):
+class FormRegisterRequestSchema(BaseSchema):
 
     
     first_name = fields.Str(required=False)

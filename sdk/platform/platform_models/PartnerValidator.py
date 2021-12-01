@@ -3,10 +3,11 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 class PartnerValidator:
     
-    class addProxyPath(Schema):
+    class addProxyPath(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -15,7 +16,7 @@ class PartnerValidator:
         extension_id = fields.Str(required=False)
          
     
-    class removeProxyPath(Schema):
+    class removeProxyPath(BaseSchema):
         
         company_id = fields.Str(required=False)
         

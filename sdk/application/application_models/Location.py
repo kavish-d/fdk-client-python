@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -15,7 +16,7 @@ from .GeoLoc import GeoLoc
 
 
 
-class Location(Schema):
+class Location(BaseSchema):
 
     
     country_code = fields.Str(required=False)

@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .Quantities import Quantities
 
@@ -57,7 +58,7 @@ from .LineItemsArticleIdentifier import LineItemsArticleIdentifier
 
 
 
-class LineItemsArticle(Schema):
+class LineItemsArticle(BaseSchema):
 
     
     quantities = fields.Nested(Quantities, required=False)

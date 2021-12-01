@@ -3,17 +3,18 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
 
 
 
-class ProductListingActionPage(Schema):
+class ProductListingActionPage(BaseSchema):
 
-    
-    type = fields.Str(required=False)
     
     query = fields.Dict(required=False)
+    
+    type = fields.Str(required=False)
     
 

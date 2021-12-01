@@ -3,13 +3,14 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .TotalShippingPriceSetShopMoney import TotalShippingPriceSetShopMoney
 
 from .TotalShippingPriceSetPresentmentMoney import TotalShippingPriceSetPresentmentMoney
 
 
-class TotalShippingPriceSet(Schema):
+class TotalShippingPriceSet(BaseSchema):
 
     
     shop_money = fields.Nested(TotalShippingPriceSetShopMoney, required=False)

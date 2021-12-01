@@ -3,10 +3,11 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 class DiscountValidator:
     
-    class getDiscounts(Schema):
+    class getDiscounts(BaseSchema):
         
         company_id = fields.Int(required=False)
         
@@ -29,61 +30,61 @@ class DiscountValidator:
         app_ids = fields.List(fields.Str(required=False), required=False)
          
     
-    class createDiscount(Schema):
+    class createDiscount(BaseSchema):
         
         company_id = fields.Int(required=False)
          
     
-    class getDiscount(Schema):
-        
-        company_id = fields.Int(required=False)
-        
-        id = fields.Str(required=False)
-         
-    
-    class updateDiscount(Schema):
+    class getDiscount(BaseSchema):
         
         company_id = fields.Int(required=False)
         
         id = fields.Str(required=False)
          
     
-    class validateDiscountFile(Schema):
+    class updateDiscount(BaseSchema):
+        
+        company_id = fields.Int(required=False)
+        
+        id = fields.Str(required=False)
+         
+    
+    class validateDiscountFile(BaseSchema):
         
         company_id = fields.Int(required=False)
         
         discount = fields.Str(required=False)
          
     
-    class downloadDiscountFile(Schema):
+    class downloadDiscountFile(BaseSchema):
         
         company_id = fields.Int(required=False)
         
         type = fields.Str(required=False)
          
     
-    class getValidationJob(Schema):
+    class getValidationJob(BaseSchema):
         
         company_id = fields.Int(required=False)
         
         id = fields.Str(required=False)
          
     
-    class cancelValidationJob(Schema):
+    class cancelValidationJob(BaseSchema):
         
         company_id = fields.Int(required=False)
         
         id = fields.Str(required=False)
          
     
-    class getDownloadJob(Schema):
+    class getDownloadJob(BaseSchema):
         
         company_id = fields.Int(required=False)
         
         id = fields.Str(required=False)
          
     
-    class cancelDownloadJob(Schema):
+    class cancelDownloadJob(BaseSchema):
         
         company_id = fields.Int(required=False)
         

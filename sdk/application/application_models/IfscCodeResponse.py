@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -11,13 +12,13 @@ from ..application_enums import *
 
 
 
-class IfscCodeResponse(Schema):
+class IfscCodeResponse(BaseSchema):
 
-    
-    success = fields.Boolean(required=False)
     
     bank_name = fields.Str(required=False)
     
     branch_name = fields.Str(required=False)
+    
+    success = fields.Boolean(required=False)
     
 

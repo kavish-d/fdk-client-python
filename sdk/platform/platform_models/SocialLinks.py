@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .FacebookLink import FacebookLink
 
@@ -23,7 +24,7 @@ from .VimeoLink import VimeoLink
 from .BlogLink import BlogLink
 
 
-class SocialLinks(Schema):
+class SocialLinks(BaseSchema):
 
     
     facebook = fields.Nested(FacebookLink, required=False)

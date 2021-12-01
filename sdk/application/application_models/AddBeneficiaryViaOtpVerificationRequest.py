@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -11,13 +12,13 @@ from ..application_enums import *
 
 
 
-class AddBeneficiaryViaOtpVerificationRequest(Schema):
+class AddBeneficiaryViaOtpVerificationRequest(BaseSchema):
 
+    
+    request_id = fields.Str(required=False)
     
     otp = fields.Str(required=False)
     
     hash_key = fields.Str(required=False)
-    
-    request_id = fields.Str(required=False)
     
 

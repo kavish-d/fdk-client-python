@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -31,7 +32,7 @@ from .InvoiceItemsPeriod import InvoiceItemsPeriod
 
 
 
-class InvoiceItems(Schema):
+class InvoiceItems(BaseSchema):
 
     
     _id = fields.Str(required=False)

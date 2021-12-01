@@ -3,6 +3,11 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
+
+
+
+
 
 
 
@@ -15,18 +20,10 @@ from .PaymentModeList import PaymentModeList
 
 
 
-
-
-
-
-class RootPaymentMode(Schema):
+class RootPaymentMode(BaseSchema):
 
     
-    name = fields.Str(required=False)
-    
-    anonymous_enable = fields.Boolean(required=False)
-    
-    list = fields.List(fields.Nested(PaymentModeList, required=False), required=False)
+    display_name = fields.Str(required=False)
     
     add_card_enabled = fields.Boolean(required=False)
     
@@ -34,6 +31,10 @@ class RootPaymentMode(Schema):
     
     display_priority = fields.Int(required=False)
     
-    display_name = fields.Str(required=False)
+    list = fields.List(fields.Nested(PaymentModeList, required=False), required=False)
+    
+    anonymous_enable = fields.Boolean(required=False)
+    
+    name = fields.Str(required=False)
     
 

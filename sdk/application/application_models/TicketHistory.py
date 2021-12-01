@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -21,7 +22,7 @@ from .CreatedOn import CreatedOn
 
 
 
-class TicketHistory(Schema):
+class TicketHistory(BaseSchema):
 
     
     type = fields.Str(required=False)

@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .Images import Images
 
@@ -13,7 +14,7 @@ from .Images import Images
 
 
 
-class Information(Schema):
+class Information(BaseSchema):
 
     
     images = fields.Nested(Images, required=False)

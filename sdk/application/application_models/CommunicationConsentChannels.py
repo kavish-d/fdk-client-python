@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .CommunicationConsentChannelsEmail import CommunicationConsentChannelsEmail
 
@@ -11,7 +12,7 @@ from .CommunicationConsentChannelsSms import CommunicationConsentChannelsSms
 from .CommunicationConsentChannelsWhatsapp import CommunicationConsentChannelsWhatsapp
 
 
-class CommunicationConsentChannels(Schema):
+class CommunicationConsentChannels(BaseSchema):
 
     
     email = fields.Nested(CommunicationConsentChannelsEmail, required=False)

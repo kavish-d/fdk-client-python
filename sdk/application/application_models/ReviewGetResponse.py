@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .ReviewFacet import ReviewFacet
 
@@ -13,7 +14,7 @@ from .Page import Page
 from .SortMethod import SortMethod
 
 
-class ReviewGetResponse(Schema):
+class ReviewGetResponse(BaseSchema):
 
     
     facets = fields.List(fields.Nested(ReviewFacet, required=False), required=False)

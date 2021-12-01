@@ -3,18 +3,19 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 class FeedbackValidator:
     
-    class createAbuseReport(Schema):
+    class createAbuseReport(BaseSchema):
         
         pass 
     
-    class updateAbuseReport(Schema):
+    class updateAbuseReport(BaseSchema):
         
         pass 
     
-    class getAbuseReports(Schema):
+    class getAbuseReports(BaseSchema):
         
         entity_id = fields.Str(required=False)
         
@@ -27,36 +28,36 @@ class FeedbackValidator:
         page_size = fields.Int(required=False)
          
     
-    class getAttributes(Schema):
+    class getAttributes(BaseSchema):
         
         page_no = fields.Int(required=False)
         
         page_size = fields.Int(required=False)
          
     
-    class createAttribute(Schema):
+    class createAttribute(BaseSchema):
         
         pass 
     
-    class getAttribute(Schema):
+    class getAttribute(BaseSchema):
         
         slug = fields.Str(required=False)
          
     
-    class updateAttribute(Schema):
+    class updateAttribute(BaseSchema):
         
         slug = fields.Str(required=False)
          
     
-    class createComment(Schema):
+    class createComment(BaseSchema):
         
         pass 
     
-    class updateComment(Schema):
+    class updateComment(BaseSchema):
         
         pass 
     
-    class getComments(Schema):
+    class getComments(BaseSchema):
         
         entity_type = fields.Str(required=False)
         
@@ -71,27 +72,27 @@ class FeedbackValidator:
         page_size = fields.Int(required=False)
          
     
-    class checkEligibility(Schema):
+    class checkEligibility(BaseSchema):
         
         entity_type = fields.Str(required=False)
         
         entity_id = fields.Str(required=False)
          
     
-    class deleteMedia(Schema):
+    class deleteMedia(BaseSchema):
         
         ids = fields.List(fields.Str(required=False), required=False)
          
     
-    class createMedia(Schema):
+    class createMedia(BaseSchema):
         
         pass 
     
-    class updateMedia(Schema):
+    class updateMedia(BaseSchema):
         
         pass 
     
-    class getMedias(Schema):
+    class getMedias(BaseSchema):
         
         entity_type = fields.Str(required=False)
         
@@ -106,7 +107,7 @@ class FeedbackValidator:
         page_size = fields.Int(required=False)
          
     
-    class getReviewSummaries(Schema):
+    class getReviewSummaries(BaseSchema):
         
         entity_type = fields.Str(required=False)
         
@@ -119,15 +120,15 @@ class FeedbackValidator:
         page_size = fields.Int(required=False)
          
     
-    class createReview(Schema):
+    class createReview(BaseSchema):
         
         pass 
     
-    class updateReview(Schema):
+    class updateReview(BaseSchema):
         
         pass 
     
-    class getReviews(Schema):
+    class getReviews(BaseSchema):
         
         entity_type = fields.Str(required=False)
         
@@ -156,7 +157,7 @@ class FeedbackValidator:
         page_size = fields.Int(required=False)
          
     
-    class getTemplates(Schema):
+    class getTemplates(BaseSchema):
         
         template_id = fields.Str(required=False)
         
@@ -165,15 +166,15 @@ class FeedbackValidator:
         entity_type = fields.Str(required=False)
          
     
-    class createQuestion(Schema):
+    class createQuestion(BaseSchema):
         
         pass 
     
-    class updateQuestion(Schema):
+    class updateQuestion(BaseSchema):
         
         pass 
     
-    class getQuestionAndAnswers(Schema):
+    class getQuestionAndAnswers(BaseSchema):
         
         entity_type = fields.Str(required=False)
         
@@ -190,7 +191,7 @@ class FeedbackValidator:
         page_size = fields.Int(required=False)
          
     
-    class getVotes(Schema):
+    class getVotes(BaseSchema):
         
         id = fields.Str(required=False)
         
@@ -201,11 +202,11 @@ class FeedbackValidator:
         page_size = fields.Int(required=False)
          
     
-    class createVote(Schema):
+    class createVote(BaseSchema):
         
         pass 
     
-    class updateVote(Schema):
+    class updateVote(BaseSchema):
         
         pass 
     

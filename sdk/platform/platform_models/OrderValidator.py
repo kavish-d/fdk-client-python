@@ -3,39 +3,40 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 class OrderValidator:
     
-    class shipmentStatusUpdate(Schema):
+    class shipmentStatusUpdate(BaseSchema):
         
         company_id = fields.Str(required=False)
          
     
-    class activityStatus(Schema):
+    class activityStatus(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         bag_id = fields.Str(required=False)
          
     
-    class storeProcessShipmentUpdate(Schema):
+    class storeProcessShipmentUpdate(BaseSchema):
         
         company_id = fields.Str(required=False)
          
     
-    class checkRefund(Schema):
+    class checkRefund(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         shipment_id = fields.Str(required=False)
          
     
-    class ShipmentBagsCanBreak(Schema):
+    class ShipmentBagsCanBreak(BaseSchema):
         
         company_id = fields.Str(required=False)
          
     
-    class getOrdersByCompanyId(Schema):
+    class getOrdersByCompanyId(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -46,6 +47,10 @@ class OrderValidator:
         from_date = fields.Str(required=False)
         
         to_date = fields.Str(required=False)
+        
+        is_priority_sort = fields.Boolean(required=False)
+        
+        lock_status = fields.Boolean(required=False)
         
         q = fields.Str(required=False)
         
@@ -68,7 +73,7 @@ class OrderValidator:
         filter_type = fields.Str(required=False)
          
     
-    class getOrderLanesCountByCompanyId(Schema):
+    class getOrderLanesCountByCompanyId(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -97,7 +102,7 @@ class OrderValidator:
         filter_type = fields.Str(required=False)
          
     
-    class getOrderDetails(Schema):
+    class getOrderDetails(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -108,7 +113,7 @@ class OrderValidator:
         previous = fields.Str(required=False)
          
     
-    class getPicklistOrdersByCompanyId(Schema):
+    class getPicklistOrdersByCompanyId(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -137,7 +142,7 @@ class OrderValidator:
         filter_type = fields.Str(required=False)
          
     
-    class trackShipmentPlatform(Schema):
+    class trackShipmentPlatform(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -146,7 +151,7 @@ class OrderValidator:
         shipment_id = fields.Str(required=False)
          
     
-    class trackOrder(Schema):
+    class trackOrder(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -155,14 +160,14 @@ class OrderValidator:
         order_id = fields.Str(required=False)
          
     
-    class failedOrders(Schema):
+    class failedOrders(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class reprocessOrder(Schema):
+    class reprocessOrder(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -171,7 +176,7 @@ class OrderValidator:
         order_id = fields.Str(required=False)
          
     
-    class updateShipment(Schema):
+    class updateShipment(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -180,7 +185,7 @@ class OrderValidator:
         shipment_id = fields.Str(required=False)
          
     
-    class getPlatformShipmentReasons(Schema):
+    class getPlatformShipmentReasons(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -189,7 +194,7 @@ class OrderValidator:
         action = fields.Str(required=False)
          
     
-    class getShipmentTrackDetails(Schema):
+    class getShipmentTrackDetails(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -200,7 +205,7 @@ class OrderValidator:
         shipment_id = fields.Str(required=False)
          
     
-    class getShipmentAddress(Schema):
+    class getShipmentAddress(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -209,7 +214,7 @@ class OrderValidator:
         address_category = fields.Str(required=False)
          
     
-    class updateShipmentAddress(Schema):
+    class updateShipmentAddress(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -218,7 +223,7 @@ class OrderValidator:
         address_category = fields.Str(required=False)
          
     
-    class getOrdersByApplicationId(Schema):
+    class getOrdersByApplicationId(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -251,17 +256,17 @@ class OrderValidator:
         filter_type = fields.Str(required=False)
          
     
-    class getPing(Schema):
+    class getPing(BaseSchema):
         
         company_id = fields.Str(required=False)
          
     
-    class voiceCallback(Schema):
+    class voiceCallback(BaseSchema):
         
         company_id = fields.Str(required=False)
          
     
-    class voiceClickToCall(Schema):
+    class voiceClickToCall(BaseSchema):
         
         company_id = fields.Str(required=False)
         

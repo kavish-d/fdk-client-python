@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -15,17 +16,17 @@ from ..platform_enums import *
 
 
 
-class PageResponse(Schema):
+class PageResponse(BaseSchema):
 
+    
+    current = fields.Str(required=False)
     
     has_next = fields.Boolean(required=False)
     
-    item_total = fields.Int(required=False)
-    
     size = fields.Int(required=False)
     
-    has_previous = fields.Boolean(required=False)
+    item_total = fields.Int(required=False)
     
-    current = fields.Str(required=False)
+    has_previous = fields.Boolean(required=False)
     
 

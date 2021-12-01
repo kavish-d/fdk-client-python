@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -27,7 +28,7 @@ from .AnnouncementAuthorSchema import AnnouncementAuthorSchema
 from .ScheduleSchema import ScheduleSchema
 
 
-class AdminAnnouncementSchema(Schema):
+class AdminAnnouncementSchema(BaseSchema):
 
     
     _id = fields.Str(required=False)

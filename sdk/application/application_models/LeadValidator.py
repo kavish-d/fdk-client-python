@@ -3,39 +3,40 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 class LeadValidator:
     
-    class getTicket(Schema):
+    class getTicket(BaseSchema):
         
         id = fields.Str(required=False)
          
     
-    class createHistory(Schema):
+    class createHistory(BaseSchema):
         
         id = fields.Str(required=False)
          
     
-    class createTicket(Schema):
+    class createTicket(BaseSchema):
         
         pass 
     
-    class getCustomForm(Schema):
+    class getCustomForm(BaseSchema):
         
         slug = fields.Str(required=False)
          
     
-    class submitCustomForm(Schema):
+    class submitCustomForm(BaseSchema):
         
         slug = fields.Str(required=False)
          
     
-    class getParticipantsInsideVideoRoom(Schema):
+    class getParticipantsInsideVideoRoom(BaseSchema):
         
         unique_name = fields.Str(required=False)
          
     
-    class getTokenForVideoRoom(Schema):
+    class getTokenForVideoRoom(BaseSchema):
         
         unique_name = fields.Str(required=False)
          

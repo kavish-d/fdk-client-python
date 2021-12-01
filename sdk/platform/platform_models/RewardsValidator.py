@@ -3,10 +3,11 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 class RewardsValidator:
     
-    class getGiveaways(Schema):
+    class getGiveaways(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -17,23 +18,14 @@ class RewardsValidator:
         page_size = fields.Int(required=False)
          
     
-    class createGiveaway(Schema):
+    class createGiveaway(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getGiveawayByID(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        id = fields.Str(required=False)
-         
-    
-    class updateGiveaway(Schema):
+    class getGiveawayByID(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -42,14 +34,23 @@ class RewardsValidator:
         id = fields.Str(required=False)
          
     
-    class getOffers(Schema):
+    class updateGiveaway(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        id = fields.Str(required=False)
+         
+    
+    class getOffers(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getOfferByName(Schema):
+    class getOfferByName(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -60,7 +61,7 @@ class RewardsValidator:
         name = fields.Str(required=False)
          
     
-    class updateOfferByName(Schema):
+    class updateOfferByName(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -69,7 +70,7 @@ class RewardsValidator:
         name = fields.Str(required=False)
          
     
-    class getUserAvailablePoints(Schema):
+    class getUserAvailablePoints(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -78,7 +79,7 @@ class RewardsValidator:
         user_id = fields.Str(required=False)
          
     
-    class updateUserStatus(Schema):
+    class updateUserStatus(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -87,7 +88,7 @@ class RewardsValidator:
         user_id = fields.Str(required=False)
          
     
-    class getUserPointsHistory(Schema):
+    class getUserPointsHistory(BaseSchema):
         
         company_id = fields.Str(required=False)
         

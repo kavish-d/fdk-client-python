@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -11,12 +12,12 @@ from ..platform_enums import *
 
 
 
-class OpenApiErrorResponse(Schema):
+class OpenApiErrorResponse(BaseSchema):
 
-    
-    errors = fields.Dict(required=False)
     
     success = fields.Boolean(required=False)
+    
+    errors = fields.Dict(required=False)
     
     message = fields.Str(required=False)
     

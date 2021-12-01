@@ -3,13 +3,14 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
 
 
 
-class GetCatalogConfigurationDetailsSchemaListing(Schema):
+class GetCatalogConfigurationDetailsSchemaListing(BaseSchema):
 
     
     filter = fields.Dict(required=False)

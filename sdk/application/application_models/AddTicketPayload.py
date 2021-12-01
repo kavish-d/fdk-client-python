@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -15,7 +16,7 @@ from ..application_enums import *
 from .TicketContent import TicketContent
 
 
-class AddTicketPayload(Schema):
+class AddTicketPayload(BaseSchema):
 
     
     created_by = fields.Dict(required=False)

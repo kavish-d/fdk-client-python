@@ -3,38 +3,39 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 class RewardsValidator:
     
-    class getPointsOnProduct(Schema):
+    class getPointsOnProduct(BaseSchema):
         
         pass 
     
-    class getOfferByName(Schema):
+    class getOfferByName(BaseSchema):
         
         name = fields.Str(required=False)
          
     
-    class getOrderDiscount(Schema):
+    class getOrderDiscount(BaseSchema):
         
         pass 
     
-    class getUserPoints(Schema):
+    class getUserPoints(BaseSchema):
         
         pass 
     
-    class getUserPointsHistory(Schema):
+    class getUserPointsHistory(BaseSchema):
         
         page_id = fields.Str(required=False)
         
         page_size = fields.Int(required=False)
          
     
-    class getUserReferralDetails(Schema):
+    class getUserReferralDetails(BaseSchema):
         
         pass 
     
-    class redeemReferralCode(Schema):
+    class redeemReferralCode(BaseSchema):
         
         pass 
     

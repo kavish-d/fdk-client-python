@@ -3,13 +3,14 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .EventSubscription import EventSubscription
 
 from .Page import Page
 
 
-class EventSubscriptions(Schema):
+class EventSubscriptions(BaseSchema):
 
     
     items = fields.List(fields.Nested(EventSubscription, required=False), required=False)

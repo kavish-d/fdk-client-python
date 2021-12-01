@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -55,7 +56,7 @@ from .FulfillingStoreStoreAddressJson import FulfillingStoreStoreAddressJson
 
 
 
-class PlatformFulfillingStore(Schema):
+class PlatformFulfillingStore(BaseSchema):
 
     
     packaging_material_count = fields.Int(required=False)

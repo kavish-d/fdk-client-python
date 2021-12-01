@@ -3,13 +3,14 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
 from .SetSizeDistribution import SetSizeDistribution
 
 
-class Set(Schema):
+class Set(BaseSchema):
 
     
     quantity = fields.Int(required=False)

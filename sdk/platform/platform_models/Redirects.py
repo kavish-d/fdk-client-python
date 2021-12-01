@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .RedirectDevice import RedirectDevice
 
@@ -13,7 +14,7 @@ from .WebRedirect import WebRedirect
 
 
 
-class Redirects(Schema):
+class Redirects(BaseSchema):
 
     
     ios = fields.Nested(RedirectDevice, required=False)

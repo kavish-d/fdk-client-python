@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .ItemBrand import ItemBrand
 
@@ -19,7 +20,7 @@ from .ItemBrand import ItemBrand
 
 
 
-class Item(Schema):
+class Item(BaseSchema):
 
     
     brand = fields.Nested(ItemBrand, required=False)

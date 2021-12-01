@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -21,7 +22,7 @@ from .RatingRequest import RatingRequest
 from .ReviewRequest import ReviewRequest
 
 
-class UpdateTemplateRequest(Schema):
+class UpdateTemplateRequest(BaseSchema):
 
     
     active = fields.Boolean(required=False)

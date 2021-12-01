@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -13,15 +14,15 @@ from ..platform_enums import *
 
 
 
-class ProductFiltersKey(Schema):
+class ProductFiltersKey(BaseSchema):
 
     
-    kind = fields.Str(required=False)
+    display = fields.Str(required=False)
     
     logo = fields.Str(required=False)
     
     name = fields.Str(required=False)
     
-    display = fields.Str(required=False)
+    kind = fields.Str(required=False)
     
 

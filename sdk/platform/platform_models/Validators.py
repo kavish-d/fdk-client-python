@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .CompanyValidator import CompanyValidator
 
@@ -13,7 +14,7 @@ from .InventoryValidator import InventoryValidator
 from .OrderValidator import OrderValidator
 
 
-class Validators(Schema):
+class Validators(BaseSchema):
 
     
     company = fields.Nested(CompanyValidator, required=False)

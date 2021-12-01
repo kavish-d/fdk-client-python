@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -15,7 +16,7 @@ from .AuthSuccessUserDebug import AuthSuccessUserDebug
 from .AuthSuccessUserEmails import AuthSuccessUserEmails
 
 
-class AuthSuccessUser(Schema):
+class AuthSuccessUser(BaseSchema):
 
     
     first_name = fields.Str(required=False)

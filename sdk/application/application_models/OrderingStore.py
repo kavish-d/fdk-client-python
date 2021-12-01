@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .OptedStoreAddress import OptedStoreAddress
 
@@ -23,7 +24,7 @@ from .OptedStoreAddress import OptedStoreAddress
 
 
 
-class OrderingStore(Schema):
+class OrderingStore(BaseSchema):
 
     
     address = fields.Nested(OptedStoreAddress, required=False)

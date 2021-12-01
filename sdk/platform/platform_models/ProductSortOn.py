@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -11,13 +12,13 @@ from ..platform_enums import *
 
 
 
-class ProductSortOn(Schema):
+class ProductSortOn(BaseSchema):
 
     
-    value = fields.Str(required=False)
+    is_selected = fields.Boolean(required=False)
     
     name = fields.Str(required=False)
     
-    is_selected = fields.Boolean(required=False)
+    value = fields.Str(required=False)
     
 

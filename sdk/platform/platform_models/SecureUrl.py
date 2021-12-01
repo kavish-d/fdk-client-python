@@ -3,11 +3,12 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
 
-class SecureUrl(Schema):
+class SecureUrl(BaseSchema):
 
     
     secure_url = fields.Str(required=False)

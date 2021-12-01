@@ -3,11 +3,12 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
 
-class SubscriptionLimitTeam(Schema):
+class SubscriptionLimitTeam(BaseSchema):
 
     
     limit = fields.Int(required=False)

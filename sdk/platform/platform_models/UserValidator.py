@@ -3,10 +3,11 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 class UserValidator:
     
-    class getCustomers(Schema):
+    class getCustomers(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -19,7 +20,7 @@ class UserValidator:
         page_no = fields.Int(required=False)
          
     
-    class searchUsers(Schema):
+    class searchUsers(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -28,14 +29,14 @@ class UserValidator:
         q = fields.Dict(required=False)
          
     
-    class createUser(Schema):
+    class createUser(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class updateUser(Schema):
+    class updateUser(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -44,21 +45,21 @@ class UserValidator:
         user_id = fields.Str(required=False)
          
     
-    class createUserSession(Schema):
+    class createUserSession(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getPlatformConfig(Schema):
+    class getPlatformConfig(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class updatePlatformConfig(Schema):
+    class updatePlatformConfig(BaseSchema):
         
         company_id = fields.Str(required=False)
         

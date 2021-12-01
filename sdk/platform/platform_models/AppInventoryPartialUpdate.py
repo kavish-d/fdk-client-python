@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .RewardPointsConfig import RewardPointsConfig
 
@@ -15,7 +16,7 @@ from .LoyaltyPointsConfig import LoyaltyPointsConfig
 
 
 
-class AppInventoryPartialUpdate(Schema):
+class AppInventoryPartialUpdate(BaseSchema):
 
     
     reward_points = fields.Nested(RewardPointsConfig, required=False)

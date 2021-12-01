@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .CommunicationOptinDialogFeature import CommunicationOptinDialogFeature
 
@@ -21,7 +22,7 @@ from .CompareProductsFeature import CompareProductsFeature
 from .RewardPointsConfig import RewardPointsConfig
 
 
-class CommonFeature(Schema):
+class CommonFeature(BaseSchema):
 
     
     communication_optin_dialog = fields.Nested(CommunicationOptinDialogFeature, required=False)

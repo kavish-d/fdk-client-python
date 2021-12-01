@@ -3,10 +3,11 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 class CartValidator:
     
-    class getCoupons(Schema):
+    class getCoupons(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -29,23 +30,14 @@ class CartValidator:
         code = fields.Str(required=False)
          
     
-    class createCoupon(Schema):
+    class createCoupon(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getCouponById(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        id = fields.Str(required=False)
-         
-    
-    class updateCoupon(Schema):
+    class getCouponById(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -54,7 +46,7 @@ class CartValidator:
         id = fields.Str(required=False)
          
     
-    class updateCouponPartially(Schema):
+    class updateCoupon(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -63,21 +55,30 @@ class CartValidator:
         id = fields.Str(required=False)
          
     
-    class fetchAndvalidateCartItems(Schema):
+    class updateCouponPartially(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        id = fields.Str(required=False)
+         
+    
+    class fetchAndvalidateCartItems(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class checkCartServiceability(Schema):
+    class checkCartServiceability(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class checkoutCart(Schema):
+    class checkoutCart(BaseSchema):
         
         company_id = fields.Str(required=False)
         

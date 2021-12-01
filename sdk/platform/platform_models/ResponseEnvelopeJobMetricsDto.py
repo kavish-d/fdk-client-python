@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -27,7 +28,7 @@ from .JobMetricsDto import JobMetricsDto
 from .Page import Page
 
 
-class ResponseEnvelopeJobMetricsDto(Schema):
+class ResponseEnvelopeJobMetricsDto(BaseSchema):
 
     
     timestamp = fields.Str(required=False)

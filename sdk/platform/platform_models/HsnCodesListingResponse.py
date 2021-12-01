@@ -3,13 +3,14 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .PageResponse import PageResponse
 
 from .HsnCodesObject import HsnCodesObject
 
 
-class HsnCodesListingResponse(Schema):
+class HsnCodesListingResponse(BaseSchema):
 
     
     page = fields.Nested(PageResponse, required=False)

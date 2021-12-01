@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -13,7 +14,7 @@ from ..application_enums import *
 
 
 
-class EditorMeta(Schema):
+class EditorMeta(BaseSchema):
 
     
     foreground_color = fields.Str(required=False)

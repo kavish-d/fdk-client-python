@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .Blocks import Blocks
 
@@ -13,7 +14,7 @@ from .Blocks import Blocks
 from .BlocksProps import BlocksProps
 
 
-class availableSectionSchema(Schema):
+class availableSectionSchema(BaseSchema):
 
     
     blocks = fields.List(fields.Nested(Blocks, required=False), required=False)

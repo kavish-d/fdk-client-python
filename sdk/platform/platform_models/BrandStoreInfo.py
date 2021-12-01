@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -17,7 +18,7 @@ from .OptedStoreAddress import OptedStoreAddress
 from .OptedCompany import OptedCompany
 
 
-class BrandStoreInfo(Schema):
+class BrandStoreInfo(BaseSchema):
 
     
     store_name = fields.Str(required=False)

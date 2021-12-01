@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .LogisticMeta import LogisticMeta
 
@@ -19,7 +20,7 @@ from .LogisticError import LogisticError
 
 
 
-class LogisticPincodeData(Schema):
+class LogisticPincodeData(BaseSchema):
 
     
     meta = fields.Nested(LogisticMeta, required=False)

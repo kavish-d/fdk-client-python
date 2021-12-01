@@ -3,11 +3,12 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
 
-class EntityChargeRecurring(Schema):
+class EntityChargeRecurring(BaseSchema):
 
     
     interval = fields.Str(required=False)

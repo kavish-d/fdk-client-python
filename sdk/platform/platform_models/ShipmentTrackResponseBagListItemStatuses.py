@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -23,7 +24,7 @@ from .ShipmentTrackResponseBagListItemStatusesProgress import ShipmentTrackRespo
 from .ShipmentTrackResponseBagListItemStatusesTrack import ShipmentTrackResponseBagListItemStatusesTrack
 
 
-class ShipmentTrackResponseBagListItemStatuses(Schema):
+class ShipmentTrackResponseBagListItemStatuses(BaseSchema):
 
     
     nps_rating = fields.Int(required=False)

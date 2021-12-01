@@ -3,13 +3,14 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
 from .StatsGroupComponent import StatsGroupComponent
 
 
-class StatsGroupComponents(Schema):
+class StatsGroupComponents(BaseSchema):
 
     
     title = fields.Str(required=False)

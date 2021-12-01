@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .Comment import Comment
 
@@ -23,7 +24,7 @@ from .QNAState import QNAState
 from .TagMeta import TagMeta
 
 
-class QNA(Schema):
+class QNA(BaseSchema):
 
     
     comments = fields.List(fields.Nested(Comment, required=False), required=False)

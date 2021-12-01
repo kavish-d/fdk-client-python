@@ -3,33 +3,25 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 class FileStorageValidator:
     
-    class startUpload(Schema):
+    class startUpload(BaseSchema):
         
         namespace = fields.Str(required=False)
         
         company_id = fields.Int(required=False)
          
     
-    class completeUpload(Schema):
+    class completeUpload(BaseSchema):
         
         namespace = fields.Str(required=False)
         
         company_id = fields.Int(required=False)
          
     
-    class appStartUpload(Schema):
-        
-        namespace = fields.Str(required=False)
-        
-        company_id = fields.Int(required=False)
-        
-        application_id = fields.Str(required=False)
-         
-    
-    class appCompleteUpload(Schema):
+    class appStartUpload(BaseSchema):
         
         namespace = fields.Str(required=False)
         
@@ -38,19 +30,28 @@ class FileStorageValidator:
         application_id = fields.Str(required=False)
          
     
-    class getSignUrls(Schema):
+    class appCompleteUpload(BaseSchema):
+        
+        namespace = fields.Str(required=False)
+        
+        company_id = fields.Int(required=False)
+        
+        application_id = fields.Str(required=False)
+         
+    
+    class getSignUrls(BaseSchema):
         
         company_id = fields.Int(required=False)
          
     
-    class copyFiles(Schema):
+    class copyFiles(BaseSchema):
         
         sync = fields.Boolean(required=False)
         
         company_id = fields.Int(required=False)
          
     
-    class appCopyFiles(Schema):
+    class appCopyFiles(BaseSchema):
         
         sync = fields.Boolean(required=False)
         
@@ -59,7 +60,7 @@ class FileStorageValidator:
         application_id = fields.Int(required=False)
          
     
-    class browse(Schema):
+    class browse(BaseSchema):
         
         namespace = fields.Str(required=False)
         
@@ -68,7 +69,7 @@ class FileStorageValidator:
         page_no = fields.Int(required=False)
          
     
-    class browse(Schema):
+    class browse(BaseSchema):
         
         namespace = fields.Str(required=False)
         
@@ -79,7 +80,7 @@ class FileStorageValidator:
         page_no = fields.Int(required=False)
          
     
-    class proxy(Schema):
+    class proxy(BaseSchema):
         
         company_id = fields.Int(required=False)
         

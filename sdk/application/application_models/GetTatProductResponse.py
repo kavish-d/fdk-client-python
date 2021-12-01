@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .LocationDetails import LocationDetails
 
@@ -27,7 +28,7 @@ from .LocationDetails import LocationDetails
 
 
 
-class GetTatProductResponse(Schema):
+class GetTatProductResponse(BaseSchema):
 
     
     location_details = fields.List(fields.Nested(LocationDetails, required=False), required=False)

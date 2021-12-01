@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .Firebase import Firebase
 
@@ -21,7 +22,7 @@ from .FyndRewards import FyndRewards
 from .GoogleMap import GoogleMap
 
 
-class Tokens(Schema):
+class Tokens(BaseSchema):
 
     
     firebase = fields.Nested(Firebase, required=False)

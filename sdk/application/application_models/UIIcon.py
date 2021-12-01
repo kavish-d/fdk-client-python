@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -11,7 +12,7 @@ from ..application_enums import *
 
 
 
-class UIIcon(Schema):
+class UIIcon(BaseSchema):
 
     
     active = fields.Str(required=False)

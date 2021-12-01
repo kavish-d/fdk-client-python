@@ -3,17 +3,18 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .Media import Media
 
 from .Media import Media
 
 
-class ImageUrls(Schema):
+class ImageUrls(BaseSchema):
 
-    
-    landscape = fields.Nested(Media, required=False)
     
     portrait = fields.Nested(Media, required=False)
+    
+    landscape = fields.Nested(Media, required=False)
     
 

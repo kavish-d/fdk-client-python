@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .UmdJs import UmdJs
 
@@ -11,7 +12,7 @@ from .CommonJs import CommonJs
 from .Css import Css
 
 
-class AssetsSchema(Schema):
+class AssetsSchema(BaseSchema):
 
     
     umd_js = fields.Nested(UmdJs, required=False)

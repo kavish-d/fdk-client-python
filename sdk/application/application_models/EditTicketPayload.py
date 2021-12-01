@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .TicketContent import TicketContent
 
@@ -21,7 +22,7 @@ from .AgentChangePayload import AgentChangePayload
 
 
 
-class EditTicketPayload(Schema):
+class EditTicketPayload(BaseSchema):
 
     
     content = fields.Nested(TicketContent, required=False)

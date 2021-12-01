@@ -3,25 +3,26 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
-
-
-
-from .ActionPage import ActionPage
+from ..application_models.BaseSchema import BaseSchema
 
 
 
 from .Media import Media
 
+from .ActionPage import ActionPage
 
-class AutocompleteItem(Schema):
+
+
+
+class AutocompleteItem(BaseSchema):
 
     
     type = fields.Str(required=False)
     
+    logo = fields.Nested(Media, required=False)
+    
     action = fields.Nested(ActionPage, required=False)
     
     display = fields.Str(required=False)
-    
-    logo = fields.Nested(Media, required=False)
     
 

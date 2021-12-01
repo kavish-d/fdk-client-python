@@ -3,13 +3,14 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .Credentials import Credentials
 
 
 
 
-class Firebase(Schema):
+class Firebase(BaseSchema):
 
     
     credentials = fields.Nested(Credentials, required=False)

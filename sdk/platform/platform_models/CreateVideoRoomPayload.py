@@ -3,13 +3,14 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
 from .NotifyUser import NotifyUser
 
 
-class CreateVideoRoomPayload(Schema):
+class CreateVideoRoomPayload(BaseSchema):
 
     
     unique_name = fields.Str(required=False)

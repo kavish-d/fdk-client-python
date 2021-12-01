@@ -3,10 +3,11 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 class FeedbackValidator:
     
-    class getAttributes(Schema):
+    class getAttributes(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -17,7 +18,7 @@ class FeedbackValidator:
         page_size = fields.Int(required=False)
          
     
-    class getCustomerReviews(Schema):
+    class getCustomerReviews(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -54,7 +55,7 @@ class FeedbackValidator:
         page_size = fields.Int(required=False)
          
     
-    class updateApprove(Schema):
+    class updateApprove(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -63,7 +64,7 @@ class FeedbackValidator:
         review_id = fields.Str(required=False)
          
     
-    class getHistory(Schema):
+    class getHistory(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -72,7 +73,7 @@ class FeedbackValidator:
         review_id = fields.Str(required=False)
          
     
-    class getApplicationTemplates(Schema):
+    class getApplicationTemplates(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -83,23 +84,14 @@ class FeedbackValidator:
         page_size = fields.Int(required=False)
          
     
-    class createTemplate(Schema):
+    class createTemplate(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getTemplateById(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        id = fields.Str(required=False)
-         
-    
-    class updateTemplate(Schema):
+    class getTemplateById(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -108,7 +100,16 @@ class FeedbackValidator:
         id = fields.Str(required=False)
          
     
-    class updateTemplateStatus(Schema):
+    class updateTemplate(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        id = fields.Str(required=False)
+         
+    
+    class updateTemplateStatus(BaseSchema):
         
         company_id = fields.Str(required=False)
         

@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -11,7 +12,7 @@ from ..platform_enums import *
 from .AppStoreRules import AppStoreRules
 
 
-class InventoryStore(Schema):
+class InventoryStore(BaseSchema):
 
     
     criteria = fields.Str(required=False)

@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -37,7 +38,7 @@ from .BagItemAttributes import BagItemAttributes
 
 
 
-class BagItem(Schema):
+class BagItem(BaseSchema):
 
     
     id = fields.Int(required=False)

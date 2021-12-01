@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -23,7 +24,7 @@ from ..platform_enums import *
 
 
 
-class Payments(Schema):
+class Payments(BaseSchema):
 
     
     is_active = fields.Boolean(required=False)

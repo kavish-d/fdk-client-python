@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -11,7 +12,7 @@ from ..application_enums import *
 from .TicketAsset import TicketAsset
 
 
-class TicketContent(Schema):
+class TicketContent(BaseSchema):
 
     
     title = fields.Str(required=False)

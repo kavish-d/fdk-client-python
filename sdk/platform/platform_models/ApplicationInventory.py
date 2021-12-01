@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .AppInventoryConfig import AppInventoryConfig
 
@@ -39,7 +40,7 @@ from .LoyaltyPointsConfig import LoyaltyPointsConfig
 
 
 
-class ApplicationInventory(Schema):
+class ApplicationInventory(BaseSchema):
 
     
     inventory = fields.Nested(AppInventoryConfig, required=False)

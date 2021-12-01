@@ -3,38 +3,39 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 class ShareValidator:
     
-    class getApplicationQRCode(Schema):
+    class getApplicationQRCode(BaseSchema):
         
         pass 
     
-    class getProductQRCodeBySlug(Schema):
+    class getProductQRCodeBySlug(BaseSchema):
         
         slug = fields.Str(required=False)
          
     
-    class getCollectionQRCodeBySlug(Schema):
+    class getCollectionQRCodeBySlug(BaseSchema):
         
         slug = fields.Str(required=False)
          
     
-    class getUrlQRCode(Schema):
+    class getUrlQRCode(BaseSchema):
         
         url = fields.Str(required=False)
          
     
-    class createShortLink(Schema):
+    class createShortLink(BaseSchema):
         
         pass 
     
-    class getShortLinkByHash(Schema):
+    class getShortLinkByHash(BaseSchema):
         
         hash = fields.Str(required=False)
          
     
-    class getOriginalShortLinkByHash(Schema):
+    class getOriginalShortLinkByHash(BaseSchema):
         
         hash = fields.Str(required=False)
          

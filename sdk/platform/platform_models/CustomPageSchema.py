@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -33,7 +34,7 @@ from .DateMeta import DateMeta
 from .ScheduleSchema import ScheduleSchema
 
 
-class CustomPageSchema(Schema):
+class CustomPageSchema(BaseSchema):
 
     
     _id = fields.Str(required=False)

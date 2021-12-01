@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .ShipmentTrackResponseBagListItem import ShipmentTrackResponseBagListItem
 
@@ -11,7 +12,7 @@ from .ShipmentTrackResponseBagListItem import ShipmentTrackResponseBagListItem
 
 
 
-class ShipmentTrackResponse(Schema):
+class ShipmentTrackResponse(BaseSchema):
 
     
     bag_list = fields.List(fields.Nested(ShipmentTrackResponseBagListItem, required=False), required=False)

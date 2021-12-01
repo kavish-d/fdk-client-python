@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -17,7 +18,7 @@ from ..platform_enums import *
 
 
 
-class MkpLogsResp(Schema):
+class MkpLogsResp(BaseSchema):
 
     
     start_time_iso = fields.Str(required=False)

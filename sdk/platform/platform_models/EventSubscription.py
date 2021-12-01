@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .EventSubscriptionTemplate import EventSubscriptionTemplate
 
@@ -23,7 +24,7 @@ from .EventSubscriptionTemplate import EventSubscriptionTemplate
 
 
 
-class EventSubscription(Schema):
+class EventSubscription(BaseSchema):
 
     
     template = fields.Nested(EventSubscriptionTemplate, required=False)

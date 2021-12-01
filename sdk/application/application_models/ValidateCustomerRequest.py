@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -15,17 +16,17 @@ from ..application_enums import *
 
 
 
-class ValidateCustomerRequest(Schema):
+class ValidateCustomerRequest(BaseSchema):
 
-    
-    aggregator = fields.Str(required=False)
-    
-    transaction_amount_in_paise = fields.Int(required=False)
-    
-    merchant_params = fields.Dict(required=False)
     
     payload = fields.Str(required=False)
     
     phone_number = fields.Str(required=False)
+    
+    merchant_params = fields.Dict(required=False)
+    
+    aggregator = fields.Str(required=False)
+    
+    transaction_amount_in_paise = fields.Int(required=False)
     
 

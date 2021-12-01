@@ -3,10 +3,11 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 class CommunicationValidator:
     
-    class getCampaigns(Schema):
+    class getCampaigns(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -19,23 +20,14 @@ class CommunicationValidator:
         sort = fields.Dict(required=False)
          
     
-    class createCampaign(Schema):
+    class createCampaign(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getCampaignById(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        id = fields.Str(required=False)
-         
-    
-    class updateCampaignById(Schema):
+    class getCampaignById(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -44,7 +36,7 @@ class CommunicationValidator:
         id = fields.Str(required=False)
          
     
-    class getStatsOfCampaignById(Schema):
+    class updateCampaignById(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -53,7 +45,16 @@ class CommunicationValidator:
         id = fields.Str(required=False)
          
     
-    class getAudiences(Schema):
+    class getStatsOfCampaignById(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        id = fields.Str(required=False)
+         
+    
+    class getAudiences(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -66,30 +67,21 @@ class CommunicationValidator:
         sort = fields.Dict(required=False)
          
     
-    class createAudience(Schema):
+    class createAudience(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getBigqueryHeaders(Schema):
+    class getBigqueryHeaders(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getAudienceById(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        id = fields.Str(required=False)
-         
-    
-    class updateAudienceById(Schema):
+    class getAudienceById(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -98,14 +90,23 @@ class CommunicationValidator:
         id = fields.Str(required=False)
          
     
-    class getNSampleRecordsFromCsv(Schema):
+    class updateAudienceById(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        id = fields.Str(required=False)
+         
+    
+    class getNSampleRecordsFromCsv(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getEmailProviders(Schema):
+    class getEmailProviders(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -118,23 +119,14 @@ class CommunicationValidator:
         sort = fields.Dict(required=False)
          
     
-    class createEmailProvider(Schema):
+    class createEmailProvider(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getEmailProviderById(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        id = fields.Str(required=False)
-         
-    
-    class updateEmailProviderById(Schema):
+    class getEmailProviderById(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -143,7 +135,16 @@ class CommunicationValidator:
         id = fields.Str(required=False)
          
     
-    class getEmailTemplates(Schema):
+    class updateEmailProviderById(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        id = fields.Str(required=False)
+         
+    
+    class getEmailTemplates(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -156,14 +157,14 @@ class CommunicationValidator:
         sort = fields.Dict(required=False)
          
     
-    class createEmailTemplate(Schema):
+    class createEmailTemplate(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getSystemEmailTemplates(Schema):
+    class getSystemEmailTemplates(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -176,7 +177,7 @@ class CommunicationValidator:
         sort = fields.Dict(required=False)
          
     
-    class getEmailTemplateById(Schema):
+    class getEmailTemplateById(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -185,7 +186,7 @@ class CommunicationValidator:
         id = fields.Str(required=False)
          
     
-    class updateEmailTemplateById(Schema):
+    class updateEmailTemplateById(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -194,7 +195,7 @@ class CommunicationValidator:
         id = fields.Str(required=False)
          
     
-    class deleteEmailTemplateById(Schema):
+    class deleteEmailTemplateById(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -203,7 +204,7 @@ class CommunicationValidator:
         id = fields.Str(required=False)
          
     
-    class getEventSubscriptions(Schema):
+    class getEventSubscriptions(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -216,7 +217,7 @@ class CommunicationValidator:
         populate = fields.Str(required=False)
          
     
-    class getJobs(Schema):
+    class getJobs(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -229,14 +230,14 @@ class CommunicationValidator:
         sort = fields.Dict(required=False)
          
     
-    class triggerCampaignJob(Schema):
+    class triggerCampaignJob(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getJobLogs(Schema):
+    class getJobLogs(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -249,7 +250,7 @@ class CommunicationValidator:
         sort = fields.Dict(required=False)
          
     
-    class getCommunicationLogs(Schema):
+    class getCommunicationLogs(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -264,7 +265,7 @@ class CommunicationValidator:
         query = fields.Dict(required=False)
          
     
-    class getSystemNotifications(Schema):
+    class getSystemNotifications(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -273,45 +274,7 @@ class CommunicationValidator:
         page_size = fields.Int(required=False)
          
     
-    class getSmsProviders(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        page_no = fields.Int(required=False)
-        
-        page_size = fields.Int(required=False)
-        
-        sort = fields.Dict(required=False)
-         
-    
-    class createSmsProvider(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-         
-    
-    class getSmsProviderById(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        id = fields.Str(required=False)
-         
-    
-    class updateSmsProviderById(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        id = fields.Str(required=False)
-         
-    
-    class getSmsTemplates(Schema):
+    class getSmsProviders(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -324,23 +287,14 @@ class CommunicationValidator:
         sort = fields.Dict(required=False)
          
     
-    class createSmsTemplate(Schema):
+    class createSmsProvider(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getSmsTemplateById(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        id = fields.Str(required=False)
-         
-    
-    class updateSmsTemplateById(Schema):
+    class getSmsProviderById(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -349,7 +303,7 @@ class CommunicationValidator:
         id = fields.Str(required=False)
          
     
-    class deleteSmsTemplateById(Schema):
+    class updateSmsProviderById(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -358,7 +312,54 @@ class CommunicationValidator:
         id = fields.Str(required=False)
          
     
-    class getSystemSystemTemplates(Schema):
+    class getSmsTemplates(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        page_no = fields.Int(required=False)
+        
+        page_size = fields.Int(required=False)
+        
+        sort = fields.Dict(required=False)
+         
+    
+    class createSmsTemplate(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+         
+    
+    class getSmsTemplateById(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        id = fields.Str(required=False)
+         
+    
+    class updateSmsTemplateById(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        id = fields.Str(required=False)
+         
+    
+    class deleteSmsTemplateById(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        id = fields.Str(required=False)
+         
+    
+    class getSystemSystemTemplates(BaseSchema):
         
         company_id = fields.Str(required=False)
         

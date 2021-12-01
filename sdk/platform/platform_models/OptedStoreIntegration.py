@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -11,7 +12,7 @@ from .IntegrationOptIn import IntegrationOptIn
 from .OtherEntity import OtherEntity
 
 
-class OptedStoreIntegration(Schema):
+class OptedStoreIntegration(BaseSchema):
 
     
     other_opted = fields.Boolean(required=False)

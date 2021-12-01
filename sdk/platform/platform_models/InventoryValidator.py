@@ -3,10 +3,11 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 class InventoryValidator:
     
-    class getJobsByCompany(Schema):
+    class getJobsByCompany(BaseSchema):
         
         company_id = fields.Int(required=False)
         
@@ -15,24 +16,24 @@ class InventoryValidator:
         page_size = fields.Int(required=False)
          
     
-    class updateJob(Schema):
+    class updateJob(BaseSchema):
         
         company_id = fields.Int(required=False)
          
     
-    class createJob(Schema):
+    class createJob(BaseSchema):
         
         company_id = fields.Int(required=False)
          
     
-    class getJobSteps(Schema):
+    class getJobSteps(BaseSchema):
         
         company_id = fields.Int(required=False)
         
         job_id = fields.Int(required=False)
          
     
-    class getJobByCompanyAndIntegration(Schema):
+    class getJobByCompanyAndIntegration(BaseSchema):
         
         company_id = fields.Int(required=False)
         
@@ -43,26 +44,26 @@ class InventoryValidator:
         page_size = fields.Int(required=False)
          
     
-    class disable(Schema):
+    class disable(BaseSchema):
         
         company_id = fields.Int(required=False)
         
         integration_id = fields.Str(required=False)
          
     
-    class getJobConfigDefaults(Schema):
+    class getJobConfigDefaults(BaseSchema):
         
         company_id = fields.Int(required=False)
          
     
-    class getJobByCode(Schema):
+    class getJobByCode(BaseSchema):
         
         company_id = fields.Int(required=False)
         
         code = fields.Str(required=False)
          
     
-    class getJobCodeMetrics(Schema):
+    class getJobCodeMetrics(BaseSchema):
         
         company_id = fields.Int(required=False)
         
@@ -77,7 +78,7 @@ class InventoryValidator:
         date = fields.Str(required=False)
          
     
-    class getJobCodesByCompanyAndIntegration(Schema):
+    class getJobCodesByCompanyAndIntegration(BaseSchema):
         
         company_id = fields.Int(required=False)
         

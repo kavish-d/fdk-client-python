@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -13,12 +14,12 @@ from ..platform_enums import *
 
 
 
-class Schedule(Schema):
+class Schedule(BaseSchema):
 
-    
-    start = fields.Str(required=False)
     
     cron = fields.Str(required=False)
+    
+    start = fields.Str(required=False)
     
     end = fields.Str(required=False)
     

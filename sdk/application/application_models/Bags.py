@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .Item import Item
 
@@ -15,7 +16,7 @@ from .CurrentStatus import CurrentStatus
 from .FinancialBreakup import FinancialBreakup
 
 
-class Bags(Schema):
+class Bags(BaseSchema):
 
     
     item = fields.Nested(Item, required=False)

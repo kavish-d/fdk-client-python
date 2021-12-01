@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -17,7 +18,7 @@ from .MediaMetaRequest import MediaMetaRequest
 from .MediaMetaRequest import MediaMetaRequest
 
 
-class ReviewRequest(Schema):
+class ReviewRequest(BaseSchema):
 
     
     description = fields.Str(required=False)

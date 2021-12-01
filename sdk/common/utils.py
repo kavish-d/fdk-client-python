@@ -21,7 +21,7 @@ async def create_url_with_params(domain: Text, url: Text, proccessed_params: Tex
     params = {}
     final_url = domain + url
     for key, value in kwargs.items():
-        new_key = key.replace("_", "-")
+        new_key = key.replace("__", "-")
         params[new_key] = value
         if new_key in final_url:
             final_url.replace(new_key, key)
@@ -37,7 +37,7 @@ async def create_url_without_domain(url: Text, **kwargs):
     """Returns url without domain replacing variables."""
     params = {}
     for key, value in kwargs.items():
-        new_key = key.replace("_", "-")
+        new_key = key.replace("__", "-")
         params[new_key] = value
         if new_key in url:
             url.replace(new_key, key)
@@ -49,7 +49,7 @@ async def create_query_string(**kwargs):
     """Return query string."""
     params = {}
     for key, value in kwargs.items():
-        new_key = key.replace("_", "-")
+        new_key = key.replace("__", "-")
         params[new_key] = value
     query_string = parse.urlencode(params)
     return query_string
@@ -62,20 +62,25 @@ async def get_headers_with_signature(domain: Text, method: Text, url: Text, quer
     host = domain.replace("https://", "").replace("http://", "")
     headers["host"] = host
     headers["x-fp-date"] = fp_date
-    authorization = headers.pop("Authorization")
+    authorization = headers.pop("Authorization") if "Authorization" in headers else None
     for key, val in headers.items():
         headers_str += f"{key}:{val}\n"
+
+    body_hex = hashlib.sha256("".encode()).hexdigest()
+    if body:
+        body_hex = hashlib.sha256(json.dumps(body).replace(", ", ",").replace(": ", ":").encode()).hexdigest()
     request_list = [
         method.upper(),
         url,
         query_string,
         headers_str,
         "host;x-fp-date",
-        hashlib.sha256(str(body).encode()).hexdigest()
+        body_hex
     ]
     request_str = "\n".join(request_list)
     request_str = "\n".join([fp_date, hashlib.sha256(request_str.encode()).hexdigest()])
     signature = "v1.1:" + hmac.new("1234567".encode(), request_str.encode(), hashlib.sha256).hexdigest()
     headers["x-fp-signature"] = signature
-    headers["Authorization"] = authorization
+    if authorization:
+        headers["Authorization"] = authorization
     return headers

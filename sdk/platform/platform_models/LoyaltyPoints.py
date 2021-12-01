@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -13,15 +14,15 @@ from ..platform_enums import *
 
 
 
-class LoyaltyPoints(Schema):
+class LoyaltyPoints(BaseSchema):
 
-    
-    is_applied = fields.Boolean(required=False)
     
     total = fields.Float(required=False)
     
-    description = fields.Str(required=False)
-    
     applicable = fields.Float(required=False)
+    
+    is_applied = fields.Boolean(required=False)
+    
+    description = fields.Str(required=False)
     
 

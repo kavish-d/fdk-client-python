@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -11,13 +12,13 @@ from ..platform_enums import *
 
 
 
-class ArticleQuery(Schema):
+class ArticleQuery(BaseSchema):
 
     
-    ignored_stores = fields.List(fields.Int(required=False), required=False)
+    size = fields.Str(required=False)
     
     item_id = fields.Int(required=False)
     
-    size = fields.Str(required=False)
+    ignored_stores = fields.List(fields.Int(required=False), required=False)
     
 

@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -25,7 +26,7 @@ from .SubscriptionTrialPeriod import SubscriptionTrialPeriod
 from .SubscriptionCharge import SubscriptionCharge
 
 
-class EntitySubscription(Schema):
+class EntitySubscription(BaseSchema):
 
     
     _id = fields.Str(required=False)

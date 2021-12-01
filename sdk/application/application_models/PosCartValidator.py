@@ -3,10 +3,11 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 class PosCartValidator:
     
-    class getCart(Schema):
+    class getCart(BaseSchema):
         
         id = fields.Str(required=False)
         
@@ -17,19 +18,19 @@ class PosCartValidator:
         assign_card_id = fields.Int(required=False)
          
     
-    class getCartLastModified(Schema):
+    class getCartLastModified(BaseSchema):
         
         id = fields.Str(required=False)
          
     
-    class addItems(Schema):
+    class addItems(BaseSchema):
         
         i = fields.Boolean(required=False)
         
         b = fields.Boolean(required=False)
          
     
-    class updateCart(Schema):
+    class updateCart(BaseSchema):
         
         id = fields.Str(required=False)
         
@@ -38,17 +39,17 @@ class PosCartValidator:
         b = fields.Boolean(required=False)
          
     
-    class getItemCount(Schema):
+    class getItemCount(BaseSchema):
         
         id = fields.Str(required=False)
          
     
-    class getCoupons(Schema):
+    class getCoupons(BaseSchema):
         
         id = fields.Str(required=False)
          
     
-    class applyCoupon(Schema):
+    class applyCoupon(BaseSchema):
         
         i = fields.Boolean(required=False)
         
@@ -59,12 +60,12 @@ class PosCartValidator:
         id = fields.Str(required=False)
          
     
-    class removeCoupon(Schema):
+    class removeCoupon(BaseSchema):
         
         id = fields.Str(required=False)
          
     
-    class getBulkDiscountOffers(Schema):
+    class getBulkDiscountOffers(BaseSchema):
         
         item_id = fields.Int(required=False)
         
@@ -75,7 +76,7 @@ class PosCartValidator:
         slug = fields.Str(required=False)
          
     
-    class applyRewardPoints(Schema):
+    class applyRewardPoints(BaseSchema):
         
         id = fields.Str(required=False)
         
@@ -84,7 +85,7 @@ class PosCartValidator:
         b = fields.Boolean(required=False)
          
     
-    class getAddresses(Schema):
+    class getAddresses(BaseSchema):
         
         cart_id = fields.Str(required=False)
         
@@ -97,11 +98,11 @@ class PosCartValidator:
         is_default = fields.Boolean(required=False)
          
     
-    class addAddress(Schema):
+    class addAddress(BaseSchema):
         
         pass 
     
-    class getAddressById(Schema):
+    class getAddressById(BaseSchema):
         
         id = fields.Str(required=False)
         
@@ -116,17 +117,17 @@ class PosCartValidator:
         is_default = fields.Boolean(required=False)
          
     
-    class updateAddress(Schema):
+    class updateAddress(BaseSchema):
         
         id = fields.Str(required=False)
          
     
-    class removeAddress(Schema):
+    class removeAddress(BaseSchema):
         
         id = fields.Str(required=False)
          
     
-    class selectAddress(Schema):
+    class selectAddress(BaseSchema):
         
         cart_id = fields.Str(required=False)
         
@@ -135,12 +136,12 @@ class PosCartValidator:
         b = fields.Boolean(required=False)
          
     
-    class selectPaymentMode(Schema):
+    class selectPaymentMode(BaseSchema):
         
         id = fields.Str(required=False)
          
     
-    class validateCouponForPayment(Schema):
+    class validateCouponForPayment(BaseSchema):
         
         id = fields.Str(required=False)
         
@@ -155,7 +156,7 @@ class PosCartValidator:
         merchant_code = fields.Str(required=False)
          
     
-    class getShipments(Schema):
+    class getShipments(BaseSchema):
         
         pick_at_store_uid = fields.Int(required=False)
         
@@ -172,7 +173,7 @@ class PosCartValidator:
         order_type = fields.Str(required=False)
          
     
-    class updateShipments(Schema):
+    class updateShipments(BaseSchema):
         
         i = fields.Boolean(required=False)
         
@@ -185,38 +186,38 @@ class PosCartValidator:
         order_type = fields.Str(required=False)
          
     
-    class checkoutCart(Schema):
+    class checkoutCart(BaseSchema):
         
         id = fields.Str(required=False)
          
     
-    class updateCartMeta(Schema):
+    class updateCartMeta(BaseSchema):
         
         id = fields.Str(required=False)
          
     
-    class getAvailableDeliveryModes(Schema):
+    class getAvailableDeliveryModes(BaseSchema):
         
         area_code = fields.Str(required=False)
         
         id = fields.Str(required=False)
          
     
-    class getStoreAddressByUid(Schema):
+    class getStoreAddressByUid(BaseSchema):
         
         store_uid = fields.Int(required=False)
          
     
-    class getCartShareLink(Schema):
+    class getCartShareLink(BaseSchema):
         
         pass 
     
-    class getCartSharedItems(Schema):
+    class getCartSharedItems(BaseSchema):
         
         token = fields.Str(required=False)
          
     
-    class updateCartWithSharedItems(Schema):
+    class updateCartWithSharedItems(BaseSchema):
         
         token = fields.Str(required=False)
         

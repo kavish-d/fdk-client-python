@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -13,7 +14,7 @@ from .UIIcon import UIIcon
 
 
 
-class UI(Schema):
+class UI(BaseSchema):
 
     
     feedback_question = fields.List(fields.Str(required=False), required=False)

@@ -3,17 +3,18 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 class AnalyticsValidator:
     
-    class getStatiscticsGroups(Schema):
+    class getStatiscticsGroups(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getStatiscticsGroupComponents(Schema):
+    class getStatiscticsGroupComponents(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -22,7 +23,7 @@ class AnalyticsValidator:
         group_name = fields.Str(required=False)
          
     
-    class getComponentStatsCSV(Schema):
+    class getComponentStatsCSV(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -31,7 +32,7 @@ class AnalyticsValidator:
         component_name = fields.Str(required=False)
          
     
-    class getComponentStatsPDF(Schema):
+    class getComponentStatsPDF(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -40,7 +41,7 @@ class AnalyticsValidator:
         component_name = fields.Str(required=False)
          
     
-    class getComponentStats(Schema):
+    class getComponentStats(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -49,7 +50,7 @@ class AnalyticsValidator:
         component_name = fields.Str(required=False)
          
     
-    class getAbandonCartList(Schema):
+    class getAbandonCartList(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -64,7 +65,7 @@ class AnalyticsValidator:
         page_size = fields.Int(required=False)
          
     
-    class getAbandonCartsCSV(Schema):
+    class getAbandonCartsCSV(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -75,7 +76,7 @@ class AnalyticsValidator:
         to_date = fields.Str(required=False)
          
     
-    class getAbandonCartDetail(Schema):
+    class getAbandonCartDetail(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -84,14 +85,14 @@ class AnalyticsValidator:
         cart_id = fields.Str(required=False)
          
     
-    class createExportJob(Schema):
+    class createExportJob(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         export_type = fields.Str(required=False)
          
     
-    class getExportJobStatus(Schema):
+    class getExportJobStatus(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -100,7 +101,7 @@ class AnalyticsValidator:
         job_id = fields.Str(required=False)
          
     
-    class getLogsList(Schema):
+    class getLogsList(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -111,7 +112,7 @@ class AnalyticsValidator:
         page_size = fields.Int(required=False)
          
     
-    class searchLogs(Schema):
+    class searchLogs(BaseSchema):
         
         company_id = fields.Str(required=False)
         

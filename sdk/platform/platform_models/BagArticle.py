@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .ArticleIdentifiers import ArticleIdentifiers
 
@@ -27,7 +28,7 @@ from .BagArticleReturnConfig import BagArticleReturnConfig
 
 
 
-class BagArticle(Schema):
+class BagArticle(BaseSchema):
 
     
     identifiers = fields.Nested(ArticleIdentifiers, required=False)

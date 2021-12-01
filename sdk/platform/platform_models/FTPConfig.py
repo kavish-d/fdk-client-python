@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -33,7 +34,7 @@ from .ArchiveConfig import ArchiveConfig
 
 
 
-class FTPConfig(Schema):
+class FTPConfig(BaseSchema):
 
     
     host = fields.Str(required=False)

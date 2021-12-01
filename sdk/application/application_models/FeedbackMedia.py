@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .ApplicationSchema import ApplicationSchema
 
@@ -31,7 +32,7 @@ from .TagMeta import TagMeta
 from .Url import Url
 
 
-class FeedbackMedia(Schema):
+class FeedbackMedia(BaseSchema):
 
     
     application = fields.Nested(ApplicationSchema, required=False)

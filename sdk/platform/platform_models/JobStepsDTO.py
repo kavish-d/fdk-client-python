@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -21,7 +22,7 @@ from ..platform_enums import *
 
 
 
-class JobStepsDTO(Schema):
+class JobStepsDTO(BaseSchema):
 
     
     step_name = fields.Str(required=False)

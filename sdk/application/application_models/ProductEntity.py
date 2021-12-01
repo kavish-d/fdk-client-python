@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -11,7 +12,7 @@ from .EntityMeta import EntityMeta
 
 
 
-class ProductEntity(Schema):
+class ProductEntity(BaseSchema):
 
     
     id = fields.Str(required=False)

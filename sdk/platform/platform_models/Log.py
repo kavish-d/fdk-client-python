@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .LogEmail import LogEmail
 
@@ -27,7 +28,7 @@ from .LogMeta import LogMeta
 
 
 
-class Log(Schema):
+class Log(BaseSchema):
 
     
     email = fields.Nested(LogEmail, required=False)

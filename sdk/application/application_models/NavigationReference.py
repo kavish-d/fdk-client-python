@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -25,7 +26,7 @@ from .Action import Action
 
 
 
-class NavigationReference(Schema):
+class NavigationReference(BaseSchema):
 
     
     acl = fields.List(fields.Str(required=False), required=False)

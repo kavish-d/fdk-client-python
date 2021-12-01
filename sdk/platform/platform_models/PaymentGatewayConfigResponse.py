@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -17,19 +18,19 @@ from ..platform_enums import *
 
 
 
-class PaymentGatewayConfigResponse(Schema):
+class PaymentGatewayConfigResponse(BaseSchema):
 
-    
-    aggregators = fields.List(fields.Dict(required=False), required=False)
-    
-    display_fields = fields.List(fields.Str(required=False), required=False)
-    
-    excluded_fields = fields.List(fields.Str(required=False), required=False)
-    
-    app_id = fields.Str(required=False)
     
     success = fields.Boolean(required=False)
     
+    app_id = fields.Str(required=False)
+    
+    aggregators = fields.List(fields.Dict(required=False), required=False)
+    
     created = fields.Boolean(required=False)
+    
+    excluded_fields = fields.List(fields.Str(required=False), required=False)
+    
+    display_fields = fields.List(fields.Str(required=False), required=False)
     
 

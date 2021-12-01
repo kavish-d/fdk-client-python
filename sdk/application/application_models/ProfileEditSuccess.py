@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .UserSchema import UserSchema
 
@@ -19,7 +20,9 @@ from .UserSchema import UserSchema
 
 
 
-class ProfileEditSuccess(Schema):
+
+
+class ProfileEditSuccess(BaseSchema):
 
     
     user = fields.Nested(UserSchema, required=False)
@@ -35,5 +38,7 @@ class ProfileEditSuccess(Schema):
     verify_mobile_otp = fields.Boolean(required=False)
     
     email = fields.Str(required=False)
+    
+    request_id = fields.Str(required=False)
     
 

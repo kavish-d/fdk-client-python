@@ -3,49 +3,50 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 class CompanyProfileValidator:
     
-    class updateCompany(Schema):
+    class updateCompany(BaseSchema):
         
         company_id = fields.Str(required=False)
          
     
-    class cbsOnboardGet(Schema):
+    class cbsOnboardGet(BaseSchema):
         
         company_id = fields.Str(required=False)
          
     
-    class getCompanyMetrics(Schema):
+    class getCompanyMetrics(BaseSchema):
         
         company_id = fields.Str(required=False)
          
     
-    class editBrand(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        brand_id = fields.Str(required=False)
-         
-    
-    class getBrand(Schema):
+    class getBrand(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         brand_id = fields.Str(required=False)
          
     
-    class createBrand(Schema):
+    class editBrand(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        brand_id = fields.Str(required=False)
+         
+    
+    class createBrand(BaseSchema):
         
         company_id = fields.Str(required=False)
          
     
-    class createCompanyBrandMapping(Schema):
+    class createCompanyBrandMapping(BaseSchema):
         
         company_id = fields.Str(required=False)
          
     
-    class getBrands(Schema):
+    class getBrands(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -56,12 +57,12 @@ class CompanyProfileValidator:
         q = fields.Str(required=False)
          
     
-    class createLocation(Schema):
+    class createLocation(BaseSchema):
         
         company_id = fields.Str(required=False)
          
     
-    class getLocations(Schema):
+    class getLocations(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -76,21 +77,21 @@ class CompanyProfileValidator:
         page_size = fields.Int(required=False)
          
     
-    class updateLocation(Schema):
+    class getLocationDetail(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         location_id = fields.Str(required=False)
          
     
-    class getLocationDetail(Schema):
+    class updateLocation(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         location_id = fields.Str(required=False)
          
     
-    class createLocationBulk(Schema):
+    class createLocationBulk(BaseSchema):
         
         company_id = fields.Str(required=False)
          

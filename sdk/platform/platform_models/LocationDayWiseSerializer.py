@@ -3,24 +3,25 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
-
-
-
-from .LocationTimingSerializer import LocationTimingSerializer
+from ..platform_models.BaseSchema import BaseSchema
 
 from .LocationTimingSerializer import LocationTimingSerializer
 
 
 
+from .LocationTimingSerializer import LocationTimingSerializer
 
-class LocationDayWiseSerializer(Schema):
 
+
+
+class LocationDayWiseSerializer(BaseSchema):
+
+    
+    opening = fields.Nested(LocationTimingSerializer, required=False)
     
     open = fields.Boolean(required=False)
     
     closing = fields.Nested(LocationTimingSerializer, required=False)
-    
-    opening = fields.Nested(LocationTimingSerializer, required=False)
     
     weekday = fields.Str(required=False)
     

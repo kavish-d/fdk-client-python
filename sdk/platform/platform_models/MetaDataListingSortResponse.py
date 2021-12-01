@@ -3,11 +3,12 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .MetaDataListingSortMetaResponse import MetaDataListingSortMetaResponse
 
 
-class MetaDataListingSortResponse(Schema):
+class MetaDataListingSortResponse(BaseSchema):
 
     
     data = fields.List(fields.Nested(MetaDataListingSortMetaResponse, required=False), required=False)

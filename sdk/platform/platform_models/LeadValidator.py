@@ -3,10 +3,11 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 class LeadValidator:
     
-    class getTickets(Schema):
+    class getTickets(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -27,12 +28,12 @@ class LeadValidator:
         page_size = fields.Int(required=False)
          
     
-    class createTicket(Schema):
+    class createTicket(BaseSchema):
         
         company_id = fields.Str(required=False)
          
     
-    class getTickets(Schema):
+    class getTickets(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -51,30 +52,21 @@ class LeadValidator:
         category = fields.Str(required=False)
          
     
-    class getTicket(Schema):
+    class getTicket(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         id = fields.Str(required=False)
          
     
-    class editTicket(Schema):
+    class editTicket(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         id = fields.Str(required=False)
          
     
-    class getTicket(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        id = fields.Str(required=False)
-         
-    
-    class editTicket(Schema):
+    class getTicket(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -83,35 +75,7 @@ class LeadValidator:
         id = fields.Str(required=False)
          
     
-    class createHistory(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        id = fields.Str(required=False)
-         
-    
-    class getTicketHistory(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        id = fields.Str(required=False)
-         
-    
-    class getFeedbacks(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        id = fields.Str(required=False)
-         
-    
-    class submitFeedback(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        id = fields.Str(required=False)
-         
-    
-    class createHistory(Schema):
+    class editTicket(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -120,7 +84,35 @@ class LeadValidator:
         id = fields.Str(required=False)
          
     
-    class getTicketHistory(Schema):
+    class createHistory(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        id = fields.Str(required=False)
+         
+    
+    class getTicketHistory(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        id = fields.Str(required=False)
+         
+    
+    class getFeedbacks(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        id = fields.Str(required=False)
+         
+    
+    class submitFeedback(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        id = fields.Str(required=False)
+         
+    
+    class createHistory(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -129,7 +121,16 @@ class LeadValidator:
         id = fields.Str(required=False)
          
     
-    class getCustomForm(Schema):
+    class getTicketHistory(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        id = fields.Str(required=False)
+         
+    
+    class getCustomForm(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -138,7 +139,7 @@ class LeadValidator:
         slug = fields.Str(required=False)
          
     
-    class editCustomForm(Schema):
+    class editCustomForm(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -147,44 +148,28 @@ class LeadValidator:
         slug = fields.Str(required=False)
          
     
-    class getCustomForms(Schema):
+    class getCustomForms(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class createCustomForm(Schema):
+    class createCustomForm(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getTokenForVideoRoom(Schema):
+    class getTokenForVideoRoom(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         unique_name = fields.Str(required=False)
          
     
-    class getTokenForVideoRoom(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        unique_name = fields.Str(required=False)
-         
-    
-    class getVideoParticipants(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        unique_name = fields.Str(required=False)
-         
-    
-    class getVideoParticipants(Schema):
+    class getTokenForVideoRoom(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -193,14 +178,30 @@ class LeadValidator:
         unique_name = fields.Str(required=False)
          
     
-    class openVideoRoom(Schema):
+    class getVideoParticipants(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        unique_name = fields.Str(required=False)
+         
+    
+    class getVideoParticipants(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        unique_name = fields.Str(required=False)
+         
+    
+    class openVideoRoom(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class closeVideoRoom(Schema):
+    class closeVideoRoom(BaseSchema):
         
         company_id = fields.Str(required=False)
         

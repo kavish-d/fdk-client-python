@@ -3,17 +3,18 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 class ShareValidator:
     
-    class createShortLink(Schema):
+    class createShortLink(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getShortLinks(Schema):
+    class getShortLinks(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -30,7 +31,7 @@ class ShareValidator:
         q = fields.Str(required=False)
          
     
-    class getShortLinkByHash(Schema):
+    class getShortLinkByHash(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -39,7 +40,7 @@ class ShareValidator:
         hash = fields.Str(required=False)
          
     
-    class updateShortLinkById(Schema):
+    class updateShortLinkById(BaseSchema):
         
         company_id = fields.Str(required=False)
         

@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .OrderDiscountRuleBucket import OrderDiscountRuleBucket
 
@@ -15,7 +16,7 @@ from .DiscountProperties import DiscountProperties
 
 
 
-class OrderDiscountResponse(Schema):
+class OrderDiscountResponse(BaseSchema):
 
     
     applied_rule_bucket = fields.Nested(OrderDiscountRuleBucket, required=False)

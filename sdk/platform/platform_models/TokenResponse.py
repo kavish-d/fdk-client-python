@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .Tokens import Tokens
 
@@ -17,7 +18,7 @@ from .Tokens import Tokens
 
 
 
-class TokenResponse(Schema):
+class TokenResponse(BaseSchema):
 
     
     tokens = fields.Nested(Tokens, required=False)

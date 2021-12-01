@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -13,7 +14,7 @@ from .SplashImage import SplashImage
 
 
 
-class MobileAppConfigRequest(Schema):
+class MobileAppConfigRequest(BaseSchema):
 
     
     app_name = fields.Str(required=False)

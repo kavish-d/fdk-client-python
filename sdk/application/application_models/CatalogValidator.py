@@ -3,22 +3,23 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 class CatalogValidator:
     
-    class getProductDetailBySlug(Schema):
+    class getProductDetailBySlug(BaseSchema):
         
         slug = fields.Str(required=False)
          
     
-    class getProductSizesBySlug(Schema):
+    class getProductSizesBySlug(BaseSchema):
         
         slug = fields.Str(required=False)
         
         store_id = fields.Int(required=False)
          
     
-    class getProductPriceBySlug(Schema):
+    class getProductPriceBySlug(BaseSchema):
         
         slug = fields.Str(required=False)
         
@@ -29,7 +30,7 @@ class CatalogValidator:
         store_id = fields.Int(required=False)
          
     
-    class getProductSellersBySlug(Schema):
+    class getProductSellersBySlug(BaseSchema):
         
         slug = fields.Str(required=False)
         
@@ -44,34 +45,34 @@ class CatalogValidator:
         page_size = fields.Int(required=False)
          
     
-    class getProductComparisonBySlugs(Schema):
+    class getProductComparisonBySlugs(BaseSchema):
         
         slug = fields.List(fields.Str(required=False), required=False)
          
     
-    class getSimilarComparisonProductBySlug(Schema):
+    class getSimilarComparisonProductBySlug(BaseSchema):
         
         slug = fields.Str(required=False)
          
     
-    class getComparedFrequentlyProductBySlug(Schema):
+    class getComparedFrequentlyProductBySlug(BaseSchema):
         
         slug = fields.Str(required=False)
          
     
-    class getProductSimilarByIdentifier(Schema):
+    class getProductSimilarByIdentifier(BaseSchema):
         
         slug = fields.Str(required=False)
         
         similar_type = fields.Str(required=False)
          
     
-    class getProductVariantsBySlug(Schema):
+    class getProductVariantsBySlug(BaseSchema):
         
         slug = fields.Str(required=False)
          
     
-    class getProductStockByIds(Schema):
+    class getProductStockByIds(BaseSchema):
         
         item_id = fields.Str(required=False)
         
@@ -84,7 +85,7 @@ class CatalogValidator:
         upc = fields.Str(required=False)
          
     
-    class getProductStockForTimeByIds(Schema):
+    class getProductStockForTimeByIds(BaseSchema):
         
         timestamp = fields.Str(required=False)
         
@@ -93,7 +94,7 @@ class CatalogValidator:
         page_id = fields.Str(required=False)
          
     
-    class getProducts(Schema):
+    class getProducts(BaseSchema):
         
         q = fields.Str(required=False)
         
@@ -112,7 +113,7 @@ class CatalogValidator:
         page_type = fields.Str(required=False)
          
     
-    class getBrands(Schema):
+    class getBrands(BaseSchema):
         
         department = fields.Str(required=False)
         
@@ -121,22 +122,22 @@ class CatalogValidator:
         page_size = fields.Int(required=False)
          
     
-    class getBrandDetailBySlug(Schema):
+    class getBrandDetailBySlug(BaseSchema):
         
         slug = fields.Str(required=False)
          
     
-    class getCategories(Schema):
+    class getCategories(BaseSchema):
         
         department = fields.Str(required=False)
          
     
-    class getCategoryDetailBySlug(Schema):
+    class getCategoryDetailBySlug(BaseSchema):
         
         slug = fields.Str(required=False)
          
     
-    class getHomeProducts(Schema):
+    class getHomeProducts(BaseSchema):
         
         sort_on = fields.Str(required=False)
         
@@ -145,16 +146,16 @@ class CatalogValidator:
         page_size = fields.Int(required=False)
          
     
-    class getDepartments(Schema):
+    class getDepartments(BaseSchema):
         
         pass 
     
-    class getSearchResults(Schema):
+    class getSearchResults(BaseSchema):
         
         q = fields.Str(required=False)
          
     
-    class getCollections(Schema):
+    class getCollections(BaseSchema):
         
         page_no = fields.Int(required=False)
         
@@ -163,7 +164,7 @@ class CatalogValidator:
         tag = fields.List(fields.Str(required=False), required=False)
          
     
-    class getCollectionItemsBySlug(Schema):
+    class getCollectionItemsBySlug(BaseSchema):
         
         slug = fields.Str(required=False)
         
@@ -178,12 +179,12 @@ class CatalogValidator:
         page_size = fields.Int(required=False)
          
     
-    class getCollectionDetailBySlug(Schema):
+    class getCollectionDetailBySlug(BaseSchema):
         
         slug = fields.Str(required=False)
          
     
-    class getFollowedListing(Schema):
+    class getFollowedListing(BaseSchema):
         
         collection_type = fields.Str(required=False)
         
@@ -192,33 +193,33 @@ class CatalogValidator:
         page_size = fields.Int(required=False)
          
     
-    class followById(Schema):
+    class followById(BaseSchema):
         
         collection_type = fields.Str(required=False)
         
         collection_id = fields.Str(required=False)
          
     
-    class unfollowById(Schema):
+    class unfollowById(BaseSchema):
         
         collection_type = fields.Str(required=False)
         
         collection_id = fields.Str(required=False)
          
     
-    class getFollowerCountById(Schema):
+    class getFollowerCountById(BaseSchema):
         
         collection_type = fields.Str(required=False)
         
         collection_id = fields.Str(required=False)
          
     
-    class getFollowIds(Schema):
+    class getFollowIds(BaseSchema):
         
         collection_type = fields.Str(required=False)
          
     
-    class getStores(Schema):
+    class getStores(BaseSchema):
         
         page_no = fields.Int(required=False)
         
@@ -235,7 +236,7 @@ class CatalogValidator:
         longitude = fields.Float(required=False)
          
     
-    class getInStockLocations(Schema):
+    class getInStockLocations(BaseSchema):
         
         page_no = fields.Int(required=False)
         
@@ -252,7 +253,7 @@ class CatalogValidator:
         longitude = fields.Float(required=False)
          
     
-    class getLocationDetailsById(Schema):
+    class getLocationDetailsById(BaseSchema):
         
         location_id = fields.Int(required=False)
          

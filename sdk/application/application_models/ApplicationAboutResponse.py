@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .ApplicationInfo import ApplicationInfo
 
@@ -11,7 +12,7 @@ from .CompanyInfo import CompanyInfo
 from .OwnerInfo import OwnerInfo
 
 
-class ApplicationAboutResponse(Schema):
+class ApplicationAboutResponse(BaseSchema):
 
     
     application_info = fields.Nested(ApplicationInfo, required=False)

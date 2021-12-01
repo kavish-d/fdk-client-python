@@ -3,13 +3,14 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
 
 
 
-class LogisticRequestCategory(Schema):
+class LogisticRequestCategory(BaseSchema):
 
     
     id = fields.Int(required=False)

@@ -3,13 +3,14 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .CollectionListingFilterType import CollectionListingFilterType
 
 from .CollectionListingFilterTag import CollectionListingFilterTag
 
 
-class CollectionListingFilter(Schema):
+class CollectionListingFilter(BaseSchema):
 
     
     type = fields.List(fields.Nested(CollectionListingFilterType, required=False), required=False)

@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .Priority import Priority
 
@@ -13,7 +14,7 @@ from .Status import Status
 
 
 
-class Filter(Schema):
+class Filter(BaseSchema):
 
     
     priorities = fields.List(fields.Nested(Priority, required=False), required=False)

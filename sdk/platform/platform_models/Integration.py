@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .Validators import Validators
 
@@ -37,7 +38,7 @@ from .IntegrationMeta import IntegrationMeta
 
 
 
-class Integration(Schema):
+class Integration(BaseSchema):
 
     
     validators = fields.Nested(Validators, required=False)

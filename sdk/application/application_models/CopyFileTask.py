@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -27,7 +28,7 @@ from .Opts import Opts
 
 
 
-class CopyFileTask(Schema):
+class CopyFileTask(BaseSchema):
 
     
     id = fields.Str(required=False)

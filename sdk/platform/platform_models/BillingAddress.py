@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -35,7 +36,7 @@ from ..platform_enums import *
 
 
 
-class BillingAddress(Schema):
+class BillingAddress(BaseSchema):
 
     
     address1 = fields.Str(required=False)

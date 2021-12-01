@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -13,7 +14,7 @@ from ..application_enums import *
 
 
 
-class Email(Schema):
+class Email(BaseSchema):
 
     
     primary = fields.Boolean(required=False)

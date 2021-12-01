@@ -3,13 +3,14 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
 from .Subscription import Subscription
 
 
-class SubscriptionActivateRes(Schema):
+class SubscriptionActivateRes(BaseSchema):
 
     
     success = fields.Boolean(required=False)

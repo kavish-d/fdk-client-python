@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -27,7 +28,7 @@ from .SplashImage import SplashImage
 
 
 
-class MobileAppConfiguration(Schema):
+class MobileAppConfiguration(BaseSchema):
 
     
     is_active = fields.Boolean(required=False)

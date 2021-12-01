@@ -3,13 +3,14 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .Page import Page
 
 from .CompanyBrandDetail import CompanyBrandDetail
 
 
-class OptinCompanyBrandDetailsView(Schema):
+class OptinCompanyBrandDetailsView(BaseSchema):
 
     
     page = fields.Nested(Page, required=False)

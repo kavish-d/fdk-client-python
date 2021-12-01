@@ -3,26 +3,27 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 class ConfigurationValidator:
     
-    class getApplication(Schema):
+    class getApplication(BaseSchema):
         
         pass 
     
-    class getOwnerInfo(Schema):
+    class getOwnerInfo(BaseSchema):
         
         pass 
     
-    class getBasicDetails(Schema):
+    class getBasicDetails(BaseSchema):
         
         pass 
     
-    class getIntegrationTokens(Schema):
+    class getIntegrationTokens(BaseSchema):
         
         pass 
     
-    class getOrderingStores(Schema):
+    class getOrderingStores(BaseSchema):
         
         page_no = fields.Int(required=False)
         
@@ -31,45 +32,45 @@ class ConfigurationValidator:
         q = fields.Str(required=False)
          
     
-    class getStoreDetailById(Schema):
+    class getStoreDetailById(BaseSchema):
         
         store_id = fields.Int(required=False)
          
     
-    class getFeatures(Schema):
+    class getFeatures(BaseSchema):
         
         pass 
     
-    class getContactInfo(Schema):
+    class getContactInfo(BaseSchema):
         
         pass 
     
-    class getCurrencies(Schema):
+    class getCurrencies(BaseSchema):
         
         pass 
     
-    class getCurrencyById(Schema):
+    class getCurrencyById(BaseSchema):
         
         id = fields.Str(required=False)
          
     
-    class getAppCurrencies(Schema):
+    class getAppCurrencies(BaseSchema):
         
         pass 
     
-    class getLanguages(Schema):
+    class getLanguages(BaseSchema):
         
         pass 
     
-    class getOrderingStoreCookie(Schema):
+    class getOrderingStoreCookie(BaseSchema):
         
         pass 
     
-    class removeOrderingStoreCookie(Schema):
+    class removeOrderingStoreCookie(BaseSchema):
         
         pass 
     
-    class getAppStaffs(Schema):
+    class getAppStaffs(BaseSchema):
         
         order_incent = fields.Boolean(required=False)
         

@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .Preset import Preset
 
@@ -13,7 +14,7 @@ from .GlobalSchema import GlobalSchema
 from .ListSchemaItem import ListSchemaItem
 
 
-class Config(Schema):
+class Config(BaseSchema):
 
     
     preset = fields.Nested(Preset, required=False)

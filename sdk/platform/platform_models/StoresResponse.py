@@ -3,13 +3,14 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .AppInventoryStores import AppInventoryStores
 
 from .Page import Page
 
 
-class StoresResponse(Schema):
+class StoresResponse(BaseSchema):
 
     
     items = fields.Nested(AppInventoryStores, required=False)

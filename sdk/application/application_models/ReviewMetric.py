@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .RatingMetric import RatingMetric
 
@@ -23,7 +24,7 @@ from .RatingMetric import RatingMetric
 
 
 
-class ReviewMetric(Schema):
+class ReviewMetric(BaseSchema):
 
     
     attribute_metric = fields.List(fields.Nested(RatingMetric, required=False), required=False)

@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -39,7 +40,7 @@ from .Debug import Debug
 
 
 
-class UserSchema(Schema):
+class UserSchema(BaseSchema):
 
     
     first_name = fields.Str(required=False)

@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -27,7 +28,7 @@ from ..platform_enums import *
 
 
 
-class DBConfig(Schema):
+class DBConfig(BaseSchema):
 
     
     vendor = fields.Str(required=False)

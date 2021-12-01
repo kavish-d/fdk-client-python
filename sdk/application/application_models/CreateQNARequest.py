@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -21,7 +22,7 @@ from ..application_enums import *
 
 
 
-class CreateQNARequest(Schema):
+class CreateQNARequest(BaseSchema):
 
     
     choices = fields.List(fields.Str(required=False), required=False)

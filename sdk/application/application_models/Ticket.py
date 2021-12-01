@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .TicketContext import TicketContext
 
@@ -41,7 +42,7 @@ from .Priority import Priority
 
 
 
-class Ticket(Schema):
+class Ticket(BaseSchema):
 
     
     context = fields.Nested(TicketContext, required=False)

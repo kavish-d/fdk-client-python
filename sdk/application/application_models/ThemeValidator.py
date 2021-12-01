@@ -3,26 +3,27 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 class ThemeValidator:
     
-    class getAllPages(Schema):
+    class getAllPages(BaseSchema):
         
         theme_id = fields.Str(required=False)
          
     
-    class getPage(Schema):
+    class getPage(BaseSchema):
         
         theme_id = fields.Str(required=False)
         
         page_value = fields.Str(required=False)
          
     
-    class getAppliedTheme(Schema):
+    class getAppliedTheme(BaseSchema):
         
         pass 
     
-    class getThemeForPreview(Schema):
+    class getThemeForPreview(BaseSchema):
         
         theme_id = fields.Str(required=False)
          

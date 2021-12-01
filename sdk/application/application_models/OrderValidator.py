@@ -3,10 +3,11 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 class OrderValidator:
     
-    class getOrders(Schema):
+    class getOrders(BaseSchema):
         
         page_no = fields.Int(required=False)
         
@@ -19,51 +20,51 @@ class OrderValidator:
         status = fields.Int(required=False)
          
     
-    class getOrderById(Schema):
+    class getOrderById(BaseSchema):
         
         order_id = fields.Str(required=False)
          
     
-    class getShipmentById(Schema):
+    class getShipmentById(BaseSchema):
         
         shipment_id = fields.Str(required=False)
          
     
-    class getShipmentReasons(Schema):
+    class getShipmentReasons(BaseSchema):
         
         shipment_id = fields.Str(required=False)
          
     
-    class updateShipmentStatus(Schema):
+    class updateShipmentStatus(BaseSchema):
         
         shipment_id = fields.Str(required=False)
          
     
-    class trackShipment(Schema):
+    class trackShipment(BaseSchema):
         
         shipment_id = fields.Str(required=False)
          
     
-    class getPosOrderById(Schema):
+    class getPosOrderById(BaseSchema):
         
         order_id = fields.Str(required=False)
          
     
-    class getCustomerDetailsByShipmentId(Schema):
-        
-        order_id = fields.Str(required=False)
-        
-        shipment_id = fields.Str(required=False)
-         
-    
-    class sendOtpToShipmentCustomer(Schema):
+    class getCustomerDetailsByShipmentId(BaseSchema):
         
         order_id = fields.Str(required=False)
         
         shipment_id = fields.Str(required=False)
          
     
-    class verifyOtpShipmentCustomer(Schema):
+    class sendOtpToShipmentCustomer(BaseSchema):
+        
+        order_id = fields.Str(required=False)
+        
+        shipment_id = fields.Str(required=False)
+         
+    
+    class verifyOtpShipmentCustomer(BaseSchema):
         
         order_id = fields.Str(required=False)
         

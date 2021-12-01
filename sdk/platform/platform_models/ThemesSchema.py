@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -51,7 +52,7 @@ from .Font import Font
 from .Colors import Colors
 
 
-class ThemesSchema(Schema):
+class ThemesSchema(BaseSchema):
 
     
     application = fields.Str(required=False)

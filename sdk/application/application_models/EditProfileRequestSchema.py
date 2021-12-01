@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -27,7 +28,7 @@ from .EditProfileMobileSchema import EditProfileMobileSchema
 
 
 
-class EditProfileRequestSchema(Schema):
+class EditProfileRequestSchema(BaseSchema):
 
     
     first_name = fields.Str(required=False)

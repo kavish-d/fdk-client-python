@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -29,7 +30,7 @@ from .SocialMediaTags import SocialMediaTags
 
 
 
-class ShortLinkReq(Schema):
+class ShortLinkReq(BaseSchema):
 
     
     title = fields.Str(required=False)

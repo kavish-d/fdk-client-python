@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -61,7 +62,7 @@ from .ShipmentUserInfo import ShipmentUserInfo
 from .ShipmentTotalDetails import ShipmentTotalDetails
 
 
-class Shipments(Schema):
+class Shipments(BaseSchema):
 
     
     order_id = fields.Str(required=False)

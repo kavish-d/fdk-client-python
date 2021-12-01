@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -11,7 +12,7 @@ from ..application_enums import *
 
 
 
-class OAuthRequestAppleSchemaProfile(Schema):
+class OAuthRequestAppleSchemaProfile(BaseSchema):
 
     
     last_name = fields.Str(required=False)

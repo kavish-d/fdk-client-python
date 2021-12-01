@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .Opening import Opening
 
@@ -13,7 +14,7 @@ from .Opening import Opening
 from .Closing import Closing
 
 
-class Timing(Schema):
+class Timing(BaseSchema):
 
     
     opening = fields.Nested(Opening, required=False)

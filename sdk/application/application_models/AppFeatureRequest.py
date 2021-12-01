@@ -3,11 +3,12 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .AppFeature import AppFeature
 
 
-class AppFeatureRequest(Schema):
+class AppFeatureRequest(BaseSchema):
 
     
     feature = fields.Nested(AppFeature, required=False)

@@ -324,7 +324,7 @@ Get Orders for company based on Company Id
 
 ```python
 try:
-    result = await client.order.getOrdersByCompanyId(pageNo=pageNo, pageSize=pageSize, fromDate=fromDate, toDate=toDate, q=q, stage=stage, salesChannels=salesChannels, orderId=orderId, stores=stores, deploymentStores=deploymentStores, status=status, dp=dp, shortenUrls=shortenUrls, filterType=filterType)
+    result = await client.order.getOrdersByCompanyId(pageNo=pageNo, pageSize=pageSize, fromDate=fromDate, toDate=toDate, isPrioritySort=isPrioritySort, lockStatus=lockStatus, q=q, stage=stage, salesChannels=salesChannels, orderId=orderId, stores=stores, deploymentStores=deploymentStores, status=status, dp=dp, shortenUrls=shortenUrls, filterType=filterType)
     # use result
 except Exception as e:
     print(e)
@@ -340,6 +340,8 @@ except Exception as e:
 | pageSize | String? | no | Page limit |   
 | fromDate | String? | no | From Date |   
 | toDate | String? | no | To Date |   
+| isPrioritySort | Boolean? | no | Sorting Order |   
+| lockStatus | Boolean? | no | Hide Lock Status |   
 | q | String? | no | Keyword for Search |   
 | stage | String? | no | Specefic Order Stage |   
 | salesChannels | String? | no | Selected Sales Channel |   
@@ -2314,6 +2316,9 @@ Success
  | id | String? |  yes  |  |
  | gst | [ShipmentGst](#ShipmentGst)? |  yes  |  |
  | breakupValues | [ShipmentBreakupValues](#ShipmentBreakupValues)? |  yes  |  |
+ | priority | Double? |  yes  |  |
+ | priorityText | String? |  yes  |  |
+ | lockStatus | Boolean? |  yes  |  |
  | totalShipmentBags | Int? |  yes  |  |
 
 ---
@@ -2629,6 +2634,8 @@ Success
  | totalShipmentBags | Int? |  yes  |  |
  | pod | HashMap<String,Any>? |  yes  |  |
  | lockStatus | Boolean? |  yes  |  |
+ | priority | Double? |  yes  |  |
+ | priorityText | String? |  yes  |  |
  | orderingChannel | String? |  yes  |  |
  | creditNoteId | String? |  yes  |  |
  | autoTriggerDpAssignment | Boolean? |  yes  |  |

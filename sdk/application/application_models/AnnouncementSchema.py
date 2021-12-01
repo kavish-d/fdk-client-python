@@ -3,13 +3,14 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
 from .ScheduleStartSchema import ScheduleStartSchema
 
 
-class AnnouncementSchema(Schema):
+class AnnouncementSchema(BaseSchema):
 
     
     announcement = fields.Str(required=False)

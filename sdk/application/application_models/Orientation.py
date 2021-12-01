@@ -3,13 +3,14 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
 
 
 
-class Orientation(Schema):
+class Orientation(BaseSchema):
 
     
     portrait = fields.List(fields.Str(required=False), required=False)

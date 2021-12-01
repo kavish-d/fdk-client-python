@@ -3,11 +3,12 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
 
-class SendMobileVerifyLinkSuccess(Schema):
+class SendMobileVerifyLinkSuccess(BaseSchema):
 
     
     verify_mobile_link = fields.Boolean(required=False)

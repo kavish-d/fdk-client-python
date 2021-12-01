@@ -3,13 +3,14 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
 
 
 
-class UpdatePasswordRequestSchema(Schema):
+class UpdatePasswordRequestSchema(BaseSchema):
 
     
     old_password = fields.Str(required=False)

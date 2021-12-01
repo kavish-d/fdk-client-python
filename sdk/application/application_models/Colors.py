@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -17,7 +18,7 @@ from ..application_enums import *
 
 
 
-class Colors(Schema):
+class Colors(BaseSchema):
 
     
     bg_color = fields.Str(required=False)

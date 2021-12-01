@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -21,7 +22,7 @@ from .FeedbackState import FeedbackState
 from .TagMeta import TagMeta
 
 
-class Vote(Schema):
+class Vote(BaseSchema):
 
     
     action = fields.Str(required=False)

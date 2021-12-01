@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .AutoDetectors import AutoDetectors
 
@@ -35,7 +36,7 @@ from .Template import Template
 from .VoteCount import VoteCount
 
 
-class CustomerReview(Schema):
+class CustomerReview(BaseSchema):
 
     
     auto_detectors = fields.Nested(AutoDetectors, required=False)

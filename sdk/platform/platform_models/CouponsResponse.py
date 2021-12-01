@@ -3,17 +3,18 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
-
-from .CouponAdd import CouponAdd
+from ..platform_models.BaseSchema import BaseSchema
 
 from .Page import Page
 
+from .CouponAdd import CouponAdd
 
-class CouponsResponse(Schema):
 
-    
-    items = fields.Nested(CouponAdd, required=False)
+class CouponsResponse(BaseSchema):
+
     
     page = fields.Nested(Page, required=False)
+    
+    items = fields.Nested(CouponAdd, required=False)
     
 

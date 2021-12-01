@@ -3,13 +3,14 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .Credit import Credit
 
 from .Debit import Debit
 
 
-class RewardPointsConfig(Schema):
+class RewardPointsConfig(BaseSchema):
 
     
     credit = fields.Nested(Credit, required=False)

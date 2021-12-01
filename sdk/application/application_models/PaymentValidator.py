@@ -3,51 +3,52 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 class PaymentValidator:
     
-    class getAggregatorsConfig(Schema):
+    class getAggregatorsConfig(BaseSchema):
         
-        x_api_token = fields.Str(required=False)
+        x__api__token = fields.Str(required=False)
         
         refresh = fields.Boolean(required=False)
          
     
-    class attachCardToCustomer(Schema):
+    class attachCardToCustomer(BaseSchema):
         
         pass 
     
-    class getActiveCardAggregator(Schema):
+    class getActiveCardAggregator(BaseSchema):
         
         refresh = fields.Boolean(required=False)
          
     
-    class getActiveUserCards(Schema):
+    class getActiveUserCards(BaseSchema):
         
         force_refresh = fields.Boolean(required=False)
          
     
-    class deleteUserCard(Schema):
+    class deleteUserCard(BaseSchema):
         
         pass 
     
-    class verifyCustomerForPayment(Schema):
+    class verifyCustomerForPayment(BaseSchema):
         
         pass 
     
-    class verifyAndChargePayment(Schema):
+    class verifyAndChargePayment(BaseSchema):
         
         pass 
     
-    class initialisePayment(Schema):
+    class initialisePayment(BaseSchema):
         
         pass 
     
-    class checkAndUpdatePaymentStatus(Schema):
+    class checkAndUpdatePaymentStatus(BaseSchema):
         
         pass 
     
-    class getPaymentModeRoutes(Schema):
+    class getPaymentModeRoutes(BaseSchema):
         
         amount = fields.Int(required=False)
         
@@ -64,7 +65,7 @@ class PaymentValidator:
         user_details = fields.Str(required=False)
          
     
-    class getPosPaymentModeRoutes(Schema):
+    class getPosPaymentModeRoutes(BaseSchema):
         
         amount = fields.Int(required=False)
         
@@ -83,50 +84,50 @@ class PaymentValidator:
         user_details = fields.Str(required=False)
          
     
-    class getRupifiBannerDetails(Schema):
+    class getRupifiBannerDetails(BaseSchema):
         
         pass 
     
-    class getActiveRefundTransferModes(Schema):
+    class getActiveRefundTransferModes(BaseSchema):
         
         pass 
     
-    class enableOrDisableRefundTransferMode(Schema):
+    class enableOrDisableRefundTransferMode(BaseSchema):
         
         pass 
     
-    class getUserBeneficiariesDetail(Schema):
+    class getUserBeneficiariesDetail(BaseSchema):
         
         order_id = fields.Str(required=False)
          
     
-    class verifyIfscCode(Schema):
+    class verifyIfscCode(BaseSchema):
         
         ifsc_code = fields.Str(required=False)
          
     
-    class getOrderBeneficiariesDetail(Schema):
+    class getOrderBeneficiariesDetail(BaseSchema):
         
         order_id = fields.Str(required=False)
          
     
-    class verifyOtpAndAddBeneficiaryForBank(Schema):
+    class verifyOtpAndAddBeneficiaryForBank(BaseSchema):
         
         pass 
     
-    class addBeneficiaryDetails(Schema):
+    class addBeneficiaryDetails(BaseSchema):
         
         pass 
     
-    class addRefundBankAccountUsingOTP(Schema):
+    class addRefundBankAccountUsingOTP(BaseSchema):
         
         pass 
     
-    class verifyOtpAndAddBeneficiaryForWallet(Schema):
+    class verifyOtpAndAddBeneficiaryForWallet(BaseSchema):
         
         pass 
     
-    class updateDefaultBeneficiary(Schema):
+    class updateDefaultBeneficiary(BaseSchema):
         
         pass 
     

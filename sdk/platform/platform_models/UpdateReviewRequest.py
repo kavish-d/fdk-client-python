@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -33,7 +34,7 @@ from .MediaMeta import MediaMeta
 
 
 
-class UpdateReviewRequest(Schema):
+class UpdateReviewRequest(BaseSchema):
 
     
     active = fields.Boolean(required=False)

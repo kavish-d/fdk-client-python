@@ -3,26 +3,18 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 class BillingValidator:
     
-    class createSubscriptionCharge(Schema):
+    class createSubscriptionCharge(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         extension_id = fields.Str(required=False)
          
     
-    class getSubscriptionCharge(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        extension_id = fields.Str(required=False)
-        
-        subscription_id = fields.Str(required=False)
-         
-    
-    class cancelSubscriptionCharge(Schema):
+    class getSubscriptionCharge(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -31,44 +23,53 @@ class BillingValidator:
         subscription_id = fields.Str(required=False)
          
     
-    class getInvoices(Schema):
+    class cancelSubscriptionCharge(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        extension_id = fields.Str(required=False)
+        
+        subscription_id = fields.Str(required=False)
+         
+    
+    class getInvoices(BaseSchema):
         
         company_id = fields.Str(required=False)
          
     
-    class getInvoiceById(Schema):
+    class getInvoiceById(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         invoice_id = fields.Str(required=False)
          
     
-    class getCustomerDetail(Schema):
+    class getCustomerDetail(BaseSchema):
         
         company_id = fields.Str(required=False)
          
     
-    class upsertCustomerDetail(Schema):
+    class upsertCustomerDetail(BaseSchema):
         
         company_id = fields.Str(required=False)
          
     
-    class getSubscription(Schema):
+    class getSubscription(BaseSchema):
         
         company_id = fields.Str(required=False)
          
     
-    class getFeatureLimitConfig(Schema):
+    class getFeatureLimitConfig(BaseSchema):
         
         company_id = fields.Str(required=False)
          
     
-    class activateSubscriptionPlan(Schema):
+    class activateSubscriptionPlan(BaseSchema):
         
         company_id = fields.Str(required=False)
          
     
-    class cancelSubscriptionPlan(Schema):
+    class cancelSubscriptionPlan(BaseSchema):
         
         company_id = fields.Str(required=False)
          

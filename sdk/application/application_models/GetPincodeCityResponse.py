@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -13,7 +14,7 @@ from ..application_enums import *
 from .LogisticPincodeData import LogisticPincodeData
 
 
-class GetPincodeCityResponse(Schema):
+class GetPincodeCityResponse(BaseSchema):
 
     
     request_uuid = fields.Str(required=False)

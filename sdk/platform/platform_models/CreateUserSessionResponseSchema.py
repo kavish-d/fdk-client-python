@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -15,7 +16,7 @@ from ..platform_enums import *
 
 
 
-class CreateUserSessionResponseSchema(Schema):
+class CreateUserSessionResponseSchema(BaseSchema):
 
     
     domain = fields.Str(required=False)

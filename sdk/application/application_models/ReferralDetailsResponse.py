@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .Offer import Offer
 
@@ -13,7 +14,7 @@ from .ShareMessages import ShareMessages
 from .ReferralDetailsUser import ReferralDetailsUser
 
 
-class ReferralDetailsResponse(Schema):
+class ReferralDetailsResponse(BaseSchema):
 
     
     referral = fields.Nested(Offer, required=False)

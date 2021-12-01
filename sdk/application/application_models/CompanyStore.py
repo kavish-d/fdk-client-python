@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -13,15 +14,15 @@ from ..application_enums import *
 
 
 
-class CompanyStore(Schema):
+class CompanyStore(BaseSchema):
 
     
-    uid = fields.Int(required=False)
+    business_type = fields.Str(required=False)
     
     company_type = fields.Str(required=False)
     
-    name = fields.Str(required=False)
+    uid = fields.Int(required=False)
     
-    business_type = fields.Str(required=False)
+    name = fields.Str(required=False)
     
 

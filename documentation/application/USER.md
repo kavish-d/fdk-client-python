@@ -8,7 +8,6 @@
 Authentication Service
 * [loginWithFacebook](#loginwithfacebook)
 * [loginWithGoogle](#loginwithgoogle)
-* [loginWithGoogleOauth](#loginwithgoogleoauth)
 * [loginWithGoogleAndroid](#loginwithgoogleandroid)
 * [loginWithGoogleIOS](#loginwithgoogleios)
 * [loginWithAppleIOS](#loginwithappleios)
@@ -145,72 +144,6 @@ Use this API to login or register using Google Account credentials.
 [AuthSuccess](#AuthSuccess)
 
 Success. Returns a JSON object with the user details. Check the example shown below or refer `AuthSuccess` for more details.
-
-
-
-
-<details>
-<summary><i>&nbsp; Examples:</i></summary>
-
-
-<details>
-<summary><i>&nbsp; Success</i></summary>
-
-```json
-{
-  "$ref": "#/components/examples/AuthSuccess"
-}
-```
-</details>
-
-</details>
-
-
-
-
-
-
-
-
-
----
-
-
-### loginWithGoogleOauth
-Login or Register using Google
-
-
-
-
-```python
-try:
-    result = await client.user.loginWithGoogleOauth(platform=platform, redirectUrl=redirectUrl)
-    # use result
-except Exception as e:
-    print(e)
-```
-
-
-
-
-
-| Argument  |  Type  | Required | Description |
-| --------- | -----  | -------- | ----------- | 
-| platform | String? | no | ID of the application |   
-| redirectUrl | String? | no | Url to redirect after login |  
-
-
-
-Use this API to login or register using Google Account credentials.
-
-*Returned Response:*
-
-
-
-
-[AuthSuccess](#AuthSuccess)
-
-Success. Returns a google url and redirect to same
 
 
 
@@ -2553,6 +2486,7 @@ Request body must contain an email ID. Refer `EditEmailRequestSchema` for more d
  | verifyEmailOtp | Boolean? |  yes  |  |
  | verifyMobileOtp | Boolean? |  yes  |  |
  | email | String? |  yes  |  |
+ | requestId | String? |  yes  |  |
 
 ---
 

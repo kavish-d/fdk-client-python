@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -11,12 +12,12 @@ from ..application_enums import *
 
 
 
-class PaymentSelectionLock(Schema):
+class PaymentSelectionLock(BaseSchema):
 
-    
-    enabled = fields.Boolean(required=False)
     
     payment_identifier = fields.Str(required=False)
+    
+    enabled = fields.Boolean(required=False)
     
     default_options = fields.Str(required=False)
     

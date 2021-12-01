@@ -3,13 +3,14 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
 
 
 
-class PlatformEmail(Schema):
+class PlatformEmail(BaseSchema):
 
     
     is_required = fields.Boolean(required=False)

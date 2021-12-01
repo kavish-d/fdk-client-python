@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .DateMeta import DateMeta
 
@@ -17,7 +18,7 @@ from .DateMeta import DateMeta
 from .TagMeta import TagMeta
 
 
-class Attribute(Schema):
+class Attribute(BaseSchema):
 
     
     date_meta = fields.Nested(DateMeta, required=False)

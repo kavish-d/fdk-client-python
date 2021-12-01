@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -11,7 +12,7 @@ from ..platform_enums import *
 
 
 
-class UserSerializer1(Schema):
+class UserSerializer1(BaseSchema):
 
     
     user_id = fields.Str(required=False)

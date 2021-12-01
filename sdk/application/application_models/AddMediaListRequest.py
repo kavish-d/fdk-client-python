@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -15,7 +16,7 @@ from .AddMediaRequest import AddMediaRequest
 
 
 
-class AddMediaListRequest(Schema):
+class AddMediaListRequest(BaseSchema):
 
     
     entity_id = fields.Str(required=False)

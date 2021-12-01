@@ -3,13 +3,14 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
 
 
 
-class Login(Schema):
+class Login(BaseSchema):
 
     
     password = fields.Boolean(required=False)

@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .PlanRecurring import PlanRecurring
 
@@ -45,7 +46,7 @@ from .PlanRecurring import PlanRecurring
 from .DetailedPlanComponents import DetailedPlanComponents
 
 
-class DetailedPlan(Schema):
+class DetailedPlan(BaseSchema):
 
     
     recurring = fields.Nested(PlanRecurring, required=False)

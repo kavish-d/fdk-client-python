@@ -3,10 +3,11 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 class WebhookValidator:
     
-    class getSubscribersByCompany(Schema):
+    class getSubscribersByCompany(BaseSchema):
         
         page_no = fields.Int(required=False)
         
@@ -17,17 +18,17 @@ class WebhookValidator:
         extension_id = fields.Str(required=False)
          
     
-    class registerSubscriberToEvent(Schema):
+    class registerSubscriberToEvent(BaseSchema):
         
         company_id = fields.Int(required=False)
          
     
-    class updateSubscriberConfig(Schema):
+    class updateSubscriberConfig(BaseSchema):
         
         company_id = fields.Int(required=False)
          
     
-    class getSubscribersByExtensionId(Schema):
+    class getSubscribersByExtensionId(BaseSchema):
         
         page_no = fields.Int(required=False)
         
@@ -38,14 +39,14 @@ class WebhookValidator:
         extension_id = fields.Str(required=False)
          
     
-    class getSubscriberById(Schema):
+    class getSubscriberById(BaseSchema):
         
         company_id = fields.Int(required=False)
         
         subscriber_id = fields.Int(required=False)
          
     
-    class fetchAllEventConfigurations(Schema):
+    class fetchAllEventConfigurations(BaseSchema):
         
         company_id = fields.Int(required=False)
          

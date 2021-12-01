@@ -3,11 +3,12 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
 
-class Css(Schema):
+class Css(BaseSchema):
 
     
     link = fields.Str(required=False)

@@ -3,17 +3,18 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
 
 
 
-class GeoLocation(Schema):
+class GeoLocation(BaseSchema):
 
-    
-    longitude = fields.Float(required=False)
     
     latitude = fields.Float(required=False)
+    
+    longitude = fields.Float(required=False)
     
 

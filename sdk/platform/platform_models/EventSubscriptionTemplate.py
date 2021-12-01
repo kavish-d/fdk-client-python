@@ -3,13 +3,14 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .EventSubscriptionTemplateSms import EventSubscriptionTemplateSms
 
 from .EventSubscriptionTemplateEmail import EventSubscriptionTemplateEmail
 
 
-class EventSubscriptionTemplate(Schema):
+class EventSubscriptionTemplate(BaseSchema):
 
     
     sms = fields.Nested(EventSubscriptionTemplateSms, required=False)

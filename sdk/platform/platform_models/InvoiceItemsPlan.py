@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .InvoiceItemsPlanRecurring import InvoiceItemsPlanRecurring
 
@@ -43,7 +44,7 @@ from .InvoiceItemsPlanRecurring import InvoiceItemsPlanRecurring
 
 
 
-class InvoiceItemsPlan(Schema):
+class InvoiceItemsPlan(BaseSchema):
 
     
     recurring = fields.Nested(InvoiceItemsPlanRecurring, required=False)

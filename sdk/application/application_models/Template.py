@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 from .DateMeta import DateMeta
 
@@ -19,7 +20,7 @@ from .TemplateReview import TemplateReview
 from .FeedbackState import FeedbackState
 
 
-class Template(Schema):
+class Template(BaseSchema):
 
     
     date_meta = fields.Nested(DateMeta, required=False)

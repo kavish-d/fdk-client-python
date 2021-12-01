@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 from .SubscriptionCurrentPeriod import SubscriptionCurrentPeriod
 
@@ -37,7 +38,7 @@ from .Plan import Plan
 
 
 
-class Subscription(Schema):
+class Subscription(BaseSchema):
 
     
     current_period = fields.Nested(SubscriptionCurrentPeriod, required=False)

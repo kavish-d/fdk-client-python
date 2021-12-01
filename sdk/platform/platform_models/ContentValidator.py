@@ -3,10 +3,11 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 class ContentValidator:
     
-    class getAnnouncementsList(Schema):
+    class getAnnouncementsList(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -17,23 +18,14 @@ class ContentValidator:
         page_size = fields.Int(required=False)
          
     
-    class createAnnouncement(Schema):
+    class createAnnouncement(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getAnnouncementById(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        announcement_id = fields.Str(required=False)
-         
-    
-    class updateAnnouncement(Schema):
+    class getAnnouncementById(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -42,7 +34,7 @@ class ContentValidator:
         announcement_id = fields.Str(required=False)
          
     
-    class updateAnnouncementSchedule(Schema):
+    class updateAnnouncement(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -51,7 +43,7 @@ class ContentValidator:
         announcement_id = fields.Str(required=False)
          
     
-    class deleteAnnouncement(Schema):
+    class updateAnnouncementSchedule(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -60,14 +52,23 @@ class ContentValidator:
         announcement_id = fields.Str(required=False)
          
     
-    class createBlog(Schema):
+    class deleteAnnouncement(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        announcement_id = fields.Str(required=False)
+         
+    
+    class createBlog(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getBlogs(Schema):
+    class getBlogs(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -78,7 +79,7 @@ class ContentValidator:
         page_size = fields.Int(required=False)
          
     
-    class updateBlog(Schema):
+    class updateBlog(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -87,7 +88,7 @@ class ContentValidator:
         id = fields.Str(required=False)
          
     
-    class deleteBlog(Schema):
+    class deleteBlog(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -96,7 +97,7 @@ class ContentValidator:
         id = fields.Str(required=False)
          
     
-    class getComponentById(Schema):
+    class getComponentById(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -105,48 +106,14 @@ class ContentValidator:
         slug = fields.Str(required=False)
          
     
-    class getFaqCategories(Schema):
+    class getFaqCategories(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getFaqCategoryBySlugOrId(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        id_or_slug = fields.Str(required=False)
-         
-    
-    class createFaqCategory(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-         
-    
-    class updateFaqCategory(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        id = fields.Str(required=False)
-         
-    
-    class deleteFaqCategory(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        id = fields.Str(required=False)
-         
-    
-    class getFaqsByCategoryIdOrSlug(Schema):
+    class getFaqCategoryBySlugOrId(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -155,7 +122,41 @@ class ContentValidator:
         id_or_slug = fields.Str(required=False)
          
     
-    class addFaq(Schema):
+    class createFaqCategory(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+         
+    
+    class updateFaqCategory(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        id = fields.Str(required=False)
+         
+    
+    class deleteFaqCategory(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        id = fields.Str(required=False)
+         
+    
+    class getFaqsByCategoryIdOrSlug(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        id_or_slug = fields.Str(required=False)
+         
+    
+    class addFaq(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -164,7 +165,7 @@ class ContentValidator:
         category_id = fields.Str(required=False)
          
     
-    class updateFaq(Schema):
+    class updateFaq(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -175,7 +176,7 @@ class ContentValidator:
         faq_id = fields.Str(required=False)
          
     
-    class deleteFaq(Schema):
+    class deleteFaq(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -186,7 +187,7 @@ class ContentValidator:
         faq_id = fields.Str(required=False)
          
     
-    class getFaqByIdOrSlug(Schema):
+    class getFaqByIdOrSlug(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -195,7 +196,7 @@ class ContentValidator:
         id_or_slug = fields.Str(required=False)
          
     
-    class getLandingPages(Schema):
+    class getLandingPages(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -206,23 +207,14 @@ class ContentValidator:
         page_size = fields.Int(required=False)
          
     
-    class createLandingPage(Schema):
+    class createLandingPage(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class updateLandingPage(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        id = fields.Str(required=False)
-         
-    
-    class deleteLandingPage(Schema):
+    class updateLandingPage(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -231,21 +223,30 @@ class ContentValidator:
         id = fields.Str(required=False)
          
     
-    class getLegalInformation(Schema):
+    class deleteLandingPage(BaseSchema):
+        
+        company_id = fields.Str(required=False)
+        
+        application_id = fields.Str(required=False)
+        
+        id = fields.Str(required=False)
+         
+    
+    class getLegalInformation(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class updateLegalInformation(Schema):
+    class updateLegalInformation(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getNavigations(Schema):
+    class getNavigations(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -258,21 +259,21 @@ class ContentValidator:
         page_size = fields.Int(required=False)
          
     
-    class createNavigation(Schema):
+    class createNavigation(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getDefaultNavigations(Schema):
+    class getDefaultNavigations(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getNavigationBySlug(Schema):
+    class getNavigationBySlug(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -283,7 +284,7 @@ class ContentValidator:
         device_platform = fields.Str(required=False)
          
     
-    class updateNavigation(Schema):
+    class updateNavigation(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -292,7 +293,7 @@ class ContentValidator:
         id = fields.Str(required=False)
          
     
-    class deleteNavigation(Schema):
+    class deleteNavigation(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -301,7 +302,7 @@ class ContentValidator:
         id = fields.Str(required=False)
          
     
-    class getPageMeta(Schema):
+    class getPageMeta(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -312,39 +313,21 @@ class ContentValidator:
         cart_pages = fields.Boolean(required=False)
          
     
-    class getPageSpec(Schema):
+    class getPageSpec(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class createPage(Schema):
+    class createPagePreview(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getPages(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        page_no = fields.Int(required=False)
-        
-        page_size = fields.Int(required=False)
-         
-    
-    class createPagePreview(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-         
-    
-    class updatePagePreview(Schema):
+    class updatePagePreview(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -353,7 +336,7 @@ class ContentValidator:
         slug = fields.Str(required=False)
          
     
-    class updatePage(Schema):
+    class deletePage(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -362,53 +345,35 @@ class ContentValidator:
         id = fields.Str(required=False)
          
     
-    class deletePage(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        id = fields.Str(required=False)
-         
-    
-    class getPageBySlug(Schema):
-        
-        company_id = fields.Str(required=False)
-        
-        application_id = fields.Str(required=False)
-        
-        slug = fields.Str(required=False)
-         
-    
-    class updatePathRedirectionRules(Schema):
+    class updatePathRedirectionRules(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getPathRedirectionRules(Schema):
+    class getPathRedirectionRules(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getSEOConfiguration(Schema):
+    class getSEOConfiguration(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class updateSEOConfiguration(Schema):
+    class updateSEOConfiguration(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getSlideshows(Schema):
+    class getSlideshows(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -421,14 +386,14 @@ class ContentValidator:
         page_size = fields.Int(required=False)
          
     
-    class createSlideshow(Schema):
+    class createSlideshow(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getSlideshowBySlug(Schema):
+    class getSlideshowBySlug(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -439,7 +404,7 @@ class ContentValidator:
         device_platform = fields.Str(required=False)
          
     
-    class updateSlideshow(Schema):
+    class updateSlideshow(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -448,7 +413,7 @@ class ContentValidator:
         id = fields.Str(required=False)
          
     
-    class deleteSlideshow(Schema):
+    class deleteSlideshow(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -457,56 +422,56 @@ class ContentValidator:
         id = fields.Str(required=False)
          
     
-    class getSupportInformation(Schema):
+    class getSupportInformation(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class updateSupportInformation(Schema):
+    class updateSupportInformation(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class updateInjectableTag(Schema):
+    class updateInjectableTag(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class deleteAllInjectableTags(Schema):
+    class deleteAllInjectableTags(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getInjectableTags(Schema):
+    class getInjectableTags(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class addInjectableTag(Schema):
+    class addInjectableTag(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class removeInjectableTag(Schema):
+    class removeInjectableTag(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class editInjectableTag(Schema):
+    class editInjectableTag(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -515,14 +480,14 @@ class ContentValidator:
         tag_id = fields.Str(required=False)
          
     
-    class createPageV2(Schema):
+    class createPage(BaseSchema):
         
         company_id = fields.Str(required=False)
         
         application_id = fields.Str(required=False)
          
     
-    class getPagesV2(Schema):
+    class getPages(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -533,7 +498,7 @@ class ContentValidator:
         page_size = fields.Int(required=False)
          
     
-    class updatePageV2(Schema):
+    class updatePage(BaseSchema):
         
         company_id = fields.Str(required=False)
         
@@ -542,7 +507,7 @@ class ContentValidator:
         id = fields.Str(required=False)
          
     
-    class getPageBySlugV2(Schema):
+    class getPageBySlug(BaseSchema):
         
         company_id = fields.Str(required=False)
         

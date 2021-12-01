@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
 
 
 
@@ -13,7 +14,7 @@ from ..platform_enums import *
 
 
 
-class SendEmailOtpRequestSchema(Schema):
+class SendEmailOtpRequestSchema(BaseSchema):
 
     
     email = fields.Str(required=False)

@@ -3,6 +3,7 @@
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
 from ..application_enums import *
+from ..application_models.BaseSchema import BaseSchema
 
 
 
@@ -15,17 +16,17 @@ from ..application_enums import *
 
 
 
-class CouponValidity(Schema):
+class CouponValidity(BaseSchema):
 
-    
-    display_message_en = fields.Str(required=False)
-    
-    discount = fields.Float(required=False)
     
     valid = fields.Boolean(required=False)
     
+    title = fields.Str(required=False)
+    
+    discount = fields.Float(required=False)
+    
     code = fields.Str(required=False)
     
-    title = fields.Str(required=False)
+    display_message_en = fields.Str(required=False)
     
 
