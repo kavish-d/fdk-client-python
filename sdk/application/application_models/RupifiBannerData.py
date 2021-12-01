@@ -13,8 +13,8 @@ from ..application_models.BaseSchema import BaseSchema
 class RupifiBannerData(BaseSchema):
 
     
-    status = fields.Str(required=False)
-    
     kyc_url = fields.Str(required=False)
+    
+    status = fields.Str(required=False)
     
 

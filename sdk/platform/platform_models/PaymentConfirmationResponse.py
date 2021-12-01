@@ -15,9 +15,9 @@ from ..platform_models.BaseSchema import BaseSchema
 class PaymentConfirmationResponse(BaseSchema):
 
     
-    success = fields.Boolean(required=False)
-    
     message = fields.Str(required=False)
+    
+    success = fields.Boolean(required=False)
     
     order_id = fields.Str(required=False)
     

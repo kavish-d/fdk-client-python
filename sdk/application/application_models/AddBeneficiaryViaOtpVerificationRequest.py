@@ -15,10 +15,10 @@ from ..application_models.BaseSchema import BaseSchema
 class AddBeneficiaryViaOtpVerificationRequest(BaseSchema):
 
     
+    hash_key = fields.Str(required=False)
+    
     request_id = fields.Str(required=False)
     
     otp = fields.Str(required=False)
-    
-    hash_key = fields.Str(required=False)
     
 

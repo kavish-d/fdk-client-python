@@ -19,11 +19,11 @@ from ..platform_models.BaseSchema import BaseSchema
 class PaymentGatewayConfig(BaseSchema):
 
     
+    is_active = fields.Boolean(required=False)
+    
     key = fields.Str(required=False)
     
     secret = fields.Str(required=False)
-    
-    is_active = fields.Boolean(required=False)
     
     config_type = fields.Str(required=False)
     
