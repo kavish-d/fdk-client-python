@@ -27,11 +27,13 @@ from ..application_models.BaseSchema import BaseSchema
 class PaymentInitializationRequest(BaseSchema):
 
     
+    razorpay_payment_id = fields.Str(required=False)
+    
     aggregator = fields.Str(required=False)
     
-    virtual_id = fields.Str(required=False)
-    
     polling_url = fields.Str(required=False)
+    
+    aggregator_order_id = fields.Str(required=False)
     
     timeout = fields.Int(required=False)
     
@@ -39,10 +41,8 @@ class PaymentInitializationRequest(BaseSchema):
     
     customer_id = fields.Str(required=False)
     
-    aggregator_order_id = fields.Str(required=False)
-    
     merchant_order_id = fields.Str(required=False)
     
-    razorpay_payment_id = fields.Str(required=False)
+    virtual_id = fields.Str(required=False)
     
 

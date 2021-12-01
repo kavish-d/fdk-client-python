@@ -262,7 +262,7 @@ Update the shipment status
 
 ```python
 try:
-    result = await client.order.updateShipmentStatus(shipmentId=shipmentId, body: body)
+    result = await client.order.updateShipmentStatus(shipmentId=shipmentId, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -549,7 +549,7 @@ Verify Otp code
 
 ```python
 try:
-    result = await client.order.verifyOtpShipmentCustomer(orderId=orderId, shipmentId=shipmentId, body: body)
+    result = await client.order.verifyOtpShipmentCustomer(orderId=orderId, shipmentId=shipmentId, body=body)
     # use result
 except Exception as e:
     print(e)

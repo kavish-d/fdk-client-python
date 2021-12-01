@@ -85,7 +85,7 @@ Register Subscriber
 
 ```python
 try:
-    result = await client.webhook.registerSubscriberToEvent(body: body)
+    result = await client.webhook.registerSubscriberToEvent(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -141,7 +141,7 @@ Update Subscriber
 
 ```python
 try:
-    result = await client.webhook.updateSubscriberConfig(body: body)
+    result = await client.webhook.updateSubscriberConfig(body=body)
     # use result
 except Exception as e:
     print(e)

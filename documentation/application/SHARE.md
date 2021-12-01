@@ -262,7 +262,7 @@ Create a short link
 
 ```python
 try:
-    result = await client.share.createShortLink(body: body)
+    result = await client.share.createShortLink(body=body)
     # use result
 except Exception as e:
     print(e)

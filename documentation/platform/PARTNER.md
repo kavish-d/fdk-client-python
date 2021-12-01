@@ -22,7 +22,7 @@ Add proxy path for external url
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").partner.addProxyPath(extensionId=extensionId, body: body)
+    result = await client.application("<APPLICATION_ID>").partner.addProxyPath(extensionId=extensionId, body=body)
     # use result
 except Exception as e:
     print(e)

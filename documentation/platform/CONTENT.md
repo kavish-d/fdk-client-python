@@ -145,7 +145,7 @@ Create an announcement
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.createAnnouncement(body: body)
+    result = await client.application("<APPLICATION_ID>").content.createAnnouncement(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -274,7 +274,7 @@ Update an announcement
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.updateAnnouncement(announcementId=announcementId, body: body)
+    result = await client.application("<APPLICATION_ID>").content.updateAnnouncement(announcementId=announcementId, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -339,7 +339,7 @@ Update the schedule and the publish status of an announcement
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.updateAnnouncementSchedule(announcementId=announcementId, body: body)
+    result = await client.application("<APPLICATION_ID>").content.updateAnnouncementSchedule(announcementId=announcementId, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -469,7 +469,7 @@ Create a blog
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.createBlog(body: body)
+    result = await client.application("<APPLICATION_ID>").content.createBlog(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -599,7 +599,7 @@ Update a blog
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.updateBlog(id=id, body: body)
+    result = await client.application("<APPLICATION_ID>").content.updateBlog(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -933,7 +933,7 @@ Create an FAQ category
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.createFaqCategory(body: body)
+    result = await client.application("<APPLICATION_ID>").content.createFaqCategory(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -998,7 +998,7 @@ Update an FAQ category
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.updateFaqCategory(id=id, body: body)
+    result = await client.application("<APPLICATION_ID>").content.updateFaqCategory(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -1198,7 +1198,7 @@ Create an FAQ
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.addFaq(categoryId=categoryId, body: body)
+    result = await client.application("<APPLICATION_ID>").content.addFaq(categoryId=categoryId, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -1263,7 +1263,7 @@ Update an FAQ
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.updateFaq(categoryId=categoryId, faqId=faqId, body: body)
+    result = await client.application("<APPLICATION_ID>").content.updateFaq(categoryId=categoryId, faqId=faqId, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -1526,7 +1526,7 @@ Create a landing page
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.createLandingPage(body: body)
+    result = await client.application("<APPLICATION_ID>").content.createLandingPage(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -1590,7 +1590,7 @@ Update a landing page
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.updateLandingPage(id=id, body: body)
+    result = await client.application("<APPLICATION_ID>").content.updateLandingPage(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -1803,7 +1803,7 @@ Save legal information
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.updateLegalInformation(body: body)
+    result = await client.application("<APPLICATION_ID>").content.updateLegalInformation(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -1935,7 +1935,7 @@ Create a navigation
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.createNavigation(body: body)
+    result = await client.application("<APPLICATION_ID>").content.createNavigation(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -2125,7 +2125,7 @@ Update a navigation
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.updateNavigation(id=id, body: body)
+    result = await client.application("<APPLICATION_ID>").content.updateNavigation(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -2587,7 +2587,7 @@ Create a page preview
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.createPagePreview(body: body)
+    result = await client.application("<APPLICATION_ID>").content.createPagePreview(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -2651,7 +2651,7 @@ Change the publish status of a page
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.updatePagePreview(slug=slug, body: body)
+    result = await client.application("<APPLICATION_ID>").content.updatePagePreview(slug=slug, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -2781,7 +2781,7 @@ Save path based redirection rules
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.updatePathRedirectionRules(body: body)
+    result = await client.application("<APPLICATION_ID>").content.updatePathRedirectionRules(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -2964,7 +2964,7 @@ Update SEO of application
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.updateSEOConfiguration(body: body)
+    result = await client.application("<APPLICATION_ID>").content.updateSEOConfiguration(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -3118,7 +3118,7 @@ Create a slideshow
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.createSlideshow(body: body)
+    result = await client.application("<APPLICATION_ID>").content.createSlideshow(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -3248,7 +3248,7 @@ Update a slideshow
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.updateSlideshow(id=id, body: body)
+    result = await client.application("<APPLICATION_ID>").content.updateSlideshow(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -3477,7 +3477,7 @@ Update the support data of an application
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.updateSupportInformation(body: body)
+    result = await client.application("<APPLICATION_ID>").content.updateSupportInformation(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -3541,7 +3541,7 @@ Update a tag
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.updateInjectableTag(body: body)
+    result = await client.application("<APPLICATION_ID>").content.updateInjectableTag(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -3767,7 +3767,7 @@ Add a tag
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.addInjectableTag(body: body)
+    result = await client.application("<APPLICATION_ID>").content.addInjectableTag(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -3837,7 +3837,7 @@ Remove a tag
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.removeInjectableTag(body: body)
+    result = await client.application("<APPLICATION_ID>").content.removeInjectableTag(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -3895,7 +3895,7 @@ Edit a tag by id
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.editInjectableTag(tagId=tagId, body: body)
+    result = await client.application("<APPLICATION_ID>").content.editInjectableTag(tagId=tagId, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -3966,7 +3966,7 @@ Create a page
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.createPage(body: body)
+    result = await client.application("<APPLICATION_ID>").content.createPage(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -4096,7 +4096,7 @@ Update a page
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").content.updatePage(id=id, body: body)
+    result = await client.application("<APPLICATION_ID>").content.updatePage(id=id, body=body)
     # use result
 except Exception as e:
     print(e)

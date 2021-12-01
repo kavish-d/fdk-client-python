@@ -42,7 +42,7 @@ Update status of Shipment
 
 ```python
 try:
-    result = await client.order.shipmentStatusUpdate(body: body)
+    result = await client.order.shipmentStatusUpdate(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -155,7 +155,7 @@ Update Store Process-Shipment
 
 ```python
 try:
-    result = await client.order.storeProcessShipmentUpdate(body: body)
+    result = await client.order.storeProcessShipmentUpdate(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -268,7 +268,7 @@ Decides if Shipment bags can break
 
 ```python
 try:
-    result = await client.order.ShipmentBagsCanBreak(body: body)
+    result = await client.order.ShipmentBagsCanBreak(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -814,7 +814,7 @@ Use this API to update the shipment using its shipment ID.
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").order.updateShipment(shipmentId=shipmentId, body: body)
+    result = await client.application("<APPLICATION_ID>").order.updateShipment(shipmentId=shipmentId, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -1044,7 +1044,7 @@ Use this API to update address of a shipment using its shipment ID and Address C
 
 ```python
 try:
-    result = await client.order.updateShipmentAddress(shipmentId=shipmentId, addressCategory=addressCategory, body: body)
+    result = await client.order.updateShipmentAddress(shipmentId=shipmentId, addressCategory=addressCategory, body=body)
     # use result
 except Exception as e:
     print(e)

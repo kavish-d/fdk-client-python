@@ -124,7 +124,7 @@ Create campaign
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").communication.createCampaign(body: body)
+    result = await client.application("<APPLICATION_ID>").communication.createCampaign(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -253,7 +253,7 @@ Update campaign by id
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").communication.updateCampaignById(id=id, body: body)
+    result = await client.application("<APPLICATION_ID>").communication.updateCampaignById(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -450,7 +450,7 @@ Create audience
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").communication.createAudience(body: body)
+    result = await client.application("<APPLICATION_ID>").communication.createAudience(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -514,7 +514,7 @@ Get bigquery headers
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").communication.getBigqueryHeaders(body: body)
+    result = await client.application("<APPLICATION_ID>").communication.getBigqueryHeaders(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -643,7 +643,7 @@ Update audience by id
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").communication.updateAudienceById(id=id, body: body)
+    result = await client.application("<APPLICATION_ID>").communication.updateAudienceById(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -708,7 +708,7 @@ Get n sample records from csv
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").communication.getNSampleRecordsFromCsv(body: body)
+    result = await client.application("<APPLICATION_ID>").communication.getNSampleRecordsFromCsv(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -839,7 +839,7 @@ Create email provider
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").communication.createEmailProvider(body: body)
+    result = await client.application("<APPLICATION_ID>").communication.createEmailProvider(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -968,7 +968,7 @@ Update email provider by id
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").communication.updateEmailProviderById(id=id, body: body)
+    result = await client.application("<APPLICATION_ID>").communication.updateEmailProviderById(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -1100,7 +1100,7 @@ Create email template
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").communication.createEmailTemplate(body: body)
+    result = await client.application("<APPLICATION_ID>").communication.createEmailTemplate(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -1296,7 +1296,7 @@ Update email template by id
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").communication.updateEmailTemplateById(id=id, body: body)
+    result = await client.application("<APPLICATION_ID>").communication.updateEmailTemplateById(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -1560,7 +1560,7 @@ Trigger campaign job
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").communication.triggerCampaignJob(body: body)
+    result = await client.application("<APPLICATION_ID>").communication.triggerCampaignJob(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -1892,7 +1892,7 @@ Create sms provider
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").communication.createSmsProvider(body: body)
+    result = await client.application("<APPLICATION_ID>").communication.createSmsProvider(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -2021,7 +2021,7 @@ Update sms provider by id
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").communication.updateSmsProviderById(id=id, body: body)
+    result = await client.application("<APPLICATION_ID>").communication.updateSmsProviderById(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -2153,7 +2153,7 @@ Create sms template
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").communication.createSmsTemplate(body: body)
+    result = await client.application("<APPLICATION_ID>").communication.createSmsTemplate(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -2282,7 +2282,7 @@ Update sms template by id
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").communication.updateSmsTemplateById(id=id, body: body)
+    result = await client.application("<APPLICATION_ID>").communication.updateSmsTemplateById(id=id, body=body)
     # use result
 except Exception as e:
     print(e)

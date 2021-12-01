@@ -88,7 +88,7 @@ Updates An Existing Job Config
 
 ```python
 try:
-    result = await client.inventory.updateJob(body: body)
+    result = await client.inventory.updateJob(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -144,7 +144,7 @@ Creates A New Job Config
 
 ```python
 try:
-    result = await client.inventory.createJob(body: body)
+    result = await client.inventory.createJob(body=body)
     # use result
 except Exception as e:
     print(e)

@@ -573,7 +573,7 @@ Create data export job in required format
 
 ```python
 try:
-    result = await client.analytics.createExportJob(exportType=exportType, body: body)
+    result = await client.analytics.createExportJob(exportType=exportType, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -695,7 +695,7 @@ Get logs list
 
 ```python
 try:
-    result = await client.analytics.getLogsList(logType=logType, pageNo=pageNo, pageSize=pageSize, body: body)
+    result = await client.analytics.getLogsList(logType=logType, pageNo=pageNo, pageSize=pageSize, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -772,7 +772,7 @@ Search logs
 
 ```python
 try:
-    result = await client.analytics.searchLogs(pageNo=pageNo, pageSize=pageSize, logType=logType, body: body)
+    result = await client.analytics.searchLogs(pageNo=pageNo, pageSize=pageSize, logType=logType, body=body)
     # use result
 except Exception as e:
     print(e)

@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class AttributeSchemaRange(BaseSchema):
 
     
-    min = fields.Int(required=False)
-    
     max = fields.Int(required=False)
+    
+    min = fields.Int(required=False)
     
 

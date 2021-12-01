@@ -108,7 +108,7 @@ Create a page
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").theme.createPage(themeId=themeId, body: body)
+    result = await client.application("<APPLICATION_ID>").theme.createPage(themeId=themeId, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -173,7 +173,7 @@ Update multiple pages of a theme
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").theme.updateMultiplePages(themeId=themeId, body: body)
+    result = await client.application("<APPLICATION_ID>").theme.updateMultiplePages(themeId=themeId, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -304,7 +304,7 @@ Updates a page
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").theme.updatePage(themeId=themeId, pageValue=pageValue, body: body)
+    result = await client.application("<APPLICATION_ID>").theme.updatePage(themeId=themeId, pageValue=pageValue, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -502,7 +502,7 @@ Add a theme to the theme library
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").theme.addToThemeLibrary(body: body)
+    result = await client.application("<APPLICATION_ID>").theme.addToThemeLibrary(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -566,7 +566,7 @@ Apply a theme
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").theme.applyTheme(body: body)
+    result = await client.application("<APPLICATION_ID>").theme.applyTheme(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -826,7 +826,7 @@ Create a new theme
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").theme.createTheme(body: body)
+    result = await client.application("<APPLICATION_ID>").theme.createTheme(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -1075,7 +1075,7 @@ Update a theme
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").theme.updateTheme(themeId=themeId, body: body)
+    result = await client.application("<APPLICATION_ID>").theme.updateTheme(themeId=themeId, body=body)
     # use result
 except Exception as e:
     print(e)

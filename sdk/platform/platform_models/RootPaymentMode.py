@@ -33,8 +33,8 @@ class RootPaymentMode(BaseSchema):
     
     list = fields.List(fields.Nested(PaymentModeList, required=False), required=False)
     
-    aggregator_name = fields.Str(required=False)
-    
     display_priority = fields.Int(required=False)
+    
+    aggregator_name = fields.Str(required=False)
     
 

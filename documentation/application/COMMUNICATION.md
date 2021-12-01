@@ -83,7 +83,7 @@ Upsert communication consent
 
 ```python
 try:
-    result = await client.communication.upsertCommunicationConsent(body: body)
+    result = await client.communication.upsertCommunicationConsent(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -147,7 +147,7 @@ Upsert push token of a user
 
 ```python
 try:
-    result = await client.communication.upsertAppPushtoken(body: body)
+    result = await client.communication.upsertAppPushtoken(body=body)
     # use result
 except Exception as e:
     print(e)

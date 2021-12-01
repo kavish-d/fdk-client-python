@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class ArticleAssignment1(BaseSchema):
 
     
-    level = fields.Str(required=False)
-    
     strategy = fields.Str(required=False)
+    
+    level = fields.Str(required=False)
     
 

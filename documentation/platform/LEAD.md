@@ -481,7 +481,7 @@ Creates a company level ticket
 
 ```python
 try:
-    result = await client.lead.createTicket(body: body)
+    result = await client.lead.createTicket(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -1426,7 +1426,7 @@ Edits ticket details of a company level ticket
 
 ```python
 try:
-    result = await client.lead.editTicket(id=id, body: body)
+    result = await client.lead.editTicket(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -1937,7 +1937,7 @@ Edits ticket details of a application level ticket
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").lead.editTicket(id=id, body: body)
+    result = await client.application("<APPLICATION_ID>").lead.editTicket(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -2193,7 +2193,7 @@ Create history for specific company level ticket
 
 ```python
 try:
-    result = await client.lead.createHistory(id=id, body: body)
+    result = await client.lead.createHistory(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -2581,7 +2581,7 @@ Submit a response for feeback form against that ticket
 
 ```python
 try:
-    result = await client.lead.submitFeedback(id=id, body: body)
+    result = await client.lead.submitFeedback(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -2663,7 +2663,7 @@ Create history for specific application level ticket
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").lead.createHistory(id=id, body: body)
+    result = await client.application("<APPLICATION_ID>").lead.createHistory(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -3074,7 +3074,7 @@ Edit the given custom form
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").lead.editCustomForm(slug=slug, body: body)
+    result = await client.application("<APPLICATION_ID>").lead.editCustomForm(slug=slug, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -3386,7 +3386,7 @@ Creates a new custom form
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").lead.createCustomForm(body: body)
+    result = await client.application("<APPLICATION_ID>").lead.createCustomForm(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -3772,7 +3772,7 @@ Open a video room.
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").lead.openVideoRoom(body: body)
+    result = await client.application("<APPLICATION_ID>").lead.openVideoRoom(body=body)
     # use result
 except Exception as e:
     print(e)

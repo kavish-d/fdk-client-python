@@ -9,7 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 
-
+from .ProductDownloadItemsData import ProductDownloadItemsData
 
 
 
@@ -23,7 +23,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 from .VerifiedBy import VerifiedBy
 
-from .ProductDownloadItemsData import ProductDownloadItemsData
+
 
 
 class ProductDownloadsItems(BaseSchema):
@@ -31,11 +31,9 @@ class ProductDownloadsItems(BaseSchema):
     
     trigger_on = fields.Str(required=False)
     
-    template_tags = fields.Dict(required=False)
-    
     status = fields.Str(required=False)
     
-    url = fields.Str(required=False)
+    data = fields.Nested(ProductDownloadItemsData, required=False)
     
     task_id = fields.Str(required=False)
     
@@ -45,8 +43,10 @@ class ProductDownloadsItems(BaseSchema):
     
     id = fields.Str(required=False)
     
+    url = fields.Str(required=False)
+    
     created_by = fields.Nested(VerifiedBy, required=False)
     
-    data = fields.Nested(ProductDownloadItemsData, required=False)
+    template_tags = fields.Dict(required=False)
     
 

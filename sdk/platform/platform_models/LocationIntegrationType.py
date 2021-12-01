@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class LocationIntegrationType(BaseSchema):
 
     
-    inventory = fields.Str(required=False)
-    
     order = fields.Str(required=False)
+    
+    inventory = fields.Str(required=False)
     
 

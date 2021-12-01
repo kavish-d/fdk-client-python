@@ -308,7 +308,7 @@ Add items to cart
 
 ```python
 try:
-    result = await client.cart.addItems(i=i, b=b, body: body)
+    result = await client.cart.addItems(i=i, b=b, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -999,7 +999,7 @@ Update items in the cart
 
 ```python
 try:
-    result = await client.cart.updateCart(id=id, i=i, b=b, body: body)
+    result = await client.cart.updateCart(id=id, i=i, b=b, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -1572,7 +1572,7 @@ Apply Coupon
 
 ```python
 try:
-    result = await client.cart.applyCoupon(i=i, b=b, p=p, id=id, body: body)
+    result = await client.cart.applyCoupon(i=i, b=b, p=p, id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -2513,7 +2513,7 @@ Apply reward points at cart
 
 ```python
 try:
-    result = await client.cart.applyRewardPoints(id=id, i=i, b=b, body: body)
+    result = await client.cart.applyRewardPoints(id=id, i=i, b=b, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -2829,7 +2829,7 @@ Add address to an account
 
 ```python
 try:
-    result = await client.cart.addAddress(body: body)
+    result = await client.cart.addAddress(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -2978,7 +2978,7 @@ Update address added to an account
 
 ```python
 try:
-    result = await client.cart.updateAddress(id=id, body: body)
+    result = await client.cart.updateAddress(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -3100,7 +3100,7 @@ Select an address from available addresses
 
 ```python
 try:
-    result = await client.cart.selectAddress(cartId=cartId, i=i, b=b, body: body)
+    result = await client.cart.selectAddress(cartId=cartId, i=i, b=b, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -3414,7 +3414,7 @@ Update cart payment
 
 ```python
 try:
-    result = await client.cart.selectPaymentMode(id=id, body: body)
+    result = await client.cart.selectPaymentMode(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -4510,7 +4510,7 @@ Checkout all items in the cart
 
 ```python
 try:
-    result = await client.cart.checkoutCart(body: body)
+    result = await client.cart.checkoutCart(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -4946,7 +4946,7 @@ Update the cart meta
 
 ```python
 try:
-    result = await client.cart.updateCartMeta(id=id, body: body)
+    result = await client.cart.updateCartMeta(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -5005,7 +5005,7 @@ Generate token for sharing the cart
 
 ```python
 try:
-    result = await client.cart.getCartShareLink(body: body)
+    result = await client.cart.getCartShareLink(body=body)
     # use result
 except Exception as e:
     print(e)

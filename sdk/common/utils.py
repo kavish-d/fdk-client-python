@@ -55,14 +55,17 @@ async def create_query_string(**kwargs):
     return query_string
 
 
-async def get_headers_with_signature(domain: Text, method: Text, url: Text, query_string: Text, headers: Dict, body=""):
+async def get_headers_with_signature(domain: Text, method: Text, url: Text, query_string: Text, headers: Dict, body="",
+                                     exclude_headers=[]):
     """Returns headers with signature."""
     fp_date = datetime.now().strftime("%Y%m%dT%H%M%SZ")
     headers_str = ""
     host = domain.replace("https://", "").replace("http://", "")
     headers["host"] = host
     headers["x-fp-date"] = fp_date
-    authorization = headers.pop("Authorization") if "Authorization" in headers else None
+    excluded_headers = {}
+    for header in exclude_headers:
+        excluded_headers[header] = headers.pop(header) if header in headers else None
     for key, val in headers.items():
         headers_str += f"{key}:{val}\n"
 
@@ -81,6 +84,7 @@ async def get_headers_with_signature(domain: Text, method: Text, url: Text, quer
     request_str = "\n".join([fp_date, hashlib.sha256(request_str.encode()).hexdigest()])
     signature = "v1.1:" + hmac.new("1234567".encode(), request_str.encode(), hashlib.sha256).hexdigest()
     headers["x-fp-signature"] = signature
-    if authorization:
-        headers["Authorization"] = authorization
+    for h_key, h_value in excluded_headers.items():
+        if h_value:
+            headers[h_key] = h_value
     return headers

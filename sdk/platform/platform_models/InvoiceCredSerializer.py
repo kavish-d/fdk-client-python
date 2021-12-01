@@ -15,10 +15,10 @@ from ..platform_models.BaseSchema import BaseSchema
 class InvoiceCredSerializer(BaseSchema):
 
     
-    enabled = fields.Boolean(required=False)
+    username = fields.Str(required=False)
     
     password = fields.Str(required=False)
     
-    username = fields.Str(required=False)
+    enabled = fields.Boolean(required=False)
     
 

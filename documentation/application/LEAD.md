@@ -283,7 +283,7 @@ Create history for specific Ticket
 
 ```python
 try:
-    result = await client.lead.createHistory(id=id, body: body)
+    result = await client.lead.createHistory(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -382,7 +382,7 @@ Create Ticket
 
 ```python
 try:
-    result = await client.lead.createTicket(body: body)
+    result = await client.lead.createTicket(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -746,7 +746,7 @@ Submit Response for a specific Custom Form using it's slug
 
 ```python
 try:
-    result = await client.lead.submitCustomForm(slug=slug, body: body)
+    result = await client.lead.submitCustomForm(slug=slug, body=body)
     # use result
 except Exception as e:
     print(e)

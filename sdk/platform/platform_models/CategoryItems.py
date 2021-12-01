@@ -9,13 +9,13 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 
-from .ActionPage import ActionPage
-
 from .ImageUrls import ImageUrls
 
 from .Child import Child
 
 
+
+from .ActionPage import ActionPage
 
 
 class CategoryItems(BaseSchema):
@@ -23,14 +23,14 @@ class CategoryItems(BaseSchema):
     
     uid = fields.Int(required=False)
     
-    name = fields.Str(required=False)
-    
-    action = fields.Nested(ActionPage, required=False)
+    slug = fields.Str(required=False)
     
     banners = fields.Nested(ImageUrls, required=False)
     
     childs = fields.List(fields.Nested(Child, required=False), required=False)
     
-    slug = fields.Str(required=False)
+    name = fields.Str(required=False)
+    
+    action = fields.Nested(ActionPage, required=False)
     
 

@@ -23,11 +23,11 @@ from ..platform_models.BaseSchema import BaseSchema
 class InventoryExportJob(BaseSchema):
 
     
+    request_params = fields.Dict(required=False)
+    
     trigger_on = fields.Str(required=False)
     
     status = fields.Str(required=False)
-    
-    url = fields.Str(required=False)
     
     task_id = fields.Str(required=False)
     
@@ -35,6 +35,6 @@ class InventoryExportJob(BaseSchema):
     
     completed_on = fields.Str(required=False)
     
-    request_params = fields.Dict(required=False)
+    url = fields.Str(required=False)
     
 

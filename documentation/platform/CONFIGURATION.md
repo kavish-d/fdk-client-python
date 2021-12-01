@@ -141,7 +141,7 @@ Update build config for next build
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").configuration.updateBuildConfig(platformType=platformType, body: body)
+    result = await client.application("<APPLICATION_ID>").configuration.updateBuildConfig(platformType=platformType, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -436,7 +436,7 @@ Update features of application
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").configuration.updateAppFeatures(body: body)
+    result = await client.application("<APPLICATION_ID>").configuration.updateAppFeatures(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -668,7 +668,7 @@ Add or update application's basic details
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").configuration.updateAppBasicDetails(body: body)
+    result = await client.application("<APPLICATION_ID>").configuration.updateAppBasicDetails(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -929,7 +929,7 @@ Get application information
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").configuration.updateAppContactInfo(body: body)
+    result = await client.application("<APPLICATION_ID>").configuration.updateAppContactInfo(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -1223,7 +1223,7 @@ Add social tokens
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").configuration.updateAppApiTokens(body: body)
+    result = await client.application("<APPLICATION_ID>").configuration.updateAppApiTokens(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -1773,7 +1773,7 @@ Update application configuration
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").configuration.updateInventoryConfig(body: body)
+    result = await client.application("<APPLICATION_ID>").configuration.updateInventoryConfig(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -2014,7 +2014,7 @@ Partially update application configuration
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").configuration.partiallyUpdateInventoryConfig(body: body)
+    result = await client.application("<APPLICATION_ID>").configuration.partiallyUpdateInventoryConfig(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -2323,7 +2323,7 @@ Add initial application supported currency
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").configuration.updateAppCurrencyConfig(body: body)
+    result = await client.application("<APPLICATION_ID>").configuration.updateAppCurrencyConfig(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -2465,7 +2465,7 @@ Get ordering store by filter
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").configuration.getOrderingStoresByFilter(pageNo=pageNo, pageSize=pageSize, body: body)
+    result = await client.application("<APPLICATION_ID>").configuration.getOrderingStoresByFilter(pageNo=pageNo, pageSize=pageSize, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -2607,7 +2607,7 @@ Add/Update ordering store config
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").configuration.updateOrderingStoreConfig(body: body)
+    result = await client.application("<APPLICATION_ID>").configuration.updateOrderingStoreConfig(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -2809,7 +2809,7 @@ Add new domain to application
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").configuration.addDomain(body: body)
+    result = await client.application("<APPLICATION_ID>").configuration.addDomain(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -2932,7 +2932,7 @@ Change domain type
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").configuration.changeDomainType(body: body)
+    result = await client.application("<APPLICATION_ID>").configuration.changeDomainType(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -3012,7 +3012,7 @@ Get domain connected status.
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").configuration.getDomainStatus(body: body)
+    result = await client.application("<APPLICATION_ID>").configuration.getDomainStatus(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -3084,7 +3084,7 @@ Create application
 
 ```python
 try:
-    result = await client.configuration.createApplication(body: body)
+    result = await client.configuration.createApplication(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -3316,7 +3316,7 @@ Check domain availibility before linking to application
 
 ```python
 try:
-    result = await client.configuration.getDomainAvailibility(body: body)
+    result = await client.configuration.getDomainAvailibility(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -4049,7 +4049,7 @@ Update a store level opt-in for integration
 
 ```python
 try:
-    result = await client.configuration.updateLevelUidIntegration(id=id, level=level, uid=uid, body: body)
+    result = await client.configuration.updateLevelUidIntegration(id=id, level=level, uid=uid, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -4201,7 +4201,7 @@ Update a store level opt-in for integration
 
 ```python
 try:
-    result = await client.configuration.updateLevelIntegration(id=id, level=level, body: body)
+    result = await client.configuration.updateLevelIntegration(id=id, level=level, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -4350,7 +4350,7 @@ Get company by brand uids
 
 ```python
 try:
-    result = await client.configuration.getCompanyByBrands(pageNo=pageNo, pageSize=pageSize, body: body)
+    result = await client.configuration.getCompanyByBrands(pageNo=pageNo, pageSize=pageSize, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -4430,7 +4430,7 @@ Get stores by brand uids
 
 ```python
 try:
-    result = await client.configuration.getStoreByBrands(pageNo=pageNo, pageSize=pageSize, body: body)
+    result = await client.configuration.getStoreByBrands(pageNo=pageNo, pageSize=pageSize, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -4754,7 +4754,7 @@ Opt out company or store from other seller application
 
 ```python
 try:
-    result = await client.configuration.optOutFromApplication(id=id, body: body)
+    result = await client.configuration.optOutFromApplication(id=id, body=body)
     # use result
 except Exception as e:
     print(e)

@@ -30,7 +30,7 @@ This operation initiates upload and returns storage link which is valid for 30 M
 
 ```python
 try:
-    result = await client.filestorage.startUpload(namespace=namespace, body: body)
+    result = await client.filestorage.startUpload(namespace=namespace, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -105,7 +105,7 @@ This will complete the upload process. After successfully uploading file, you ca
 
 ```python
 try:
-    result = await client.filestorage.completeUpload(namespace=namespace, body: body)
+    result = await client.filestorage.completeUpload(namespace=namespace, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -180,7 +180,7 @@ This operation initiates upload and returns storage link which is valid for 30 M
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").filestorage.appStartUpload(namespace=namespace, body: body)
+    result = await client.application("<APPLICATION_ID>").filestorage.appStartUpload(namespace=namespace, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -255,7 +255,7 @@ This will complete the upload process. After successfully uploading file, you ca
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").filestorage.appCompleteUpload(namespace=namespace, body: body)
+    result = await client.application("<APPLICATION_ID>").filestorage.appCompleteUpload(namespace=namespace, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -330,7 +330,7 @@ Explain here
 
 ```python
 try:
-    result = await client.filestorage.getSignUrls(body: body)
+    result = await client.filestorage.getSignUrls(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -386,7 +386,7 @@ Copy Files
 
 ```python
 try:
-    result = await client.filestorage.copyFiles(sync=sync, body: body)
+    result = await client.filestorage.copyFiles(sync=sync, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -470,7 +470,7 @@ Copy Files
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").filestorage.appCopyFiles(sync=sync, body: body)
+    result = await client.application("<APPLICATION_ID>").filestorage.appCopyFiles(sync=sync, body=body)
     # use result
 except Exception as e:
     print(e)

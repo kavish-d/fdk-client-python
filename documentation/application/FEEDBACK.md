@@ -46,7 +46,7 @@ Post a new abuse request
 
 ```python
 try:
-    result = await client.feedback.createAbuseReport(body: body)
+    result = await client.feedback.createAbuseReport(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -102,7 +102,7 @@ Update abuse details
 
 ```python
 try:
-    result = await client.feedback.updateAbuseReport(body: body)
+    result = await client.feedback.updateAbuseReport(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -277,7 +277,7 @@ Add a new attribute request
 
 ```python
 try:
-    result = await client.feedback.createAttribute(body: body)
+    result = await client.feedback.createAttribute(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -390,7 +390,7 @@ Update details of an attribute
 
 ```python
 try:
-    result = await client.feedback.updateAttribute(slug=slug, body: body)
+    result = await client.feedback.updateAttribute(slug=slug, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -447,7 +447,7 @@ Post a new comment
 
 ```python
 try:
-    result = await client.feedback.createComment(body: body)
+    result = await client.feedback.createComment(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -503,7 +503,7 @@ Update the status of a comment
 
 ```python
 try:
-    result = await client.feedback.updateComment(body: body)
+    result = await client.feedback.updateComment(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -736,7 +736,7 @@ Add Media
 
 ```python
 try:
-    result = await client.feedback.createMedia(body: body)
+    result = await client.feedback.createMedia(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -792,7 +792,7 @@ Update Media
 
 ```python
 try:
-    result = await client.feedback.updateMedia(body: body)
+    result = await client.feedback.updateMedia(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -971,7 +971,7 @@ Add customer reviews
 
 ```python
 try:
-    result = await client.feedback.createReview(body: body)
+    result = await client.feedback.createReview(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -1027,7 +1027,7 @@ Update customer reviews
 
 ```python
 try:
-    result = await client.feedback.updateReview(body: body)
+    result = await client.feedback.updateReview(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -1211,7 +1211,7 @@ Create a new question
 
 ```python
 try:
-    result = await client.feedback.createQuestion(body: body)
+    result = await client.feedback.createQuestion(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -1267,7 +1267,7 @@ Update a question
 
 ```python
 try:
-    result = await client.feedback.updateQuestion(body: body)
+    result = await client.feedback.updateQuestion(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -1446,7 +1446,7 @@ Create a new vote
 
 ```python
 try:
-    result = await client.feedback.createVote(body: body)
+    result = await client.feedback.createVote(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -1502,7 +1502,7 @@ Update a vote
 
 ```python
 try:
-    result = await client.feedback.updateVote(body: body)
+    result = await client.feedback.updateVote(body=body)
     # use result
 except Exception as e:
     print(e)

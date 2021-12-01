@@ -5,9 +5,9 @@ from marshmallow.validate import OneOf
 from ..platform_enums import *
 from ..platform_models.BaseSchema import BaseSchema
 
+
+
 from .Logo import Logo
-
-
 
 
 
@@ -15,9 +15,9 @@ from .Logo import Logo
 class Brand(BaseSchema):
 
     
-    logo = fields.Nested(Logo, required=False)
-    
     name = fields.Str(required=False)
+    
+    logo = fields.Nested(Logo, required=False)
     
     uid = fields.Int(required=False)
     

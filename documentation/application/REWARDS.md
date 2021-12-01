@@ -27,7 +27,7 @@ Get the eligibility of reward points on a product
 
 ```python
 try:
-    result = await client.rewards.getPointsOnProduct(body: body)
+    result = await client.rewards.getPointsOnProduct(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -140,7 +140,7 @@ Calculates the discount on order-amount
 
 ```python
 try:
-    result = await client.rewards.getOrderDiscount(body: body)
+    result = await client.rewards.getOrderDiscount(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -358,7 +358,7 @@ Redeems a referral code and credits reward points to users
 
 ```python
 try:
-    result = await client.rewards.redeemReferralCode(body: body)
+    result = await client.rewards.redeemReferralCode(body=body)
     # use result
 except Exception as e:
     print(e)

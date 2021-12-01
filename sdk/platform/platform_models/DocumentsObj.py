@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class DocumentsObj(BaseSchema):
 
     
-    pending = fields.Int(required=False)
-    
     verified = fields.Int(required=False)
+    
+    pending = fields.Int(required=False)
     
 

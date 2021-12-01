@@ -194,7 +194,7 @@ Create user
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").user.createUser(body: body)
+    result = await client.application("<APPLICATION_ID>").user.createUser(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -292,7 +292,7 @@ Update user
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").user.updateUser(userId=userId, body: body)
+    result = await client.application("<APPLICATION_ID>").user.updateUser(userId=userId, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -391,7 +391,7 @@ Create user session
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").user.createUserSession(body: body)
+    result = await client.application("<APPLICATION_ID>").user.createUserSession(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -572,7 +572,7 @@ Update platform configurations
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").user.updatePlatformConfig(body: body)
+    result = await client.application("<APPLICATION_ID>").user.updatePlatformConfig(body=body)
     # use result
 except Exception as e:
     print(e)

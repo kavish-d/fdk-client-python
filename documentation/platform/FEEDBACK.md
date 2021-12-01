@@ -158,7 +158,7 @@ update approve details
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").feedback.updateApprove(reviewId=reviewId, body: body)
+    result = await client.application("<APPLICATION_ID>").feedback.updateApprove(reviewId=reviewId, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -330,7 +330,7 @@ Create a new template
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").feedback.createTemplate(body: body)
+    result = await client.application("<APPLICATION_ID>").feedback.createTemplate(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -446,7 +446,7 @@ Update a template's status
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").feedback.updateTemplate(id=id, body: body)
+    result = await client.application("<APPLICATION_ID>").feedback.updateTemplate(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -503,7 +503,7 @@ Update a template's status
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").feedback.updateTemplateStatus(id=id, body: body)
+    result = await client.application("<APPLICATION_ID>").feedback.updateTemplateStatus(id=id, body=body)
     # use result
 except Exception as e:
     print(e)

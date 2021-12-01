@@ -144,7 +144,7 @@ Create new coupon
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").cart.createCoupon(body: body)
+    result = await client.application("<APPLICATION_ID>").cart.createCoupon(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -400,7 +400,7 @@ Update existing coupon configuration
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").cart.updateCoupon(id=id, body: body)
+    result = await client.application("<APPLICATION_ID>").cart.updateCoupon(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -460,7 +460,7 @@ Update coupon archive state and schedule
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").cart.updateCouponPartially(id=id, body: body)
+    result = await client.application("<APPLICATION_ID>").cart.updateCouponPartially(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -541,7 +541,7 @@ Fetch Cart Details
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").cart.fetchAndvalidateCartItems(body: body)
+    result = await client.application("<APPLICATION_ID>").cart.fetchAndvalidateCartItems(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -871,7 +871,7 @@ Check Pincode Serviceability
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").cart.checkCartServiceability(body: body)
+    result = await client.application("<APPLICATION_ID>").cart.checkCartServiceability(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -1457,7 +1457,7 @@ Create Fynd order with cart details
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").cart.checkoutCart(body: body)
+    result = await client.application("<APPLICATION_ID>").cart.checkoutCart(body=body)
     # use result
 except Exception as e:
     print(e)

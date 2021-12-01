@@ -22,7 +22,7 @@ Get TAT of a product
 
 ```python
 try:
-    result = await client.logistic.getTatProduct(body: body)
+    result = await client.logistic.getTatProduct(body=body)
     # use result
 except Exception as e:
     print(e)

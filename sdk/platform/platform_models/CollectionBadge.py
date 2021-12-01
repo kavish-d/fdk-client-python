@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class CollectionBadge(BaseSchema):
 
     
-    text = fields.Str(required=False)
-    
     color = fields.Str(required=False)
+    
+    text = fields.Str(required=False)
     
 

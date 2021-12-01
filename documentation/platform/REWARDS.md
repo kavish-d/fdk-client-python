@@ -88,7 +88,7 @@ Adds a new giveaway.
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").rewards.createGiveaway(body: body)
+    result = await client.application("<APPLICATION_ID>").rewards.createGiveaway(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -201,7 +201,7 @@ Updates the giveaway by it's ID.
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").rewards.updateGiveaway(id=id, body: body)
+    result = await client.application("<APPLICATION_ID>").rewards.updateGiveaway(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -368,7 +368,7 @@ Updates the offer by name.
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").rewards.updateOfferByName(name=name, body: body)
+    result = await client.application("<APPLICATION_ID>").rewards.updateOfferByName(name=name, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -482,7 +482,7 @@ Update User status
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").rewards.updateUserStatus(userId=userId, body: body)
+    result = await client.application("<APPLICATION_ID>").rewards.updateUserStatus(userId=userId, body=body)
     # use result
 except Exception as e:
     print(e)

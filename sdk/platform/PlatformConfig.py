@@ -16,4 +16,4 @@ class PlatformConfig:
 
     async def getAccessToken(self):
         token = await self.oauthClient.getAccessToken()
-        return token.access_token
+        return token

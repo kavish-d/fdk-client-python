@@ -15,10 +15,10 @@ from .CategoryMappingValues import CategoryMappingValues
 class CategoryMapping(BaseSchema):
 
     
+    google = fields.Nested(CategoryMappingValues, required=False)
+    
     facebook = fields.Nested(CategoryMappingValues, required=False)
     
     ajio = fields.Nested(CategoryMappingValues, required=False)
-    
-    google = fields.Nested(CategoryMappingValues, required=False)
     
 

@@ -1222,7 +1222,7 @@ Get an Ordering Store signed cookie on selection of ordering store.
 
 ```python
 try:
-    result = await client.configuration.getOrderingStoreCookie(body: body)
+    result = await client.configuration.getOrderingStoreCookie(body=body)
     # use result
 except Exception as e:
     print(e)

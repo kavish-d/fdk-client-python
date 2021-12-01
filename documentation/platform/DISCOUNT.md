@@ -95,7 +95,7 @@ Create Discount.
 
 ```python
 try:
-    result = await client.discount.createDiscount(body: body)
+    result = await client.discount.createDiscount(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -208,7 +208,7 @@ Create Discount.
 
 ```python
 try:
-    result = await client.discount.updateDiscount(id=id, body: body)
+    result = await client.discount.updateDiscount(id=id, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -265,7 +265,7 @@ Validate File.
 
 ```python
 try:
-    result = await client.discount.validateDiscountFile(discount=discount, body: body)
+    result = await client.discount.validateDiscountFile(discount=discount, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -322,7 +322,7 @@ Validate File.
 
 ```python
 try:
-    result = await client.discount.downloadDiscountFile(type=type, body: body)
+    result = await client.discount.downloadDiscountFile(type=type, body=body)
     # use result
 except Exception as e:
     print(e)

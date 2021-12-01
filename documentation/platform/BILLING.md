@@ -31,7 +31,7 @@ Create subscription charge
 
 ```python
 try:
-    result = await client.billing.createSubscriptionCharge(extensionId=extensionId, body: body)
+    result = await client.billing.createSubscriptionCharge(extensionId=extensionId, body=body)
     # use result
 except Exception as e:
     print(e)
@@ -389,7 +389,7 @@ Upsert subscription customer detail
 
 ```python
 try:
-    result = await client.billing.upsertCustomerDetail(body: body)
+    result = await client.billing.upsertCustomerDetail(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -584,7 +584,7 @@ Activate subscription
 
 ```python
 try:
-    result = await client.billing.activateSubscriptionPlan(body: body)
+    result = await client.billing.activateSubscriptionPlan(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -648,7 +648,7 @@ Cancel subscription
 
 ```python
 try:
-    result = await client.billing.cancelSubscriptionPlan(body: body)
+    result = await client.billing.cancelSubscriptionPlan(body=body)
     # use result
 except Exception as e:
     print(e)

@@ -24,7 +24,7 @@ Create short link
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").share.createShortLink(body: body)
+    result = await client.application("<APPLICATION_ID>").share.createShortLink(body=body)
     # use result
 except Exception as e:
     print(e)
@@ -323,7 +323,7 @@ Update short link by id
 
 ```python
 try:
-    result = await client.application("<APPLICATION_ID>").share.updateShortLinkById(id=id, body: body)
+    result = await client.application("<APPLICATION_ID>").share.updateShortLinkById(id=id, body=body)
     # use result
 except Exception as e:
     print(e)

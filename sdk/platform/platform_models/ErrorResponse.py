@@ -17,12 +17,12 @@ from ..platform_models.BaseSchema import BaseSchema
 class ErrorResponse(BaseSchema):
 
     
-    message = fields.Str(required=False)
-    
     code = fields.Str(required=False)
     
-    meta = fields.Dict(required=False)
+    message = fields.Str(required=False)
     
     status = fields.Int(required=False)
+    
+    meta = fields.Dict(required=False)
     
 

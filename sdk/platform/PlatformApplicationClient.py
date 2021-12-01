@@ -6267,33 +6267,6 @@ class Catalog:
         self.applicationId = applicationId
     # async def ():
     
-    async def deleteSearchKeywords(self, company_id=None, application_id=None, id=None, body=""):
-        """Delete a keywords by it's id. Returns an object that tells whether the keywords was deleted successfully
-        :param company_id : A `company_id` is a unique identifier for a particular seller account. : type string
-        :param application_id : A `application_id` is a unique identifier for a particular sale channel. : type string
-        :param id : A `id` is a unique identifier for a particular detail. Pass the `id` of the keywords which you want to delete. : type string
-        """
-        payload = {}
-        
-        if company_id:
-            payload["company_id"] = company_id
-        
-        if application_id:
-            payload["application_id"] = application_id
-        
-        if id:
-            payload["id"] = id
-        
-
-        # Parameter validation
-        schema = CatalogValidator.deleteSearchKeywords()
-        schema.dump(schema.load(payload))
-        
-
-        url_with_params = await create_url_with_params(self._conf.domain, f"/service/platform/catalog/v1.0/company/{self._conf.companyId}/application/{self.applicationId}/search/keyword/{id}/", """{"required":[{"in":"path","name":"company_id","description":"A `company_id` is a unique identifier for a particular seller account.","schema":{"type":"string"},"required":true},{"in":"path","name":"application_id","description":"A `application_id` is a unique identifier for a particular sale channel.","schema":{"type":"string"},"required":true},{"in":"path","name":"id","description":"A `id` is a unique identifier for a particular detail. Pass the `id` of the keywords which you want to delete.","schema":{"type":"string"},"required":true}],"optional":[],"query":[],"headers":[]}""", company_id=company_id, application_id=application_id, id=id)
-        query_string = await create_query_string(company_id=company_id, application_id=application_id, id=id)
-        return await AiohttpHelper().aiohttp_request("DELETE", url_with_params, headers=await get_headers_with_signature(self._conf.domain, "delete", await create_url_without_domain(f"/service/platform/catalog/v1.0/company/{self._conf.companyId}/application/{self.applicationId}/search/keyword/{id}/", company_id=company_id, application_id=application_id, id=id), query_string, {}))
-    
     async def getSearchKeywords(self, company_id=None, application_id=None, id=None, body=""):
         """Get the details of a words by its `id`. If successful, returns a Collection resource in the response body specified in `GetSearchWordsDetailResponseSchema`
         :param company_id : A `company_id` is a unique identifier for a particular seller account. : type string
@@ -6320,6 +6293,33 @@ class Catalog:
         url_with_params = await create_url_with_params(self._conf.domain, f"/service/platform/catalog/v1.0/company/{self._conf.companyId}/application/{self.applicationId}/search/keyword/{id}/", """{"required":[{"in":"path","name":"company_id","description":"A `company_id` is a unique identifier for a particular seller account.","schema":{"type":"string"},"required":true},{"in":"path","name":"application_id","description":"A `application_id` is a unique identifier for a particular sale channel.","schema":{"type":"string"},"required":true},{"in":"path","name":"id","description":"A `id` is a unique identifier for a particular detail. Pass the `id` of the keywords which you want to retrieve.","schema":{"type":"string"},"required":true}],"optional":[],"query":[],"headers":[]}""", company_id=company_id, application_id=application_id, id=id)
         query_string = await create_query_string(company_id=company_id, application_id=application_id, id=id)
         return await AiohttpHelper().aiohttp_request("GET", url_with_params, headers=await get_headers_with_signature(self._conf.domain, "get", await create_url_without_domain(f"/service/platform/catalog/v1.0/company/{self._conf.companyId}/application/{self.applicationId}/search/keyword/{id}/", company_id=company_id, application_id=application_id, id=id), query_string, {}))
+    
+    async def deleteSearchKeywords(self, company_id=None, application_id=None, id=None, body=""):
+        """Delete a keywords by it's id. Returns an object that tells whether the keywords was deleted successfully
+        :param company_id : A `company_id` is a unique identifier for a particular seller account. : type string
+        :param application_id : A `application_id` is a unique identifier for a particular sale channel. : type string
+        :param id : A `id` is a unique identifier for a particular detail. Pass the `id` of the keywords which you want to delete. : type string
+        """
+        payload = {}
+        
+        if company_id:
+            payload["company_id"] = company_id
+        
+        if application_id:
+            payload["application_id"] = application_id
+        
+        if id:
+            payload["id"] = id
+        
+
+        # Parameter validation
+        schema = CatalogValidator.deleteSearchKeywords()
+        schema.dump(schema.load(payload))
+        
+
+        url_with_params = await create_url_with_params(self._conf.domain, f"/service/platform/catalog/v1.0/company/{self._conf.companyId}/application/{self.applicationId}/search/keyword/{id}/", """{"required":[{"in":"path","name":"company_id","description":"A `company_id` is a unique identifier for a particular seller account.","schema":{"type":"string"},"required":true},{"in":"path","name":"application_id","description":"A `application_id` is a unique identifier for a particular sale channel.","schema":{"type":"string"},"required":true},{"in":"path","name":"id","description":"A `id` is a unique identifier for a particular detail. Pass the `id` of the keywords which you want to delete.","schema":{"type":"string"},"required":true}],"optional":[],"query":[],"headers":[]}""", company_id=company_id, application_id=application_id, id=id)
+        query_string = await create_query_string(company_id=company_id, application_id=application_id, id=id)
+        return await AiohttpHelper().aiohttp_request("DELETE", url_with_params, headers=await get_headers_with_signature(self._conf.domain, "delete", await create_url_without_domain(f"/service/platform/catalog/v1.0/company/{self._conf.companyId}/application/{self.applicationId}/search/keyword/{id}/", company_id=company_id, application_id=application_id, id=id), query_string, {}))
     
     async def updateSearchKeywords(self, company_id=None, application_id=None, id=None, body=""):
         """Update Search Keyword by its id. On successful request, returns the updated collection
@@ -6404,33 +6404,6 @@ class Catalog:
         query_string = await create_query_string(company_id=company_id, application_id=application_id)
         return await AiohttpHelper().aiohttp_request("POST", url_with_params, headers=await get_headers_with_signature(self._conf.domain, "post", await create_url_without_domain(f"/service/platform/catalog/v1.0/company/{self._conf.companyId}/application/{self.applicationId}/search/keyword/", company_id=company_id, application_id=application_id), query_string, {}))
     
-    async def deleteAutocompleteKeyword(self, company_id=None, application_id=None, id=None, body=""):
-        """Delete a keywords by it's id. Returns an object that tells whether the keywords was deleted successfully
-        :param company_id : A `company_id` is a unique identifier for a particular seller account. : type string
-        :param application_id : A `application_id` is a unique identifier for a particular sale channel. : type string
-        :param id : A `id` is a unique identifier for a particular detail. Pass the `id` of the keywords which you want to delete. : type string
-        """
-        payload = {}
-        
-        if company_id:
-            payload["company_id"] = company_id
-        
-        if application_id:
-            payload["application_id"] = application_id
-        
-        if id:
-            payload["id"] = id
-        
-
-        # Parameter validation
-        schema = CatalogValidator.deleteAutocompleteKeyword()
-        schema.dump(schema.load(payload))
-        
-
-        url_with_params = await create_url_with_params(self._conf.domain, f"/service/platform/catalog/v1.0/company/{self._conf.companyId}/application/{self.applicationId}/search/autocomplete/{id}/", """{"required":[{"in":"path","name":"company_id","description":"A `company_id` is a unique identifier for a particular seller account.","schema":{"type":"string"},"required":true},{"in":"path","name":"application_id","description":"A `application_id` is a unique identifier for a particular sale channel.","schema":{"type":"string"},"required":true},{"in":"path","name":"id","description":"A `id` is a unique identifier for a particular detail. Pass the `id` of the keywords which you want to delete.","schema":{"type":"string"},"required":true}],"optional":[],"query":[],"headers":[]}""", company_id=company_id, application_id=application_id, id=id)
-        query_string = await create_query_string(company_id=company_id, application_id=application_id, id=id)
-        return await AiohttpHelper().aiohttp_request("DELETE", url_with_params, headers=await get_headers_with_signature(self._conf.domain, "delete", await create_url_without_domain(f"/service/platform/catalog/v1.0/company/{self._conf.companyId}/application/{self.applicationId}/search/autocomplete/{id}/", company_id=company_id, application_id=application_id, id=id), query_string, {}))
-    
     async def getAutocompleteKeywordDetail(self, company_id=None, application_id=None, id=None, body=""):
         """Get the details of a words by its `id`. If successful, returns a keywords resource in the response body specified in `GetAutocompleteWordsResponseSchema`
         :param company_id : A `company_id` is a unique identifier for a particular seller account. : type string
@@ -6457,6 +6430,33 @@ class Catalog:
         url_with_params = await create_url_with_params(self._conf.domain, f"/service/platform/catalog/v1.0/company/{self._conf.companyId}/application/{self.applicationId}/search/autocomplete/{id}/", """{"required":[{"in":"path","name":"company_id","description":"A `company_id` is a unique identifier for a particular seller account.","schema":{"type":"string"},"required":true},{"in":"path","name":"application_id","description":"A `application_id` is a unique identifier for a particular sale channel.","schema":{"type":"string"},"required":true},{"in":"path","name":"id","description":"A `id` is a unique identifier for a particular detail. Pass the `id` of the keywords which you want to retrieve.","schema":{"type":"string"},"required":true}],"optional":[],"query":[],"headers":[]}""", company_id=company_id, application_id=application_id, id=id)
         query_string = await create_query_string(company_id=company_id, application_id=application_id, id=id)
         return await AiohttpHelper().aiohttp_request("GET", url_with_params, headers=await get_headers_with_signature(self._conf.domain, "get", await create_url_without_domain(f"/service/platform/catalog/v1.0/company/{self._conf.companyId}/application/{self.applicationId}/search/autocomplete/{id}/", company_id=company_id, application_id=application_id, id=id), query_string, {}))
+    
+    async def deleteAutocompleteKeyword(self, company_id=None, application_id=None, id=None, body=""):
+        """Delete a keywords by it's id. Returns an object that tells whether the keywords was deleted successfully
+        :param company_id : A `company_id` is a unique identifier for a particular seller account. : type string
+        :param application_id : A `application_id` is a unique identifier for a particular sale channel. : type string
+        :param id : A `id` is a unique identifier for a particular detail. Pass the `id` of the keywords which you want to delete. : type string
+        """
+        payload = {}
+        
+        if company_id:
+            payload["company_id"] = company_id
+        
+        if application_id:
+            payload["application_id"] = application_id
+        
+        if id:
+            payload["id"] = id
+        
+
+        # Parameter validation
+        schema = CatalogValidator.deleteAutocompleteKeyword()
+        schema.dump(schema.load(payload))
+        
+
+        url_with_params = await create_url_with_params(self._conf.domain, f"/service/platform/catalog/v1.0/company/{self._conf.companyId}/application/{self.applicationId}/search/autocomplete/{id}/", """{"required":[{"in":"path","name":"company_id","description":"A `company_id` is a unique identifier for a particular seller account.","schema":{"type":"string"},"required":true},{"in":"path","name":"application_id","description":"A `application_id` is a unique identifier for a particular sale channel.","schema":{"type":"string"},"required":true},{"in":"path","name":"id","description":"A `id` is a unique identifier for a particular detail. Pass the `id` of the keywords which you want to delete.","schema":{"type":"string"},"required":true}],"optional":[],"query":[],"headers":[]}""", company_id=company_id, application_id=application_id, id=id)
+        query_string = await create_query_string(company_id=company_id, application_id=application_id, id=id)
+        return await AiohttpHelper().aiohttp_request("DELETE", url_with_params, headers=await get_headers_with_signature(self._conf.domain, "delete", await create_url_without_domain(f"/service/platform/catalog/v1.0/company/{self._conf.companyId}/application/{self.applicationId}/search/autocomplete/{id}/", company_id=company_id, application_id=application_id, id=id), query_string, {}))
     
     async def updateAutocompleteKeyword(self, company_id=None, application_id=None, id=None, body=""):
         """Update a mapping by it's id. On successful request, returns the updated Keyword mapping
@@ -7803,29 +7803,6 @@ class Catalog:
         query_string = await create_query_string(company_id=company_id)
         return await AiohttpHelper().aiohttp_request("POST", url_with_params, headers=await get_headers_with_signature(self._conf.domain, "post", await create_url_without_domain(f"/service/platform/catalog/v1.0/company/{self._conf.companyId}/products/", company_id=company_id), query_string, {}))
     
-    async def deleteProduct(self, company_id=None, item_id=None, body=""):
-        """This API allows to delete product.
-        :param company_id : Company Id of the company associated to product that is to be deleted. : type string
-        :param item_id : Id of the product to be updated. : type integer
-        """
-        payload = {}
-        
-        if company_id:
-            payload["company_id"] = company_id
-        
-        if item_id:
-            payload["item_id"] = item_id
-        
-
-        # Parameter validation
-        schema = CatalogValidator.deleteProduct()
-        schema.dump(schema.load(payload))
-        
-
-        url_with_params = await create_url_with_params(self._conf.domain, f"/service/platform/catalog/v1.0/company/{self._conf.companyId}/products/{item_id}/", """{"required":[{"in":"path","name":"company_id","description":"Company Id of the company associated to product that is to be deleted.","schema":{"type":"string"},"required":true},{"in":"path","name":"item_id","description":"Id of the product to be updated.","schema":{"type":"integer"},"required":true}],"optional":[],"query":[],"headers":[]}""", company_id=company_id, item_id=item_id)
-        query_string = await create_query_string(company_id=company_id, item_id=item_id)
-        return await AiohttpHelper().aiohttp_request("DELETE", url_with_params, headers=await get_headers_with_signature(self._conf.domain, "delete", await create_url_without_domain(f"/service/platform/catalog/v1.0/company/{self._conf.companyId}/products/{item_id}/", company_id=company_id, item_id=item_id), query_string, {}))
-    
     async def getProduct(self, item_code=None, company_id=None, item_id=None, brand_uid=None, body=""):
         """This API helps to get data associated to a particular product.
         :param item_code : Item code of the product. : type string
@@ -7856,6 +7833,29 @@ class Catalog:
         url_with_params = await create_url_with_params(self._conf.domain, f"/service/platform/catalog/v1.0/company/{self._conf.companyId}/products/{item_id}/", """{"required":[{"in":"path","name":"company_id","description":"Company Id of the product.","schema":{"type":"integer"},"required":true},{"in":"path","name":"item_id","description":"Item Id of the product.","schema":{"type":"integer"},"required":true}],"optional":[{"in":"query","name":"item_code","description":"Item code of the product.","schema":{"type":"string"},"required":false},{"in":"query","name":"brand_uid","description":"Brand Id of the product.","schema":{"type":"integer"},"required":false}],"query":[{"in":"query","name":"item_code","description":"Item code of the product.","schema":{"type":"string"},"required":false},{"in":"query","name":"brand_uid","description":"Brand Id of the product.","schema":{"type":"integer"},"required":false}],"headers":[]}""", item_code=item_code, company_id=company_id, item_id=item_id, brand_uid=brand_uid)
         query_string = await create_query_string(item_code=item_code, company_id=company_id, item_id=item_id, brand_uid=brand_uid)
         return await AiohttpHelper().aiohttp_request("GET", url_with_params, headers=await get_headers_with_signature(self._conf.domain, "get", await create_url_without_domain(f"/service/platform/catalog/v1.0/company/{self._conf.companyId}/products/{item_id}/", item_code=item_code, company_id=company_id, item_id=item_id, brand_uid=brand_uid), query_string, {}))
+    
+    async def deleteProduct(self, company_id=None, item_id=None, body=""):
+        """This API allows to delete product.
+        :param company_id : Company Id of the company associated to product that is to be deleted. : type string
+        :param item_id : Id of the product to be updated. : type integer
+        """
+        payload = {}
+        
+        if company_id:
+            payload["company_id"] = company_id
+        
+        if item_id:
+            payload["item_id"] = item_id
+        
+
+        # Parameter validation
+        schema = CatalogValidator.deleteProduct()
+        schema.dump(schema.load(payload))
+        
+
+        url_with_params = await create_url_with_params(self._conf.domain, f"/service/platform/catalog/v1.0/company/{self._conf.companyId}/products/{item_id}/", """{"required":[{"in":"path","name":"company_id","description":"Company Id of the company associated to product that is to be deleted.","schema":{"type":"string"},"required":true},{"in":"path","name":"item_id","description":"Id of the product to be updated.","schema":{"type":"integer"},"required":true}],"optional":[],"query":[],"headers":[]}""", company_id=company_id, item_id=item_id)
+        query_string = await create_query_string(company_id=company_id, item_id=item_id)
+        return await AiohttpHelper().aiohttp_request("DELETE", url_with_params, headers=await get_headers_with_signature(self._conf.domain, "delete", await create_url_without_domain(f"/service/platform/catalog/v1.0/company/{self._conf.companyId}/products/{item_id}/", company_id=company_id, item_id=item_id), query_string, {}))
     
     async def editProduct(self, company_id=None, item_id=None, body=""):
         """This API allows to edit product.

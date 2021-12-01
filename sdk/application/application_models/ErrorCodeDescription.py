@@ -15,9 +15,9 @@ from ..application_models.BaseSchema import BaseSchema
 class ErrorCodeDescription(BaseSchema):
 
     
-    code = fields.Str(required=False)
-    
     description = fields.Str(required=False)
+    
+    code = fields.Str(required=False)
     
     success = fields.Boolean(required=False)
     
