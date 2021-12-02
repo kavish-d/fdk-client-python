@@ -7,11 +7,11 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 
-
-
-
-
 from .PayoutBankDetails import PayoutBankDetails
+
+
+
+
 
 
 
@@ -21,13 +21,13 @@ from .PayoutBankDetails import PayoutBankDetails
 class PayoutRequest(BaseSchema):
 
     
-    transfer_type = fields.Str(required=False)
-    
     users = fields.Dict(required=False)
     
-    unique_external_id = fields.Str(required=False)
-    
     bank_details = fields.Nested(PayoutBankDetails, required=False)
+    
+    transfer_type = fields.Str(required=False)
+    
+    unique_external_id = fields.Str(required=False)
     
     is_active = fields.Boolean(required=False)
     

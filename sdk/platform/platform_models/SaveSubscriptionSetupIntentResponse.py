@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class SaveSubscriptionSetupIntentResponse(BaseSchema):
 
     
-    success = fields.Boolean(required=False)
-    
     data = fields.Dict(required=False)
+    
+    success = fields.Boolean(required=False)
     
 

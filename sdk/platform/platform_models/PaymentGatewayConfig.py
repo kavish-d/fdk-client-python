@@ -25,8 +25,8 @@ class PaymentGatewayConfig(BaseSchema):
     
     key = fields.Str(required=False)
     
-    is_active = fields.Boolean(required=False)
-    
     secret = fields.Str(required=False)
+    
+    is_active = fields.Boolean(required=False)
     
 

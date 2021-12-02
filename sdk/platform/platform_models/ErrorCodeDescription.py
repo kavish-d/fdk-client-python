@@ -15,10 +15,10 @@ from ..platform_models.BaseSchema import BaseSchema
 class ErrorCodeDescription(BaseSchema):
 
     
-    success = fields.Boolean(required=False)
-    
     description = fields.Str(required=False)
     
     code = fields.Str(required=False)
+    
+    success = fields.Boolean(required=False)
     
 
