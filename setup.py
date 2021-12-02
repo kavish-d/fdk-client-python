@@ -11,13 +11,13 @@ with open('README.md', 'r') as fh:
 
 setup(
     name='fdk_client_python',
-    version='0.1',
+    version='0.1.11',
     author='Manish Magnani',
     author_email='manishmagnani@gofynd.com',
     description=description,
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/gofynd/fdk-client-python/tree/fyndx0',
+    url='https://github.com/gofynd/fdk-client-python',
     packages=find_packages(),
     license='',
     install_requires=[
