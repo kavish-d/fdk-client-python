@@ -15,9 +15,9 @@ from .CardPaymentGateway import CardPaymentGateway
 class ActiveCardPaymentGatewayResponse(BaseSchema):
 
     
-    success = fields.Boolean(required=False)
-    
     message = fields.Str(required=False)
+    
+    success = fields.Boolean(required=False)
     
     cards = fields.Nested(CardPaymentGateway, required=False)
     

@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class SubscriptionPaymentMethodResponse(BaseSchema):
 
     
-    data = fields.List(fields.Dict(required=False), required=False)
-    
     success = fields.Boolean(required=False)
+    
+    data = fields.List(fields.Dict(required=False), required=False)
     
 

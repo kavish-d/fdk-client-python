@@ -15,10 +15,10 @@ from ..application_models.BaseSchema import BaseSchema
 class AggregatorRoute(BaseSchema):
 
     
-    payment_flow = fields.Str(required=False)
+    api_link = fields.Str(required=False)
     
     data = fields.Dict(required=False)
     
-    api_link = fields.Str(required=False)
+    payment_flow = fields.Str(required=False)
     
 

@@ -15,10 +15,10 @@ from ..platform_models.BaseSchema import BaseSchema
 class SubscriptionConfigResponse(BaseSchema):
 
     
-    aggregator = fields.Str(required=False)
+    success = fields.Boolean(required=False)
     
     config = fields.Dict(required=False)
     
-    success = fields.Boolean(required=False)
+    aggregator = fields.Str(required=False)
     
 

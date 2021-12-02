@@ -18,8 +18,7 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/gofynd/fdk-client-python/tree/fyndx0',
-    packages=find_packages(
-        exclude=('local_development', 'tests*', 'docs')),
+    packages=find_packages(),
     license='',
     install_requires=[
         "aiohttp==3.7.3",
