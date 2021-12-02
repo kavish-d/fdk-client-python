@@ -19,13 +19,13 @@ from ..application_models.BaseSchema import BaseSchema
 class ChargeCustomerRequest(BaseSchema):
 
     
-    verified = fields.Boolean(required=False)
-    
-    aggregator = fields.Str(required=False)
+    transaction_token = fields.Str(required=False)
     
     amount = fields.Int(required=False)
     
-    transaction_token = fields.Str(required=False)
+    aggregator = fields.Str(required=False)
+    
+    verified = fields.Boolean(required=False)
     
     order_id = fields.Str(required=False)
     

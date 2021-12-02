@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class ErrorCodeAndDescription(BaseSchema):
 
     
-    description = fields.Str(required=False)
-    
     code = fields.Str(required=False)
+    
+    description = fields.Str(required=False)
     
 
