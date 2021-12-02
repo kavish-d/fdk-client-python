@@ -9,6 +9,12 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 
+
+
+
+
+from .VerifiedBy import VerifiedBy
+
 from .ProductDownloadItemsData import ProductDownloadItemsData
 
 
@@ -20,18 +26,18 @@ from .ProductDownloadItemsData import ProductDownloadItemsData
 
 
 
-
-from .VerifiedBy import VerifiedBy
-
-
-
-
 class ProductDownloadsItems(BaseSchema):
 
     
-    trigger_on = fields.Str(required=False)
-    
     status = fields.Str(required=False)
+    
+    template_tags = fields.Dict(required=False)
+    
+    completed_on = fields.Str(required=False)
+    
+    id = fields.Str(required=False)
+    
+    created_by = fields.Nested(VerifiedBy, required=False)
     
     data = fields.Nested(ProductDownloadItemsData, required=False)
     
@@ -39,14 +45,8 @@ class ProductDownloadsItems(BaseSchema):
     
     seller_id = fields.Float(required=False)
     
-    completed_on = fields.Str(required=False)
-    
-    id = fields.Str(required=False)
-    
     url = fields.Str(required=False)
     
-    created_by = fields.Nested(VerifiedBy, required=False)
-    
-    template_tags = fields.Dict(required=False)
+    trigger_on = fields.Str(required=False)
     
 

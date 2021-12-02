@@ -15,9 +15,9 @@ from ..application_models.BaseSchema import BaseSchema
 class AttachCardsResponse(BaseSchema):
 
     
-    message = fields.Str(required=False)
-    
     success = fields.Boolean(required=False)
+    
+    message = fields.Str(required=False)
     
     data = fields.Dict(required=False)
     

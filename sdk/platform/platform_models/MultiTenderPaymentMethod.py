@@ -17,12 +17,12 @@ from .MultiTenderPaymentMeta import MultiTenderPaymentMeta
 class MultiTenderPaymentMethod(BaseSchema):
 
     
-    mode = fields.Str(required=False)
+    name = fields.Str(required=False)
     
     meta = fields.Nested(MultiTenderPaymentMeta, required=False)
     
     amount = fields.Float(required=False)
     
-    name = fields.Str(required=False)
+    mode = fields.Str(required=False)
     
 

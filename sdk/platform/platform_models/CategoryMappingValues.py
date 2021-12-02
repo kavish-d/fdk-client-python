@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class CategoryMappingValues(BaseSchema):
 
     
-    name = fields.Str(required=False)
-    
     catalog_id = fields.Int(required=False)
+    
+    name = fields.Str(required=False)
     
 

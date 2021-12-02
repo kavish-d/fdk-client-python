@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class ConfigurationBucketPoints(BaseSchema):
 
     
-    end = fields.Float(required=False)
-    
     start = fields.Float(required=False)
+    
+    end = fields.Float(required=False)
     
 

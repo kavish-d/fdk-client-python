@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class SuccessResponse(BaseSchema):
 
     
-    success = fields.Boolean(required=False)
-    
     uid = fields.Int(required=False)
+    
+    success = fields.Boolean(required=False)
     
 

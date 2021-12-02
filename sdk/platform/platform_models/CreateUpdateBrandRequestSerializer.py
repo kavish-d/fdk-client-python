@@ -5,11 +5,11 @@ from marshmallow.validate import OneOf
 from ..platform_enums import *
 from ..platform_models.BaseSchema import BaseSchema
 
+
+
+
+
 from .BrandBannerSerializer import BrandBannerSerializer
-
-
-
-
 
 
 
@@ -29,6 +29,10 @@ from .BrandBannerSerializer import BrandBannerSerializer
 class CreateUpdateBrandRequestSerializer(BaseSchema):
 
     
+    name = fields.Str(required=False)
+    
+    description = fields.Str(required=False)
+    
     banner = fields.Nested(BrandBannerSerializer, required=False)
     
     _locale_language = fields.Dict(required=False)
@@ -39,13 +43,9 @@ class CreateUpdateBrandRequestSerializer(BaseSchema):
     
     logo = fields.Str(required=False)
     
-    company_id = fields.Int(required=False)
-    
-    name = fields.Str(required=False)
-    
     brand_tier = fields.Str(required=False)
     
-    description = fields.Str(required=False)
+    company_id = fields.Int(required=False)
     
     _custom_json = fields.Dict(required=False)
     

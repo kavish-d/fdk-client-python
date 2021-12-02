@@ -13,8 +13,8 @@ from ..application_models.BaseSchema import BaseSchema
 class WalletOtpRequest(BaseSchema):
 
     
-    country_code = fields.Str(required=False)
-    
     mobile = fields.Str(required=False)
+    
+    country_code = fields.Str(required=False)
     
 

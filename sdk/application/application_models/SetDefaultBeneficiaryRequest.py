@@ -13,8 +13,8 @@ from ..application_models.BaseSchema import BaseSchema
 class SetDefaultBeneficiaryRequest(BaseSchema):
 
     
-    order_id = fields.Str(required=False)
-    
     beneficiary_id = fields.Str(required=False)
+    
+    order_id = fields.Str(required=False)
     
 

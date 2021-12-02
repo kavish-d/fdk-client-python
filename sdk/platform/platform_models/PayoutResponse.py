@@ -29,8 +29,6 @@ from ..platform_models.BaseSchema import BaseSchema
 class PayoutResponse(BaseSchema):
 
     
-    bank_details = fields.Dict(required=False)
-    
     users = fields.Dict(required=False)
     
     transfer_type = fields.Str(required=False)
@@ -41,12 +39,14 @@ class PayoutResponse(BaseSchema):
     
     aggregator = fields.Str(required=False)
     
-    payment_status = fields.Str(required=False)
-    
     payouts = fields.Dict(required=False)
     
-    is_active = fields.Boolean(required=False)
+    payment_status = fields.Str(required=False)
     
     unique_transfer_no = fields.Str(required=False)
+    
+    bank_details = fields.Dict(required=False)
+    
+    is_active = fields.Boolean(required=False)
     
 

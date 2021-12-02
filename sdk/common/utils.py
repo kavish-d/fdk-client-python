@@ -12,7 +12,8 @@ from .exceptions import RequiredParametersError
 async def validate_required_query_params(proccessed_params: Dict, params: Dict):
     """Checks if required params are present or not."""
     for r_param in proccessed_params["required"]:
-        if r_param["name"] not in params:
+        r_param_name = r_param["name"]
+        if ((r_param_name not in params) or not params[r_param_name]) and r_param_name != "company_id" and r_param != "application_id":
             raise RequiredParametersError(message="{} missing".format(r_param["name"]))
 
 

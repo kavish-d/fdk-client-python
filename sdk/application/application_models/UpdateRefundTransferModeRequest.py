@@ -13,8 +13,8 @@ from ..application_models.BaseSchema import BaseSchema
 class UpdateRefundTransferModeRequest(BaseSchema):
 
     
-    enable = fields.Boolean(required=False)
-    
     transfer_mode = fields.Str(required=False)
+    
+    enable = fields.Boolean(required=False)
     
 
