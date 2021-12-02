@@ -18,7 +18,7 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/gofynd/fdk-client-python',
-    packages=find_packages(),
+    py_modules=['fdk_client_python'],
     license='',
     install_requires=[
         "aiohttp==3.7.3",
