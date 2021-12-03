@@ -1,0 +1,28 @@
+"""Platform Models."""
+
+from marshmallow import fields, Schema
+from marshmallow.validate import OneOf
+from ..platform_enums import *
+from ..platform_models.BaseSchema import BaseSchema
+
+
+
+
+
+
+
+
+
+
+class FilterOrderingStoreRequest(BaseSchema):
+
+    
+    all_stores = fields.Boolean(required=False)
+    
+    deployed_stores = fields.List(fields.Int(required=False), required=False)
+    
+    q = fields.Str(required=False)
+    
+    only_deployed = fields.Boolean(required=False)
+    
+

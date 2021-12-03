@@ -2319,6 +2319,7 @@ Success
  | priority | Double? |  yes  |  |
  | priorityText | String? |  yes  |  |
  | lockStatus | Boolean? |  yes  |  |
+ | orderingChannel | String? |  yes  |  |
  | totalShipmentBags | Int? |  yes  |  |
 
 ---

@@ -5923,6 +5923,7 @@ Success
  | allStores | Boolean? |  yes  |  |
  | deployedStores | ArrayList<Int>? |  yes  |  |
  | q | String? |  yes  |  |
+ | onlyDeployed | Boolean? |  yes  |  |
 
 ---
 

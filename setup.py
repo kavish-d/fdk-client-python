@@ -10,7 +10,7 @@ with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 setup(
-    name='fdk_client_python',
+    name='fdk_client',
     version='0.1.11',
     author='Manish Magnani',
     author_email='manishmagnani@gofynd.com',
