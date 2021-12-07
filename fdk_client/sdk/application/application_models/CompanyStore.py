@@ -17,11 +17,11 @@ from ..application_models.BaseSchema import BaseSchema
 class CompanyStore(BaseSchema):
 
     
-    business_type = fields.Str(required=False)
+    uid = fields.Int(required=False)
     
     company_type = fields.Str(required=False)
     
-    uid = fields.Int(required=False)
+    business_type = fields.Str(required=False)
     
     name = fields.Str(required=False)
     

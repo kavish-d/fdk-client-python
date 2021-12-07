@@ -15,9 +15,9 @@ from ..application_models.BaseSchema import BaseSchema
 class ProductSortOn(BaseSchema):
 
     
-    value = fields.Str(required=False)
-    
     is_selected = fields.Boolean(required=False)
+    
+    value = fields.Str(required=False)
     
     name = fields.Str(required=False)
     

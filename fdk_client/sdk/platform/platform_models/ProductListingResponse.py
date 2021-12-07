@@ -5,16 +5,16 @@ from marshmallow.validate import OneOf
 from ..platform_enums import *
 from ..platform_models.BaseSchema import BaseSchema
 
-from .Page import Page
-
 from .Product import Product
+
+from .Page import Page
 
 
 class ProductListingResponse(BaseSchema):
 
     
-    page = fields.Nested(Page, required=False)
-    
     items = fields.List(fields.Nested(Product, required=False), required=False)
+    
+    page = fields.Nested(Page, required=False)
     
 

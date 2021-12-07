@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class CouponAction(BaseSchema):
 
     
-    action_date = fields.Str(required=False)
-    
     txn_mode = fields.Str(required=False)
+    
+    action_date = fields.Str(required=False)
     
 

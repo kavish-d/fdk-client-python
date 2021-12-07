@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class CategoryUpdateResponse(BaseSchema):
 
     
-    success = fields.Boolean(required=False)
-    
     message = fields.Str(required=False)
+    
+    success = fields.Boolean(required=False)
     
 

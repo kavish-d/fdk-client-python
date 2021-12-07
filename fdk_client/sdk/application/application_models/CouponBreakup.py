@@ -21,16 +21,16 @@ from ..application_models.BaseSchema import BaseSchema
 class CouponBreakup(BaseSchema):
 
     
-    message = fields.Str(required=False)
+    is_applied = fields.Boolean(required=False)
     
     type = fields.Str(required=False)
     
-    code = fields.Str(required=False)
-    
-    uid = fields.Str(required=False)
-    
     value = fields.Float(required=False)
     
-    is_applied = fields.Boolean(required=False)
+    code = fields.Str(required=False)
+    
+    message = fields.Str(required=False)
+    
+    uid = fields.Str(required=False)
     
 

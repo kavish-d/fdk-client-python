@@ -13,8 +13,8 @@ from ..application_models.BaseSchema import BaseSchema
 class Files(BaseSchema):
 
     
-    values = fields.List(fields.Str(required=False), required=False)
-    
     key = fields.Str(required=False)
+    
+    values = fields.List(fields.Str(required=False), required=False)
     
 

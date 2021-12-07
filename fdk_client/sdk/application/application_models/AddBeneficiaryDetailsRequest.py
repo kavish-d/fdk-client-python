@@ -9,13 +9,13 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 
+
+
+
+
+
+
 from .BeneficiaryModeDetails import BeneficiaryModeDetails
-
-
-
-
-
-
 
 
 
@@ -27,14 +27,14 @@ class AddBeneficiaryDetailsRequest(BaseSchema):
     
     transfer_mode = fields.Str(required=False)
     
-    details = fields.Nested(BeneficiaryModeDetails, required=False)
-    
-    order_id = fields.Str(required=False)
+    shipment_id = fields.Str(required=False)
     
     delights = fields.Boolean(required=False)
     
-    request_id = fields.Str(required=False)
+    order_id = fields.Str(required=False)
     
-    shipment_id = fields.Str(required=False)
+    details = fields.Nested(BeneficiaryModeDetails, required=False)
+    
+    request_id = fields.Str(required=False)
     
 

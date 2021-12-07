@@ -17,9 +17,9 @@ from ..application_models.BaseSchema import BaseSchema
 class ProductFiltersKey(BaseSchema):
 
     
-    logo = fields.Str(required=False)
-    
     kind = fields.Str(required=False)
+    
+    logo = fields.Str(required=False)
     
     display = fields.Str(required=False)
     

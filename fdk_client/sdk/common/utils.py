@@ -57,13 +57,17 @@ async def create_query_string(**kwargs):
 
 
 async def get_headers_with_signature(domain: Text, method: Text, url: Text, query_string: Text, headers: Dict, body="",
-                                     exclude_headers=[]):
+                                     exclude_headers=[], sign_query=False):
     """Returns headers with signature."""
+    query_string = query_string.replace("%3A", ":").replace("%2F", "/")
     fp_date = datetime.now().strftime("%Y%m%dT%H%M%SZ")
     headers_str = ""
     host = domain.replace("https://", "").replace("http://", "")
     headers["host"] = host
-    headers["x-fp-date"] = fp_date
+    if not sign_query:
+        headers["x-fp-date"] = fp_date
+    else:
+        query_string += f"&x-fp-date={fp_date}" if query_string else f"?x-fp-date={fp_date}"
     excluded_headers = {}
     for header in exclude_headers:
         excluded_headers[header] = headers.pop(header) if header in headers else None
@@ -78,14 +82,17 @@ async def get_headers_with_signature(domain: Text, method: Text, url: Text, quer
         url,
         query_string,
         headers_str,
-        "host;x-fp-date",
+        ";".join([h for h in headers.keys() if h == "host" or h.startswith("x-fp-")]),
         body_hex
     ]
     request_str = "\n".join(request_list)
     request_str = "\n".join([fp_date, hashlib.sha256(request_str.encode()).hexdigest()])
     signature = "v1.1:" + hmac.new("1234567".encode(), request_str.encode(), hashlib.sha256).hexdigest()
-    headers["x-fp-signature"] = signature
+    if not sign_query:
+        headers["x-fp-signature"] = signature
+    else:
+        query_string += f"&x-fp-signature={signature}"
     for h_key, h_value in excluded_headers.items():
         if h_value:
             headers[h_key] = h_value
-    return headers
+    return headers if not sign_query else query_string

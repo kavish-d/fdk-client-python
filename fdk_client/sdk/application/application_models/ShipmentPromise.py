@@ -5,16 +5,16 @@ from marshmallow.validate import OneOf
 from ..application_enums import *
 from ..application_models.BaseSchema import BaseSchema
 
-from .PromiseTimestamp import PromiseTimestamp
-
 from .PromiseFormatted import PromiseFormatted
+
+from .PromiseTimestamp import PromiseTimestamp
 
 
 class ShipmentPromise(BaseSchema):
 
     
-    timestamp = fields.Nested(PromiseTimestamp, required=False)
-    
     formatted = fields.Nested(PromiseFormatted, required=False)
+    
+    timestamp = fields.Nested(PromiseTimestamp, required=False)
     
 

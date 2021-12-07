@@ -13,8 +13,8 @@ from ..application_models.BaseSchema import BaseSchema
 class DeleteAddressResponse(BaseSchema):
 
     
-    is_deleted = fields.Boolean(required=False)
-    
     id = fields.Str(required=False)
+    
+    is_deleted = fields.Boolean(required=False)
     
 

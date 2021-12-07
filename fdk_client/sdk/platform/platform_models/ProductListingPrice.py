@@ -13,8 +13,8 @@ from .Price1 import Price1
 class ProductListingPrice(BaseSchema):
 
     
-    effective = fields.Nested(Price1, required=False)
-    
     marked = fields.Nested(Price1, required=False)
+    
+    effective = fields.Nested(Price1, required=False)
     
 

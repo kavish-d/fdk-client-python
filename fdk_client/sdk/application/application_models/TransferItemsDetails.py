@@ -21,11 +21,11 @@ class TransferItemsDetails(BaseSchema):
     
     logo_small = fields.Str(required=False)
     
+    display_name = fields.Boolean(required=False)
+    
     logo_large = fields.Str(required=False)
     
     id = fields.Str(required=False)
-    
-    display_name = fields.Boolean(required=False)
     
     name = fields.Str(required=False)
     

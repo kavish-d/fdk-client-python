@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class FilerList(BaseSchema):
 
     
-    value = fields.Str(required=False)
-    
     display = fields.Str(required=False)
+    
+    value = fields.Str(required=False)
     
 

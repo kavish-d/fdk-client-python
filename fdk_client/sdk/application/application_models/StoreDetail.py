@@ -17,11 +17,11 @@ from ..application_models.BaseSchema import BaseSchema
 class StoreDetail(BaseSchema):
 
     
-    code = fields.Str(required=False)
-    
     city = fields.Str(required=False)
     
     id = fields.Int(required=False)
+    
+    code = fields.Str(required=False)
     
     name = fields.Str(required=False)
     

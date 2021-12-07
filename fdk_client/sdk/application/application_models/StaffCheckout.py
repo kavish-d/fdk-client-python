@@ -21,8 +21,8 @@ class StaffCheckout(BaseSchema):
     
     _id = fields.Str(required=False)
     
-    user = fields.Str(required=False)
-    
     last_name = fields.Str(required=False)
+    
+    user = fields.Str(required=False)
     
 

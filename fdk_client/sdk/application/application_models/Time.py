@@ -13,8 +13,8 @@ from ..application_models.BaseSchema import BaseSchema
 class Time(BaseSchema):
 
     
-    hour = fields.Int(required=False)
-    
     minute = fields.Int(required=False)
+    
+    hour = fields.Int(required=False)
     
 

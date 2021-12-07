@@ -15,10 +15,10 @@ from ..platform_models.BaseSchema import BaseSchema
 class CompanyBrandPostRequestSerializer(BaseSchema):
 
     
-    company = fields.Int(required=False)
+    brands = fields.List(fields.Int(required=False), required=False)
     
     uid = fields.Int(required=False)
     
-    brands = fields.List(fields.Int(required=False), required=False)
+    company = fields.Int(required=False)
     
 

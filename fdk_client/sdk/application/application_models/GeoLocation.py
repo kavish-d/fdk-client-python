@@ -13,8 +13,8 @@ from ..application_models.BaseSchema import BaseSchema
 class GeoLocation(BaseSchema):
 
     
-    latitude = fields.Float(required=False)
-    
     longitude = fields.Float(required=False)
+    
+    latitude = fields.Float(required=False)
     
 

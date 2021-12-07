@@ -15,9 +15,9 @@ from ..application_models.BaseSchema import BaseSchema
 class ProductStockPrice(BaseSchema):
 
     
-    marked = fields.Float(required=False)
-    
     effective = fields.Float(required=False)
+    
+    marked = fields.Float(required=False)
     
     currency = fields.Str(required=False)
     

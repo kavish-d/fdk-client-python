@@ -15,10 +15,10 @@ from ..platform_models.BaseSchema import BaseSchema
 class GTIN(BaseSchema):
 
     
-    primary = fields.Boolean(required=False)
+    gtin_type = fields.Str(required=False)
     
     gtin_value = fields.Str(required=False)
     
-    gtin_type = fields.Str(required=False)
+    primary = fields.Boolean(required=False)
     
 

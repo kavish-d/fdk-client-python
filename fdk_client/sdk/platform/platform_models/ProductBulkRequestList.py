@@ -5,16 +5,16 @@ from marshmallow.validate import OneOf
 from ..platform_enums import *
 from ..platform_models.BaseSchema import BaseSchema
 
-from .Page import Page
-
 from .ProductBulkRequest import ProductBulkRequest
+
+from .Page import Page
 
 
 class ProductBulkRequestList(BaseSchema):
 
     
-    page = fields.Nested(Page, required=False)
-    
     items = fields.Nested(ProductBulkRequest, required=False)
+    
+    page = fields.Nested(Page, required=False)
     
 

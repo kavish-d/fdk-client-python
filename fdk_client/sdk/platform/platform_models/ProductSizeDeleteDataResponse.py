@@ -15,9 +15,9 @@ from ..platform_models.BaseSchema import BaseSchema
 class ProductSizeDeleteDataResponse(BaseSchema):
 
     
-    company_id = fields.Int(required=False)
-    
     size = fields.Str(required=False)
+    
+    company_id = fields.Int(required=False)
     
     item_id = fields.Int(required=False)
     

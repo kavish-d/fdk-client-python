@@ -13,8 +13,8 @@ from ..application_models.BaseSchema import BaseSchema
 class LatLong(BaseSchema):
 
     
-    type = fields.Str(required=False)
-    
     coordinates = fields.List(fields.Float(required=False), required=False)
+    
+    type = fields.Str(required=False)
     
 

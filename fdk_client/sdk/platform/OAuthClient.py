@@ -7,6 +7,7 @@ import base64
 
 from ..common.exceptions import FDKOAuthCodeError
 from ..common.aiohttp_helper import AiohttpHelper
+from ..common.utils import get_headers_with_signature
 
 
 class OAuthClient:
@@ -38,15 +39,15 @@ class OAuthClient:
 
     async def startAuthorization(self, options: Dict):
         query = {
-          "client_id": self._conf.apiKey,
-          "scope": ",".join(options.get("scope", [])),
-          "redirect_uri": options.get("redirectUri", ""),
-          "state": options.get("state", ""),
-          "access_mode": options.get("access_mode", ""),
-          "response_type": "code",
+            "access_mode": options.get("access_mode", ""),
+            "client_id": self._conf.apiKey,
+            "redirect_uri": options.get("redirectUri", ""),
+            "response_type": "code",
+            "scope": ",".join(options.get("scope", [])),
+            "state": options.get("state", "")
         }
         queryString = parse.urlencode(query)
-        reqPath = f"/service/panel/authentication/v1.0/company/${self._conf.companyId}/oauth/authorize?{queryString}"
+        reqPath = f"/service/panel/authentication/v1.0/company/{self._conf.companyId}/oauth/authorize"
         signingOptions = {
           "method": "GET",
           "host": self._conf.domain,
@@ -55,7 +56,11 @@ class OAuthClient:
           "headers": {},
           "signQuery": True
         }
-        return f"{self._conf.domain}{signingOptions['path']}"
+        queryString = await get_headers_with_signature(self._conf.domain, "get",
+                                                            f"/service/panel/authentication/v1.0/company/"
+                                                            f"{self._conf.companyId}/oauth/authorize",
+                                                            queryString, {}, sign_query=True)
+        return f"{self._conf.domain}{signingOptions['path']}?{queryString}"
 
     async def verifyCallback(self, query):
         if query.get("error"):

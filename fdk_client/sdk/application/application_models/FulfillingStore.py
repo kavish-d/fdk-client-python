@@ -14,6 +14,8 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 
+
+
 class FulfillingStore(BaseSchema):
 
     
@@ -24,5 +26,7 @@ class FulfillingStore(BaseSchema):
     name = fields.Str(required=False)
     
     company_id = fields.Int(required=False)
+    
+    company_name = fields.Str(required=False)
     
 

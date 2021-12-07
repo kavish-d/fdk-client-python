@@ -13,8 +13,8 @@ from ..application_models.BaseSchema import BaseSchema
 class ProductSetDistributionSize(BaseSchema):
 
     
-    pieces = fields.Int(required=False)
-    
     size = fields.Str(required=False)
+    
+    pieces = fields.Int(required=False)
     
 

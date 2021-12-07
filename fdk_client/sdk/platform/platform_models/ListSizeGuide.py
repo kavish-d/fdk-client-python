@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class ListSizeGuide(BaseSchema):
 
     
-    page = fields.Dict(required=False)
-    
     items = fields.List(fields.Dict(required=False), required=False)
+    
+    page = fields.Dict(required=False)
     
 

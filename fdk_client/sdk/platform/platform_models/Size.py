@@ -17,12 +17,12 @@ from ..platform_models.BaseSchema import BaseSchema
 class Size(BaseSchema):
 
     
-    value = fields.Str(required=False)
-    
-    quantity = fields.Int(required=False)
-    
     is_available = fields.Boolean(required=False)
     
     display = fields.Str(required=False)
+    
+    quantity = fields.Int(required=False)
+    
+    value = fields.Str(required=False)
     
 

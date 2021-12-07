@@ -9,15 +9,15 @@ from ..application_models.BaseSchema import BaseSchema
 
 from .SecondLevelChild import SecondLevelChild
 
-
-
 from .ImageUrls import ImageUrls
 
+
+
+
+
+
+
 from .ActionPage import ActionPage
-
-
-
-
 
 
 class Child(BaseSchema):
@@ -27,14 +27,14 @@ class Child(BaseSchema):
     
     childs = fields.List(fields.Nested(SecondLevelChild, required=False), required=False)
     
-    slug = fields.Str(required=False)
-    
     banners = fields.Nested(ImageUrls, required=False)
     
-    action = fields.Nested(ActionPage, required=False)
+    slug = fields.Str(required=False)
     
     uid = fields.Int(required=False)
     
     name = fields.Str(required=False)
+    
+    action = fields.Nested(ActionPage, required=False)
     
 
