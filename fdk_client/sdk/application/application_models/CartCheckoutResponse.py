@@ -29,12 +29,12 @@ class CartCheckoutResponse(BaseSchema):
     
     cart = fields.Nested(CheckCart, required=False)
     
-    app_intercept_url = fields.Str(required=False)
+    message = fields.Str(required=False)
     
-    order_id = fields.Str(required=False)
+    app_intercept_url = fields.Str(required=False)
     
     success = fields.Boolean(required=False)
     
-    message = fields.Str(required=False)
+    order_id = fields.Str(required=False)
     
 

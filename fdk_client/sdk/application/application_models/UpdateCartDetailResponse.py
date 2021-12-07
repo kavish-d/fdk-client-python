@@ -7,9 +7,9 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 
-
-
 from .CartDetailResponse import CartDetailResponse
+
+
 
 
 class UpdateCartDetailResponse(BaseSchema):
@@ -17,8 +17,8 @@ class UpdateCartDetailResponse(BaseSchema):
     
     success = fields.Boolean(required=False)
     
-    message = fields.Str(required=False)
-    
     cart = fields.Nested(CartDetailResponse, required=False)
+    
+    message = fields.Str(required=False)
     
 

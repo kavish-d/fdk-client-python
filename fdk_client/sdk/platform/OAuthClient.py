@@ -79,7 +79,7 @@ class OAuthClient:
 
     async def getAccesstokenObj(self, grant_type="", refresh_token="", code=""):
         reqData = {
-            grant_type: grant_type,
+            "grant_type": grant_type,
         }
         if grant_type == "refresh_token":
             reqData = {**reqData, "refresh_token": refresh_token}

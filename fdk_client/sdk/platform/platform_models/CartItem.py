@@ -15,10 +15,10 @@ from ..platform_models.BaseSchema import BaseSchema
 class CartItem(BaseSchema):
 
     
+    quantity = fields.Int(required=False)
+    
     product_id = fields.Str(required=False)
     
     size = fields.Str(required=False)
-    
-    quantity = fields.Int(required=False)
     
 

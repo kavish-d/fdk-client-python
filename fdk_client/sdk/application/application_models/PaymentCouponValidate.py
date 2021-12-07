@@ -7,9 +7,9 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 
-
-
 from .CouponValidity import CouponValidity
+
+
 
 
 class PaymentCouponValidate(BaseSchema):
@@ -17,8 +17,8 @@ class PaymentCouponValidate(BaseSchema):
     
     success = fields.Boolean(required=False)
     
-    message = fields.Str(required=False)
-    
     coupon_validity = fields.Nested(CouponValidity, required=False)
+    
+    message = fields.Str(required=False)
     
 

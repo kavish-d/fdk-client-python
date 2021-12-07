@@ -19,14 +19,14 @@ from ..application_models.BaseSchema import BaseSchema
 class SharedCartDetails(BaseSchema):
 
     
-    user = fields.Dict(required=False)
+    source = fields.Dict(required=False)
     
     token = fields.Str(required=False)
     
-    created_on = fields.Str(required=False)
-    
-    source = fields.Dict(required=False)
+    user = fields.Dict(required=False)
     
     meta = fields.Dict(required=False)
+    
+    created_on = fields.Str(required=False)
     
 

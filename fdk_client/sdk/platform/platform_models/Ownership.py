@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class Ownership(BaseSchema):
 
     
-    payable_by = fields.Str(required=False)
-    
     payable_category = fields.Str(required=False)
+    
+    payable_by = fields.Str(required=False)
     
 

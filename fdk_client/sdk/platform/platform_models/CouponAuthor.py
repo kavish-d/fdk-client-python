@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class CouponAuthor(BaseSchema):
 
     
-    created_by = fields.Str(required=False)
-    
     modified_by = fields.Str(required=False)
+    
+    created_by = fields.Str(required=False)
     
 

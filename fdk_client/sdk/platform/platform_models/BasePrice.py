@@ -17,12 +17,12 @@ from ..platform_models.BaseSchema import BaseSchema
 class BasePrice(BaseSchema):
 
     
-    effective = fields.Float(required=False)
-    
-    marked = fields.Float(required=False)
-    
     currency_symbol = fields.Str(required=False)
     
+    effective = fields.Float(required=False)
+    
     currency_code = fields.Str(required=False)
+    
+    marked = fields.Float(required=False)
     
 

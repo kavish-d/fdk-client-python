@@ -29,24 +29,24 @@ from .PaymentModes import PaymentModes
 class PaymentCodes(BaseSchema):
 
     
-    simpl = fields.Nested(PaymentModes, required=False)
-    
-    qr = fields.Nested(PaymentModes, required=False)
-    
-    wl = fields.Nested(PaymentModes, required=False)
+    ps = fields.Nested(PaymentModes, required=False)
     
     upi = fields.Nested(PaymentModes, required=False)
     
-    card = fields.Nested(PaymentModes, required=False)
+    wl = fields.Nested(PaymentModes, required=False)
     
-    rupifipg = fields.Nested(PaymentModes, required=False)
-    
-    ps = fields.Nested(PaymentModes, required=False)
+    qr = fields.Nested(PaymentModes, required=False)
     
     pl = fields.Nested(PaymentModes, required=False)
     
     stripepg = fields.Nested(PaymentModes, required=False)
     
     nb = fields.Nested(PaymentModes, required=False)
+    
+    simpl = fields.Nested(PaymentModes, required=False)
+    
+    rupifipg = fields.Nested(PaymentModes, required=False)
+    
+    card = fields.Nested(PaymentModes, required=False)
     
 

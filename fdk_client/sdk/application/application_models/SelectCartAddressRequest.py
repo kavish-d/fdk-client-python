@@ -15,10 +15,10 @@ from ..application_models.BaseSchema import BaseSchema
 class SelectCartAddressRequest(BaseSchema):
 
     
+    cart_id = fields.Str(required=False)
+    
     billing_address_id = fields.Str(required=False)
     
     id = fields.Str(required=False)
-    
-    cart_id = fields.Str(required=False)
     
 

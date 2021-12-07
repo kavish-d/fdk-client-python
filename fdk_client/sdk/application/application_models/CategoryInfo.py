@@ -13,8 +13,8 @@ from ..application_models.BaseSchema import BaseSchema
 class CategoryInfo(BaseSchema):
 
     
-    name = fields.Str(required=False)
-    
     uid = fields.Int(required=False)
+    
+    name = fields.Str(required=False)
     
 

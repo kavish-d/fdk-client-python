@@ -17,8 +17,8 @@ class State(BaseSchema):
     
     is_public = fields.Boolean(required=False)
     
-    is_display = fields.Boolean(required=False)
-    
     is_archived = fields.Boolean(required=False)
+    
+    is_display = fields.Boolean(required=False)
     
 

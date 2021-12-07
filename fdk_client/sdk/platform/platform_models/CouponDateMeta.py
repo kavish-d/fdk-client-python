@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class CouponDateMeta(BaseSchema):
 
     
-    modified_on = fields.Str(required=False)
-    
     created_on = fields.Str(required=False)
+    
+    modified_on = fields.Str(required=False)
     
 

@@ -13,8 +13,8 @@ from ..application_models.BaseSchema import BaseSchema
 class GetShareCartLinkRequest(BaseSchema):
 
     
-    id = fields.Str(required=False)
-    
     meta = fields.Dict(required=False)
+    
+    id = fields.Str(required=False)
     
 
