@@ -5,16 +5,16 @@ from marshmallow.validate import OneOf
 from ..platform_enums import *
 from ..platform_models.BaseSchema import BaseSchema
 
-from .HsnCodesObject import HsnCodesObject
-
 from .PageResponse import PageResponse
+
+from .HsnCodesObject import HsnCodesObject
 
 
 class HsnCodesListingResponse(BaseSchema):
 
     
-    items = fields.List(fields.Nested(HsnCodesObject, required=False), required=False)
-    
     page = fields.Nested(PageResponse, required=False)
+    
+    items = fields.List(fields.Nested(HsnCodesObject, required=False), required=False)
     
 

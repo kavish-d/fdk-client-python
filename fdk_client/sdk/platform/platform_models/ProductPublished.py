@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class ProductPublished(BaseSchema):
 
     
-    product_online_date = fields.Int(required=False)
-    
     is_set = fields.Boolean(required=False)
+    
+    product_online_date = fields.Int(required=False)
     
 

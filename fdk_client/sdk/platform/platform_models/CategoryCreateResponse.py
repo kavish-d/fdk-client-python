@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class CategoryCreateResponse(BaseSchema):
 
     
-    uid = fields.Int(required=False)
-    
     message = fields.Str(required=False)
+    
+    uid = fields.Int(required=False)
     
 

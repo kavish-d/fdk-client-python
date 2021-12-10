@@ -29,8 +29,8 @@ class PayoutRequest(BaseSchema):
     
     transfer_type = fields.Str(required=False)
     
-    is_active = fields.Boolean(required=False)
-    
     aggregator = fields.Str(required=False)
+    
+    is_active = fields.Boolean(required=False)
     
 

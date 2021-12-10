@@ -64,7 +64,7 @@ class OAuthClient:
 
     async def verifyCallback(self, query):
         if query.get("error"):
-            raise FDKOAuthCodeError(query.error_description)
+            raise FDKOAuthCodeError(query["error_description"])
         # try:
         res = await self.getAccesstokenObj(grant_type="authorization_code", code=query.get("code", ""))
         await self.setToken(res)
@@ -89,9 +89,11 @@ class OAuthClient:
         token = base64.b64encode(f"{self._conf.apiKey}:{self._conf.apiSecret}".encode()).decode()
         url = f"{self._conf.domain}/service/panel/authentication/v1.0/company/{self._conf.companyId}/oauth/token"
         headers = {
-            "Authorization": f"Basic {token}",
-            "Content-Type": "application/x-www-form-urlencoded",
+            "Authorization": f"Basic {token}"
         }
+        headers = get_headers_with_signature(self._conf.domain, "post",
+                                             f"/service/panel/authentication/v1.0/company/{self._conf.companyId}/oauth/token",
+                                             "", headers, reqData, ["Authorization"])
         response = await AiohttpHelper().aiohttp_request("POST", url, reqData, headers)
         return response["json"]
 

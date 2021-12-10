@@ -17,12 +17,12 @@ from ..platform_models.BaseSchema import BaseSchema
 class AutocompletePageAction(BaseSchema):
 
     
-    type = fields.Str(required=False)
-    
     params = fields.Dict(required=False)
+    
+    url = fields.Str(required=False)
     
     query = fields.Dict(required=False)
     
-    url = fields.Str(required=False)
+    type = fields.Str(required=False)
     
 

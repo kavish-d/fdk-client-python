@@ -5,16 +5,16 @@ from marshmallow.validate import OneOf
 from ..platform_enums import *
 from ..platform_models.BaseSchema import BaseSchema
 
-from .GetLocationSerializer import GetLocationSerializer
-
 from .Page import Page
+
+from .GetLocationSerializer import GetLocationSerializer
 
 
 class LocationListSerializer(BaseSchema):
 
     
-    items = fields.List(fields.Nested(GetLocationSerializer, required=False), required=False)
-    
     page = fields.Nested(Page, required=False)
+    
+    items = fields.List(fields.Nested(GetLocationSerializer, required=False), required=False)
     
 

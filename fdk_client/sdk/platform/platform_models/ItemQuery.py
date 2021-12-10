@@ -15,10 +15,10 @@ from ..platform_models.BaseSchema import BaseSchema
 class ItemQuery(BaseSchema):
 
     
-    uid = fields.Int(required=False)
+    item_code = fields.Str(required=False)
     
     brand_uid = fields.Int(required=False)
     
-    item_code = fields.Str(required=False)
+    uid = fields.Int(required=False)
     
 

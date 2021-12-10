@@ -15,10 +15,10 @@ from ..platform_models.BaseSchema import BaseSchema
 class InventoryExportRequest(BaseSchema):
 
     
-    type = fields.Str(required=False)
-    
     store = fields.List(fields.Int(required=False), required=False)
     
     brand = fields.List(fields.Int(required=False), required=False)
+    
+    type = fields.Str(required=False)
     
 

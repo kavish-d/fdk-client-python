@@ -15,10 +15,10 @@ from ..platform_models.BaseSchema import BaseSchema
 class Meta(BaseSchema):
 
     
+    unit = fields.Str(required=False)
+    
     headers = fields.Dict(required=False)
     
     values = fields.List(fields.Dict(required=False), required=False)
-    
-    unit = fields.Str(required=False)
     
 

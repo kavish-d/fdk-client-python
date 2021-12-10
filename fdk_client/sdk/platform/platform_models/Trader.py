@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class Trader(BaseSchema):
 
     
-    address = fields.Str(required=False)
-    
     name = fields.Str(required=False)
+    
+    address = fields.Str(required=False)
     
 

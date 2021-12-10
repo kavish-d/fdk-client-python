@@ -22,10 +22,11 @@ async def create_url_with_params(domain: Text, url: Text, proccessed_params: Tex
     params = {}
     final_url = domain + url
     for key, value in kwargs.items():
-        new_key = key.replace("__", "-")
-        params[new_key] = value
-        if new_key in final_url:
-            final_url.replace(new_key, key)
+        if value:
+            new_key = key.replace("__", "-")
+            params[new_key] = value
+            if new_key in final_url:
+                final_url.replace(new_key, key)
     await validate_required_query_params(json.loads(proccessed_params), params)
     final_url = final_url.format(**params)
     query_string = parse.urlencode(params)
@@ -38,10 +39,11 @@ async def create_url_without_domain(url: Text, **kwargs):
     """Returns url without domain replacing variables."""
     params = {}
     for key, value in kwargs.items():
-        new_key = key.replace("__", "-")
-        params[new_key] = value
-        if new_key in url:
-            url.replace(new_key, key)
+        if value:
+            new_key = key.replace("__", "-")
+            params[new_key] = value
+            if new_key in url:
+                url.replace(new_key, key)
     final_url = url.format(**params)
     return final_url
 
@@ -50,8 +52,9 @@ async def create_query_string(**kwargs):
     """Return query string."""
     params = {}
     for key, value in kwargs.items():
-        new_key = key.replace("__", "-")
-        params[new_key] = value
+        if value:
+            new_key = key.replace("__", "-")
+            params[new_key] = value
     query_string = parse.urlencode(params)
     return query_string
 
@@ -59,7 +62,7 @@ async def create_query_string(**kwargs):
 async def get_headers_with_signature(domain: Text, method: Text, url: Text, query_string: Text, headers: Dict, body="",
                                      exclude_headers=[], sign_query=False):
     """Returns headers with signature."""
-    query_string = query_string.replace("%3A", ":").replace("%2F", "/")
+    query_string = query_string.replace("%3A", ":").replace("%2F", "/").replace("%3F", "?").replace("%3D", "=").replace("%26", "&")
     fp_date = datetime.now().strftime("%Y%m%dT%H%M%SZ")
     headers_str = ""
     host = domain.replace("https://", "").replace("http://", "")

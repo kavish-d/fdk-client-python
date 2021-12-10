@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class GetCatalogConfigurationDetailsSchemaListing(BaseSchema):
 
     
-    sort = fields.Dict(required=False)
-    
     filter = fields.Dict(required=False)
+    
+    sort = fields.Dict(required=False)
     
 
