@@ -13,8 +13,8 @@ from .CollectionImage import CollectionImage
 class CollectionBanner(BaseSchema):
 
     
-    landscape = fields.Nested(CollectionImage, required=False)
-    
     portrait = fields.Nested(CollectionImage, required=False)
+    
+    landscape = fields.Nested(CollectionImage, required=False)
     
 

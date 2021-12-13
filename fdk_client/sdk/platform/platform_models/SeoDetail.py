@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class SeoDetail(BaseSchema):
 
     
-    description = fields.Str(required=False)
-    
     title = fields.Str(required=False)
+    
+    description = fields.Str(required=False)
     
 

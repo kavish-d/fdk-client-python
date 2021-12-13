@@ -15,10 +15,10 @@ from ..platform_models.BaseSchema import BaseSchema
 class InventoryDeleteData(BaseSchema):
 
     
-    item_id = fields.Int(required=False)
+    location_id = fields.Int(required=False)
     
     size = fields.Str(required=False)
     
-    location_id = fields.Int(required=False)
+    item_id = fields.Int(required=False)
     
 

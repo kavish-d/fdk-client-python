@@ -13,8 +13,8 @@ from .BannerImage import BannerImage
 class ImageUrls(BaseSchema):
 
     
-    landscape = fields.Nested(BannerImage, required=False)
-    
     portrait = fields.Nested(BannerImage, required=False)
+    
+    landscape = fields.Nested(BannerImage, required=False)
     
 

@@ -15,10 +15,10 @@ from ..application_models.BaseSchema import BaseSchema
 class ValidateCustomerResponse(BaseSchema):
 
     
+    success = fields.Boolean(required=False)
+    
     message = fields.Str(required=False)
     
     data = fields.Dict(required=False)
-    
-    success = fields.Boolean(required=False)
     
 

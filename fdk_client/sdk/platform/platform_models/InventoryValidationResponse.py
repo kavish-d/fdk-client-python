@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class InventoryValidationResponse(BaseSchema):
 
     
-    data = fields.Dict(required=False)
-    
     message = fields.Str(required=False)
+    
+    data = fields.Dict(required=False)
     
 

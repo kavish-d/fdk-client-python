@@ -15,10 +15,10 @@ from ..platform_models.BaseSchema import BaseSchema
 class OrderQuantity(BaseSchema):
 
     
-    minimum = fields.Int(required=False)
-    
     is_set = fields.Boolean(required=False)
     
     maximum = fields.Int(required=False)
+    
+    minimum = fields.Int(required=False)
     
 

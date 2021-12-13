@@ -5,32 +5,32 @@ from marshmallow.validate import OneOf
 from ..platform_enums import *
 from ..platform_models.BaseSchema import BaseSchema
 
-
-
 from .ImageUrls import ImageUrls
 
-
-
-
+from .Child import Child
 
 from .ActionPage import ActionPage
 
-from .Child import Child
+
+
+
+
+
 
 
 class CategoryItems(BaseSchema):
 
     
-    name = fields.Str(required=False)
-    
     banners = fields.Nested(ImageUrls, required=False)
     
-    uid = fields.Int(required=False)
-    
-    slug = fields.Str(required=False)
+    childs = fields.List(fields.Nested(Child, required=False), required=False)
     
     action = fields.Nested(ActionPage, required=False)
     
-    childs = fields.List(fields.Nested(Child, required=False), required=False)
+    uid = fields.Int(required=False)
+    
+    name = fields.Str(required=False)
+    
+    slug = fields.Str(required=False)
     
 

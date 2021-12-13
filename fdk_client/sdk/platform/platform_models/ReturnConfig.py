@@ -15,9 +15,9 @@ from ..platform_models.BaseSchema import BaseSchema
 class ReturnConfig(BaseSchema):
 
     
-    unit = fields.Str(required=False)
-    
     time = fields.Int(required=False)
+    
+    unit = fields.Str(required=False)
     
     returnable = fields.Boolean(required=False)
     

@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class CollectionItemRequest(BaseSchema):
 
     
-    page_no = fields.Int(required=False)
-    
     page_size = fields.Int(required=False)
+    
+    page_no = fields.Int(required=False)
     
 

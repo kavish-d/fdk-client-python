@@ -13,8 +13,8 @@ from ..platform_models.BaseSchema import BaseSchema
 class MetaDataListingSortMetaResponse(BaseSchema):
 
     
-    display = fields.Str(required=False)
-    
     key = fields.Str(required=False)
+    
+    display = fields.Str(required=False)
     
 
