@@ -13,6 +13,7 @@ from .ActionPage import ActionPage
 
 
 class Action(BaseSchema):
+    # Content swagger.json
 
     
     page = fields.Nested(ActionPage, required=False)

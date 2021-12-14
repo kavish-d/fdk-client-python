@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class AvailablePageUserPredicate(BaseSchema):
+    # Theme swagger.json
 
     
     authenticated = fields.Boolean(required=False)

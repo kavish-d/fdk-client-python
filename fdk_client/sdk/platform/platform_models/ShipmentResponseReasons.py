@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ShipmentResponseReasons(BaseSchema):
+    # Order swagger.json
 
     
     reason_id = fields.Float(required=False)

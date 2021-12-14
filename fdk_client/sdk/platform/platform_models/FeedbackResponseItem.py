@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class FeedbackResponseItem(BaseSchema):
+    # Lead swagger.json
 
     
     display = fields.Str(required=False)

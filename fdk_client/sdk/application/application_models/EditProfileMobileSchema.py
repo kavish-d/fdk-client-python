@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class EditProfileMobileSchema(BaseSchema):
+    # User swagger.json
 
     
     phone = fields.Str(required=False)

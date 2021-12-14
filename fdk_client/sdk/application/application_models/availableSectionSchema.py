@@ -15,6 +15,7 @@ from .BlocksProps import BlocksProps
 
 
 class availableSectionSchema(BaseSchema):
+    # Theme swagger.json
 
     
     blocks = fields.List(fields.Nested(Blocks, required=False), required=False)

@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CommonResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     success = fields.Str(required=False)

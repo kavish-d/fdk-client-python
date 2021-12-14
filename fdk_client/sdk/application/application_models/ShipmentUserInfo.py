@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ShipmentUserInfo(BaseSchema):
+    # Order swagger.json
 
     
     gender = fields.Str(required=False)

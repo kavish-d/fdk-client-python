@@ -35,6 +35,7 @@ from .MediaMeta import MediaMeta
 
 
 class UpdateReviewRequest(BaseSchema):
+    # Feedback swagger.json
 
     
     active = fields.Boolean(required=False)

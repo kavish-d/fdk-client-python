@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class UnauthenticatedSchema(BaseSchema):
+    # User swagger.json
 
     
     authenticated = fields.Boolean(required=False)

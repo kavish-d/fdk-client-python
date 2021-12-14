@@ -11,6 +11,7 @@ from .Coupon import Coupon
 
 
 class GetCouponResponse(BaseSchema):
+    # Cart swagger.json
 
     
     page = fields.Nested(PageCoupon, required=False)

@@ -15,6 +15,7 @@ from .ListSchemaItem import ListSchemaItem
 
 
 class Config(BaseSchema):
+    # Theme swagger.json
 
     
     preset = fields.Nested(Preset, required=False)

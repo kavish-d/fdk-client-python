@@ -19,6 +19,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class SizeChartValues(BaseSchema):
+    # Catalog swagger.json
 
     
     col_5 = fields.Str(required=False)

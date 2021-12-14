@@ -23,6 +23,7 @@ from .PlatformShipment import PlatformShipment
 
 
 class OrderItems(BaseSchema):
+    # Order swagger.json
 
     
     user = fields.Nested(PlatformOrderUserInfo, required=False)

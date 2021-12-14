@@ -11,6 +11,7 @@ from .HsnCodesObject import HsnCodesObject
 
 
 class HsnCodesListingResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     page = fields.Nested(PageResponse, required=False)

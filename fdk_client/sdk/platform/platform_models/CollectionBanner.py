@@ -11,6 +11,7 @@ from .CollectionImage import CollectionImage
 
 
 class CollectionBanner(BaseSchema):
+    # Catalog swagger.json
 
     
     portrait = fields.Nested(CollectionImage, required=False)

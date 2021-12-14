@@ -23,6 +23,7 @@ from .ActionPage import ActionPage
 
 
 class BrandItem(BaseSchema):
+    # Catalog swagger.json
 
     
     discount = fields.Str(required=False)

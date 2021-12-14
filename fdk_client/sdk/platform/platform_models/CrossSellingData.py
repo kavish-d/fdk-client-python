@@ -11,10 +11,11 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CrossSellingData(BaseSchema):
+    # Catalog swagger.json
 
     
-    products = fields.Int(required=False)
-    
     articles = fields.Int(required=False)
+    
+    products = fields.Int(required=False)
     
 

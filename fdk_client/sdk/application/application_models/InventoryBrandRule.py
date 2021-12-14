@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class InventoryBrandRule(BaseSchema):
+    # Configuration swagger.json
 
     
     criteria = fields.Str(required=False)

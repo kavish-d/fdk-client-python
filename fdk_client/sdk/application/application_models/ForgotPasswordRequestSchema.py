@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ForgotPasswordRequestSchema(BaseSchema):
+    # User swagger.json
 
     
     code = fields.Str(required=False)

@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Question(BaseSchema):
+    # Feedback swagger.json
 
     
     choices = fields.List(fields.Str(required=False), required=False)

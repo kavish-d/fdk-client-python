@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CartProductIdentifer(BaseSchema):
+    # Cart swagger.json
 
     
     identifier = fields.Str(required=False)

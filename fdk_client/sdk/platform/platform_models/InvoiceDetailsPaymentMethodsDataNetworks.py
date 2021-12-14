@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class InvoiceDetailsPaymentMethodsDataNetworks(BaseSchema):
+    # Billing swagger.json
 
     
     available = fields.List(fields.Str(required=False), required=False)

@@ -21,6 +21,7 @@ from .CompanyAboutAddress import CompanyAboutAddress
 
 
 class CompanyInfo(BaseSchema):
+    # Configuration swagger.json
 
     
     _id = fields.Str(required=False)

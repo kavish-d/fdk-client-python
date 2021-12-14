@@ -21,6 +21,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class GstDetails(BaseSchema):
+    # Order swagger.json
 
     
     brand_calculated_amount = fields.Float(required=False)

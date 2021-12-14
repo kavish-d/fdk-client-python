@@ -37,6 +37,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class BillingAddress(BaseSchema):
+    # Order swagger.json
 
     
     address1 = fields.Str(required=False)

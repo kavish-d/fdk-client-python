@@ -11,6 +11,7 @@ from .CompanyBrandDetail import CompanyBrandDetail
 
 
 class OptinCompanyBrandDetailsView(BaseSchema):
+    # Catalog swagger.json
 
     
     page = fields.Nested(Page, required=False)

@@ -15,6 +15,7 @@ from .UIIcon import UIIcon
 
 
 class UI(BaseSchema):
+    # Feedback swagger.json
 
     
     feedback_question = fields.List(fields.Str(required=False), required=False)

@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class GoogleMapCredentials(BaseSchema):
+    # Configuration swagger.json
 
     
     api_key = fields.Str(required=False)

@@ -9,6 +9,7 @@ from .FAQCategorySchema import FAQCategorySchema
 
 
 class GetFaqCategoryBySlugSchema(BaseSchema):
+    # Content swagger.json
 
     
     category = fields.Nested(FAQCategorySchema, required=False)

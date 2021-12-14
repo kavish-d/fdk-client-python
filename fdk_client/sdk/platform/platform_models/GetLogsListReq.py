@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class GetLogsListReq(BaseSchema):
+    # Analytics swagger.json
 
     
     marketplace_name = fields.Str(required=False)

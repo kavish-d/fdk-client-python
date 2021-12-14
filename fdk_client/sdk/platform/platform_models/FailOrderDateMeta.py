@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class FailOrderDateMeta(BaseSchema):
+    # Order swagger.json
 
     
     added_on_store = fields.Str(required=False)

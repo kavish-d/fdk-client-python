@@ -21,6 +21,7 @@ from .ProcessConfig import ProcessConfig
 
 
 class StoreConfig(BaseSchema):
+    # Inventory swagger.json
 
     
     job_code = fields.Str(required=False)

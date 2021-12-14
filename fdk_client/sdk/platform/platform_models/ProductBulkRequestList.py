@@ -11,6 +11,7 @@ from .ProductBulkRequest import ProductBulkRequest
 
 
 class ProductBulkRequestList(BaseSchema):
+    # Catalog swagger.json
 
     
     page = fields.Nested(Page, required=False)

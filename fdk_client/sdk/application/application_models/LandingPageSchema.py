@@ -25,6 +25,7 @@ from .DateMeta import DateMeta
 
 
 class LandingPageSchema(BaseSchema):
+    # Content swagger.json
 
     
     slug = fields.Str(required=False)

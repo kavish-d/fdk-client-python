@@ -21,6 +21,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class CreateUserRequestSchema(BaseSchema):
+    # User swagger.json
 
     
     phone_number = fields.Str(required=False)

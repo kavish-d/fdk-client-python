@@ -11,6 +11,7 @@ from .Items import Items
 
 
 class BulkAssetResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     page = fields.Nested(Page, required=False)

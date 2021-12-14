@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class OAuthRequestSchemaOauth2(BaseSchema):
+    # User swagger.json
 
     
     access_token = fields.Str(required=False)

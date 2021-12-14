@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class LogEmail(BaseSchema):
+    # Communication swagger.json
 
     
     template = fields.Str(required=False)

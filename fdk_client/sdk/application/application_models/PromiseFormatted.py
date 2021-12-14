@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class PromiseFormatted(BaseSchema):
+    # Cart swagger.json
 
     
     min = fields.Str(required=False)

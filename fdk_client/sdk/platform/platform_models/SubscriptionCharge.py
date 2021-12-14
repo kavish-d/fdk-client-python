@@ -35,6 +35,7 @@ from .CurrentPeriod import CurrentPeriod
 
 
 class SubscriptionCharge(BaseSchema):
+    # Billing swagger.json
 
     
     _id = fields.Str(required=False)

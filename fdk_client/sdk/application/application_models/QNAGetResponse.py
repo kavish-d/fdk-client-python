@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class QNAGetResponse(BaseSchema):
+    # Feedback swagger.json
 
     
     items = fields.List(fields.Nested(QNA, required=False), required=False)

@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ScheduleStartSchema(BaseSchema):
+    # Content swagger.json
 
     
     start = fields.Str(required=False)

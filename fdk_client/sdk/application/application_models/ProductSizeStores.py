@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ProductSizeStores(BaseSchema):
+    # Catalog swagger.json
 
     
     count = fields.Int(required=False)

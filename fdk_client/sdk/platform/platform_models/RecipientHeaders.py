@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class RecipientHeaders(BaseSchema):
+    # Communication swagger.json
 
     
     email = fields.Str(required=False)

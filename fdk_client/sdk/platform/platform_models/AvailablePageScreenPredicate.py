@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class AvailablePageScreenPredicate(BaseSchema):
+    # Theme swagger.json
 
     
     mobile = fields.Boolean(required=False)

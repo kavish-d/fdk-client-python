@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class UpdateShipmentStatusBody(BaseSchema):
+    # Order swagger.json
 
     
     shipments = fields.Dict(required=False)

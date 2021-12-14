@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Invoice(BaseSchema):
+    # Order swagger.json
 
     
     updated_date = fields.Str(required=False)

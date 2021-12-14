@@ -41,6 +41,7 @@ from .LoyaltyPointsConfig import LoyaltyPointsConfig
 
 
 class ApplicationInventory(BaseSchema):
+    # Configuration swagger.json
 
     
     inventory = fields.Nested(AppInventoryConfig, required=False)

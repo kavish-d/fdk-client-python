@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CloseVideoRoomResponse(BaseSchema):
+    # Lead swagger.json
 
     
     success = fields.Boolean(required=False)

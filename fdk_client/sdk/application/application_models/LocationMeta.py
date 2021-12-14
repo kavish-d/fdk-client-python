@@ -11,6 +11,7 @@ from .Location import Location
 
 
 class LocationMeta(BaseSchema):
+    # Feedback swagger.json
 
     
     demand = fields.Nested(Location, required=False)

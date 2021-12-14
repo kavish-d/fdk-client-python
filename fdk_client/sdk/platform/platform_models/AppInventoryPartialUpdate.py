@@ -17,6 +17,7 @@ from .LoyaltyPointsConfig import LoyaltyPointsConfig
 
 
 class AppInventoryPartialUpdate(BaseSchema):
+    # Configuration swagger.json
 
     
     reward_points = fields.Nested(RewardPointsConfig, required=False)

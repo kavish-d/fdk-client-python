@@ -7,18 +7,19 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 
-
-
 from .CardPaymentGateway import CardPaymentGateway
 
 
-class ActiveCardPaymentGatewayResponse(BaseSchema):
 
-    
-    success = fields.Boolean(required=False)
+
+class ActiveCardPaymentGatewayResponse(BaseSchema):
+    # Payment swagger.json
+
     
     message = fields.Str(required=False)
     
     cards = fields.Nested(CardPaymentGateway, required=False)
+    
+    success = fields.Boolean(required=False)
     
 

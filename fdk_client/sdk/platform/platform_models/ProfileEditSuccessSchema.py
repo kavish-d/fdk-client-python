@@ -21,6 +21,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ProfileEditSuccessSchema(BaseSchema):
+    # User swagger.json
 
     
     email = fields.Str(required=False)

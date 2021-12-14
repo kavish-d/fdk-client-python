@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class RewardsAudience(BaseSchema):
+    # Rewards swagger.json
 
     
     header_user_id = fields.Str(required=False)

@@ -19,6 +19,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Notification(BaseSchema):
+    # Communication swagger.json
 
     
     title = fields.Str(required=False)

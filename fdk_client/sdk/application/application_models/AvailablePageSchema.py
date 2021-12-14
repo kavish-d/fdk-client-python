@@ -27,6 +27,7 @@ from .AvailablePageSeo import AvailablePageSeo
 
 
 class AvailablePageSchema(BaseSchema):
+    # Theme swagger.json
 
     
     value = fields.Str(required=False)

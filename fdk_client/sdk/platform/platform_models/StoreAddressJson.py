@@ -43,6 +43,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class StoreAddressJson(BaseSchema):
+    # Order swagger.json
 
     
     country = fields.Str(required=False)

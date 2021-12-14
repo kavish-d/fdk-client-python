@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CancelSubscriptionReq(BaseSchema):
+    # Billing swagger.json
 
     
     unique_id = fields.Str(required=False)

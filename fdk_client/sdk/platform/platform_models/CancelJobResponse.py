@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CancelJobResponse(BaseSchema):
+    # Discount swagger.json
 
     
     success = fields.Boolean(required=False)

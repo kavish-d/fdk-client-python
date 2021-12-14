@@ -17,6 +17,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class FulfillingStore(BaseSchema):
+    # Order swagger.json
 
     
     code = fields.Str(required=False)

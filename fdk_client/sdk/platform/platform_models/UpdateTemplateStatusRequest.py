@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class UpdateTemplateStatusRequest(BaseSchema):
+    # Feedback swagger.json
 
     
     active = fields.Boolean(required=False)

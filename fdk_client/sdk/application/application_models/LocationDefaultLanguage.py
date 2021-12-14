@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class LocationDefaultLanguage(BaseSchema):
+    # Common swagger.json
 
     
     name = fields.Str(required=False)

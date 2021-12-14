@@ -37,6 +37,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class OrderShippingAddress(BaseSchema):
+    # Order swagger.json
 
     
     address1 = fields.Str(required=False)

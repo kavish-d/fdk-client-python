@@ -13,6 +13,7 @@ from .StoreCriteriaRule import StoreCriteriaRule
 
 
 class InventoryStoreRule(BaseSchema):
+    # Configuration swagger.json
 
     
     criteria = fields.Str(required=False)

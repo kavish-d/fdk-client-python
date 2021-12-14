@@ -9,6 +9,7 @@ from .TextDetector import TextDetector
 
 
 class AutoDetectors(BaseSchema):
+    # Feedback swagger.json
 
     
     text_detector = fields.List(fields.Nested(TextDetector, required=False), required=False)

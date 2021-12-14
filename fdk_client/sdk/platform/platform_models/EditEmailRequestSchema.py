@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class EditEmailRequestSchema(BaseSchema):
+    # User swagger.json
 
     
     email = fields.Str(required=False)

@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Email(BaseSchema):
+    # Lead swagger.json
 
     
     primary = fields.Boolean(required=False)

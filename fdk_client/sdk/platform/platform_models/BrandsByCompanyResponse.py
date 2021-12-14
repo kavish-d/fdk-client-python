@@ -9,6 +9,7 @@ from .CompanyBrandInfo import CompanyBrandInfo
 
 
 class BrandsByCompanyResponse(BaseSchema):
+    # Configuration swagger.json
 
     
     brands = fields.Nested(CompanyBrandInfo, required=False)

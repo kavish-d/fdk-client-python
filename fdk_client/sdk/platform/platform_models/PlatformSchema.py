@@ -49,6 +49,7 @@ from .SocialTokens import SocialTokens
 
 
 class PlatformSchema(BaseSchema):
+    # User swagger.json
 
     
     display = fields.Str(required=False)

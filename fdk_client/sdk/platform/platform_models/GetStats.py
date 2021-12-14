@@ -9,6 +9,7 @@ from .Stats import Stats
 
 
 class GetStats(BaseSchema):
+    # Communication swagger.json
 
     
     items = fields.List(fields.Nested(Stats, required=False), required=False)

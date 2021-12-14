@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class InformationPhone(BaseSchema):
+    # Configuration swagger.json
 
     
     code = fields.Str(required=False)

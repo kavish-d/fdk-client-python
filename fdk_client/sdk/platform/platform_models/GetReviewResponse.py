@@ -15,6 +15,7 @@ from .SortMethod import SortMethod
 
 
 class GetReviewResponse(BaseSchema):
+    # Feedback swagger.json
 
     
     facets = fields.List(fields.Nested(ReviewFacet, required=False), required=False)

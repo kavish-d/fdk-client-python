@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class InvoiceDetailsPaymentMethodsDataThreeDSecureUsage(BaseSchema):
+    # Billing swagger.json
 
     
     supported = fields.Boolean(required=False)

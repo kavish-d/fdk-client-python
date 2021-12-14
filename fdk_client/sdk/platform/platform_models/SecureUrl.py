@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class SecureUrl(BaseSchema):
+    # Configuration swagger.json
 
     
     secure_url = fields.Str(required=False)

@@ -31,6 +31,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ProductFiltersValue(BaseSchema):
+    # Catalog swagger.json
 
     
     value = fields.Str(required=False)

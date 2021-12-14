@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class CodeRequestBodySchema(BaseSchema):
+    # User swagger.json
 
     
     code = fields.Str(required=False)

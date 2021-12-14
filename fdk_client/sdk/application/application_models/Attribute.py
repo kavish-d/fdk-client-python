@@ -19,6 +19,7 @@ from .TagMeta import TagMeta
 
 
 class Attribute(BaseSchema):
+    # Feedback swagger.json
 
     
     date_meta = fields.Nested(DateMeta, required=False)

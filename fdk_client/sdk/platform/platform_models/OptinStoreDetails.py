@@ -11,6 +11,7 @@ from .StoreDetail import StoreDetail
 
 
 class OptinStoreDetails(BaseSchema):
+    # Catalog swagger.json
 
     
     page = fields.Nested(Page, required=False)

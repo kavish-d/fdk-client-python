@@ -37,6 +37,7 @@ from .DateMeta import DateMeta
 
 
 class BlogSchema(BaseSchema):
+    # Content swagger.json
 
     
     _id = fields.Str(required=False)

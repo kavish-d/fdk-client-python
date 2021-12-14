@@ -19,6 +19,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class LogMeta(BaseSchema):
+    # Communication swagger.json
 
     
     type = fields.Str(required=False)

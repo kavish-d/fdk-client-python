@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class RegisterRequiredFieldsMobile(BaseSchema):
+    # User swagger.json
 
     
     is_required = fields.Boolean(required=False)

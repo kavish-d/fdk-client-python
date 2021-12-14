@@ -9,6 +9,7 @@ from .ConfigurationProductConfig import ConfigurationProductConfig
 
 
 class ConfigurationProductSimilar(BaseSchema):
+    # Catalog swagger.json
 
     
     config = fields.List(fields.Nested(ConfigurationProductConfig, required=False), required=False)

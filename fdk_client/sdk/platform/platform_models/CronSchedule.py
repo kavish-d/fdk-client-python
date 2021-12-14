@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CronSchedule(BaseSchema):
+    # Content swagger.json
 
     
     cron = fields.Str(required=False)

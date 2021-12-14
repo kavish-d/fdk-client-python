@@ -15,6 +15,7 @@ from .Status import Status
 
 
 class Filter(BaseSchema):
+    # Lead swagger.json
 
     
     priorities = fields.List(fields.Nested(Priority, required=False), required=False)

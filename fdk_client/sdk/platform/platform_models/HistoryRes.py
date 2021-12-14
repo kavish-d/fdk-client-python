@@ -13,6 +13,7 @@ from .Page import Page
 
 
 class HistoryRes(BaseSchema):
+    # Rewards swagger.json
 
     
     items = fields.List(fields.Nested(HistoryPretty, required=False), required=False)

@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class RedirectionSchema(BaseSchema):
+    # Content swagger.json
 
     
     redirect_from = fields.Str(required=False)

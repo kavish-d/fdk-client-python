@@ -11,6 +11,7 @@ from .PaginationSchema import PaginationSchema
 
 
 class ThemesListingResponseSchema(BaseSchema):
+    # Theme swagger.json
 
     
     items = fields.List(fields.Nested(ThemesSchema, required=False), required=False)

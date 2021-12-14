@@ -13,6 +13,7 @@ from .ConfigPage import ConfigPage
 
 
 class ListSchemaItem(BaseSchema):
+    # Theme swagger.json
 
     
     global_config = fields.Dict(required=False)

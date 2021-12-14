@@ -29,6 +29,7 @@ from .EditProfileMobileSchema import EditProfileMobileSchema
 
 
 class EditProfileRequestSchema(BaseSchema):
+    # User swagger.json
 
     
     first_name = fields.Str(required=False)

@@ -25,6 +25,7 @@ from .OptedStoreAddress import OptedStoreAddress
 
 
 class OptedStore(BaseSchema):
+    # Configuration swagger.json
 
     
     name = fields.Str(required=False)

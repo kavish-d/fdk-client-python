@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class OrderStatuses(BaseSchema):
+    # Order swagger.json
 
     
     display = fields.Str(required=False)

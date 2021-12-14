@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class SearchLogRes(BaseSchema):
+    # Analytics swagger.json
 
     
     items = fields.List(fields.Nested(LogInfo, required=False), required=False)

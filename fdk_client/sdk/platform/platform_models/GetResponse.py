@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class GetResponse(BaseSchema):
+    # Feedback swagger.json
 
     
     data = fields.Dict(required=False)

@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class AdditionalContactDetails(BaseSchema):
+    # Order swagger.json
 
     
     number = fields.List(fields.Str(required=False), required=False)

@@ -17,6 +17,7 @@ from .AddMediaRequest import AddMediaRequest
 
 
 class AddMediaListRequest(BaseSchema):
+    # Feedback swagger.json
 
     
     entity_id = fields.Str(required=False)

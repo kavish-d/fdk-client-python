@@ -13,6 +13,7 @@ from .OAuthRequestSchemaProfile import OAuthRequestSchemaProfile
 
 
 class OAuthRequestSchema(BaseSchema):
+    # User swagger.json
 
     
     is_signed_in = fields.Boolean(required=False)

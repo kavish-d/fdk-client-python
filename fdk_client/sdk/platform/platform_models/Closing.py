@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Closing(BaseSchema):
+    # Order swagger.json
 
     
     hour = fields.Int(required=False)

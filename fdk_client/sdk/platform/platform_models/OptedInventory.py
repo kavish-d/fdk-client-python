@@ -11,6 +11,7 @@ from .OptType import OptType
 
 
 class OptedInventory(BaseSchema):
+    # Configuration swagger.json
 
     
     opt_type = fields.Nested(OptType, required=False)

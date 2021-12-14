@@ -11,6 +11,7 @@ from .LandingPageSchema import LandingPageSchema
 
 
 class LandingPage(BaseSchema):
+    # Content swagger.json
 
     
     data = fields.Nested(LandingPageSchema, required=False)

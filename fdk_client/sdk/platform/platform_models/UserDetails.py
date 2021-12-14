@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class UserDetails(BaseSchema):
+    # Discount swagger.json
 
     
     username = fields.Str(required=False)

@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class LogisticError(BaseSchema):
+    # Logistic swagger.json
 
     
     type = fields.Str(required=False)

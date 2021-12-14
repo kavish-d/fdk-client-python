@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class TatacliqLuxury(BaseSchema):
+    # Order swagger.json
 
     
     sku = fields.Str(required=False)

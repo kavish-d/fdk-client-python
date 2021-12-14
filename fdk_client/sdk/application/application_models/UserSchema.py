@@ -41,6 +41,7 @@ from .Debug import Debug
 
 
 class UserSchema(BaseSchema):
+    # User swagger.json
 
     
     first_name = fields.Str(required=False)

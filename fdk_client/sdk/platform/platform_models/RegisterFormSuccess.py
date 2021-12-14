@@ -33,6 +33,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class RegisterFormSuccess(BaseSchema):
+    # User swagger.json
 
     
     email = fields.Str(required=False)

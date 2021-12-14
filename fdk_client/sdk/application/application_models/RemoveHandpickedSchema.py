@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class RemoveHandpickedSchema(BaseSchema):
+    # Content swagger.json
 
     
     tags = fields.List(fields.Str(required=False), required=False)

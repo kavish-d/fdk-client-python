@@ -13,6 +13,7 @@ from .ProductDetail import ProductDetail
 
 
 class ProductSimilarItem(BaseSchema):
+    # Catalog swagger.json
 
     
     title = fields.Str(required=False)

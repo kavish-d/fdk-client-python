@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class GetIntegrationsOptInsResponse(BaseSchema):
+    # Configuration swagger.json
 
     
     items = fields.List(fields.Nested(IntegrationOptIn, required=False), required=False)

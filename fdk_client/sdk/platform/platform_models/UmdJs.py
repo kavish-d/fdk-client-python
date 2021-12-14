@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class UmdJs(BaseSchema):
+    # Theme swagger.json
 
     
     link = fields.Str(required=False)

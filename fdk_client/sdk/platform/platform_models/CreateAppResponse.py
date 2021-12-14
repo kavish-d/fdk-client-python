@@ -11,6 +11,7 @@ from .ApplicationInventory import ApplicationInventory
 
 
 class CreateAppResponse(BaseSchema):
+    # Configuration swagger.json
 
     
     app = fields.Nested(Application, required=False)

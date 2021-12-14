@@ -15,6 +15,7 @@ from .StagesFilters import StagesFilters
 
 
 class Stages(BaseSchema):
+    # Order swagger.json
 
     
     text = fields.Str(required=False)

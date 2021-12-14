@@ -11,10 +11,11 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class TeaserTag(BaseSchema):
+    # Catalog swagger.json
 
     
-    url = fields.Str(required=False)
-    
     tag = fields.Str(required=False)
+    
+    url = fields.Str(required=False)
     
 

@@ -19,7 +19,12 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class CouponBreakup(BaseSchema):
+    # Cart swagger.json
 
+    
+    code = fields.Str(required=False)
+    
+    type = fields.Str(required=False)
     
     is_applied = fields.Boolean(required=False)
     
@@ -28,9 +33,5 @@ class CouponBreakup(BaseSchema):
     uid = fields.Str(required=False)
     
     value = fields.Float(required=False)
-    
-    code = fields.Str(required=False)
-    
-    type = fields.Str(required=False)
     
 

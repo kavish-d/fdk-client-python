@@ -15,6 +15,7 @@ from .SplashImage import SplashImage
 
 
 class MobileAppConfigRequest(BaseSchema):
+    # Configuration swagger.json
 
     
     app_name = fields.Str(required=False)

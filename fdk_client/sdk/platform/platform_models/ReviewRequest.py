@@ -19,6 +19,7 @@ from .MediaMetaRequest import MediaMetaRequest
 
 
 class ReviewRequest(BaseSchema):
+    # Feedback swagger.json
 
     
     description = fields.Str(required=False)

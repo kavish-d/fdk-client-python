@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class TaxLinesPriceSetPresentmentMoney(BaseSchema):
+    # Order swagger.json
 
     
     currency_code = fields.Str(required=False)

@@ -15,6 +15,7 @@ from .Device import Device
 
 
 class AppVersionRequest(BaseSchema):
+    # Configuration swagger.json
 
     
     application = fields.Nested(ApplicationVersionRequest, required=False)

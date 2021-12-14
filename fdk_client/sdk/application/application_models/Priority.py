@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Priority(BaseSchema):
+    # Lead swagger.json
 
     
     key = fields.Str(required=False, validate=OneOf(PriorityEnum.__members__.keys()))

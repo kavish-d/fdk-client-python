@@ -15,14 +15,15 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Logo(BaseSchema):
+    # Catalog swagger.json
 
     
     aspect_ratio = fields.Str(required=False)
     
-    aspect_ratio_f = fields.Int(required=False)
-    
     secure_url = fields.Str(required=False)
     
     url = fields.Str(required=False)
+    
+    aspect_ratio_f = fields.Int(required=False)
     
 

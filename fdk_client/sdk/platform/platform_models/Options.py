@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Options(BaseSchema):
+    # Order swagger.json
 
     
     text = fields.Str(required=False)

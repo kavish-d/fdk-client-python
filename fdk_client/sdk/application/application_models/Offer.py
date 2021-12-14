@@ -35,6 +35,7 @@ from .ShareMessages import ShareMessages
 
 
 class Offer(BaseSchema):
+    # Rewards swagger.json
 
     
     _schedule = fields.Nested(Schedule, required=False)

@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Opts(BaseSchema):
+    # FileStorage swagger.json
 
     
     attempts = fields.Int(required=False)

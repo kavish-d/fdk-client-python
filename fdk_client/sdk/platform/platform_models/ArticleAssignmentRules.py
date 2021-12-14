@@ -9,6 +9,7 @@ from .StorePriority import StorePriority
 
 
 class ArticleAssignmentRules(BaseSchema):
+    # Configuration swagger.json
 
     
     store_priority = fields.Nested(StorePriority, required=False)

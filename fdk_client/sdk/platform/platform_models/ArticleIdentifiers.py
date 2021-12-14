@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ArticleIdentifiers(BaseSchema):
+    # Order swagger.json
 
     
     ean = fields.Str(required=False)

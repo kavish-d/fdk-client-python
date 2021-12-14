@@ -9,6 +9,7 @@ from .UpdateCartShipmentItem import UpdateCartShipmentItem
 
 
 class UpdateCartShipmentRequest(BaseSchema):
+    # PosCart swagger.json
 
     
     shipments = fields.List(fields.Nested(UpdateCartShipmentItem, required=False), required=False)

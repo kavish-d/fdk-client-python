@@ -21,6 +21,7 @@ from .BagsForReorder import BagsForReorder
 
 
 class OrderSchema(BaseSchema):
+    # Order swagger.json
 
     
     order_id = fields.Str(required=False)

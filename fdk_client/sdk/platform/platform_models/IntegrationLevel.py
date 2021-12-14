@@ -33,6 +33,7 @@ from .IntegrationMeta import IntegrationMeta
 
 
 class IntegrationLevel(BaseSchema):
+    # Configuration swagger.json
 
     
     opted = fields.Boolean(required=False)

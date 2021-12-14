@@ -27,6 +27,7 @@ from .LatLong import LatLong
 
 
 class Store1(BaseSchema):
+    # Catalog swagger.json
 
     
     state = fields.Str(required=False)

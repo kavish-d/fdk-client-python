@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class AuthSuccessUserDebug(BaseSchema):
+    # User swagger.json
 
     
     platform = fields.Str(required=False)

@@ -19,6 +19,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class SubscriptionBillingAddress(BaseSchema):
+    # Billing swagger.json
 
     
     country = fields.Str(required=False)

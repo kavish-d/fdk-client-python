@@ -19,6 +19,7 @@ from .SystemNotificationUser import SystemNotificationUser
 
 
 class SystemNotification(BaseSchema):
+    # Communication swagger.json
 
     
     notification = fields.Nested(Notification, required=False)

@@ -63,6 +63,7 @@ from .ShipmentTotalDetails import ShipmentTotalDetails
 
 
 class Shipments(BaseSchema):
+    # Order swagger.json
 
     
     order_id = fields.Str(required=False)

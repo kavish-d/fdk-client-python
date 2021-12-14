@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class NotFoundResourceError(BaseSchema):
+    # Payment swagger.json
 
     
     success = fields.Boolean(required=False)

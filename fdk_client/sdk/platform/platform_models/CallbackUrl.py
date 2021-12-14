@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CallbackUrl(BaseSchema):
+    # Configuration swagger.json
 
     
     app = fields.Str(required=False)

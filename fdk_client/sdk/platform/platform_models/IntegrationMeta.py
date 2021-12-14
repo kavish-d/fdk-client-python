@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class IntegrationMeta(BaseSchema):
+    # Configuration swagger.json
 
     
     is_public = fields.Boolean(required=False)

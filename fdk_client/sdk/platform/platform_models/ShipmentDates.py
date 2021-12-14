@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ShipmentDates(BaseSchema):
+    # Order swagger.json
 
     
     due_date = fields.Str(required=False)

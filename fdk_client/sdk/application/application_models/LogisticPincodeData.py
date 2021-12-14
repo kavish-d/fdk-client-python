@@ -21,6 +21,7 @@ from .LogisticError import LogisticError
 
 
 class LogisticPincodeData(BaseSchema):
+    # Logistic swagger.json
 
     
     meta = fields.Nested(LogisticMeta, required=False)

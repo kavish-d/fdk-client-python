@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CollectionBadge(BaseSchema):
+    # Catalog swagger.json
 
     
     text = fields.Str(required=False)

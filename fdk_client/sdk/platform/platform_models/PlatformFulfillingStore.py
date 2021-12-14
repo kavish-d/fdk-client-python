@@ -57,6 +57,7 @@ from .FulfillingStoreStoreAddressJson import FulfillingStoreStoreAddressJson
 
 
 class PlatformFulfillingStore(BaseSchema):
+    # Order swagger.json
 
     
     packaging_material_count = fields.Int(required=False)

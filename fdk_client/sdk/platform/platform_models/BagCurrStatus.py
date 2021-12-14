@@ -17,6 +17,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class BagCurrStatus(BaseSchema):
+    # Order swagger.json
 
     
     enable_tracking = fields.Boolean(required=False)

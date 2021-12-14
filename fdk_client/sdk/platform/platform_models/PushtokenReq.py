@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class PushtokenReq(BaseSchema):
+    # Communication swagger.json
 
     
     action = fields.Str(required=False)

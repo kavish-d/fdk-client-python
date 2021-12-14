@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ArticleMeta(BaseSchema):
+    # Order swagger.json
 
     
     service = fields.Str(required=False)

@@ -23,6 +23,7 @@ from .VoteCount import VoteCount
 
 
 class Comment(BaseSchema):
+    # Feedback swagger.json
 
     
     comment = fields.List(fields.Str(required=False), required=False)

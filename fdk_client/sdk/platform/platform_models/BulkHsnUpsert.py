@@ -9,6 +9,7 @@ from .HsnUpsert import HsnUpsert
 
 
 class BulkHsnUpsert(BaseSchema):
+    # Catalog swagger.json
 
     
     data = fields.List(fields.Nested(HsnUpsert, required=False), required=False)

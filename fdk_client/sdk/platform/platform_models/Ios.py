@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Ios(BaseSchema):
+    # Configuration swagger.json
 
     
     application_id = fields.Str(required=False)

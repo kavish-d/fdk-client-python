@@ -45,6 +45,7 @@ from .InvoiceItemsPlanRecurring import InvoiceItemsPlanRecurring
 
 
 class InvoiceItemsPlan(BaseSchema):
+    # Billing swagger.json
 
     
     recurring = fields.Nested(InvoiceItemsPlanRecurring, required=False)

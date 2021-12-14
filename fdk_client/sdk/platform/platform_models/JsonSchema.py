@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class JsonSchema(BaseSchema):
+    # Configuration swagger.json
 
     
     display = fields.Str(required=False)

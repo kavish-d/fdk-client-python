@@ -13,6 +13,7 @@ from .Css import Css
 
 
 class AssetsSchema(BaseSchema):
+    # Theme swagger.json
 
     
     umd_js = fields.Nested(UmdJs, required=False)

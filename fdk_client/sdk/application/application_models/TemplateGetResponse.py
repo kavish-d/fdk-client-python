@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class TemplateGetResponse(BaseSchema):
+    # Feedback swagger.json
 
     
     items = fields.List(fields.Nested(Template, required=False), required=False)

@@ -17,6 +17,7 @@ from .FinancialBreakup import FinancialBreakup
 
 
 class Bags(BaseSchema):
+    # Order swagger.json
 
     
     item = fields.Nested(Item, required=False)

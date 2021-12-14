@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ReturnConfig(BaseSchema):
+    # Catalog swagger.json
 
     
     time = fields.Int(required=False)

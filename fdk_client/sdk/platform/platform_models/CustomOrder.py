@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CustomOrder(BaseSchema):
+    # Catalog swagger.json
 
     
     manufacturing_time = fields.Int(required=False)

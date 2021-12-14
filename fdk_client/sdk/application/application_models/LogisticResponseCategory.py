@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class LogisticResponseCategory(BaseSchema):
+    # Logistic swagger.json
 
     
     id = fields.Int(required=False)

@@ -19,6 +19,7 @@ from .ProductListingPrice import ProductListingPrice
 
 
 class ProductSizes(BaseSchema):
+    # Catalog swagger.json
 
     
     discount = fields.Str(required=False)

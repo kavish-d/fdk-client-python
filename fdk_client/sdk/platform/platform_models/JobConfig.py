@@ -65,6 +65,7 @@ from .Audit import Audit
 
 
 class JobConfig(BaseSchema):
+    # Inventory swagger.json
 
     
     _id = fields.Int(required=False)

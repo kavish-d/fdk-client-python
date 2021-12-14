@@ -13,6 +13,7 @@ from .Page import Page
 
 
 class SystemNotifications(BaseSchema):
+    # Communication swagger.json
 
     
     items = fields.List(fields.Nested(SystemNotification, required=False), required=False)

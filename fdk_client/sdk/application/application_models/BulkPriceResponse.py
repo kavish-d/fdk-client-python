@@ -9,6 +9,7 @@ from .BulkPriceOffer import BulkPriceOffer
 
 
 class BulkPriceResponse(BaseSchema):
+    # Cart swagger.json
 
     
     data = fields.List(fields.Nested(BulkPriceOffer, required=False), required=False)

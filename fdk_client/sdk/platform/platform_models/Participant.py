@@ -13,6 +13,7 @@ from .UserSchema import UserSchema
 
 
 class Participant(BaseSchema):
+    # Lead swagger.json
 
     
     user = fields.Nested(UserSchema, required=False)

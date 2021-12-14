@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class FontsSchemaItemsFiles(BaseSchema):
+    # Theme swagger.json
 
     
     regular = fields.Str(required=False)

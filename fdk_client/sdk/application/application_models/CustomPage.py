@@ -9,6 +9,7 @@ from .CustomPageSchema import CustomPageSchema
 
 
 class CustomPage(BaseSchema):
+    # Content swagger.json
 
     
     data = fields.Nested(CustomPageSchema, required=False)

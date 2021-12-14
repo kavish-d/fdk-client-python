@@ -11,6 +11,7 @@ from .MoengageCredentials import MoengageCredentials
 
 
 class Moengage(BaseSchema):
+    # Configuration swagger.json
 
     
     credentials = fields.Nested(MoengageCredentials, required=False)

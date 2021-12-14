@@ -11,6 +11,7 @@ from .BagItem import BagItem
 
 
 class Bags(BaseSchema):
+    # Order swagger.json
 
     
     item = fields.Nested(BagItem, required=False)

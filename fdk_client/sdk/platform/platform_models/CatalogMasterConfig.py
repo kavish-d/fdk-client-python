@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CatalogMasterConfig(BaseSchema):
+    # Inventory swagger.json
 
     
     source_slug = fields.Str(required=False)

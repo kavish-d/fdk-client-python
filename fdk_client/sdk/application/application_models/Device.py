@@ -13,6 +13,7 @@ from .OS import OS
 
 
 class Device(BaseSchema):
+    # Configuration swagger.json
 
     
     build = fields.Int(required=False)

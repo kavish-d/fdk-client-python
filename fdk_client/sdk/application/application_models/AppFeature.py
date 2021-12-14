@@ -35,6 +35,7 @@ from .OrderFeature import OrderFeature
 
 
 class AppFeature(BaseSchema):
+    # Configuration swagger.json
 
     
     product_detail = fields.Nested(ProductDetailFeature, required=False)

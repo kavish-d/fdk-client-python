@@ -17,6 +17,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class BagStatusBagStateMapper(BaseSchema):
+    # Order swagger.json
 
     
     is_active = fields.Boolean(required=False)

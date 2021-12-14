@@ -29,6 +29,7 @@ from .SplashImage import SplashImage
 
 
 class MobileAppConfiguration(BaseSchema):
+    # Configuration swagger.json
 
     
     is_active = fields.Boolean(required=False)

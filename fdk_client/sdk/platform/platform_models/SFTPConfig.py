@@ -41,6 +41,7 @@ from .ArchiveConfig import ArchiveConfig
 
 
 class SFTPConfig(BaseSchema):
+    # Inventory swagger.json
 
     
     host = fields.Str(required=False)

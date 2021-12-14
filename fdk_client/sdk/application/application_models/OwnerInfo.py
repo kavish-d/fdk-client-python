@@ -19,6 +19,7 @@ from .UserPhoneNumber import UserPhoneNumber
 
 
 class OwnerInfo(BaseSchema):
+    # Configuration swagger.json
 
     
     _id = fields.Str(required=False)

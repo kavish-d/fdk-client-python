@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class LoyaltyPointsConfig(BaseSchema):
+    # Configuration swagger.json
 
     
     enabled = fields.Boolean(required=False)

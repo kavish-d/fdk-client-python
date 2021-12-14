@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class GetNRecordsCsvReq(BaseSchema):
+    # Communication swagger.json
 
     
     url = fields.Str(required=False)

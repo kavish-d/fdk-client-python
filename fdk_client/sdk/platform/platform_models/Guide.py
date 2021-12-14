@@ -9,6 +9,7 @@ from .Meta import Meta
 
 
 class Guide(BaseSchema):
+    # Catalog swagger.json
 
     
     meta = fields.Nested(Meta, required=False)

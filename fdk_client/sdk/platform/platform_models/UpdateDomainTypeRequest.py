@@ -11,6 +11,7 @@ from .UpdateDomain import UpdateDomain
 
 
 class UpdateDomainTypeRequest(BaseSchema):
+    # Configuration swagger.json
 
     
     domain = fields.Nested(UpdateDomain, required=False)

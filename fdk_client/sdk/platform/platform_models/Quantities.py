@@ -15,6 +15,7 @@ from .Damaged import Damaged
 
 
 class Quantities(BaseSchema):
+    # Order swagger.json
 
     
     not_available = fields.Nested(NotAvailable, required=False)

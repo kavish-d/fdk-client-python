@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CommonJs(BaseSchema):
+    # Theme swagger.json
 
     
     link = fields.Str(required=False)

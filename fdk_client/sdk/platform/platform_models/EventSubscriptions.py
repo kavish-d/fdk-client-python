@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class EventSubscriptions(BaseSchema):
+    # Communication swagger.json
 
     
     items = fields.List(fields.Nested(EventSubscription, required=False), required=False)

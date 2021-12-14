@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ApiError(BaseSchema):
+    # Partner swagger.json
 
     
     code = fields.Str(required=False)

@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class PollForAssignment(BaseSchema):
+    # Lead swagger.json
 
     
     duration = fields.Float(required=False)

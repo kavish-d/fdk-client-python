@@ -35,6 +35,7 @@ from .TemplateAndType import TemplateAndType
 
 
 class EmailTemplateReq(BaseSchema):
+    # Communication swagger.json
 
     
     name = fields.Str(required=False)

@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class TrackingDetails(BaseSchema):
+    # Order swagger.json
 
     
     is_current = fields.Boolean(required=False)

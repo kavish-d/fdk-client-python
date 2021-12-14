@@ -19,6 +19,7 @@ from .SubscriptionBillingAddress import SubscriptionBillingAddress
 
 
 class SubscriptionCustomerCreate(BaseSchema):
+    # Billing swagger.json
 
     
     phone = fields.Nested(Phone, required=False)

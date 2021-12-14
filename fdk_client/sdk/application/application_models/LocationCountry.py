@@ -33,6 +33,7 @@ from .LocationDefaultLanguage import LocationDefaultLanguage
 
 
 class LocationCountry(BaseSchema):
+    # Common swagger.json
 
     
     capital = fields.Str(required=False)

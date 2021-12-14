@@ -9,6 +9,7 @@ from .NestedTags import NestedTags
 
 
 class ProductTagsViewResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     items = fields.Nested(NestedTags, required=False)

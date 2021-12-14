@@ -13,12 +13,13 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class OrderQuantity(BaseSchema):
+    # Catalog swagger.json
 
     
     is_set = fields.Boolean(required=False)
     
-    maximum = fields.Int(required=False)
-    
     minimum = fields.Int(required=False)
+    
+    maximum = fields.Int(required=False)
     
 

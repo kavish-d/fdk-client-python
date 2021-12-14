@@ -17,6 +17,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class StatsGroupComponent(BaseSchema):
+    # Analytics swagger.json
 
     
     key = fields.Str(required=False)

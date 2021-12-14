@@ -13,6 +13,7 @@ from .Currency import Currency
 
 
 class AppCurrencyResponse(BaseSchema):
+    # Configuration swagger.json
 
     
     application = fields.Str(required=False)

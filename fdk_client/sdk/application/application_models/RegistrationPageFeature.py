@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class RegistrationPageFeature(BaseSchema):
+    # Configuration swagger.json
 
     
     ask_store_address = fields.Boolean(required=False)

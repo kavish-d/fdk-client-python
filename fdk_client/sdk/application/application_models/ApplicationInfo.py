@@ -33,6 +33,7 @@ from .SecureUrl import SecureUrl
 
 
 class ApplicationInfo(BaseSchema):
+    # Configuration swagger.json
 
     
     _id = fields.Str(required=False)

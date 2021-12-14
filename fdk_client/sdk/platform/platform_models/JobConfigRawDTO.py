@@ -15,6 +15,7 @@ from .JobConfig import JobConfig
 
 
 class JobConfigRawDTO(BaseSchema):
+    # Inventory swagger.json
 
     
     integration = fields.Str(required=False)

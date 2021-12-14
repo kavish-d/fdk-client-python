@@ -57,6 +57,7 @@ from .InvoiceItems import InvoiceItems
 
 
 class InvoicesData(BaseSchema):
+    # Billing swagger.json
 
     
     _id = fields.Str(required=False)

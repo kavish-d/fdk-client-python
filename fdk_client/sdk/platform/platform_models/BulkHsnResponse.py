@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class BulkHsnResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     success = fields.Boolean(required=False)

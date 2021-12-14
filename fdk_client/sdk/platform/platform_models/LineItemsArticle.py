@@ -59,6 +59,7 @@ from .LineItemsArticleIdentifier import LineItemsArticleIdentifier
 
 
 class LineItemsArticle(BaseSchema):
+    # Order swagger.json
 
     
     quantities = fields.Nested(Quantities, required=False)

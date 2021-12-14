@@ -45,6 +45,7 @@ from .PaymentModeConfig import PaymentModeConfig
 
 
 class Methods(BaseSchema):
+    # Configuration swagger.json
 
     
     pl = fields.Nested(PaymentModeConfig, required=False)

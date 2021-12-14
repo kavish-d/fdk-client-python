@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ApplicationSchema(BaseSchema):
+    # Feedback swagger.json
 
     
     id = fields.Str(required=False)

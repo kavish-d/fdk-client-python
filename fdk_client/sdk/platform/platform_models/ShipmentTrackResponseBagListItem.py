@@ -55,6 +55,7 @@ from .ShipmentTrackResponseBagListItemsProductImage import ShipmentTrackResponse
 
 
 class ShipmentTrackResponseBagListItem(BaseSchema):
+    # Order swagger.json
 
     
     enable_tracking = fields.Boolean(required=False)

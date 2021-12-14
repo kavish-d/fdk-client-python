@@ -23,6 +23,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class JobLog(BaseSchema):
+    # Communication swagger.json
 
     
     imported = fields.Raw(required=False)

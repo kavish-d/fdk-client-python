@@ -23,6 +23,7 @@ from .ApplicationLegalFAQ import ApplicationLegalFAQ
 
 
 class ApplicationLegal(BaseSchema):
+    # Content swagger.json
 
     
     application = fields.Str(required=False)

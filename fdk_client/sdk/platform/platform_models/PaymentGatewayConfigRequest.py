@@ -13,6 +13,7 @@ from .PaymentGatewayConfig import PaymentGatewayConfig
 
 
 class PaymentGatewayConfigRequest(BaseSchema):
+    # Payment swagger.json
 
     
     app_id = fields.Str(required=False)

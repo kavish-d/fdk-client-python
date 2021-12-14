@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class Logs(BaseSchema):
+    # Communication swagger.json
 
     
     items = fields.List(fields.Nested(Log, required=False), required=False)

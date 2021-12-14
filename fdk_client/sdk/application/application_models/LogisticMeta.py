@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class LogisticMeta(BaseSchema):
+    # Logistic swagger.json
 
     
     zone = fields.Str(required=False)

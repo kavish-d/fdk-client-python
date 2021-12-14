@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class OpenApiFiles(BaseSchema):
+    # Cart swagger.json
 
     
     key = fields.Str(required=False)

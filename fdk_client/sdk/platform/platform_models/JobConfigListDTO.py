@@ -23,6 +23,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class JobConfigListDTO(BaseSchema):
+    # Inventory swagger.json
 
     
     code = fields.Str(required=False)

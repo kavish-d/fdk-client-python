@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class SuccessMessage(BaseSchema):
+    # Cart swagger.json
 
     
     message = fields.Str(required=False)

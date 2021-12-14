@@ -11,6 +11,7 @@ from .FreshchatCredentials import FreshchatCredentials
 
 
 class Freshchat(BaseSchema):
+    # Configuration swagger.json
 
     
     credentials = fields.Nested(FreshchatCredentials, required=False)

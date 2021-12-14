@@ -23,6 +23,7 @@ from .JobHistoryDto import JobHistoryDto
 
 
 class JobMetricsDto(BaseSchema):
+    # Inventory swagger.json
 
     
     job_code = fields.Str(required=False)

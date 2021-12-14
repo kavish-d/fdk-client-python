@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class RedeemReferralCodeRequest(BaseSchema):
+    # Rewards swagger.json
 
     
     device_id = fields.Str(required=False)

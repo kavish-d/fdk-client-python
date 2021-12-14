@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Urls(BaseSchema):
+    # FileStorage swagger.json
 
     
     url = fields.Str(required=False)

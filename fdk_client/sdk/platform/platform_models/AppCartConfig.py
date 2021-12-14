@@ -19,6 +19,7 @@ from .DeliveryCharges import DeliveryCharges
 
 
 class AppCartConfig(BaseSchema):
+    # Configuration swagger.json
 
     
     delivery_charges = fields.Nested(DeliveryCharges, required=False)

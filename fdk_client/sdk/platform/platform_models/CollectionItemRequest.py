@@ -11,10 +11,11 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CollectionItemRequest(BaseSchema):
+    # Catalog swagger.json
 
     
-    page_size = fields.Int(required=False)
-    
     page_no = fields.Int(required=False)
+    
+    page_size = fields.Int(required=False)
     
 

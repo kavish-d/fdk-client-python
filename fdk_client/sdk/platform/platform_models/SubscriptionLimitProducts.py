@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class SubscriptionLimitProducts(BaseSchema):
+    # Billing swagger.json
 
     
     bulk = fields.Boolean(required=False)

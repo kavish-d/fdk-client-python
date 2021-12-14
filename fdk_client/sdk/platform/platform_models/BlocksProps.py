@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class BlocksProps(BaseSchema):
+    # Theme swagger.json
 
     
     id = fields.Str(required=False)

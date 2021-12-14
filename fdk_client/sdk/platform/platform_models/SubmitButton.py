@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class SubmitButton(BaseSchema):
+    # Lead swagger.json
 
     
     title = fields.Str(required=False)

@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Send(BaseSchema):
+    # Inventory swagger.json
 
     
     raw = fields.Boolean(required=False)

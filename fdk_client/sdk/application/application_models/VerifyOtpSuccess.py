@@ -13,6 +13,7 @@ from .UserSchema import UserSchema
 
 
 class VerifyOtpSuccess(BaseSchema):
+    # User swagger.json
 
     
     user = fields.Nested(UserSchema, required=False)

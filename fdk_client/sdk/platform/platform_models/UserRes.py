@@ -11,6 +11,7 @@ from .RewardUser import RewardUser
 
 
 class UserRes(BaseSchema):
+    # Rewards swagger.json
 
     
     points = fields.Nested(Points, required=False)

@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class UpdateMediaListRequest(BaseSchema):
+    # Feedback swagger.json
 
     
     approve = fields.Boolean(required=False)

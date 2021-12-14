@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class OAuthRequestAppleSchemaProfile(BaseSchema):
+    # User swagger.json
 
     
     last_name = fields.Str(required=False)

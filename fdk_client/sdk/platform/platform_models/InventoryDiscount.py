@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class InventoryDiscount(BaseSchema):
+    # Configuration swagger.json
 
     
     min = fields.Float(required=False)

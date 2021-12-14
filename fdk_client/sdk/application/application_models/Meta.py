@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Meta(BaseSchema):
+    # Catalog swagger.json
 
     
     source = fields.Str(required=False)

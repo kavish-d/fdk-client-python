@@ -21,6 +21,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CompanyAboutAddress(BaseSchema):
+    # Configuration swagger.json
 
     
     pincode = fields.Int(required=False)

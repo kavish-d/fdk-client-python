@@ -35,6 +35,7 @@ from .ScheduleSchema import ScheduleSchema
 
 
 class CustomPageSchema(BaseSchema):
+    # Content swagger.json
 
     
     _id = fields.Str(required=False)

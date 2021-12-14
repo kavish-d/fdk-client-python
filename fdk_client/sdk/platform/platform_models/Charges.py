@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Charges(BaseSchema):
+    # Configuration swagger.json
 
     
     threshold = fields.Float(required=False)

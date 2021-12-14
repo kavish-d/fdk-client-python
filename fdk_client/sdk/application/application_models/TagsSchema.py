@@ -13,6 +13,7 @@ from .TagSchema import TagSchema
 
 
 class TagsSchema(BaseSchema):
+    # Content swagger.json
 
     
     application = fields.Str(required=False)

@@ -9,6 +9,7 @@ from .ActivityHistory import ActivityHistory
 
 
 class GetActivityStatus(BaseSchema):
+    # Order swagger.json
 
     
     activity_history = fields.Nested(ActivityHistory, required=False)

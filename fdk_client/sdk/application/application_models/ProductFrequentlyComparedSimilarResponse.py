@@ -9,6 +9,7 @@ from .ProductCompareResponse import ProductCompareResponse
 
 
 class ProductFrequentlyComparedSimilarResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     similars = fields.Nested(ProductCompareResponse, required=False)

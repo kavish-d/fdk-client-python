@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class AttributeResponse(BaseSchema):
+    # Feedback swagger.json
 
     
     items = fields.List(fields.Nested(Attribute, required=False), required=False)

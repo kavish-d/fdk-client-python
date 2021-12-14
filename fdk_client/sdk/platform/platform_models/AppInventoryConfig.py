@@ -27,6 +27,7 @@ from .InventoryDiscount import InventoryDiscount
 
 
 class AppInventoryConfig(BaseSchema):
+    # Configuration swagger.json
 
     
     brand = fields.Nested(InventoryBrand, required=False)

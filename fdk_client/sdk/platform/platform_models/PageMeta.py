@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class PageMeta(BaseSchema):
+    # Content swagger.json
 
     
     key = fields.Str(required=False)

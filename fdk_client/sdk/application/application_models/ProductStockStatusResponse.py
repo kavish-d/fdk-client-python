@@ -9,6 +9,7 @@ from .ProductStockStatusItem import ProductStockStatusItem
 
 
 class ProductStockStatusResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     items = fields.List(fields.Nested(ProductStockStatusItem, required=False), required=False)

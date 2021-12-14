@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ApplyCouponRequest(BaseSchema):
+    # Cart swagger.json
 
     
     coupon_code = fields.Str(required=False)

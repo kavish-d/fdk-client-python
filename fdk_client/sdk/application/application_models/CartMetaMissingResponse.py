@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class CartMetaMissingResponse(BaseSchema):
+    # Cart swagger.json
 
     
     errors = fields.List(fields.Str(required=False), required=False)

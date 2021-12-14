@@ -21,6 +21,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Page(BaseSchema):
+    # Lead swagger.json
 
     
     item_total = fields.Int(required=False)

@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ApplicationRedirections(BaseSchema):
+    # Configuration swagger.json
 
     
     redirect_from = fields.Str(required=False)

@@ -17,6 +17,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class SendVerificationLinkMobileRequestSchema(BaseSchema):
+    # User swagger.json
 
     
     verified = fields.Boolean(required=False)

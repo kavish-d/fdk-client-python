@@ -15,14 +15,15 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class GetCatalogConfigurationDetailsProduct(BaseSchema):
+    # Catalog swagger.json
 
-    
-    similar = fields.Dict(required=False)
     
     compare = fields.Dict(required=False)
     
-    variant = fields.Dict(required=False)
-    
     detail = fields.Dict(required=False)
+    
+    similar = fields.Dict(required=False)
+    
+    variant = fields.Dict(required=False)
     
 

@@ -19,6 +19,7 @@ from .Url import Url
 
 
 class MediaMeta(BaseSchema):
+    # Feedback swagger.json
 
     
     cloud = fields.Nested(Cloud, required=False)

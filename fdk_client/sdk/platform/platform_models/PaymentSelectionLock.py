@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class PaymentSelectionLock(BaseSchema):
+    # Configuration swagger.json
 
     
     enabled = fields.Boolean(required=False)

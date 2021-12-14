@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Custom(BaseSchema):
+    # Theme swagger.json
 
     
     props = fields.Dict(required=False)

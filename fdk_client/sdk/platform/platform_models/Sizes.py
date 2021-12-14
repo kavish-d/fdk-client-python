@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Sizes(BaseSchema):
+    # Order swagger.json
 
     
     size = fields.Str(required=False)

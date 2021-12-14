@@ -9,6 +9,7 @@ from .OrderStatuses import OrderStatuses
 
 
 class OrderFilters(BaseSchema):
+    # Order swagger.json
 
     
     statuses = fields.List(fields.Nested(OrderStatuses, required=False), required=False)

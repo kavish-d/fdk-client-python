@@ -15,6 +15,7 @@ from .Media import Media
 
 
 class AutocompleteItem(BaseSchema):
+    # Catalog swagger.json
 
     
     action = fields.Nested(ActionPage, required=False)

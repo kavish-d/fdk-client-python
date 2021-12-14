@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class LogPushnotification(BaseSchema):
+    # Communication swagger.json
 
     
     pushtokens = fields.List(fields.Str(required=False), required=False)

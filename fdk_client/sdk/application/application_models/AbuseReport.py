@@ -23,6 +23,7 @@ from .TagMeta import TagMeta
 
 
 class AbuseReport(BaseSchema):
+    # Feedback swagger.json
 
     
     abused = fields.Boolean(required=False)

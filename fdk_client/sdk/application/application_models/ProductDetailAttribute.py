@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ProductDetailAttribute(BaseSchema):
+    # Catalog swagger.json
 
     
     key = fields.Str(required=False)

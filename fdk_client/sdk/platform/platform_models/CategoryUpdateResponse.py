@@ -11,10 +11,11 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CategoryUpdateResponse(BaseSchema):
+    # Catalog swagger.json
 
     
-    success = fields.Boolean(required=False)
-    
     message = fields.Str(required=False)
+    
+    success = fields.Boolean(required=False)
     
 

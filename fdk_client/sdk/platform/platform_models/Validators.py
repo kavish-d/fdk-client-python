@@ -15,6 +15,7 @@ from .OrderValidator import OrderValidator
 
 
 class Validators(BaseSchema):
+    # Configuration swagger.json
 
     
     company = fields.Nested(CompanyValidator, required=False)

@@ -13,6 +13,7 @@ from .GetCollectionDetailNest import GetCollectionDetailNest
 
 
 class GetCollectionListingResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     filters = fields.Nested(CollectionListingFilter, required=False)

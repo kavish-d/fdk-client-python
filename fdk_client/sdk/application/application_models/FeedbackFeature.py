@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class FeedbackFeature(BaseSchema):
+    # Configuration swagger.json
 
     
     enabled = fields.Boolean(required=False)

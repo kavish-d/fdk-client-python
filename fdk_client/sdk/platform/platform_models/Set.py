@@ -11,6 +11,7 @@ from .SetSizeDistribution import SetSizeDistribution
 
 
 class Set(BaseSchema):
+    # Order swagger.json
 
     
     quantity = fields.Int(required=False)

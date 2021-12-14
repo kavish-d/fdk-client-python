@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class FyndRewardsCredentials(BaseSchema):
+    # Configuration swagger.json
 
     
     public_key = fields.Str(required=False)

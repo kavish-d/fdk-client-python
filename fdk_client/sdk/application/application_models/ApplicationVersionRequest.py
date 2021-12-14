@@ -17,6 +17,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ApplicationVersionRequest(BaseSchema):
+    # Configuration swagger.json
 
     
     id = fields.Str(required=False)

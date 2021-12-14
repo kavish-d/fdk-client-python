@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class NotifyUser(BaseSchema):
+    # Lead swagger.json
 
     
     country_code = fields.Str(required=False)

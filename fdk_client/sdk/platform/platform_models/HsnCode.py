@@ -9,6 +9,7 @@ from .HsnCodesObject import HsnCodesObject
 
 
 class HsnCode(BaseSchema):
+    # Catalog swagger.json
 
     
     data = fields.Nested(HsnCodesObject, required=False)

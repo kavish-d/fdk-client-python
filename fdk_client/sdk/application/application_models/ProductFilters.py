@@ -11,6 +11,7 @@ from .ProductFiltersValue import ProductFiltersValue
 
 
 class ProductFilters(BaseSchema):
+    # Catalog swagger.json
 
     
     key = fields.Nested(ProductFiltersKey, required=False)

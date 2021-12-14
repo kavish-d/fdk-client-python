@@ -11,6 +11,7 @@ from .Price import Price
 
 
 class ProductListingPrice(BaseSchema):
+    # Catalog swagger.json
 
     
     effective = fields.Nested(Price, required=False)

@@ -9,6 +9,7 @@ from .FyndRewardsCredentials import FyndRewardsCredentials
 
 
 class FyndRewards(BaseSchema):
+    # Configuration swagger.json
 
     
     credentials = fields.Nested(FyndRewardsCredentials, required=False)

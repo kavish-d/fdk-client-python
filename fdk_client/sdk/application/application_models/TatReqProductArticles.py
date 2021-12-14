@@ -9,6 +9,7 @@ from .LogisticRequestCategory import LogisticRequestCategory
 
 
 class TatReqProductArticles(BaseSchema):
+    # Logistic swagger.json
 
     
     category = fields.Nested(LogisticRequestCategory, required=False)

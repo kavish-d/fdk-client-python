@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class SmsTemplates(BaseSchema):
+    # Communication swagger.json
 
     
     items = fields.List(fields.Nested(SmsTemplate, required=False), required=False)

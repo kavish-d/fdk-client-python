@@ -11,6 +11,7 @@ from .EmailProperties import EmailProperties
 
 
 class EmailSchema(BaseSchema):
+    # Content swagger.json
 
     
     active = fields.Boolean(required=False)

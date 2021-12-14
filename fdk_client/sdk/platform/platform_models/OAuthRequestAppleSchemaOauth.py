@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class OAuthRequestAppleSchemaOauth(BaseSchema):
+    # User swagger.json
 
     
     identity_token = fields.Str(required=False)

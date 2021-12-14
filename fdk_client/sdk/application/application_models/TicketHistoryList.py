@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class TicketHistoryList(BaseSchema):
+    # Lead swagger.json
 
     
     items = fields.List(fields.Nested(TicketHistory, required=False), required=False)

@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class PaymentModeConfig(BaseSchema):
+    # Configuration swagger.json
 
     
     enabled = fields.Boolean(required=False)

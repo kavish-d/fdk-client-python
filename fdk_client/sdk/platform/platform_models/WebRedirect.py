@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class WebRedirect(BaseSchema):
+    # Share swagger.json
 
     
     link = fields.Str(required=False)

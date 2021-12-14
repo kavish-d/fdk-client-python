@@ -25,6 +25,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ItemsPayments(BaseSchema):
+    # Order swagger.json
 
     
     display_priority = fields.Int(required=False)

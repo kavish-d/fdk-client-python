@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class UnauthorizedSchema(BaseSchema):
+    # User swagger.json
 
     
     message = fields.Str(required=False)

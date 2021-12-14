@@ -11,6 +11,7 @@ from .ProductDetailAttribute import ProductDetailAttribute
 
 
 class ProductDetailGroupedAttribute(BaseSchema):
+    # Catalog swagger.json
 
     
     title = fields.Str(required=False)

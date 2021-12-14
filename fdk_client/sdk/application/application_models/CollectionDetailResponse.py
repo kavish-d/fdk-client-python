@@ -41,6 +41,7 @@ from .Media import Media
 
 
 class CollectionDetailResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     description = fields.Str(required=False)

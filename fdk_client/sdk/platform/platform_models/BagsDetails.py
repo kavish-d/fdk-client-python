@@ -29,6 +29,7 @@ from .BagStatus import BagStatus
 
 
 class BagsDetails(BaseSchema):
+    # Order swagger.json
 
     
     financial_breakup = fields.List(fields.Nested(BagFinancialBreakup, required=False), required=False)

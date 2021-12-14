@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class StatsProcessedSms(BaseSchema):
+    # Communication swagger.json
 
     
     success = fields.Int(required=False)

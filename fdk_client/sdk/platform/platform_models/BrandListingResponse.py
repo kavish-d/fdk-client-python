@@ -11,6 +11,7 @@ from .BrandItem import BrandItem
 
 
 class BrandListingResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     page = fields.Nested(Page, required=False)

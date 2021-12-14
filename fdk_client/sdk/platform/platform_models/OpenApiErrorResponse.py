@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class OpenApiErrorResponse(BaseSchema):
+    # Cart swagger.json
 
     
     message = fields.Str(required=False)

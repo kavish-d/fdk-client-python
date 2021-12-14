@@ -29,6 +29,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class AddMediaRequest(BaseSchema):
+    # Feedback swagger.json
 
     
     cloud_id = fields.Str(required=False)

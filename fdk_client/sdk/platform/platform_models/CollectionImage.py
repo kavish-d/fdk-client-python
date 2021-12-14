@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CollectionImage(BaseSchema):
+    # Catalog swagger.json
 
     
     aspect_ratio = fields.Str(required=False)

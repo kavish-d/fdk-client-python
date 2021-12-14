@@ -13,12 +13,13 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class SubscriptionConfigResponse(BaseSchema):
+    # Payment swagger.json
 
-    
-    aggregator = fields.Str(required=False)
     
     success = fields.Boolean(required=False)
     
     config = fields.Dict(required=False)
+    
+    aggregator = fields.Str(required=False)
     
 

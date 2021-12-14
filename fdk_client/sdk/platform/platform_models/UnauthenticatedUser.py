@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class UnauthenticatedUser(BaseSchema):
+    # Billing swagger.json
 
     
     message = fields.Str(required=False)

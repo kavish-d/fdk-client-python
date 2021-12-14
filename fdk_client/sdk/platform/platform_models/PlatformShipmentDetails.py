@@ -69,6 +69,7 @@ from .ShipmentDates import ShipmentDates
 
 
 class PlatformShipmentDetails(BaseSchema):
+    # Order swagger.json
 
     
     status = fields.Nested(PlatformShipmentDetailsStatus, required=False)

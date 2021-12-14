@@ -11,6 +11,7 @@ from .RegisterRequiredFieldsMobile import RegisterRequiredFieldsMobile
 
 
 class RegisterRequiredFields(BaseSchema):
+    # User swagger.json
 
     
     email = fields.Nested(RegisterRequiredFieldsEmail, required=False)

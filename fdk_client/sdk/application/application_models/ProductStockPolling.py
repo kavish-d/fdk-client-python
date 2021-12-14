@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class ProductStockPolling(BaseSchema):
+    # Catalog swagger.json
 
     
     items = fields.List(fields.Nested(ProductStockStatusItem, required=False), required=False)

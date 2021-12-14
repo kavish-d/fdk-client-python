@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class SmsProviders(BaseSchema):
+    # Communication swagger.json
 
     
     items = fields.List(fields.Nested(SmsProvider, required=False), required=False)

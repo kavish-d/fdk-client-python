@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class TextDetector(BaseSchema):
+    # Feedback swagger.json
 
     
     confidence = fields.Float(required=False)

@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ProductSize(BaseSchema):
+    # Catalog swagger.json
 
     
     is_available = fields.Boolean(required=False)

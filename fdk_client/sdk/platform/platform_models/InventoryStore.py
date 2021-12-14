@@ -13,6 +13,7 @@ from .AppStoreRules import AppStoreRules
 
 
 class InventoryStore(BaseSchema):
+    # Configuration swagger.json
 
     
     criteria = fields.Str(required=False)

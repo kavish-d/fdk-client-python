@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class AgentChangePayload(BaseSchema):
+    # Lead swagger.json
 
     
     agent_id = fields.Str(required=False)

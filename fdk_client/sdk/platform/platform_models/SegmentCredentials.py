@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class SegmentCredentials(BaseSchema):
+    # Configuration swagger.json
 
     
     write_key = fields.Str(required=False)

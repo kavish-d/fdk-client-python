@@ -25,6 +25,7 @@ from .RatingMetric import RatingMetric
 
 
 class ReviewMetric(BaseSchema):
+    # Feedback swagger.json
 
     
     attribute_metric = fields.List(fields.Nested(RatingMetric, required=False), required=False)

@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class EmailOtpSuccess(BaseSchema):
+    # User swagger.json
 
     
     success = fields.Boolean(required=False)

@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class MediaGetResponse(BaseSchema):
+    # Feedback swagger.json
 
     
     items = fields.List(fields.Nested(FeedbackMedia, required=False), required=False)

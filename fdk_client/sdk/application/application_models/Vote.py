@@ -23,6 +23,7 @@ from .TagMeta import TagMeta
 
 
 class Vote(BaseSchema):
+    # Feedback swagger.json
 
     
     action = fields.Str(required=False)

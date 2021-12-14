@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Cloud(BaseSchema):
+    # Feedback swagger.json
 
     
     id = fields.Str(required=False)

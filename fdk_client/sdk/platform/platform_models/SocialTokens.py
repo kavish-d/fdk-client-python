@@ -13,6 +13,7 @@ from .Google import Google
 
 
 class SocialTokens(BaseSchema):
+    # User swagger.json
 
     
     facebook = fields.Nested(Facebook, required=False)

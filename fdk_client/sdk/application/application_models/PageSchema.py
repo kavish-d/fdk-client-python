@@ -51,6 +51,7 @@ from .SEO import SEO
 
 
 class PageSchema(BaseSchema):
+    # Content swagger.json
 
     
     _id = fields.Str(required=False)

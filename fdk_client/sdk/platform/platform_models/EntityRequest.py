@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class EntityRequest(BaseSchema):
+    # Feedback swagger.json
 
     
     entity_id = fields.Str(required=False)

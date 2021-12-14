@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class sendOTPApplicationResponse(BaseSchema):
+    # Order swagger.json
 
     
     success = fields.Boolean(required=False)

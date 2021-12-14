@@ -15,6 +15,7 @@ from .Time import Time
 
 
 class StoreTiming(BaseSchema):
+    # Catalog swagger.json
 
     
     open = fields.Boolean(required=False)

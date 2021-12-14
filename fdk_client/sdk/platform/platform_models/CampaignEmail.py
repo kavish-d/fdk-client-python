@@ -11,6 +11,7 @@ from .CampignEmailProvider import CampignEmailProvider
 
 
 class CampaignEmail(BaseSchema):
+    # Communication swagger.json
 
     
     template = fields.Nested(CampaignEmailTemplate, required=False)

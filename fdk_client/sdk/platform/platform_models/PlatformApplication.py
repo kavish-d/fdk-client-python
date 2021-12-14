@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class PlatformApplication(BaseSchema):
+    # Order swagger.json
 
     
     id = fields.Str(required=False)

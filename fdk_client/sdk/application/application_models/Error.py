@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Error(BaseSchema):
+    # Rewards swagger.json
 
     
     code = fields.Int(required=False)

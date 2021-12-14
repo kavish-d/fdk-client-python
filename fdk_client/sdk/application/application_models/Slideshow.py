@@ -11,6 +11,7 @@ from .SlideshowSchema import SlideshowSchema
 
 
 class Slideshow(BaseSchema):
+    # Content swagger.json
 
     
     data = fields.Nested(SlideshowSchema, required=False)

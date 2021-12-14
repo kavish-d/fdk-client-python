@@ -11,6 +11,7 @@ from .Charges import Charges
 
 
 class DeliveryCharges(BaseSchema):
+    # Configuration swagger.json
 
     
     enabled = fields.Boolean(required=False)

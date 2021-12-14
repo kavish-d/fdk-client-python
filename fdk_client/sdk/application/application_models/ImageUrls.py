@@ -11,6 +11,7 @@ from .Media import Media
 
 
 class ImageUrls(BaseSchema):
+    # Catalog swagger.json
 
     
     portrait = fields.Nested(Media, required=False)

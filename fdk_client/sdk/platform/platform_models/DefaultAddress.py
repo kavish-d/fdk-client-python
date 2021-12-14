@@ -41,6 +41,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class DefaultAddress(BaseSchema):
+    # Order swagger.json
 
     
     last_name = fields.Str(required=False)

@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class CartDeliveryModesResponse(BaseSchema):
+    # PosCart swagger.json
 
     
     pickup_stores = fields.List(fields.Int(required=False), required=False)

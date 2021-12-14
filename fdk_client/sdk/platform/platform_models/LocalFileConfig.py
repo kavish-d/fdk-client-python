@@ -27,6 +27,7 @@ from .ArchiveConfig import ArchiveConfig
 
 
 class LocalFileConfig(BaseSchema):
+    # Inventory swagger.json
 
     
     retries = fields.Int(required=False)

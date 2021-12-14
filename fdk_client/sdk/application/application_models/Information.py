@@ -15,6 +15,7 @@ from .Images import Images
 
 
 class Information(BaseSchema):
+    # Theme swagger.json
 
     
     images = fields.Nested(Images, required=False)

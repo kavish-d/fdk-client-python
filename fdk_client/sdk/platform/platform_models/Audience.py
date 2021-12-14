@@ -35,6 +35,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Audience(BaseSchema):
+    # Communication swagger.json
 
     
     description = fields.Str(required=False)

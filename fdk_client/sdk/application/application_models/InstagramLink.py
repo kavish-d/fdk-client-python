@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class InstagramLink(BaseSchema):
+    # Configuration swagger.json
 
     
     title = fields.Str(required=False)

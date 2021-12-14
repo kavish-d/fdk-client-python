@@ -31,6 +31,7 @@ from .CDN import CDN
 
 
 class DbRecord(BaseSchema):
+    # FileStorage swagger.json
 
     
     success = fields.Boolean(required=False)

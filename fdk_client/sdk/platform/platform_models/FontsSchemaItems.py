@@ -23,6 +23,7 @@ from .FontsSchemaItemsFiles import FontsSchemaItemsFiles
 
 
 class FontsSchemaItems(BaseSchema):
+    # Theme swagger.json
 
     
     family = fields.Str(required=False)

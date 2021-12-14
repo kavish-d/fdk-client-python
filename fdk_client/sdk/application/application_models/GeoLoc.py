@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class GeoLoc(BaseSchema):
+    # Feedback swagger.json
 
     
     latitude = fields.Str(required=False)

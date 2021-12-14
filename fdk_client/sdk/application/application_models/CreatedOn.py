@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class CreatedOn(BaseSchema):
+    # Lead swagger.json
 
     
     user_agent = fields.Str(required=False)

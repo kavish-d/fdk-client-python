@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class StoreByBrandsRequest(BaseSchema):
+    # Configuration swagger.json
 
     
     company_id = fields.Int(required=False)

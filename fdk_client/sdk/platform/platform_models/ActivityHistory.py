@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ActivityHistory(BaseSchema):
+    # Order swagger.json
 
     
     createdat = fields.Str(required=False)

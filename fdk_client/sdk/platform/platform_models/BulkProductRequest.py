@@ -15,11 +15,12 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class BulkProductRequest(BaseSchema):
+    # Catalog swagger.json
 
     
-    template_tag = fields.Str(required=False)
-    
     batch_id = fields.Str(required=False)
+    
+    template_tag = fields.Str(required=False)
     
     data = fields.List(fields.Dict(required=False), required=False)
     

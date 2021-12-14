@@ -19,6 +19,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Colors(BaseSchema):
+    # Theme swagger.json
 
     
     bg_color = fields.Str(required=False)

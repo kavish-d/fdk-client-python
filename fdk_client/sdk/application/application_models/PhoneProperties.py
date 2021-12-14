@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class PhoneProperties(BaseSchema):
+    # Content swagger.json
 
     
     key = fields.Str(required=False)

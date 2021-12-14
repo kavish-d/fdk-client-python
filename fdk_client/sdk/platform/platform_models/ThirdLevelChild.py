@@ -9,8 +9,6 @@ from .ImageUrls import ImageUrls
 
 
 
-
-
 from .ActionPage import ActionPage
 
 
@@ -20,20 +18,23 @@ from .ActionPage import ActionPage
 
 
 
+
+
 class ThirdLevelChild(BaseSchema):
+    # Catalog swagger.json
 
     
     banners = fields.Nested(ImageUrls, required=False)
     
-    _custom_json = fields.Dict(required=False)
-    
-    childs = fields.List(fields.Dict(required=False), required=False)
+    name = fields.Str(required=False)
     
     action = fields.Nested(ActionPage, required=False)
     
+    _custom_json = fields.Dict(required=False)
+    
     uid = fields.Int(required=False)
     
-    name = fields.Str(required=False)
+    childs = fields.List(fields.Dict(required=False), required=False)
     
     slug = fields.Str(required=False)
     

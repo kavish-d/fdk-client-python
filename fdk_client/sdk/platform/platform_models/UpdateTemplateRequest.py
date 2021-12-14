@@ -23,6 +23,7 @@ from .ReviewRequest import ReviewRequest
 
 
 class UpdateTemplateRequest(BaseSchema):
+    # Feedback swagger.json
 
     
     active = fields.Boolean(required=False)

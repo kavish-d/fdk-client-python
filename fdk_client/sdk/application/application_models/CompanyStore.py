@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class CompanyStore(BaseSchema):
+    # Catalog swagger.json
 
     
     uid = fields.Int(required=False)

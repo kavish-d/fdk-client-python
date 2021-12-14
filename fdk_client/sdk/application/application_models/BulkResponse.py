@@ -11,6 +11,7 @@ from .CopyFileTask import CopyFileTask
 
 
 class BulkResponse(BaseSchema):
+    # FileStorage swagger.json
 
     
     tracking_url = fields.Str(required=False)

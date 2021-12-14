@@ -15,6 +15,7 @@ from .PageSpecParam import PageSpecParam
 
 
 class PageSpecItem(BaseSchema):
+    # Content swagger.json
 
     
     page_type = fields.Str(required=False)

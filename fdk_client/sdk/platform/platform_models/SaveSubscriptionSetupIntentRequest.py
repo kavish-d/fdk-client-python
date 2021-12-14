@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class SaveSubscriptionSetupIntentRequest(BaseSchema):
+    # Payment swagger.json
 
     
     unique_external_id = fields.Str(required=False)

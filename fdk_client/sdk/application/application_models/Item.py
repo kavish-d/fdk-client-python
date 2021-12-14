@@ -21,6 +21,7 @@ from .ItemBrand import ItemBrand
 
 
 class Item(BaseSchema):
+    # Order swagger.json
 
     
     brand = fields.Nested(ItemBrand, required=False)

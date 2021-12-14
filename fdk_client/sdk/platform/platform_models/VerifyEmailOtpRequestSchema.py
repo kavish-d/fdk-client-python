@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class VerifyEmailOtpRequestSchema(BaseSchema):
+    # User swagger.json
 
     
     email = fields.Str(required=False)

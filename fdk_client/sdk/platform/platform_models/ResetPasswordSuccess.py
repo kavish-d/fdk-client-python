@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ResetPasswordSuccess(BaseSchema):
+    # User swagger.json
 
     
     status = fields.Str(required=False)

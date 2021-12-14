@@ -19,6 +19,7 @@ from .InformationPhone import InformationPhone
 
 
 class InformationAddress(BaseSchema):
+    # Configuration swagger.json
 
     
     loc = fields.Str(required=False)

@@ -33,6 +33,7 @@ from .ArchiveConfig import ArchiveConfig
 
 
 class AWSS3config(BaseSchema):
+    # Inventory swagger.json
 
     
     bucket = fields.Str(required=False)

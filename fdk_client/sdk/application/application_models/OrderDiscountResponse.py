@@ -17,6 +17,7 @@ from .DiscountProperties import DiscountProperties
 
 
 class OrderDiscountResponse(BaseSchema):
+    # Rewards swagger.json
 
     
     applied_rule_bucket = fields.Nested(OrderDiscountRuleBucket, required=False)

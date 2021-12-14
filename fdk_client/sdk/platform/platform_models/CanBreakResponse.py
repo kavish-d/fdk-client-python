@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CanBreakResponse(BaseSchema):
+    # Order swagger.json
 
     
     status = fields.Boolean(required=False)

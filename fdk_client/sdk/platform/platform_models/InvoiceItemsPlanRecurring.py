@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class InvoiceItemsPlanRecurring(BaseSchema):
+    # Billing swagger.json
 
     
     interval = fields.Str(required=False)

@@ -17,6 +17,7 @@ from .ApplicationAuth import ApplicationAuth
 
 
 class App(BaseSchema):
+    # Configuration swagger.json
 
     
     company_id = fields.Str(required=False)

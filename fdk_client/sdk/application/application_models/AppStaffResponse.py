@@ -9,6 +9,7 @@ from .AppStaff import AppStaff
 
 
 class AppStaffResponse(BaseSchema):
+    # Configuration swagger.json
 
     
     staff_users = fields.List(fields.Nested(AppStaff, required=False), required=False)

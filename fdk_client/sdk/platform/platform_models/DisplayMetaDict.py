@@ -11,10 +11,11 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class DisplayMetaDict(BaseSchema):
+    # Cart swagger.json
 
     
-    title = fields.Str(required=False)
-    
     subtitle = fields.Str(required=False)
+    
+    title = fields.Str(required=False)
     
 

@@ -9,6 +9,7 @@ from .AvailablePageSchema import AvailablePageSchema
 
 
 class Preset(BaseSchema):
+    # Theme swagger.json
 
     
     pages = fields.List(fields.Nested(AvailablePageSchema, required=False), required=False)

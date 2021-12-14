@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ShipmentTotalDetails(BaseSchema):
+    # Order swagger.json
 
     
     total_price = fields.Float(required=False)

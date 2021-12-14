@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ListingPriceFeature(BaseSchema):
+    # Configuration swagger.json
 
     
     value = fields.Str(required=False)

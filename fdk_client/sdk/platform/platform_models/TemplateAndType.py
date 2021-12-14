@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class TemplateAndType(BaseSchema):
+    # Communication swagger.json
 
     
     template_type = fields.Str(required=False)

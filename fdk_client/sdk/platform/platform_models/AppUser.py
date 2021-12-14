@@ -21,6 +21,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class AppUser(BaseSchema):
+    # Rewards swagger.json
 
     
     _id = fields.Str(required=False)

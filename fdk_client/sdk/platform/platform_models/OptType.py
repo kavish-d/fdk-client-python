@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class OptType(BaseSchema):
+    # Configuration swagger.json
 
     
     key = fields.Str(required=False)

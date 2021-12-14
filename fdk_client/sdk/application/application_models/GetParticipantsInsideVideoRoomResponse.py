@@ -9,6 +9,7 @@ from .Participant import Participant
 
 
 class GetParticipantsInsideVideoRoomResponse(BaseSchema):
+    # Lead swagger.json
 
     
     participants = fields.List(fields.Nested(Participant, required=False), required=False)

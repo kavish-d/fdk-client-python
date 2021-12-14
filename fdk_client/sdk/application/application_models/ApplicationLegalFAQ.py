@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ApplicationLegalFAQ(BaseSchema):
+    # Content swagger.json
 
     
     question = fields.Str(required=False)

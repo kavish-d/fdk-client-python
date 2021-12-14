@@ -29,6 +29,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class PushtokenRes(BaseSchema):
+    # Communication swagger.json
 
     
     _id = fields.Str(required=False)

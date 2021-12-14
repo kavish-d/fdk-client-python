@@ -37,6 +37,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Company(BaseSchema):
+    # Order swagger.json
 
     
     id = fields.Int(required=False)

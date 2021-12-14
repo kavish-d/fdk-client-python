@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class UserEmail(BaseSchema):
+    # Configuration swagger.json
 
     
     active = fields.Boolean(required=False)

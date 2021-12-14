@@ -35,6 +35,7 @@ from .ArchiveConfig import ArchiveConfig
 
 
 class FTPConfig(BaseSchema):
+    # Inventory swagger.json
 
     
     host = fields.Str(required=False)

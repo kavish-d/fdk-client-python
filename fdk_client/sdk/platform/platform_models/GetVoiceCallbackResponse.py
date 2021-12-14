@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class GetVoiceCallbackResponse(BaseSchema):
+    # Order swagger.json
 
     
     message = fields.Str(required=False)

@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ShipmentTrackingDetails(BaseSchema):
+    # Order swagger.json
 
     
     status = fields.Str(required=False)

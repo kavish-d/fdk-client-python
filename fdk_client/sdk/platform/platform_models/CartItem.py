@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CartItem(BaseSchema):
+    # Cart swagger.json
 
     
     quantity = fields.Int(required=False)

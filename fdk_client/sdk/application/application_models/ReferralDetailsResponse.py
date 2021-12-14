@@ -15,6 +15,7 @@ from .ReferralDetailsUser import ReferralDetailsUser
 
 
 class ReferralDetailsResponse(BaseSchema):
+    # Rewards swagger.json
 
     
     referral = fields.Nested(Offer, required=False)

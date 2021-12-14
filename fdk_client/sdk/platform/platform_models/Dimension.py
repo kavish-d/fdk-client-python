@@ -17,6 +17,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Dimension(BaseSchema):
+    # Order swagger.json
 
     
     height = fields.Int(required=False)

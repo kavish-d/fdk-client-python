@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ProductPublish(BaseSchema):
+    # Catalog swagger.json
 
     
     is_set = fields.Boolean(required=False)

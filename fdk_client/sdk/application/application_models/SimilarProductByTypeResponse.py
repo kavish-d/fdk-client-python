@@ -9,6 +9,7 @@ from .ProductSimilarItem import ProductSimilarItem
 
 
 class SimilarProductByTypeResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     similars = fields.Nested(ProductSimilarItem, required=False)

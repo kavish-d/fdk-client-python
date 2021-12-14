@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class NavigationGetResponse(BaseSchema):
+    # Content swagger.json
 
     
     items = fields.List(fields.Nested(NavigationSchema, required=False), required=False)

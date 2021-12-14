@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class HomePageFeature(BaseSchema):
+    # Configuration swagger.json
 
     
     order_processing = fields.Boolean(required=False)

@@ -23,6 +23,7 @@ from .Timing import Timing
 
 
 class FulfillingStoreMeta(BaseSchema):
+    # Order swagger.json
 
     
     additional_contact_details = fields.Nested(AdditionalContactDetails, required=False)

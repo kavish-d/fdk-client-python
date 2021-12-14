@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class SubscriptionLimitTeam(BaseSchema):
+    # Billing swagger.json
 
     
     limit = fields.Int(required=False)

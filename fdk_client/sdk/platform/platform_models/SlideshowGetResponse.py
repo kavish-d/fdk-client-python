@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class SlideshowGetResponse(BaseSchema):
+    # Content swagger.json
 
     
     items = fields.List(fields.Nested(SlideshowSchema, required=False), required=False)

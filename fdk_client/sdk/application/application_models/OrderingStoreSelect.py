@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class OrderingStoreSelect(BaseSchema):
+    # Configuration swagger.json
 
     
     uid = fields.Int(required=False)

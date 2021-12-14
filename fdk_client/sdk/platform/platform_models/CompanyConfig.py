@@ -19,6 +19,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CompanyConfig(BaseSchema):
+    # Inventory swagger.json
 
     
     company_id = fields.Int(required=False)

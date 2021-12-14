@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class OS(BaseSchema):
+    # Configuration swagger.json
 
     
     name = fields.Str(required=False)

@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class PageSpec(BaseSchema):
+    # Content swagger.json
 
     
     specifications = fields.List(fields.Dict(required=False), required=False)

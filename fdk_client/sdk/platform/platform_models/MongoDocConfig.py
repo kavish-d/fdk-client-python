@@ -19,6 +19,7 @@ from .PropBeanConfig import PropBeanConfig
 
 
 class MongoDocConfig(BaseSchema):
+    # Inventory swagger.json
 
     
     collection_name = fields.Str(required=False)

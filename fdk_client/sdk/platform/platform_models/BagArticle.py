@@ -29,6 +29,7 @@ from .BagArticleReturnConfig import BagArticleReturnConfig
 
 
 class BagArticle(BaseSchema):
+    # Order swagger.json
 
     
     identifiers = fields.Nested(ArticleIdentifiers, required=False)

@@ -13,6 +13,7 @@ from .Page import Page
 
 
 class GetCollectionListingResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     filters = fields.Nested(CollectionListingFilter, required=False)

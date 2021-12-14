@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class AvailablePageRoutePredicate(BaseSchema):
+    # Theme swagger.json
 
     
     selected = fields.Str(required=False)

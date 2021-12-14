@@ -23,6 +23,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class DetailedPlanComponents(BaseSchema):
+    # Billing swagger.json
 
     
     name = fields.Str(required=False)

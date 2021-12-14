@@ -23,6 +23,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Job(BaseSchema):
+    # Communication swagger.json
 
     
     completed = fields.Boolean(required=False)

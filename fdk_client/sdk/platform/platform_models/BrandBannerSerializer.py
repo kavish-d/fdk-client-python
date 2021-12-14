@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class BrandBannerSerializer(BaseSchema):
+    # CompanyProfile swagger.json
 
     
     portrait = fields.Str(required=False)

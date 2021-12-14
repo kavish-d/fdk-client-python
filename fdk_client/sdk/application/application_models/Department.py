@@ -17,6 +17,7 @@ from .Media import Media
 
 
 class Department(BaseSchema):
+    # Catalog swagger.json
 
     
     priority_order = fields.Int(required=False)

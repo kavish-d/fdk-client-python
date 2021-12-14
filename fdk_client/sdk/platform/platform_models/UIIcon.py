@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class UIIcon(BaseSchema):
+    # Feedback swagger.json
 
     
     active = fields.Str(required=False)

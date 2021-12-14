@@ -9,6 +9,7 @@ from .StageItem import StageItem
 
 
 class OrderLanesCount(BaseSchema):
+    # Order swagger.json
 
     
     stages = fields.List(fields.Nested(StageItem, required=False), required=False)

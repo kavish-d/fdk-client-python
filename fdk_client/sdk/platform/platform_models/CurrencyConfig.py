@@ -23,6 +23,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CurrencyConfig(BaseSchema):
+    # Configuration swagger.json
 
     
     _id = fields.Str(required=False)

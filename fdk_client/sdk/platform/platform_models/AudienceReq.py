@@ -25,6 +25,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class AudienceReq(BaseSchema):
+    # Communication swagger.json
 
     
     description = fields.Str(required=False)

@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class AvailablePageSectionMetaAttributes(BaseSchema):
+    # Theme swagger.json
 
     
     attributes = fields.Dict(required=False)

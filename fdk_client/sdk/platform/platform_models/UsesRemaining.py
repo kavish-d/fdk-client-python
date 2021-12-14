@@ -13,12 +13,13 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class UsesRemaining(BaseSchema):
+    # Cart swagger.json
 
-    
-    app = fields.Int(required=False)
     
     total = fields.Int(required=False)
     
     user = fields.Int(required=False)
+    
+    app = fields.Int(required=False)
     
 

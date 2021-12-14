@@ -17,6 +17,7 @@ from .Regular import Regular
 
 
 class Variants(BaseSchema):
+    # Theme swagger.json
 
     
     medium = fields.Nested(Medium, required=False)

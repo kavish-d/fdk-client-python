@@ -17,6 +17,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class GetNRecordsCsvResItems(BaseSchema):
+    # Communication swagger.json
 
     
     phone_number = fields.Str(required=False)

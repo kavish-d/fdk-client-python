@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class FollowIdsData(BaseSchema):
+    # Catalog swagger.json
 
     
     products = fields.List(fields.Int(required=False), required=False)

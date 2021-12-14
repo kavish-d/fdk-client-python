@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class PointsResponse(BaseSchema):
+    # Rewards swagger.json
 
     
     points = fields.Float(required=False)

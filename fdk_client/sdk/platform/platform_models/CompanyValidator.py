@@ -11,6 +11,7 @@ from .JsonSchema import JsonSchema
 
 
 class CompanyValidator(BaseSchema):
+    # Configuration swagger.json
 
     
     json_schema = fields.List(fields.Nested(JsonSchema, required=False), required=False)

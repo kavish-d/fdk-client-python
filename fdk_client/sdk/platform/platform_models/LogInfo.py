@@ -33,6 +33,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class LogInfo(BaseSchema):
+    # Analytics swagger.json
 
     
     _id = fields.Str(required=False)

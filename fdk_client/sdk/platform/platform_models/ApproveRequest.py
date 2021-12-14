@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ApproveRequest(BaseSchema):
+    # Feedback swagger.json
 
     
     approve = fields.Boolean(required=False)

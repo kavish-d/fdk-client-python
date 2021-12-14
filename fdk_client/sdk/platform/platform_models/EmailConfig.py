@@ -53,6 +53,7 @@ from .ArchiveConfig import ArchiveConfig
 
 
 class EmailConfig(BaseSchema):
+    # Inventory swagger.json
 
     
     recepient = fields.Str(required=False)

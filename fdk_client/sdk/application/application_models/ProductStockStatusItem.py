@@ -25,6 +25,7 @@ from .Seller import Seller
 
 
 class ProductStockStatusItem(BaseSchema):
+    # Catalog swagger.json
 
     
     price = fields.Nested(ProductStockPrice, required=False)

@@ -21,6 +21,7 @@ from .SizeChartValues import SizeChartValues
 
 
 class SizeChart(BaseSchema):
+    # Catalog swagger.json
 
     
     headers = fields.Nested(ColumnHeaders, required=False)

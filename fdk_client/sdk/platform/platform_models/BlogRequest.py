@@ -31,6 +31,7 @@ from .CronSchedule import CronSchedule
 
 
 class BlogRequest(BaseSchema):
+    # Content swagger.json
 
     
     application = fields.Str(required=False)

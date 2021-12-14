@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class FilerList(BaseSchema):
+    # Catalog swagger.json
 
     
     value = fields.Str(required=False)

@@ -11,6 +11,7 @@ from .Subscription import Subscription
 
 
 class CancelSubscriptionRes(BaseSchema):
+    # Billing swagger.json
 
     
     success = fields.Boolean(required=False)

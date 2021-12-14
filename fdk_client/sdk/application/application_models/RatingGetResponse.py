@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class RatingGetResponse(BaseSchema):
+    # Feedback swagger.json
 
     
     items = fields.List(fields.Nested(Rating, required=False), required=False)

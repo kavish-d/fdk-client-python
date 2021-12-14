@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ShipmentUpdateResponse(BaseSchema):
+    # Order swagger.json
 
     
     success = fields.Boolean(required=False)

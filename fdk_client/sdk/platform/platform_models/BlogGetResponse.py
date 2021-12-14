@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class BlogGetResponse(BaseSchema):
+    # Content swagger.json
 
     
     items = fields.List(fields.Nested(BlogSchema, required=False), required=False)

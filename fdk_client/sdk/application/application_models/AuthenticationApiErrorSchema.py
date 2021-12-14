@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class AuthenticationApiErrorSchema(BaseSchema):
+    # User swagger.json
 
     
     message = fields.Str(required=False)

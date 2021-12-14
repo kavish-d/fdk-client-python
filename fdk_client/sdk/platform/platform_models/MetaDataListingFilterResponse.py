@@ -9,6 +9,7 @@ from .MetaDataListingFilterMetaResponse import MetaDataListingFilterMetaResponse
 
 
 class MetaDataListingFilterResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     data = fields.List(fields.Nested(MetaDataListingFilterMetaResponse, required=False), required=False)

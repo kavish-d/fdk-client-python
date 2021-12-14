@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class HasPasswordSuccess(BaseSchema):
+    # User swagger.json
 
     
     result = fields.Boolean(required=False)

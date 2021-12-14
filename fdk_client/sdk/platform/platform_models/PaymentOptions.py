@@ -9,6 +9,7 @@ from .RootPaymentMode import RootPaymentMode
 
 
 class PaymentOptions(BaseSchema):
+    # Payment swagger.json
 
     
     payment_option = fields.List(fields.Nested(RootPaymentMode, required=False), required=False)

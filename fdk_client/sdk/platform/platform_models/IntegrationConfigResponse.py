@@ -9,6 +9,7 @@ from .IntegrationLevel import IntegrationLevel
 
 
 class IntegrationConfigResponse(BaseSchema):
+    # Configuration swagger.json
 
     
     items = fields.List(fields.Nested(IntegrationLevel, required=False), required=False)

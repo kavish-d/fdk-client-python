@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Links(BaseSchema):
+    # Configuration swagger.json
 
     
     title = fields.Str(required=False)

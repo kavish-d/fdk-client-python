@@ -11,10 +11,11 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class BusinessCountryInfo(BaseSchema):
+    # CompanyProfile swagger.json
 
     
-    country = fields.Str(required=False)
-    
     country_code = fields.Str(required=False)
+    
+    country = fields.Str(required=False)
     
 

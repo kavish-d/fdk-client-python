@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CategoryMappingValues(BaseSchema):
+    # Catalog swagger.json
 
     
     catalog_id = fields.Int(required=False)

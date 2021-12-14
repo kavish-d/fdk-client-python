@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ConfigurationBucketPoints(BaseSchema):
+    # Catalog swagger.json
 
     
     end = fields.Float(required=False)

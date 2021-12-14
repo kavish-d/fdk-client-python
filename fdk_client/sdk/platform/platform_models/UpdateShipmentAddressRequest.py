@@ -29,6 +29,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class UpdateShipmentAddressRequest(BaseSchema):
+    # Order swagger.json
 
     
     email = fields.Str(required=False)

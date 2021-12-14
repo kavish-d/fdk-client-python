@@ -41,6 +41,7 @@ from .StrategyWiseListing import StrategyWiseListing
 
 
 class ProductSizePriceResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     seller_count = fields.Int(required=False)

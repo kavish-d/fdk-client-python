@@ -25,6 +25,7 @@ from .EntityChargeRecurring import EntityChargeRecurring
 
 
 class ChargeLineItem(BaseSchema):
+    # Billing swagger.json
 
     
     name = fields.Str(required=False)

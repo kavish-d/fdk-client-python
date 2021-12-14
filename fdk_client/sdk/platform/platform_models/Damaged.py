@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Damaged(BaseSchema):
+    # Order swagger.json
 
     
     updated_at = fields.Str(required=False)

@@ -11,6 +11,7 @@ from .Credentials import Credentials
 
 
 class Firebase(BaseSchema):
+    # Configuration swagger.json
 
     
     credentials = fields.Nested(Credentials, required=False)

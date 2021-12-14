@@ -11,6 +11,7 @@ from .BasePrice import BasePrice
 
 
 class ArticlePriceInfo(BaseSchema):
+    # Cart swagger.json
 
     
     base = fields.Nested(BasePrice, required=False)

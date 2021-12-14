@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Url(BaseSchema):
+    # Feedback swagger.json
 
     
     main = fields.Str(required=False)

@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ShipmentTrackResponseBagListItemDpDetails(BaseSchema):
+    # Order swagger.json
 
     
     tracking_no = fields.Str(required=False)

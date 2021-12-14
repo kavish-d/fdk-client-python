@@ -9,6 +9,7 @@ from .TatacliqLuxury import TatacliqLuxury
 
 
 class MarketplaceIdentifiers(BaseSchema):
+    # Order swagger.json
 
     
     tatacliq_luxury = fields.Nested(TatacliqLuxury, required=False)

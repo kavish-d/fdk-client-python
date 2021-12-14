@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class DeviceMeta(BaseSchema):
+    # Feedback swagger.json
 
     
     app_version = fields.Str(required=False)

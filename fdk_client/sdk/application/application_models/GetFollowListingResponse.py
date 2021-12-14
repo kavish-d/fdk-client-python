@@ -11,6 +11,7 @@ from .ProductListingDetail import ProductListingDetail
 
 
 class GetFollowListingResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     page = fields.Nested(Page, required=False)

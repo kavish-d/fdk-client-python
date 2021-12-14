@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class MoengageCredentials(BaseSchema):
+    # Configuration swagger.json
 
     
     app_id = fields.Str(required=False)

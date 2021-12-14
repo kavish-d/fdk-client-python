@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ArticlePrice(BaseSchema):
+    # Order swagger.json
 
     
     marked = fields.Int(required=False)

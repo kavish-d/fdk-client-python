@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ApefaceApiError(BaseSchema):
+    # Order swagger.json
 
     
     message = fields.Str(required=False)

@@ -29,6 +29,7 @@ from .Page import Page
 
 
 class ResponseEnvelopeListJobConfigDTO(BaseSchema):
+    # Inventory swagger.json
 
     
     timestamp = fields.Str(required=False)

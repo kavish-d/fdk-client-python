@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Entity(BaseSchema):
+    # Feedback swagger.json
 
     
     id = fields.Str(required=False)

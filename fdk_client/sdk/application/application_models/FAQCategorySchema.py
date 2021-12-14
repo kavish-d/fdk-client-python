@@ -25,6 +25,7 @@ from .ChildrenSchema import ChildrenSchema
 
 
 class FAQCategorySchema(BaseSchema):
+    # Content swagger.json
 
     
     index = fields.Int(required=False)

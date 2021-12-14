@@ -27,6 +27,7 @@ from .Action import Action
 
 
 class NavigationReference(BaseSchema):
+    # Content swagger.json
 
     
     acl = fields.List(fields.Str(required=False), required=False)

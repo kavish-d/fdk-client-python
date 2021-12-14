@@ -13,6 +13,7 @@ from .TagMeta import TagMeta
 
 
 class CreatedBy(BaseSchema):
+    # Feedback swagger.json
 
     
     id = fields.Str(required=False)

@@ -17,6 +17,7 @@ from .DateMeta import DateMeta
 
 
 class ActivityDump(BaseSchema):
+    # Feedback swagger.json
 
     
     activity = fields.Nested(Activity, required=False)

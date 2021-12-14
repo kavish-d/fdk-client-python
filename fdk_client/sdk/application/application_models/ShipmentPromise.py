@@ -5,16 +5,17 @@ from marshmallow.validate import OneOf
 from ..application_enums import *
 from ..application_models.BaseSchema import BaseSchema
 
-from .PromiseFormatted import PromiseFormatted
-
 from .PromiseTimestamp import PromiseTimestamp
+
+from .PromiseFormatted import PromiseFormatted
 
 
 class ShipmentPromise(BaseSchema):
+    # Cart swagger.json
 
     
-    formatted = fields.Nested(PromiseFormatted, required=False)
-    
     timestamp = fields.Nested(PromiseTimestamp, required=False)
+    
+    formatted = fields.Nested(PromiseFormatted, required=False)
     
 

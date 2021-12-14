@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class PostOrder(BaseSchema):
+    # Cart swagger.json
 
     
     cancellation_allowed = fields.Boolean(required=False)

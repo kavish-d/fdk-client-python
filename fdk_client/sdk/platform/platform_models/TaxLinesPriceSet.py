@@ -11,6 +11,7 @@ from .TaxLinesPriceSetPresentmentMoney import TaxLinesPriceSetPresentmentMoney
 
 
 class TaxLinesPriceSet(BaseSchema):
+    # Order swagger.json
 
     
     shop_money = fields.Nested(TaxLinesPriceSetShopMoney, required=False)

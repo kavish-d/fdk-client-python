@@ -11,6 +11,7 @@ from .UserSchema import UserSchema
 
 
 class VerifyMobileOTPSuccess(BaseSchema):
+    # User swagger.json
 
     
     user = fields.Nested(UserSchema, required=False)

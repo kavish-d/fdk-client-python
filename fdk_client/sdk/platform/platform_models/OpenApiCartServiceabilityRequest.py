@@ -11,6 +11,7 @@ from .CartItem import CartItem
 
 
 class OpenApiCartServiceabilityRequest(BaseSchema):
+    # Cart swagger.json
 
     
     shipping_address = fields.Nested(ShippingAddress, required=False)

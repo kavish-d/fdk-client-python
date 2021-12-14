@@ -15,6 +15,7 @@ from .Page import Page
 
 
 class ProductListingResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     sort_on = fields.List(fields.Nested(ProductSortOn, required=False), required=False)

@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class DeleteResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     message = fields.Str(required=False)

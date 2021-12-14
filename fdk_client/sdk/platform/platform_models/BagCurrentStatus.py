@@ -15,6 +15,7 @@ from .BagStateMapper import BagStateMapper
 
 
 class BagCurrentStatus(BaseSchema):
+    # Order swagger.json
 
     
     updated_at = fields.Str(required=False)

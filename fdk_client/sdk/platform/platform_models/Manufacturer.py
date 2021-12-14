@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Manufacturer(BaseSchema):
+    # Order swagger.json
 
     
     is_default = fields.Boolean(required=False)

@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class EditorMeta(BaseSchema):
+    # Content swagger.json
 
     
     foreground_color = fields.Str(required=False)

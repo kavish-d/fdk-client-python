@@ -11,6 +11,7 @@ from .BannerImage import BannerImage
 
 
 class ImageUrls(BaseSchema):
+    # Catalog swagger.json
 
     
     portrait = fields.Nested(BannerImage, required=False)

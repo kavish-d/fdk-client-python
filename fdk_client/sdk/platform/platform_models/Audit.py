@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Audit(BaseSchema):
+    # Inventory swagger.json
 
     
     created_by = fields.Str(required=False)

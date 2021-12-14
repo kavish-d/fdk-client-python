@@ -11,6 +11,7 @@ from .EmailSchema import EmailSchema
 
 
 class ContactSchema(BaseSchema):
+    # Content swagger.json
 
     
     phone = fields.Nested(PhoneSchema, required=False)

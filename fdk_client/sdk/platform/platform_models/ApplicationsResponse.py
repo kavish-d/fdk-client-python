@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class ApplicationsResponse(BaseSchema):
+    # Configuration swagger.json
 
     
     items = fields.List(fields.Nested(Application, required=False), required=False)

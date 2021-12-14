@@ -21,6 +21,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class FileJobResponse(BaseSchema):
+    # Discount swagger.json
 
     
     stage = fields.Str(required=False)

@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class InvoicesDataPeriod(BaseSchema):
+    # Billing swagger.json
 
     
     start = fields.Str(required=False)

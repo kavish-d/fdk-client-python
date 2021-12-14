@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class ReportAbuseGetResponse(BaseSchema):
+    # Feedback swagger.json
 
     
     items = fields.List(fields.Nested(AbuseReport, required=False), required=False)

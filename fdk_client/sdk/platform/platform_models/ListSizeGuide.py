@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ListSizeGuide(BaseSchema):
+    # Catalog swagger.json
 
     
     page = fields.Dict(required=False)

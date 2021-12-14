@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class CursorGetResponse(BaseSchema):
+    # Feedback swagger.json
 
     
     items = fields.List(fields.Dict(required=False), required=False)

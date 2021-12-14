@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Status(BaseSchema):
+    # Lead swagger.json
 
     
     key = fields.Str(required=False)

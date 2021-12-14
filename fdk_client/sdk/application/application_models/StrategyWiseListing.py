@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class StrategyWiseListing(BaseSchema):
+    # Catalog swagger.json
 
     
     pincode = fields.Int(required=False)

@@ -11,6 +11,7 @@ from .ProductDownloadsItems import ProductDownloadsItems
 
 
 class ProductDownloadsResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     page = fields.Nested(Page, required=False)

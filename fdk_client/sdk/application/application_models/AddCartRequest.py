@@ -9,6 +9,7 @@ from .AddProductCart import AddProductCart
 
 
 class AddCartRequest(BaseSchema):
+    # Cart swagger.json
 
     
     items = fields.List(fields.Nested(AddProductCart, required=False), required=False)

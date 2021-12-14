@@ -47,6 +47,7 @@ from .DetailedPlanComponents import DetailedPlanComponents
 
 
 class DetailedPlan(BaseSchema):
+    # Billing swagger.json
 
     
     recurring = fields.Nested(PlanRecurring, required=False)

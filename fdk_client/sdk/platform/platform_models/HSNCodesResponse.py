@@ -11,6 +11,7 @@ from .HSNData import HSNData
 
 
 class HSNCodesResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     message = fields.Str(required=False)

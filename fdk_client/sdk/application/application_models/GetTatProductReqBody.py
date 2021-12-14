@@ -13,6 +13,7 @@ from .LocationDetailsReq import LocationDetailsReq
 
 
 class GetTatProductReqBody(BaseSchema):
+    # Logistic swagger.json
 
     
     location_details = fields.List(fields.Nested(LocationDetailsReq, required=False), required=False)

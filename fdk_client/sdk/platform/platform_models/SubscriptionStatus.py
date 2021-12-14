@@ -11,6 +11,7 @@ from .Subscription import Subscription
 
 
 class SubscriptionStatus(BaseSchema):
+    # Billing swagger.json
 
     
     is_enabled = fields.Boolean(required=False)

@@ -23,6 +23,7 @@ from .CreatedOn import CreatedOn
 
 
 class TicketHistory(BaseSchema):
+    # Lead swagger.json
 
     
     type = fields.Str(required=False)

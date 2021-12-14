@@ -21,6 +21,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class PageCursor(BaseSchema):
+    # Feedback swagger.json
 
     
     current = fields.Int(required=False)

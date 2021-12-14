@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class OrderCommitted(BaseSchema):
+    # Order swagger.json
 
     
     count = fields.Int(required=False)

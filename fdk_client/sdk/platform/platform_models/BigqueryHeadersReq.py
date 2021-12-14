@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class BigqueryHeadersReq(BaseSchema):
+    # Communication swagger.json
 
     
     query = fields.Str(required=False)

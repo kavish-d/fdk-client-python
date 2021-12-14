@@ -49,6 +49,7 @@ from .DefaultAddress import DefaultAddress
 
 
 class Customer(BaseSchema):
+    # Order swagger.json
 
     
     created_at = fields.Str(required=False)

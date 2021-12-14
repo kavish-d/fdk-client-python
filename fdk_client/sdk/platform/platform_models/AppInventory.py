@@ -21,6 +21,7 @@ from .InventoryArticleAssignment import InventoryArticleAssignment
 
 
 class AppInventory(BaseSchema):
+    # Configuration swagger.json
 
     
     brand = fields.Nested(InventoryBrandRule, required=False)

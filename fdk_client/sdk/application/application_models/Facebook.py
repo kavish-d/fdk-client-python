@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Facebook(BaseSchema):
+    # User swagger.json
 
     
     app_id = fields.Str(required=False)

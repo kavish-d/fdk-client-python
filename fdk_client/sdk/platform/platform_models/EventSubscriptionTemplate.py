@@ -11,6 +11,7 @@ from .EventSubscriptionTemplateEmail import EventSubscriptionTemplateEmail
 
 
 class EventSubscriptionTemplate(BaseSchema):
+    # Communication swagger.json
 
     
     sms = fields.Nested(EventSubscriptionTemplateSms, required=False)

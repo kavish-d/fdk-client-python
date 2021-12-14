@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class DeleteSubscriptionPaymentMethodResponse(BaseSchema):
+    # Payment swagger.json
 
     
     success = fields.Boolean(required=False)

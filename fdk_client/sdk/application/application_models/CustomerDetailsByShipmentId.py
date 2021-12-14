@@ -17,6 +17,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class CustomerDetailsByShipmentId(BaseSchema):
+    # Order swagger.json
 
     
     order_id = fields.Str(required=False)

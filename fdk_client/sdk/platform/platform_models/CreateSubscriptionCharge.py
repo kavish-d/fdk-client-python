@@ -17,6 +17,7 @@ from .ChargeLineItem import ChargeLineItem
 
 
 class CreateSubscriptionCharge(BaseSchema):
+    # Billing swagger.json
 
     
     name = fields.Str(required=False)

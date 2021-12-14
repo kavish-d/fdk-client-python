@@ -23,6 +23,7 @@ from .Referral import Referral
 
 
 class RewardUser(BaseSchema):
+    # Rewards swagger.json
 
     
     _id = fields.Str(required=False)

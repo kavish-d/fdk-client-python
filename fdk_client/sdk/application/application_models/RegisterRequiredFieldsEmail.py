@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class RegisterRequiredFieldsEmail(BaseSchema):
+    # User swagger.json
 
     
     is_required = fields.Boolean(required=False)

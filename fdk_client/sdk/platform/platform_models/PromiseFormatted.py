@@ -11,10 +11,11 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class PromiseFormatted(BaseSchema):
+    # Cart swagger.json
 
     
-    min = fields.Str(required=False)
-    
     max = fields.Str(required=False)
+    
+    min = fields.Str(required=False)
     
 

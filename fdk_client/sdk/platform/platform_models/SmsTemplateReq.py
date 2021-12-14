@@ -19,6 +19,7 @@ from .SmsTemplateMessage import SmsTemplateMessage
 
 
 class SmsTemplateReq(BaseSchema):
+    # Communication swagger.json
 
     
     name = fields.Str(required=False)

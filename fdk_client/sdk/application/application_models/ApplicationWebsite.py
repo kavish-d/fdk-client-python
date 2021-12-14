@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ApplicationWebsite(BaseSchema):
+    # Configuration swagger.json
 
     
     enabled = fields.Boolean(required=False)

@@ -13,6 +13,7 @@ from .LogisticPromise import LogisticPromise
 
 
 class TatProductArticles(BaseSchema):
+    # Logistic swagger.json
 
     
     error = fields.Dict(required=False)

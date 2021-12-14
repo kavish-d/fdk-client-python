@@ -9,6 +9,7 @@ from .Gst import Gst
 
 
 class Documents(BaseSchema):
+    # Order swagger.json
 
     
     gst = fields.Nested(Gst, required=False)

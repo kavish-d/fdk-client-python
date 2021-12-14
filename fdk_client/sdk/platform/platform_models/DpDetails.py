@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class DpDetails(BaseSchema):
+    # Order swagger.json
 
     
     gst_tag = fields.Str(required=False)

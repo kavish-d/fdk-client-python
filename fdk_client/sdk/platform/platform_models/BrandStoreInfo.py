@@ -19,6 +19,7 @@ from .OptedCompany import OptedCompany
 
 
 class BrandStoreInfo(BaseSchema):
+    # Configuration swagger.json
 
     
     store_name = fields.Str(required=False)

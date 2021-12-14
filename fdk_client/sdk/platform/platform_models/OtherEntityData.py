@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class OtherEntityData(BaseSchema):
+    # Configuration swagger.json
 
     
     article_identifier = fields.Str(required=False)

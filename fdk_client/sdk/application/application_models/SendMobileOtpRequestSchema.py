@@ -21,6 +21,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class SendMobileOtpRequestSchema(BaseSchema):
+    # User swagger.json
 
     
     mobile = fields.Str(required=False)

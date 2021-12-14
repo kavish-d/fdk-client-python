@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ResourceContent(BaseSchema):
+    # Content swagger.json
 
     
     type = fields.Str(required=False)

@@ -23,6 +23,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class PlatformOrderUserInfo(BaseSchema):
+    # Order swagger.json
 
     
     mobile = fields.Str(required=False)

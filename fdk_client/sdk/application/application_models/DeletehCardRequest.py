@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class DeletehCardRequest(BaseSchema):
+    # Payment swagger.json
 
     
     card_id = fields.Str(required=False)

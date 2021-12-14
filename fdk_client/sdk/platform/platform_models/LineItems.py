@@ -55,6 +55,7 @@ from .TotalDiscountSet import TotalDiscountSet
 
 
 class LineItems(BaseSchema):
+    # Order swagger.json
 
     
     sku = fields.Str(required=False)

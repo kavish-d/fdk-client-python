@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ReviewMediaMeta(BaseSchema):
+    # Feedback swagger.json
 
     
     max_count = fields.Float(required=False)

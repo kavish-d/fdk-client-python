@@ -61,6 +61,7 @@ from .Identifiers import Identifiers
 
 
 class BagFinancialBreakup(BaseSchema):
+    # Order swagger.json
 
     
     value_of_good = fields.Float(required=False)

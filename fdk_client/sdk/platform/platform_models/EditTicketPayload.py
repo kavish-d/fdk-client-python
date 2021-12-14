@@ -23,6 +23,7 @@ from .AgentChangePayload import AgentChangePayload
 
 
 class EditTicketPayload(BaseSchema):
+    # Lead swagger.json
 
     
     content = fields.Nested(TicketContent, required=False)

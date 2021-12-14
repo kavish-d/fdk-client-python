@@ -23,6 +23,7 @@ from .SubscriptionLimitIntegrations import SubscriptionLimitIntegrations
 
 
 class SubscriptionLimit(BaseSchema):
+    # Billing swagger.json
 
     
     application = fields.Nested(SubscriptionLimitApplication, required=False)

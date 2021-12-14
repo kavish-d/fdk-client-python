@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ShipmentStatusUpdate(BaseSchema):
+    # Order swagger.json
 
     
     message = fields.List(fields.Dict(required=False), required=False)

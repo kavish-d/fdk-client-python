@@ -13,6 +13,7 @@ from .OwnerInfo import OwnerInfo
 
 
 class ApplicationAboutResponse(BaseSchema):
+    # Configuration swagger.json
 
     
     application_info = fields.Nested(ApplicationInfo, required=False)

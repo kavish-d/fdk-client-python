@@ -47,6 +47,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class PlatformDeliveryAddress(BaseSchema):
+    # Order swagger.json
 
     
     area = fields.Str(required=False)

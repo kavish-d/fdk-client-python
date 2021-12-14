@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ProductBulkAssets(BaseSchema):
+    # Catalog swagger.json
 
     
     user = fields.Dict(required=False)

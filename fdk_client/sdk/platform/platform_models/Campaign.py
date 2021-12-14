@@ -35,6 +35,7 @@ from .CampaignEmail import CampaignEmail
 
 
 class Campaign(BaseSchema):
+    # Communication swagger.json
 
     
     recipient_headers = fields.Nested(RecipientHeaders, required=False)

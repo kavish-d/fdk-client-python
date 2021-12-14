@@ -23,6 +23,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class AddProxyResponse(BaseSchema):
+    # Partner swagger.json
 
     
     _id = fields.Str(required=False)

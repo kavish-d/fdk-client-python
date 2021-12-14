@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Detail(BaseSchema):
+    # Content swagger.json
 
     
     title = fields.Str(required=False)

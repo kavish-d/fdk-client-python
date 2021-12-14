@@ -13,6 +13,7 @@ from .TaskParam import TaskParam
 
 
 class TaskConfig(BaseSchema):
+    # Inventory swagger.json
 
     
     name = fields.Str(required=False)

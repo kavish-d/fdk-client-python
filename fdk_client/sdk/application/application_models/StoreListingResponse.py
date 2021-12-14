@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class StoreListingResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     items = fields.List(fields.Nested(Store1, required=False), required=False)

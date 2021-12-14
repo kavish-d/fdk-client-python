@@ -31,6 +31,7 @@ from .ItemsPayments import ItemsPayments
 
 
 class OrderDetailsItem(BaseSchema):
+    # Order swagger.json
 
     
     user = fields.Nested(PlatformOrderUserInfo, required=False)

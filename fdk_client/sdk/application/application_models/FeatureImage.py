@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class FeatureImage(BaseSchema):
+    # Content swagger.json
 
     
     secure_url = fields.Str(required=False)

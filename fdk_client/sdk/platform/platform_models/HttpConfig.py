@@ -23,6 +23,7 @@ from .ArchiveConfig import ArchiveConfig
 
 
 class HttpConfig(BaseSchema):
+    # Inventory swagger.json
 
     
     hosturl = fields.Str(required=False)

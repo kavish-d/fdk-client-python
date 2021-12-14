@@ -27,6 +27,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class AppStaff(BaseSchema):
+    # Configuration swagger.json
 
     
     _id = fields.Str(required=False)

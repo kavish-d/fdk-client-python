@@ -11,6 +11,7 @@ from .PaginationSchema import PaginationSchema
 
 
 class CustomerListResponseSchema(BaseSchema):
+    # User swagger.json
 
     
     items = fields.List(fields.Nested(UserSchema, required=False), required=False)

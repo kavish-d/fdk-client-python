@@ -13,6 +13,7 @@ from .ShipmentTrackResponseBagListItem import ShipmentTrackResponseBagListItem
 
 
 class ShipmentTrackResponse(BaseSchema):
+    # Order swagger.json
 
     
     bag_list = fields.List(fields.Nested(ShipmentTrackResponseBagListItem, required=False), required=False)

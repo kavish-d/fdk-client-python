@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class InvoiceDetailsPaymentMethodsDataChecks(BaseSchema):
+    # Billing swagger.json
 
     
     cvc_check = fields.Str(required=False)

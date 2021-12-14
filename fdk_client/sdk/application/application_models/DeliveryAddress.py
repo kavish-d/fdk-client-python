@@ -47,6 +47,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class DeliveryAddress(BaseSchema):
+    # Order swagger.json
 
     
     pincode = fields.Str(required=False)

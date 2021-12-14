@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class PcrFeature(BaseSchema):
+    # Configuration swagger.json
 
     
     staff_selection = fields.Boolean(required=False)

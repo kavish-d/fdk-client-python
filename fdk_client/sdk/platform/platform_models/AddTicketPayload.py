@@ -17,6 +17,7 @@ from .TicketContent import TicketContent
 
 
 class AddTicketPayload(BaseSchema):
+    # Lead swagger.json
 
     
     created_by = fields.Dict(required=False)

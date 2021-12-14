@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class EditMobileRequestSchema(BaseSchema):
+    # User swagger.json
 
     
     country_code = fields.Str(required=False)

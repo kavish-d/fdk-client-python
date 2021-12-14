@@ -9,6 +9,7 @@ from .Shipments import Shipments
 
 
 class ShipmentById(BaseSchema):
+    # Order swagger.json
 
     
     shipment = fields.Nested(Shipments, required=False)

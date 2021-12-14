@@ -19,6 +19,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Reasons(BaseSchema):
+    # Order swagger.json
 
     
     reason_text = fields.Str(required=False)

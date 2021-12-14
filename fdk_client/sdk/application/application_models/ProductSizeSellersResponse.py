@@ -13,6 +13,7 @@ from .ProductSizePriceResponse import ProductSizePriceResponse
 
 
 class ProductSizeSellersResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     sort_on = fields.List(fields.Nested(ProductSizeSellerFilter, required=False), required=False)

@@ -11,6 +11,7 @@ from .SafetynetCredentials import SafetynetCredentials
 
 
 class Safetynet(BaseSchema):
+    # Configuration swagger.json
 
     
     credentials = fields.Nested(SafetynetCredentials, required=False)

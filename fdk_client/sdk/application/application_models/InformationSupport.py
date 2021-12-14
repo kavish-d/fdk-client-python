@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class InformationSupport(BaseSchema):
+    # Configuration swagger.json
 
     
     phone = fields.List(fields.Str(required=False), required=False)

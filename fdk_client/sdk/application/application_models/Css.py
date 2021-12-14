@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Css(BaseSchema):
+    # Theme swagger.json
 
     
     link = fields.Str(required=False)

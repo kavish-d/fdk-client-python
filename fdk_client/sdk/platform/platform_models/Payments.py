@@ -25,6 +25,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Payments(BaseSchema):
+    # Order swagger.json
 
     
     is_active = fields.Boolean(required=False)

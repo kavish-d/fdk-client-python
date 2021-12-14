@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class RewardsArticle(BaseSchema):
+    # Rewards swagger.json
 
     
     id = fields.Str(required=False)

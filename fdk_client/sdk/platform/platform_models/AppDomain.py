@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class AppDomain(BaseSchema):
+    # Configuration swagger.json
 
     
     name = fields.Str(required=False)

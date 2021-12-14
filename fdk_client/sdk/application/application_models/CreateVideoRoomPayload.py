@@ -11,6 +11,7 @@ from .NotifyUser import NotifyUser
 
 
 class CreateVideoRoomPayload(BaseSchema):
+    # Lead swagger.json
 
     
     unique_name = fields.Str(required=False)

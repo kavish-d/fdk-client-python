@@ -23,6 +23,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Results(BaseSchema):
+    # Order swagger.json
 
     
     awb = fields.Str(required=False)

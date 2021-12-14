@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class MediaMetaRequest(BaseSchema):
+    # Feedback swagger.json
 
     
     max_count = fields.Int(required=False)

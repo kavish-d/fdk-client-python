@@ -11,6 +11,7 @@ from .ProductTemplate import ProductTemplate
 
 
 class TemplatesResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     page = fields.Nested(Page, required=False)

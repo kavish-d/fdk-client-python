@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class BagItemAttributes(BaseSchema):
+    # Order swagger.json
 
     
     item_code = fields.Str(required=False)

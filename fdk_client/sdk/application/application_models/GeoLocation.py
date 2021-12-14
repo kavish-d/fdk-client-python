@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class GeoLocation(BaseSchema):
+    # Cart swagger.json
 
     
     longitude = fields.Float(required=False)

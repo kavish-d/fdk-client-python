@@ -11,6 +11,7 @@ from .Debit import Debit
 
 
 class RewardPointsConfig(BaseSchema):
+    # Configuration swagger.json
 
     
     credit = fields.Nested(Credit, required=False)

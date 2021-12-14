@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class ListOrCalender(BaseSchema):
+    # Discount swagger.json
 
     
     items = fields.List(fields.Nested(DiscountJob, required=False), required=False)

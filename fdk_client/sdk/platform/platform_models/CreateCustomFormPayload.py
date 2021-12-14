@@ -25,6 +25,7 @@ from .PollForAssignment import PollForAssignment
 
 
 class CreateCustomFormPayload(BaseSchema):
+    # Lead swagger.json
 
     
     slug = fields.Str(required=False)

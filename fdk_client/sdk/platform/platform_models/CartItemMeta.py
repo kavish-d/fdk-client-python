@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CartItemMeta(BaseSchema):
+    # Cart swagger.json
 
     
     primary_item = fields.Boolean(required=False)

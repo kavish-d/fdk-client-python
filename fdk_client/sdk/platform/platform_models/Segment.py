@@ -11,6 +11,7 @@ from .SegmentCredentials import SegmentCredentials
 
 
 class Segment(BaseSchema):
+    # Configuration swagger.json
 
     
     credentials = fields.Nested(SegmentCredentials, required=False)

@@ -19,6 +19,7 @@ from .MediaMeta import MediaMeta
 
 
 class Review(BaseSchema):
+    # Feedback swagger.json
 
     
     description = fields.Str(required=False)

@@ -25,6 +25,7 @@ from .Domain import Domain
 
 
 class ApplicationDetail(BaseSchema):
+    # Configuration swagger.json
 
     
     name = fields.Str(required=False)

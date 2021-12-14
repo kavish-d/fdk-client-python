@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Schedule(BaseSchema):
+    # Rewards swagger.json
 
     
     cron = fields.Str(required=False)

@@ -11,6 +11,7 @@ from .StatsGroupComponent import StatsGroupComponent
 
 
 class StatsGroupComponents(BaseSchema):
+    # Analytics swagger.json
 
     
     title = fields.Str(required=False)

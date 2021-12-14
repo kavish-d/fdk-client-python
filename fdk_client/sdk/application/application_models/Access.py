@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Access(BaseSchema):
+    # Feedback swagger.json
 
     
     answer = fields.Boolean(required=False)

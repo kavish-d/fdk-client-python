@@ -11,6 +11,7 @@ from .GetSearchWordsData import GetSearchWordsData
 
 
 class GetSearchWordsDetailResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     page = fields.Nested(Page, required=False)

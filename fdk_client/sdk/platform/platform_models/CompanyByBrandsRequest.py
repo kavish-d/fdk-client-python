@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CompanyByBrandsRequest(BaseSchema):
+    # Configuration swagger.json
 
     
     brands = fields.Int(required=False)

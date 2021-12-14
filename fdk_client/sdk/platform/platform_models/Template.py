@@ -23,6 +23,7 @@ from .TagMeta import TagMeta
 
 
 class Template(BaseSchema):
+    # Feedback swagger.json
 
     
     date_meta = fields.Nested(DateMeta, required=False)

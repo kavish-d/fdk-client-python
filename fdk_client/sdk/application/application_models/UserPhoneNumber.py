@@ -17,6 +17,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class UserPhoneNumber(BaseSchema):
+    # Configuration swagger.json
 
     
     active = fields.Boolean(required=False)

@@ -11,10 +11,11 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class PaymentModeLogo(BaseSchema):
+    # Payment swagger.json
 
     
-    small = fields.Str(required=False)
-    
     large = fields.Str(required=False)
+    
+    small = fields.Str(required=False)
     
 

@@ -13,6 +13,7 @@ from .MediaMeta import MediaMeta
 
 
 class TagMeta(BaseSchema):
+    # Feedback swagger.json
 
     
     media = fields.List(fields.Nested(MediaMeta, required=False), required=False)

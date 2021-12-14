@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class RupifiBannerData(BaseSchema):
+    # Payment swagger.json
 
     
     status = fields.Str(required=False)

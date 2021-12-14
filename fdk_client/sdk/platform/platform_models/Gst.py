@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Gst(BaseSchema):
+    # Order swagger.json
 
     
     legal_name = fields.Str(required=False)

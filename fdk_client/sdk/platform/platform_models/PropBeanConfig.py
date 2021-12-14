@@ -53,6 +53,7 @@ from .Send import Send
 
 
 class PropBeanConfig(BaseSchema):
+    # Inventory swagger.json
 
     
     required = fields.Boolean(required=False)

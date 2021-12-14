@@ -11,6 +11,7 @@ from .Formatted import Formatted
 
 
 class LogisticPromise(BaseSchema):
+    # Logistic swagger.json
 
     
     timestamp = fields.Nested(LogisticTimestamp, required=False)

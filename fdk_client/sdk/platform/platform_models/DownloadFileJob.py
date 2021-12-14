@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class DownloadFileJob(BaseSchema):
+    # Discount swagger.json
 
     
     brand_ids = fields.List(fields.Int(required=False), required=False)

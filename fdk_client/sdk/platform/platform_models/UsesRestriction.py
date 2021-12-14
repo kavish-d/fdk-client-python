@@ -11,10 +11,11 @@ from .UsesRemaining import UsesRemaining
 
 
 class UsesRestriction(BaseSchema):
+    # Cart swagger.json
 
     
-    maximum = fields.Nested(UsesRemaining, required=False)
-    
     remaining = fields.Nested(UsesRemaining, required=False)
+    
+    maximum = fields.Nested(UsesRemaining, required=False)
     
 

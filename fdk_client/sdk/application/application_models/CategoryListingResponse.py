@@ -11,6 +11,7 @@ from .DepartmentIdentifier import DepartmentIdentifier
 
 
 class CategoryListingResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     data = fields.List(fields.Nested(DepartmentCategoryTree, required=False), required=False)

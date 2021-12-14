@@ -9,6 +9,7 @@ from .GoogleMapCredentials import GoogleMapCredentials
 
 
 class GoogleMap(BaseSchema):
+    # Configuration swagger.json
 
     
     credentials = fields.Nested(GoogleMapCredentials, required=False)

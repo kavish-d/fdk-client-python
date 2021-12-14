@@ -11,6 +11,7 @@ from .Details import Details
 
 
 class MarketPlaceSttributes(BaseSchema):
+    # Catalog swagger.json
 
     
     title = fields.Str(required=False)

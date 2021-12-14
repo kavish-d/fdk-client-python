@@ -19,6 +19,7 @@ from .Action import Action
 
 
 class SlideshowMedia(BaseSchema):
+    # Content swagger.json
 
     
     type = fields.Str(required=False)

@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ActionQuery(BaseSchema):
+    # Cart swagger.json
 
     
     product_slug = fields.List(fields.Str(required=False), required=False)

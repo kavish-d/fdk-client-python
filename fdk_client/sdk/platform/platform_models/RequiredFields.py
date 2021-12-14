@@ -11,6 +11,7 @@ from .PlatformMobile import PlatformMobile
 
 
 class RequiredFields(BaseSchema):
+    # User swagger.json
 
     
     email = fields.Nested(PlatformEmail, required=False)

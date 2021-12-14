@@ -21,6 +21,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class HandpickedTagSchema(BaseSchema):
+    # Content swagger.json
 
     
     position = fields.Str(required=False)

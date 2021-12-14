@@ -9,6 +9,7 @@ from .FaqSchema import FaqSchema
 
 
 class FaqResponseSchema(BaseSchema):
+    # Content swagger.json
 
     
     faqs = fields.List(fields.Nested(FaqSchema, required=False), required=False)

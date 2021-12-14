@@ -9,6 +9,7 @@ from .Sizes import Sizes
 
 
 class SetSizeDistribution(BaseSchema):
+    # Order swagger.json
 
     
     sizes = fields.Nested(Sizes, required=False)

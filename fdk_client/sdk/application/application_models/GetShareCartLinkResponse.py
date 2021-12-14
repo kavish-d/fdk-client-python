@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class GetShareCartLinkResponse(BaseSchema):
+    # Cart swagger.json
 
     
     token = fields.Str(required=False)

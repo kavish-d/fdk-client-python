@@ -11,6 +11,7 @@ from .FontsSchemaItems import FontsSchemaItems
 
 
 class FontsSchema(BaseSchema):
+    # Theme swagger.json
 
     
     items = fields.Nested(FontsSchemaItems, required=False)

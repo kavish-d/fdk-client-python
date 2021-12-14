@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class PlatformOrderDetailsPage(BaseSchema):
+    # Order swagger.json
 
     
     next = fields.Str(required=False)

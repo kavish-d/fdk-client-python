@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class AuthenticationInternalServerErrorSchema(BaseSchema):
+    # User swagger.json
 
     
     message = fields.Str(required=False)

@@ -9,6 +9,7 @@ from .Timestamp import Timestamp
 
 
 class Promise(BaseSchema):
+    # Order swagger.json
 
     
     timestamp = fields.Nested(Timestamp, required=False)

@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class FlashCard(BaseSchema):
+    # User swagger.json
 
     
     text = fields.Str(required=False)

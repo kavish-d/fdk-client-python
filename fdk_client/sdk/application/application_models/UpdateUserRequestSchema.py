@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class UpdateUserRequestSchema(BaseSchema):
+    # User swagger.json
 
     
     first_name = fields.Str(required=False)

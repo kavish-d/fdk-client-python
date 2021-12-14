@@ -11,6 +11,7 @@ from .OrderingStore import OrderingStore
 
 
 class OrderingStoresResponse(BaseSchema):
+    # Configuration swagger.json
 
     
     page = fields.Nested(Page, required=False)

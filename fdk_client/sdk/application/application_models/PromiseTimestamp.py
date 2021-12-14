@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class PromiseTimestamp(BaseSchema):
+    # Cart swagger.json
 
     
     min = fields.Float(required=False)

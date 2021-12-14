@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class EntityChargeRecurring(BaseSchema):
+    # Billing swagger.json
 
     
     interval = fields.Str(required=False)

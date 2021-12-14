@@ -19,6 +19,7 @@ from .OtherSellerCompany import OtherSellerCompany
 
 
 class OtherSellerApplication(BaseSchema):
+    # Configuration swagger.json
 
     
     name = fields.Str(required=False)

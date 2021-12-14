@@ -39,6 +39,7 @@ from .BagItemAttributes import BagItemAttributes
 
 
 class BagItem(BaseSchema):
+    # Order swagger.json
 
     
     id = fields.Int(required=False)

@@ -9,6 +9,7 @@ from .FollowIdsData import FollowIdsData
 
 
 class FollowIdsResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     data = fields.Nested(FollowIdsData, required=False)

@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class BadRequestObject(BaseSchema):
+    # Discount swagger.json
 
     
     message = fields.Str(required=False)

@@ -11,6 +11,7 @@ from .TotalDiscountSetShopMoney import TotalDiscountSetShopMoney
 
 
 class TotalDiscountSet(BaseSchema):
+    # Order swagger.json
 
     
     presentment_money = fields.Nested(TotalDiscountSetPresentmentMoney, required=False)

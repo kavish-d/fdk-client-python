@@ -19,6 +19,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class AbandonCartDetail(BaseSchema):
+    # Analytics swagger.json
 
     
     _id = fields.Str(required=False)

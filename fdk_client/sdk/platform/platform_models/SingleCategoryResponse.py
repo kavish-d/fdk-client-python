@@ -9,6 +9,7 @@ from .Category import Category
 
 
 class SingleCategoryResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     data = fields.Nested(Category, required=False)

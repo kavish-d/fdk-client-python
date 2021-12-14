@@ -31,6 +31,7 @@ from .InvoiceDetailsPaymentMethodsDataThreeDSecureUsage import InvoiceDetailsPay
 
 
 class InvoiceDetailsPaymentMethodsData(BaseSchema):
+    # Billing swagger.json
 
     
     brand = fields.Str(required=False)

@@ -25,6 +25,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class StoreAddressSerializer(BaseSchema):
+    # Catalog swagger.json
 
     
     state = fields.Str(required=False)

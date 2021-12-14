@@ -13,6 +13,7 @@ from .UI import UI
 
 
 class Rating(BaseSchema):
+    # Feedback swagger.json
 
     
     attributes = fields.List(fields.Nested(Attribute, required=False), required=False)

@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class Jobs(BaseSchema):
+    # Communication swagger.json
 
     
     items = fields.List(fields.Nested(Job, required=False), required=False)

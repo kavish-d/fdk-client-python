@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class CollectionListingFilterType(BaseSchema):
+    # Catalog swagger.json
 
     
     is_selected = fields.Boolean(required=False)

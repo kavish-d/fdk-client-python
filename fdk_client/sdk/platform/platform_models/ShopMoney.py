@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ShopMoney(BaseSchema):
+    # Order swagger.json
 
     
     amount = fields.Str(required=False)

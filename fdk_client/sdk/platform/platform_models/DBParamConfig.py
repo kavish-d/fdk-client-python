@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class DBParamConfig(BaseSchema):
+    # Inventory swagger.json
 
     
     params = fields.Dict(required=False)

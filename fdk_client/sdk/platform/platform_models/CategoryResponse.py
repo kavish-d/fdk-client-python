@@ -11,6 +11,7 @@ from .Category import Category
 
 
 class CategoryResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     page = fields.Nested(Page, required=False)

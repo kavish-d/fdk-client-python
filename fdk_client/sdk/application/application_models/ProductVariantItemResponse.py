@@ -25,6 +25,7 @@ from .ActionPage import ActionPage
 
 
 class ProductVariantItemResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     color = fields.Str(required=False)

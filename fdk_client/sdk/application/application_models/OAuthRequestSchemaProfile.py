@@ -19,6 +19,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class OAuthRequestSchemaProfile(BaseSchema):
+    # User swagger.json
 
     
     last_name = fields.Str(required=False)

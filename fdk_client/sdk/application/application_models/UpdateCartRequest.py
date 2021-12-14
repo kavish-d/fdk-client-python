@@ -11,6 +11,7 @@ from .UpdateProductCart import UpdateProductCart
 
 
 class UpdateCartRequest(BaseSchema):
+    # Cart swagger.json
 
     
     items = fields.List(fields.Nested(UpdateProductCart, required=False), required=False)

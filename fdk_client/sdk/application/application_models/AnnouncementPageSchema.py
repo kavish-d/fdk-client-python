@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class AnnouncementPageSchema(BaseSchema):
+    # Content swagger.json
 
     
     page_slug = fields.Str(required=False)

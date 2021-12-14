@@ -9,6 +9,7 @@ from .AutocompleteItem import AutocompleteItem
 
 
 class AutoCompleteResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     items = fields.List(fields.Nested(AutocompleteItem, required=False), required=False)

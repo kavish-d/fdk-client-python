@@ -9,6 +9,7 @@ from .PropBeanConfig import PropBeanConfig
 
 
 class JsonDocConfig(BaseSchema):
+    # Inventory swagger.json
 
     
     prop_bean_configs = fields.List(fields.Nested(PropBeanConfig, required=False), required=False)

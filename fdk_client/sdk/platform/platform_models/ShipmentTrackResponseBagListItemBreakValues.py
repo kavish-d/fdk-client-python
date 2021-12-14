@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ShipmentTrackResponseBagListItemBreakValues(BaseSchema):
+    # Order swagger.json
 
     
     name = fields.Str(required=False)

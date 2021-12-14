@@ -45,6 +45,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class PropBeanDTO(BaseSchema):
+    # Inventory swagger.json
 
     
     required = fields.Boolean(required=False)

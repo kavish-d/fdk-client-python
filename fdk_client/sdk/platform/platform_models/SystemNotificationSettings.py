@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class SystemNotificationSettings(BaseSchema):
+    # Communication swagger.json
 
     
     sound = fields.Boolean(required=False)

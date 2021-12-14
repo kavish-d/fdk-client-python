@@ -33,6 +33,7 @@ from .OtherEntityData import OtherEntityData
 
 
 class OtherEntity(BaseSchema):
+    # Configuration swagger.json
 
     
     opted = fields.Boolean(required=False)

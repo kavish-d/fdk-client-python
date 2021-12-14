@@ -13,6 +13,7 @@ from .BlocksProps import BlocksProps
 
 
 class Blocks(BaseSchema):
+    # Theme swagger.json
 
     
     type = fields.Str(required=False)

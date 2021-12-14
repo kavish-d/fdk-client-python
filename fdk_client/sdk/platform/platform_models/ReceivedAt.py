@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ReceivedAt(BaseSchema):
+    # Analytics swagger.json
 
     
     value = fields.Str(required=False)

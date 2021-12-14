@@ -19,6 +19,7 @@ from .ArchiveConfig import ArchiveConfig
 
 
 class GoogleSpreadSheetConfig(BaseSchema):
+    # Inventory swagger.json
 
     
     range = fields.Str(required=False)

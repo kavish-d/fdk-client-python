@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class LogisticTimestamp(BaseSchema):
+    # Logistic swagger.json
 
     
     min = fields.Int(required=False)

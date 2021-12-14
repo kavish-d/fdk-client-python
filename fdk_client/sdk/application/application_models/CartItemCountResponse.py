@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class CartItemCountResponse(BaseSchema):
+    # Cart swagger.json
 
     
     user_cart_items_count = fields.Int(required=False)

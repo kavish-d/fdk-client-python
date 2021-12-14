@@ -9,6 +9,7 @@ from .FailOrder import FailOrder
 
 
 class FailedOrders(BaseSchema):
+    # Order swagger.json
 
     
     orders = fields.Nested(FailOrder, required=False)

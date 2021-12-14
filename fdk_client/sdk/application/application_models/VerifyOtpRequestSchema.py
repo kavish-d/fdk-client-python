@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class VerifyOtpRequestSchema(BaseSchema):
+    # User swagger.json
 
     
     request_id = fields.Str(required=False)

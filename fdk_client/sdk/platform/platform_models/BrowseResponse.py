@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class BrowseResponse(BaseSchema):
+    # FileStorage swagger.json
 
     
     items = fields.List(fields.Nested(DbRecord, required=False), required=False)

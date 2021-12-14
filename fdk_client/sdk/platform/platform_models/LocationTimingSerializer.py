@@ -11,10 +11,11 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class LocationTimingSerializer(BaseSchema):
+    # CompanyProfile swagger.json
 
     
-    hour = fields.Int(required=False)
-    
     minute = fields.Int(required=False)
+    
+    hour = fields.Int(required=False)
     
 

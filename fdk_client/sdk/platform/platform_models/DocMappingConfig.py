@@ -17,6 +17,7 @@ from .DefaultHeadersDTO import DefaultHeadersDTO
 
 
 class DocMappingConfig(BaseSchema):
+    # Inventory swagger.json
 
     
     properties = fields.Dict(required=False)

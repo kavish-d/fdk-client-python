@@ -19,6 +19,7 @@ from .ColumnHeader import ColumnHeader
 
 
 class ColumnHeaders(BaseSchema):
+    # Catalog swagger.json
 
     
     col_5 = fields.Nested(ColumnHeader, required=False)

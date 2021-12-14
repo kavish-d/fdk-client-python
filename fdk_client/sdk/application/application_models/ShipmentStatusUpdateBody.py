@@ -11,6 +11,7 @@ from .StatusesBody import StatusesBody
 
 
 class ShipmentStatusUpdateBody(BaseSchema):
+    # Order swagger.json
 
     
     statuses = fields.List(fields.Nested(StatusesBody, required=False), required=False)

@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CurrencyFeature(BaseSchema):
+    # Configuration swagger.json
 
     
     value = fields.List(fields.Str(required=False), required=False)

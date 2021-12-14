@@ -13,12 +13,13 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Hierarchy(BaseSchema):
+    # Catalog swagger.json
 
-    
-    department = fields.Int(required=False)
     
     l1 = fields.Int(required=False)
     
     l2 = fields.Int(required=False)
+    
+    department = fields.Int(required=False)
     
 

@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class DomainStatusRequest(BaseSchema):
+    # Configuration swagger.json
 
     
     domain_url = fields.Str(required=False)

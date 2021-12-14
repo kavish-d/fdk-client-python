@@ -15,6 +15,7 @@ from .WebRedirect import WebRedirect
 
 
 class Redirects(BaseSchema):
+    # Share swagger.json
 
     
     ios = fields.Nested(RedirectDevice, required=False)

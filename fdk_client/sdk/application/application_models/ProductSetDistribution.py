@@ -9,6 +9,7 @@ from .ProductSetDistributionSize import ProductSetDistributionSize
 
 
 class ProductSetDistribution(BaseSchema):
+    # Catalog swagger.json
 
     
     sizes = fields.List(fields.Nested(ProductSetDistributionSize, required=False), required=False)

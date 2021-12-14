@@ -23,6 +23,7 @@ from .RewardPointsConfig import RewardPointsConfig
 
 
 class CommonFeature(BaseSchema):
+    # Configuration swagger.json
 
     
     communication_optin_dialog = fields.Nested(CommunicationOptinDialogFeature, required=False)

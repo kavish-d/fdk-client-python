@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class UpdatePasswordRequestSchema(BaseSchema):
+    # User swagger.json
 
     
     old_password = fields.Str(required=False)

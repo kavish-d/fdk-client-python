@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class PointsHistoryResponse(BaseSchema):
+    # Rewards swagger.json
 
     
     items = fields.List(fields.Nested(PointsHistory, required=False), required=False)

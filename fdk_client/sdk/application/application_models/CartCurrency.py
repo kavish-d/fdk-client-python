@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class CartCurrency(BaseSchema):
+    # Cart swagger.json
 
     
     code = fields.Str(required=False)

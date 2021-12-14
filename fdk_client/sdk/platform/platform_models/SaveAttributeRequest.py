@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class SaveAttributeRequest(BaseSchema):
+    # Feedback swagger.json
 
     
     description = fields.Str(required=False)

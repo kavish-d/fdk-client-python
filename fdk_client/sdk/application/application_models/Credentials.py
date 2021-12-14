@@ -19,6 +19,7 @@ from .Android import Android
 
 
 class Credentials(BaseSchema):
+    # Configuration swagger.json
 
     
     ios = fields.Nested(Ios, required=False)

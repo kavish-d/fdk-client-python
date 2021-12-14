@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Opening(BaseSchema):
+    # Order swagger.json
 
     
     minute = fields.Int(required=False)

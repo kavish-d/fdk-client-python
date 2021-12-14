@@ -11,6 +11,7 @@ from .CollectionListingFilterType import CollectionListingFilterType
 
 
 class CollectionListingFilter(BaseSchema):
+    # Catalog swagger.json
 
     
     tags = fields.List(fields.Nested(CollectionListingFilterTag, required=False), required=False)

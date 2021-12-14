@@ -9,6 +9,7 @@ from .OrderSchema import OrderSchema
 
 
 class OrderById(BaseSchema):
+    # Order swagger.json
 
     
     order = fields.Nested(OrderSchema, required=False)

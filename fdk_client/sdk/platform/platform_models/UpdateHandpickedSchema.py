@@ -9,6 +9,7 @@ from .HandpickedTagSchema import HandpickedTagSchema
 
 
 class UpdateHandpickedSchema(BaseSchema):
+    # Content swagger.json
 
     
     tag = fields.Nested(HandpickedTagSchema, required=False)

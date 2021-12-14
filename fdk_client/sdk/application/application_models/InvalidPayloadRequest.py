@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class InvalidPayloadRequest(BaseSchema):
+    # Configuration swagger.json
 
     
     message = fields.Str(required=False)

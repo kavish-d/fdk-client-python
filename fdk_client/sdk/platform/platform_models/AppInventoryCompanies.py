@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class AppInventoryCompanies(BaseSchema):
+    # Configuration swagger.json
 
     
     uid = fields.Int(required=False)

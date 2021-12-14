@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class VoteCount(BaseSchema):
+    # Feedback swagger.json
 
     
     downvote = fields.Int(required=False)

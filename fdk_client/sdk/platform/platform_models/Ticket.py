@@ -43,6 +43,7 @@ from .Priority import Priority
 
 
 class Ticket(BaseSchema):
+    # Lead swagger.json
 
     
     context = fields.Nested(TicketContext, required=False)

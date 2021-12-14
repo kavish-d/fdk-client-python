@@ -17,6 +17,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class DiscountProperties(BaseSchema):
+    # Rewards swagger.json
 
     
     absolute = fields.Float(required=False)

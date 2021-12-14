@@ -19,6 +19,7 @@ from .AvailablePagePredicate import AvailablePagePredicate
 
 
 class AvailablePageSchemaSections(BaseSchema):
+    # Theme swagger.json
 
     
     name = fields.Str(required=False)

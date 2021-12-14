@@ -15,6 +15,7 @@ from .ProductVariantItemResponse import ProductVariantItemResponse
 
 
 class ProductVariantResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     header = fields.Str(required=False)

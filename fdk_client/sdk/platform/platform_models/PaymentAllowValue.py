@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class PaymentAllowValue(BaseSchema):
+    # Cart swagger.json
 
     
     max = fields.Int(required=False)

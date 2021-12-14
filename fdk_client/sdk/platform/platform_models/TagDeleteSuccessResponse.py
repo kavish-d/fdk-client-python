@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class TagDeleteSuccessResponse(BaseSchema):
+    # Content swagger.json
 
     
     success = fields.Boolean(required=False)

@@ -9,6 +9,7 @@ from .Address import Address
 
 
 class GetAddressesResponse(BaseSchema):
+    # Cart swagger.json
 
     
     address = fields.List(fields.Nested(Address, required=False), required=False)

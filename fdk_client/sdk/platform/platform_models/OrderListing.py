@@ -17,6 +17,7 @@ from .AppliedFilters import AppliedFilters
 
 
 class OrderListing(BaseSchema):
+    # Order swagger.json
 
     
     items = fields.List(fields.Nested(OrderItems, required=False), required=False)

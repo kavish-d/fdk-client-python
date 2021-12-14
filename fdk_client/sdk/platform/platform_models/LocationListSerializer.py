@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class LocationListSerializer(BaseSchema):
+    # CompanyProfile swagger.json
 
     
     items = fields.List(fields.Nested(GetLocationSerializer, required=False), required=False)

@@ -35,6 +35,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class SmsProvider(BaseSchema):
+    # Communication swagger.json
 
     
     rpt = fields.Int(required=False)

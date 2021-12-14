@@ -9,6 +9,7 @@ from .DomainSuggestion import DomainSuggestion
 
 
 class DomainSuggestionsResponse(BaseSchema):
+    # Configuration swagger.json
 
     
     domains = fields.List(fields.Nested(DomainSuggestion, required=False), required=False)

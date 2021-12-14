@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class OrderFeature(BaseSchema):
+    # Configuration swagger.json
 
     
     buy_again = fields.Boolean(required=False)

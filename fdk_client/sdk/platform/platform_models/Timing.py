@@ -15,6 +15,7 @@ from .Closing import Closing
 
 
 class Timing(BaseSchema):
+    # Order swagger.json
 
     
     opening = fields.Nested(Opening, required=False)

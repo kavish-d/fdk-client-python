@@ -13,6 +13,7 @@ from .Meta import Meta
 
 
 class Media(BaseSchema):
+    # Catalog swagger.json
 
     
     meta = fields.Nested(Meta, required=False)

@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class DomainStatus(BaseSchema):
+    # Configuration swagger.json
 
     
     display = fields.Str(required=False)

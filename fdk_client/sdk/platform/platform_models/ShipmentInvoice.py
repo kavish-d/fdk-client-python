@@ -21,6 +21,7 @@ from .RtoAddress import RtoAddress
 
 
 class ShipmentInvoice(BaseSchema):
+    # Order swagger.json
 
     
     payment_type = fields.Str(required=False)

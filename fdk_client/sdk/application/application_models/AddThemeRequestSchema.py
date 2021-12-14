@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class AddThemeRequestSchema(BaseSchema):
+    # Theme swagger.json
 
     
     theme_id = fields.Str(required=False)

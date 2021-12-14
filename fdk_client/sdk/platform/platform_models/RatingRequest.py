@@ -11,6 +11,7 @@ from .UI import UI
 
 
 class RatingRequest(BaseSchema):
+    # Feedback swagger.json
 
     
     attributes = fields.List(fields.Str(required=False), required=False)

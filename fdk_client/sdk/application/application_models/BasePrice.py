@@ -15,14 +15,15 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class BasePrice(BaseSchema):
+    # Cart swagger.json
 
     
     marked = fields.Float(required=False)
     
-    currency_symbol = fields.Str(required=False)
-    
     effective = fields.Float(required=False)
     
     currency_code = fields.Str(required=False)
+    
+    currency_symbol = fields.Str(required=False)
     
 

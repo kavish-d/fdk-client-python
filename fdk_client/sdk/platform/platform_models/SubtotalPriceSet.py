@@ -11,6 +11,7 @@ from .SubtotalPriceSetPresentmentMoney import SubtotalPriceSetPresentmentMoney
 
 
 class SubtotalPriceSet(BaseSchema):
+    # Order swagger.json
 
     
     shop_money = fields.Nested(SubtotalPriceSetShopMoney, required=False)

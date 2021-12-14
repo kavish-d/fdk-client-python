@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class FAQ(BaseSchema):
+    # Content swagger.json
 
     
     slug = fields.Str(required=False)

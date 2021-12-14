@@ -11,6 +11,7 @@ from .GtmCredentials import GtmCredentials
 
 
 class Gtm(BaseSchema):
+    # Configuration swagger.json
 
     
     credentials = fields.Nested(GtmCredentials, required=False)

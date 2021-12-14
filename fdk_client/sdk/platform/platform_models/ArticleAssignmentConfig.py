@@ -11,6 +11,7 @@ from .ArticleAssignmentRules import ArticleAssignmentRules
 
 
 class ArticleAssignmentConfig(BaseSchema):
+    # Configuration swagger.json
 
     
     rules = fields.Nested(ArticleAssignmentRules, required=False)

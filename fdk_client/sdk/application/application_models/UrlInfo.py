@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class UrlInfo(BaseSchema):
+    # Share swagger.json
 
     
     original = fields.Str(required=False)

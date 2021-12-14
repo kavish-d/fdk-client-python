@@ -11,6 +11,7 @@ from .GetAutocompleteWordsData import GetAutocompleteWordsData
 
 
 class GetAutocompleteWordsResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     page = fields.Nested(Page, required=False)

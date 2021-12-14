@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class CommentRequest(BaseSchema):
+    # Feedback swagger.json
 
     
     comment = fields.List(fields.Str(required=False), required=False)

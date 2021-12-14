@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Validity(BaseSchema):
+    # Cart swagger.json
 
     
     priority = fields.Int(required=False)

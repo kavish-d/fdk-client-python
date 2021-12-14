@@ -21,6 +21,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class PlatformOrderTrack(BaseSchema):
+    # Order swagger.json
 
     
     success = fields.Boolean(required=False)

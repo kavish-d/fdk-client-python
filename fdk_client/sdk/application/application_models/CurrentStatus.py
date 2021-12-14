@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class CurrentStatus(BaseSchema):
+    # Order swagger.json
 
     
     updated_at = fields.Str(required=False)

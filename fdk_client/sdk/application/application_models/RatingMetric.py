@@ -17,6 +17,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class RatingMetric(BaseSchema):
+    # Feedback swagger.json
 
     
     avg = fields.Float(required=False)

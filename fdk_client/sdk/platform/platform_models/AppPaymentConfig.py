@@ -23,6 +23,7 @@ from .PaymentSelectionLock import PaymentSelectionLock
 
 
 class AppPaymentConfig(BaseSchema):
+    # Configuration swagger.json
 
     
     callback_url = fields.Nested(CallbackUrl, required=False)

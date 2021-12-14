@@ -35,6 +35,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class BagPrices(BaseSchema):
+    # Order swagger.json
 
     
     cashback = fields.Float(required=False)

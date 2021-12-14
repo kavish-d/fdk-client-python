@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Referral(BaseSchema):
+    # Rewards swagger.json
 
     
     code = fields.Str(required=False)

@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Ownership(BaseSchema):
+    # Cart swagger.json
 
     
     payable_category = fields.Str(required=False)

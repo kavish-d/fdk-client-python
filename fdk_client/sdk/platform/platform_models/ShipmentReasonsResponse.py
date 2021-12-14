@@ -13,6 +13,7 @@ from .ShipmentResponseReasons import ShipmentResponseReasons
 
 
 class ShipmentReasonsResponse(BaseSchema):
+    # Order swagger.json
 
     
     success = fields.Boolean(required=False)

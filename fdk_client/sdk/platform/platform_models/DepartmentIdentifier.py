@@ -11,10 +11,11 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class DepartmentIdentifier(BaseSchema):
+    # Catalog swagger.json
 
     
-    uid = fields.Int(required=False)
-    
     slug = fields.Str(required=False)
+    
+    uid = fields.Int(required=False)
     
 

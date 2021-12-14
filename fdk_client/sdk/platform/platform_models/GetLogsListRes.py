@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class GetLogsListRes(BaseSchema):
+    # Analytics swagger.json
 
     
     items = fields.List(fields.Nested(MkpLogsResp, required=False), required=False)

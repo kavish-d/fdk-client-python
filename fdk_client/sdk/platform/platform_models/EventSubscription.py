@@ -25,6 +25,7 @@ from .EventSubscriptionTemplate import EventSubscriptionTemplate
 
 
 class EventSubscription(BaseSchema):
+    # Communication swagger.json
 
     
     template = fields.Nested(EventSubscriptionTemplate, required=False)

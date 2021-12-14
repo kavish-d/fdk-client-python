@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CouponAuthor(BaseSchema):
+    # Cart swagger.json
 
     
     modified_by = fields.Str(required=False)

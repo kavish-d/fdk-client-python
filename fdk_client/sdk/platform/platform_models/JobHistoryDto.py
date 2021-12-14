@@ -29,6 +29,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class JobHistoryDto(BaseSchema):
+    # Inventory swagger.json
 
     
     total_added_count = fields.Int(required=False)

@@ -13,6 +13,7 @@ from .CommunicationConsentChannels import CommunicationConsentChannels
 
 
 class CommunicationConsent(BaseSchema):
+    # Communication swagger.json
 
     
     app_id = fields.Str(required=False)

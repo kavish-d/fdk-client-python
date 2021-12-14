@@ -13,6 +13,7 @@ from .OAuthRequestAppleSchemaProfile import OAuthRequestAppleSchemaProfile
 
 
 class OAuthRequestAppleSchema(BaseSchema):
+    # User swagger.json
 
     
     user_identifier = fields.Str(required=False)

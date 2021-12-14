@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Activity(BaseSchema):
+    # Feedback swagger.json
 
     
     current_state = fields.Dict(required=False)

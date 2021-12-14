@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Timestamp(BaseSchema):
+    # Order swagger.json
 
     
     min = fields.Str(required=False)

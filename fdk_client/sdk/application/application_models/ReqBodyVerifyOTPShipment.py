@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ReqBodyVerifyOTPShipment(BaseSchema):
+    # Order swagger.json
 
     
     request_id = fields.Str(required=False)

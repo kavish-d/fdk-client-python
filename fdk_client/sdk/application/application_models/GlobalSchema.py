@@ -9,6 +9,7 @@ from .GlobalSchemaProps import GlobalSchemaProps
 
 
 class GlobalSchema(BaseSchema):
+    # Theme swagger.json
 
     
     props = fields.List(fields.Nested(GlobalSchemaProps, required=False), required=False)

@@ -13,6 +13,7 @@ from .Page import Page
 
 
 class TicketList(BaseSchema):
+    # Lead swagger.json
 
     
     items = fields.List(fields.Nested(Ticket, required=False), required=False)

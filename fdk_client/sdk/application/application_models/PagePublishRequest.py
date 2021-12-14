@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class PagePublishRequest(BaseSchema):
+    # Content swagger.json
 
     
     publish = fields.Boolean(required=False)

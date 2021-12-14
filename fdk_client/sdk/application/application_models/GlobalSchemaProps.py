@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class GlobalSchemaProps(BaseSchema):
+    # Theme swagger.json
 
     
     id = fields.Str(required=False)

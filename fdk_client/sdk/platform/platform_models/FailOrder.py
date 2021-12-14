@@ -25,6 +25,7 @@ from .MarketplaceOrder import MarketplaceOrder
 
 
 class FailOrder(BaseSchema):
+    # Order swagger.json
 
     
     updated_at = fields.Str(required=False)

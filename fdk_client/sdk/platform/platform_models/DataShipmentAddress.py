@@ -31,6 +31,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class DataShipmentAddress(BaseSchema):
+    # Order swagger.json
 
     
     city = fields.Str(required=False)

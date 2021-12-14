@@ -13,6 +13,7 @@ from .UserSchema import UserSchema
 
 
 class AuthSuccess(BaseSchema):
+    # User swagger.json
 
     
     register_token = fields.Str(required=False)

@@ -9,6 +9,7 @@ from .CreateTagSchema import CreateTagSchema
 
 
 class CreateTagRequestSchema(BaseSchema):
+    # Content swagger.json
 
     
     tags = fields.List(fields.Nested(CreateTagSchema, required=False), required=False)

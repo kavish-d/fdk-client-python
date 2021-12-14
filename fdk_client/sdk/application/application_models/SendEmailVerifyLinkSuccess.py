@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class SendEmailVerifyLinkSuccess(BaseSchema):
+    # User swagger.json
 
     
     verify_email_link = fields.Boolean(required=False)

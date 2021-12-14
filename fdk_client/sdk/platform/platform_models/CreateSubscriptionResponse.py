@@ -11,6 +11,7 @@ from .EntitySubscription import EntitySubscription
 
 
 class CreateSubscriptionResponse(BaseSchema):
+    # Billing swagger.json
 
     
     subscription = fields.Nested(EntitySubscription, required=False)

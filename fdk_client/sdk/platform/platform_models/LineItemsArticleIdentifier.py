@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class LineItemsArticleIdentifier(BaseSchema):
+    # Order swagger.json
 
     
     sku_code = fields.Str(required=False)

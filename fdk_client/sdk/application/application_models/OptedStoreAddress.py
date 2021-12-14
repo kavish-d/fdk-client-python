@@ -21,6 +21,7 @@ from .StoreLatLong import StoreLatLong
 
 
 class OptedStoreAddress(BaseSchema):
+    # Configuration swagger.json
 
     
     state = fields.Str(required=False)

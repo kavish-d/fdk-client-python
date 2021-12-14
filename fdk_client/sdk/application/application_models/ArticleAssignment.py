@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ArticleAssignment(BaseSchema):
+    # Catalog swagger.json
 
     
     level = fields.Str(required=False)

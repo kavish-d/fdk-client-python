@@ -37,6 +37,7 @@ from .GoogleSpreadSheetConfig import GoogleSpreadSheetConfig
 
 
 class ProcessConfig(BaseSchema):
+    # Inventory swagger.json
 
     
     db_config = fields.Nested(DBConfig, required=False)

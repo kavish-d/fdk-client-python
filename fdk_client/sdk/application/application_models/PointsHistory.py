@@ -35,6 +35,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class PointsHistory(BaseSchema):
+    # Rewards swagger.json
 
     
     _id = fields.Str(required=False)

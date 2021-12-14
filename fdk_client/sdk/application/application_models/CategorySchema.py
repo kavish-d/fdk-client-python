@@ -25,6 +25,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class CategorySchema(BaseSchema):
+    # Content swagger.json
 
     
     index = fields.Int(required=False)

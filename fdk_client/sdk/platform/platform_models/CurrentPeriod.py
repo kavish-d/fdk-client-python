@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CurrentPeriod(BaseSchema):
+    # Billing swagger.json
 
     
     start_date = fields.Str(required=False)

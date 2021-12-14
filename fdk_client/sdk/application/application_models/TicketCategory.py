@@ -17,6 +17,7 @@ from .TicketFeedbackForm import TicketFeedbackForm
 
 
 class TicketCategory(BaseSchema):
+    # Lead swagger.json
 
     
     key = fields.Str(required=False)

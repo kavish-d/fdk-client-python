@@ -9,6 +9,7 @@ from .CartItem import CartItem
 
 
 class OpenapiCartDetailsRequest(BaseSchema):
+    # Cart swagger.json
 
     
     cart_items = fields.Nested(CartItem, required=False)

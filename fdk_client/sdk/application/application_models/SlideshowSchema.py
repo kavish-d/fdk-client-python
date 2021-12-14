@@ -27,6 +27,7 @@ from .SlideshowMedia import SlideshowMedia
 
 
 class SlideshowSchema(BaseSchema):
+    # Content swagger.json
 
     
     _id = fields.Str(required=False)

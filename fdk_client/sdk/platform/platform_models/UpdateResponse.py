@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class UpdateResponse(BaseSchema):
+    # Feedback swagger.json
 
     
     count = fields.Int(required=False)

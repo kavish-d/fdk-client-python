@@ -13,6 +13,7 @@ from .TatProductArticles import TatProductArticles
 
 
 class LocationDetails(BaseSchema):
+    # Logistic swagger.json
 
     
     from_pincode = fields.Str(required=False)

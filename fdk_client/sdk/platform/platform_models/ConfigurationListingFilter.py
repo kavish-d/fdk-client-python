@@ -11,6 +11,7 @@ from .ConfigurationListingFilterConfig import ConfigurationListingFilterConfig
 
 
 class ConfigurationListingFilter(BaseSchema):
+    # Catalog swagger.json
 
     
     attribute_config = fields.List(fields.Nested(ConfigurationListingFilterConfig, required=False), required=False)

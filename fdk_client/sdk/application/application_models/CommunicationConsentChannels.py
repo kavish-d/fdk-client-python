@@ -13,6 +13,7 @@ from .CommunicationConsentChannelsWhatsapp import CommunicationConsentChannelsWh
 
 
 class CommunicationConsentChannels(BaseSchema):
+    # Communication swagger.json
 
     
     email = fields.Nested(CommunicationConsentChannelsEmail, required=False)

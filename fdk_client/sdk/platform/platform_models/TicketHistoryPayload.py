@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class TicketHistoryPayload(BaseSchema):
+    # Lead swagger.json
 
     
     value = fields.Dict(required=False)

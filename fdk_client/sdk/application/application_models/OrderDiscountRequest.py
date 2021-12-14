@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class OrderDiscountRequest(BaseSchema):
+    # Rewards swagger.json
 
     
     currency = fields.Str(required=False)

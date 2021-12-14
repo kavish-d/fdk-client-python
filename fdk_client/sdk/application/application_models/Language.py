@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Language(BaseSchema):
+    # Content swagger.json
 
     
     display = fields.Str(required=False)

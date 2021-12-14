@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class CommunicationConsentChannelsWhatsapp(BaseSchema):
+    # Communication swagger.json
 
     
     response = fields.Str(required=False)

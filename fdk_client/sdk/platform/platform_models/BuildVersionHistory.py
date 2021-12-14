@@ -11,6 +11,7 @@ from .BuildVersion import BuildVersion
 
 
 class BuildVersionHistory(BaseSchema):
+    # Configuration swagger.json
 
     
     versions = fields.Nested(BuildVersion, required=False)

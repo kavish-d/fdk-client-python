@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Login(BaseSchema):
+    # User swagger.json
 
     
     password = fields.Boolean(required=False)

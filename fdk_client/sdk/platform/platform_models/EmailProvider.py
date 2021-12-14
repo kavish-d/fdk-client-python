@@ -31,6 +31,7 @@ from .EmailProviderReqFrom import EmailProviderReqFrom
 
 
 class EmailProvider(BaseSchema):
+    # Communication swagger.json
 
     
     type = fields.Str(required=False)

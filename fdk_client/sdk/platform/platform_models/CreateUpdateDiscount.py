@@ -27,10 +27,13 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 
+
+
 from .ValidityObject import ValidityObject
 
 
 class CreateUpdateDiscount(BaseSchema):
+    # Discount swagger.json
 
     
     name = fields.Str(required=False)
@@ -40,6 +43,8 @@ class CreateUpdateDiscount(BaseSchema):
     is_active = fields.Boolean(required=False)
     
     app_ids = fields.List(fields.Str(required=False), required=False)
+    
+    extension_ids = fields.List(fields.Str(required=False), required=False)
     
     job_type = fields.Str(required=False)
     

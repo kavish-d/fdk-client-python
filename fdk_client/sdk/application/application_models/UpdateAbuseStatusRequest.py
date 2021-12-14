@@ -21,6 +21,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class UpdateAbuseStatusRequest(BaseSchema):
+    # Feedback swagger.json
 
     
     abusive = fields.Boolean(required=False)

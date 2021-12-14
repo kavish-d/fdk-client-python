@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class GiveawayResponse(BaseSchema):
+    # Rewards swagger.json
 
     
     items = fields.List(fields.Nested(Giveaway, required=False), required=False)

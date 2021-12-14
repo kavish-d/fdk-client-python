@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class EventSubscriptionTemplateEmail(BaseSchema):
+    # Communication swagger.json
 
     
     subscribed = fields.Boolean(required=False)

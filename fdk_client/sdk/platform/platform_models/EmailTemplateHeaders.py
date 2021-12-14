@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class EmailTemplateHeaders(BaseSchema):
+    # Communication swagger.json
 
     
     key = fields.Str(required=False)

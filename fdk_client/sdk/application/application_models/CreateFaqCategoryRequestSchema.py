@@ -9,6 +9,7 @@ from .CategoryRequestSchema import CategoryRequestSchema
 
 
 class CreateFaqCategoryRequestSchema(BaseSchema):
+    # Content swagger.json
 
     
     category = fields.Nested(CategoryRequestSchema, required=False)

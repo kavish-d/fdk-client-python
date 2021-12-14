@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class BlitzkriegNotFoundSchema(BaseSchema):
+    # Theme swagger.json
 
     
     message = fields.Str(required=False)

@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Time(BaseSchema):
+    # Catalog swagger.json
 
     
     minute = fields.Int(required=False)

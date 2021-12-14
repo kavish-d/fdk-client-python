@@ -25,6 +25,7 @@ from .StoreManagerSerializer import StoreManagerSerializer
 
 
 class StoreDetails(BaseSchema):
+    # Catalog swagger.json
 
     
     _custom_json = fields.Dict(required=False)

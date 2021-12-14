@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class ProdcutTemplateCategoriesResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     page = fields.Nested(Page, required=False)

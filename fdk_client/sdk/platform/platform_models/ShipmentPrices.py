@@ -47,6 +47,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ShipmentPrices(BaseSchema):
+    # Order swagger.json
 
     
     refund_amount = fields.Float(required=False)

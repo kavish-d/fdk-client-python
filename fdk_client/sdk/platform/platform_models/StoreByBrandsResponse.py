@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class StoreByBrandsResponse(BaseSchema):
+    # Configuration swagger.json
 
     
     items = fields.List(fields.Nested(BrandStoreInfo, required=False), required=False)

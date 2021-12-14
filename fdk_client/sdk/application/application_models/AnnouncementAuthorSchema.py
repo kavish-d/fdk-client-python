@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class AnnouncementAuthorSchema(BaseSchema):
+    # Content swagger.json
 
     
     created_by = fields.Str(required=False)

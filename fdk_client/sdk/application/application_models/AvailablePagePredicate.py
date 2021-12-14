@@ -13,6 +13,7 @@ from .AvailablePageRoutePredicate import AvailablePageRoutePredicate
 
 
 class AvailablePagePredicate(BaseSchema):
+    # Theme swagger.json
 
     
     screen = fields.Nested(AvailablePageScreenPredicate, required=False)

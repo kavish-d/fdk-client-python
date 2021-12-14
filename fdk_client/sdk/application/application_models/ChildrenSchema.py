@@ -17,6 +17,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ChildrenSchema(BaseSchema):
+    # Content swagger.json
 
     
     question = fields.Str(required=False)

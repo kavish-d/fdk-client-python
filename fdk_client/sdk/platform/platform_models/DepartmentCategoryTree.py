@@ -11,6 +11,7 @@ from .CategoryItems import CategoryItems
 
 
 class DepartmentCategoryTree(BaseSchema):
+    # Catalog swagger.json
 
     
     department = fields.Str(required=False)

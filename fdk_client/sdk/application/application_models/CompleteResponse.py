@@ -35,6 +35,7 @@ from .CDN import CDN
 
 
 class CompleteResponse(BaseSchema):
+    # FileStorage swagger.json
 
     
     _id = fields.Str(required=False)

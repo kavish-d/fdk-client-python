@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ItemTotal(BaseSchema):
+    # Order swagger.json
 
     
     new = fields.Int(required=False)

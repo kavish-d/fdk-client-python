@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class CDN(BaseSchema):
+    # FileStorage swagger.json
 
     
     url = fields.Str(required=False)

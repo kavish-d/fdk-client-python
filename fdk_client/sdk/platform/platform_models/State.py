@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class State(BaseSchema):
+    # Cart swagger.json
 
     
     is_public = fields.Boolean(required=False)

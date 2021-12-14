@@ -29,6 +29,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class DBConfig(BaseSchema):
+    # Inventory swagger.json
 
     
     vendor = fields.Str(required=False)

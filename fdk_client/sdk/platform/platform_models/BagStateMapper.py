@@ -17,6 +17,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class BagStateMapper(BaseSchema):
+    # Order swagger.json
 
     
     app_state_name = fields.Str(required=False)

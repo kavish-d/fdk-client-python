@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class EmailTemplateKeys(BaseSchema):
+    # Communication swagger.json
 
     
     to = fields.Str(required=False)

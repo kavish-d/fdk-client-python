@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CouponDateMeta(BaseSchema):
+    # Cart swagger.json
 
     
     created_on = fields.Str(required=False)

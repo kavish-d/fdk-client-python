@@ -17,6 +17,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class PaginationSchema(BaseSchema):
+    # Theme swagger.json
 
     
     size = fields.Int(required=False)

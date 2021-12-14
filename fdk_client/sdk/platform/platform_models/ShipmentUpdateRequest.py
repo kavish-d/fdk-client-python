@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ShipmentUpdateRequest(BaseSchema):
+    # Order swagger.json
 
     
     bags = fields.List(fields.Str(required=False), required=False)

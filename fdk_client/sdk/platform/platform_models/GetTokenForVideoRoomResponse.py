@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class GetTokenForVideoRoomResponse(BaseSchema):
+    # Lead swagger.json
 
     
     access_token = fields.Str(required=False)

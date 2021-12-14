@@ -17,6 +17,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class FaqSchema(BaseSchema):
+    # Content swagger.json
 
     
     slug = fields.Str(required=False)

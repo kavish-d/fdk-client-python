@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class TicketSubCategory(BaseSchema):
+    # Lead swagger.json
 
     
     key = fields.Str(required=False)

@@ -13,6 +13,7 @@ from .AppDomain import AppDomain
 
 
 class CreateApplicationRequest(BaseSchema):
+    # Configuration swagger.json
 
     
     app = fields.Nested(App, required=False)

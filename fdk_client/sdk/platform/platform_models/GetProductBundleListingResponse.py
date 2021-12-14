@@ -11,6 +11,7 @@ from .GetProductBundleCreateResponse import GetProductBundleCreateResponse
 
 
 class GetProductBundleListingResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     page = fields.Nested(Page, required=False)

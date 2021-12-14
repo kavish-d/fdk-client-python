@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class LookAndFeel(BaseSchema):
+    # User swagger.json
 
     
     card_position = fields.Str(required=False)

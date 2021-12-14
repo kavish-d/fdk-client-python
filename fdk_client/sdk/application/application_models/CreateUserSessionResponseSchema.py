@@ -17,6 +17,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class CreateUserSessionResponseSchema(BaseSchema):
+    # User swagger.json
 
     
     domain = fields.Str(required=False)

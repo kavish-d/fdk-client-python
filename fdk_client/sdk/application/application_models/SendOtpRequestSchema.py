@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class SendOtpRequestSchema(BaseSchema):
+    # User swagger.json
 
     
     country_code = fields.Str(required=False)

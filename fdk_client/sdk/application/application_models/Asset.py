@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Asset(BaseSchema):
+    # Content swagger.json
 
     
     aspect_ratio = fields.Str(required=False)

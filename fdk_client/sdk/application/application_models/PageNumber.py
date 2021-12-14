@@ -17,6 +17,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class PageNumber(BaseSchema):
+    # Feedback swagger.json
 
     
     current = fields.Int(required=False)

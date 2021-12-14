@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class SplashImage(BaseSchema):
+    # Configuration swagger.json
 
     
     aspect_ratio = fields.Str(required=False)

@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class RewardsRule(BaseSchema):
+    # Rewards swagger.json
 
     
     amount = fields.Float(required=False)

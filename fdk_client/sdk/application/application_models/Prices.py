@@ -47,6 +47,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Prices(BaseSchema):
+    # Order swagger.json
 
     
     amount_paid_roundoff = fields.Float(required=False)

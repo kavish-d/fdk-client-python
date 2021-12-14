@@ -31,6 +31,7 @@ from .SocialMediaTags import SocialMediaTags
 
 
 class ShortLinkReq(BaseSchema):
+    # Share swagger.json
 
     
     title = fields.Str(required=False)

@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class InventoryPaymentConfig(BaseSchema):
+    # Configuration swagger.json
 
     
     mode_of_payment = fields.Str(required=False)

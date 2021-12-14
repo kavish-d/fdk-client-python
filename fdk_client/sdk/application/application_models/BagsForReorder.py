@@ -19,6 +19,7 @@ from .BagsForReorderArticleAssignment import BagsForReorderArticleAssignment
 
 
 class BagsForReorder(BaseSchema):
+    # Order swagger.json
 
     
     item_id = fields.Int(required=False)

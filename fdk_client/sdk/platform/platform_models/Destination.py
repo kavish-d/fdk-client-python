@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Destination(BaseSchema):
+    # FileStorage swagger.json
 
     
     namespace = fields.Str(required=False)

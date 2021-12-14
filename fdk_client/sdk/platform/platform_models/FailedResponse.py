@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class FailedResponse(BaseSchema):
+    # FileStorage swagger.json
 
     
     message = fields.Str(required=False)

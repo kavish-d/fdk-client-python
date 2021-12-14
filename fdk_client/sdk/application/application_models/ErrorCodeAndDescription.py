@@ -11,10 +11,11 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ErrorCodeAndDescription(BaseSchema):
+    # Payment swagger.json
 
     
-    description = fields.Str(required=False)
-    
     code = fields.Str(required=False)
+    
+    description = fields.Str(required=False)
     
 

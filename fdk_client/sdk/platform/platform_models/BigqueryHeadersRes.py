@@ -9,6 +9,7 @@ from .BigqueryHeadersResHeaders import BigqueryHeadersResHeaders
 
 
 class BigqueryHeadersRes(BaseSchema):
+    # Communication swagger.json
 
     
     headers = fields.List(fields.Nested(BigqueryHeadersResHeaders, required=False), required=False)

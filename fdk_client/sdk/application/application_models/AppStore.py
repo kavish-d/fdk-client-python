@@ -21,6 +21,7 @@ from .StoreManagerSerializer import StoreManagerSerializer
 
 
 class AppStore(BaseSchema):
+    # Catalog swagger.json
 
     
     company = fields.Nested(CompanyStore, required=False)

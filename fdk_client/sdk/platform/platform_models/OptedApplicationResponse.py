@@ -21,6 +21,7 @@ from .OptOutInventory import OptOutInventory
 
 
 class OptedApplicationResponse(BaseSchema):
+    # Configuration swagger.json
 
     
     name = fields.Str(required=False)

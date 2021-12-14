@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class SessionListSuccess(BaseSchema):
+    # User swagger.json
 
     
     sessions = fields.List(fields.Str(required=False), required=False)

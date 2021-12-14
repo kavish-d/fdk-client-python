@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ShipmentTrackResponseBagListItemsProductImage(BaseSchema):
+    # Order swagger.json
 
     
     aspect_ratio = fields.Str(required=False)

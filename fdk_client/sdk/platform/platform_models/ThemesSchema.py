@@ -53,6 +53,7 @@ from .Colors import Colors
 
 
 class ThemesSchema(BaseSchema):
+    # Theme swagger.json
 
     
     application = fields.Str(required=False)

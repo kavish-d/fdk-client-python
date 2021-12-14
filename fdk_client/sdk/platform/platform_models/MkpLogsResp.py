@@ -19,6 +19,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class MkpLogsResp(BaseSchema):
+    # Analytics swagger.json
 
     
     start_time_iso = fields.Str(required=False)

@@ -17,6 +17,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class CartFeature(BaseSchema):
+    # Configuration swagger.json
 
     
     gst_input = fields.Boolean(required=False)

@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class StoresResponse(BaseSchema):
+    # Configuration swagger.json
 
     
     items = fields.Nested(AppInventoryStores, required=False)

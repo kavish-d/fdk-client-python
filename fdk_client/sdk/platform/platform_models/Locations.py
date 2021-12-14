@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Locations(BaseSchema):
+    # Common swagger.json
 
     
     items = fields.List(fields.Dict(required=False), required=False)

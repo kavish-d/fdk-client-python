@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ActionPage(BaseSchema):
+    # Content swagger.json
 
     
     params = fields.Dict(required=False)

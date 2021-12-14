@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Website(BaseSchema):
+    # CompanyProfile swagger.json
 
     
     url = fields.Str(required=False)

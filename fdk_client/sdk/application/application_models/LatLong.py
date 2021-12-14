@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class LatLong(BaseSchema):
+    # Catalog swagger.json
 
     
     coordinates = fields.List(fields.Float(required=False), required=False)

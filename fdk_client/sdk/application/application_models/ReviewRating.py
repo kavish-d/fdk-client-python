@@ -11,6 +11,7 @@ from .AttributeObject import AttributeObject
 
 
 class ReviewRating(BaseSchema):
+    # Feedback swagger.json
 
     
     attributes = fields.List(fields.Nested(AttributeObject, required=False), required=False)

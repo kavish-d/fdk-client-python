@@ -23,6 +23,7 @@ from .UserSchema import UserSchema
 
 
 class ProfileEditSuccess(BaseSchema):
+    # User swagger.json
 
     
     user = fields.Nested(UserSchema, required=False)

@@ -11,6 +11,7 @@ from .TotalTaxSetPresentmentMoney import TotalTaxSetPresentmentMoney
 
 
 class TotalTaxSet(BaseSchema):
+    # Order swagger.json
 
     
     shop_money = fields.Nested(TotalTaxSetShopMoney, required=False)

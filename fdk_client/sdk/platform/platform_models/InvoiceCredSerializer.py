@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class InvoiceCredSerializer(BaseSchema):
+    # CompanyProfile swagger.json
 
     
     password = fields.Str(required=False)

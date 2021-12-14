@@ -25,6 +25,7 @@ from .OptedStoreAddress import OptedStoreAddress
 
 
 class OrderingStore(BaseSchema):
+    # Configuration swagger.json
 
     
     address = fields.Nested(OptedStoreAddress, required=False)

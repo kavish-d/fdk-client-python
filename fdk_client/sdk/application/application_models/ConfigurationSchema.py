@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ConfigurationSchema(BaseSchema):
+    # Content swagger.json
 
     
     sleep_time = fields.Int(required=False)

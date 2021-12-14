@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class LastPatch(BaseSchema):
+    # Configuration swagger.json
 
     
     op = fields.Str(required=False)

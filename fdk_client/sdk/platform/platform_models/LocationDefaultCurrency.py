@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class LocationDefaultCurrency(BaseSchema):
+    # Common swagger.json
 
     
     name = fields.Str(required=False)

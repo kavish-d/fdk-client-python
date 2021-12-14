@@ -21,6 +21,7 @@ from .ContactSchema import ContactSchema
 
 
 class Support(BaseSchema):
+    # Content swagger.json
 
     
     created = fields.Boolean(required=False)

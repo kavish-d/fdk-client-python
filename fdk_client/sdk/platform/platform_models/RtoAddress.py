@@ -37,6 +37,7 @@ from .StoreAddressJson import StoreAddressJson
 
 
 class RtoAddress(BaseSchema):
+    # Order swagger.json
 
     
     name = fields.Str(required=False)

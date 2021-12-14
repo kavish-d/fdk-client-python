@@ -11,10 +11,11 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ArticleAssignment1(BaseSchema):
+    # Catalog swagger.json
 
     
-    strategy = fields.Str(required=False)
-    
     level = fields.Str(required=False)
+    
+    strategy = fields.Str(required=False)
     
 

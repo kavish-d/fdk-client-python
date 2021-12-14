@@ -19,6 +19,7 @@ from .ActionPage import ActionPage
 
 
 class CategoryItems(BaseSchema):
+    # Catalog swagger.json
 
     
     childs = fields.List(fields.Nested(Child, required=False), required=False)

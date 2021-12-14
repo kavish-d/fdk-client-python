@@ -9,6 +9,7 @@ from .Domain import Domain
 
 
 class DomainsResponse(BaseSchema):
+    # Configuration swagger.json
 
     
     domains = fields.List(fields.Nested(Domain, required=False), required=False)

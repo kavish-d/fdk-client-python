@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class StatusesBody(BaseSchema):
+    # Order swagger.json
 
     
     status = fields.Str(required=False)

@@ -97,6 +97,7 @@ from .OrderShippingAddress import OrderShippingAddress
 
 
 class MarketplaceOrder(BaseSchema):
+    # Order swagger.json
 
     
     order_status_url = fields.Str(required=False)

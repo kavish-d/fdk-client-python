@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class CommunicationOptinDialogFeature(BaseSchema):
+    # Configuration swagger.json
 
     
     visibility = fields.Boolean(required=False)

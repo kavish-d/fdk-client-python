@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Social(BaseSchema):
+    # User swagger.json
 
     
     account_kit = fields.Boolean(required=False)

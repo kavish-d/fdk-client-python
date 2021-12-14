@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class SubscriptionLimitApplication(BaseSchema):
+    # Billing swagger.json
 
     
     enabled = fields.Boolean(required=False)

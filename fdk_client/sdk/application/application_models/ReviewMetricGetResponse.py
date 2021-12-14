@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class ReviewMetricGetResponse(BaseSchema):
+    # Feedback swagger.json
 
     
     items = fields.List(fields.Nested(ReviewMetric, required=False), required=False)

@@ -19,6 +19,7 @@ from .Tokens import Tokens
 
 
 class AppTokenResponse(BaseSchema):
+    # Configuration swagger.json
 
     
     tokens = fields.Nested(Tokens, required=False)

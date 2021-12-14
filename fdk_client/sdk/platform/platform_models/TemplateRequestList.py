@@ -9,6 +9,7 @@ from .TemplateRequest import TemplateRequest
 
 
 class TemplateRequestList(BaseSchema):
+    # Feedback swagger.json
 
     
     template_list = fields.List(fields.Nested(TemplateRequest, required=False), required=False)

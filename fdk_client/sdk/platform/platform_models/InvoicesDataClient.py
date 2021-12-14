@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class InvoicesDataClient(BaseSchema):
+    # Billing swagger.json
 
     
     name = fields.Str(required=False)

@@ -11,6 +11,7 @@ from .PhoneProperties import PhoneProperties
 
 
 class PhoneSchema(BaseSchema):
+    # Content swagger.json
 
     
     active = fields.Boolean(required=False)

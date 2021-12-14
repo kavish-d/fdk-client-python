@@ -25,6 +25,7 @@ from .BlogLink import BlogLink
 
 
 class SocialLinks(BaseSchema):
+    # Configuration swagger.json
 
     
     facebook = fields.Nested(FacebookLink, required=False)

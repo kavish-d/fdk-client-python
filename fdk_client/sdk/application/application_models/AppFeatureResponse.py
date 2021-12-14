@@ -9,6 +9,7 @@ from .AppFeature import AppFeature
 
 
 class AppFeatureResponse(BaseSchema):
+    # Configuration swagger.json
 
     
     feature = fields.Nested(AppFeature, required=False)

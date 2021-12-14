@@ -11,6 +11,7 @@ from .ScheduleStartSchema import ScheduleStartSchema
 
 
 class AnnouncementSchema(BaseSchema):
+    # Content swagger.json
 
     
     announcement = fields.Str(required=False)

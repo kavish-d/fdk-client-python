@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ArchiveConfig(BaseSchema):
+    # Inventory swagger.json
 
     
     delete = fields.Boolean(required=False)

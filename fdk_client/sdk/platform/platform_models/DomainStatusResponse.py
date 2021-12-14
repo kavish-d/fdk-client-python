@@ -11,6 +11,7 @@ from .DomainStatus import DomainStatus
 
 
 class DomainStatusResponse(BaseSchema):
+    # Configuration swagger.json
 
     
     connected = fields.Boolean(required=False)

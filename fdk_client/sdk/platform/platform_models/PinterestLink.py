@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class PinterestLink(BaseSchema):
+    # Configuration swagger.json
 
     
     title = fields.Str(required=False)

@@ -9,6 +9,7 @@ from .RewardsArticle import RewardsArticle
 
 
 class CatalogueOrderRequest(BaseSchema):
+    # Rewards swagger.json
 
     
     articles = fields.List(fields.Nested(RewardsArticle, required=False), required=False)

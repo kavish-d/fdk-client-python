@@ -9,6 +9,7 @@ from .UserSchema import UserSchema
 
 
 class UserSearchResponseSchema(BaseSchema):
+    # User swagger.json
 
     
     users = fields.List(fields.Nested(UserSchema, required=False), required=False)

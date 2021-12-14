@@ -25,6 +25,7 @@ from .ShipmentTrackResponseBagListItemStatusesTrack import ShipmentTrackResponse
 
 
 class ShipmentTrackResponseBagListItemStatuses(BaseSchema):
+    # Order swagger.json
 
     
     nps_rating = fields.Int(required=False)

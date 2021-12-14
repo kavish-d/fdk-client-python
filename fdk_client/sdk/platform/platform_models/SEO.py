@@ -13,6 +13,7 @@ from .SEOImage import SEOImage
 
 
 class SEO(BaseSchema):
+    # Content swagger.json
 
     
     description = fields.Str(required=False)

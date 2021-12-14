@@ -11,6 +11,7 @@ from .ConfigurationProductVariant import ConfigurationProductVariant
 
 
 class ConfigurationProduct(BaseSchema):
+    # Catalog swagger.json
 
     
     similar = fields.Nested(ConfigurationProductSimilar, required=False)

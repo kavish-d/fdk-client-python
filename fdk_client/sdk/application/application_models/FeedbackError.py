@@ -23,6 +23,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class FeedbackError(BaseSchema):
+    # Feedback swagger.json
 
     
     code = fields.Str(required=False)

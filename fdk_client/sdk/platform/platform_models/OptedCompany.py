@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class OptedCompany(BaseSchema):
+    # Configuration swagger.json
 
     
     uid = fields.Int(required=False)

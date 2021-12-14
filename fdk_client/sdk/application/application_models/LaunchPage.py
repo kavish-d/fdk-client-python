@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class LaunchPage(BaseSchema):
+    # Configuration swagger.json
 
     
     page_type = fields.Str(required=False)

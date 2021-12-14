@@ -11,6 +11,7 @@ from .CatalogInsightBrand import CatalogInsightBrand
 
 
 class CatalogInsightResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     item = fields.Nested(CatalogInsightItem, required=False)

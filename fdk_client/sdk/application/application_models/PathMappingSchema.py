@@ -17,6 +17,7 @@ from .RedirectionSchema import RedirectionSchema
 
 
 class PathMappingSchema(BaseSchema):
+    # Content swagger.json
 
     
     application = fields.Str(required=False)

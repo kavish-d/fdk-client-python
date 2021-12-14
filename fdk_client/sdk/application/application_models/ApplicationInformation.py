@@ -29,6 +29,7 @@ from .BusinessHighlights import BusinessHighlights
 
 
 class ApplicationInformation(BaseSchema):
+    # Configuration swagger.json
 
     
     address = fields.Nested(InformationAddress, required=False)

@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ColumnHeader(BaseSchema):
+    # Catalog swagger.json
 
     
     value = fields.Str(required=False)

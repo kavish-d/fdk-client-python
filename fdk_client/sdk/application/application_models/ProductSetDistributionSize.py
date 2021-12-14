@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ProductSetDistributionSize(BaseSchema):
+    # Catalog swagger.json
 
     
     size = fields.Str(required=False)

@@ -39,6 +39,7 @@ from .IntegrationMeta import IntegrationMeta
 
 
 class IntegrationOptIn(BaseSchema):
+    # Configuration swagger.json
 
     
     validators = fields.Nested(Validators, required=False)

@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class DomainSuggestionsRequest(BaseSchema):
+    # Configuration swagger.json
 
     
     domain_url = fields.Str(required=False)

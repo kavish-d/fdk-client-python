@@ -23,6 +23,7 @@ from .ReceivedAt import ReceivedAt
 
 
 class AbandonCartsDetail(BaseSchema):
+    # Analytics swagger.json
 
     
     properties_cart_id = fields.Str(required=False)

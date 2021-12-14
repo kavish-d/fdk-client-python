@@ -15,6 +15,7 @@ from .Media import Media
 
 
 class CategoryMetaResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     uid = fields.Int(required=False)

@@ -17,6 +17,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Domain(BaseSchema):
+    # Configuration swagger.json
 
     
     verified = fields.Boolean(required=False)

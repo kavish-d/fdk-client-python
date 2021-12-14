@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class QrFeature(BaseSchema):
+    # Configuration swagger.json
 
     
     application = fields.Boolean(required=False)

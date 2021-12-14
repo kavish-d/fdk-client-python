@@ -15,6 +15,7 @@ from .ActionPage import ActionPage
 
 
 class ProductBrand(BaseSchema):
+    # Catalog swagger.json
 
     
     uid = fields.Int(required=False)

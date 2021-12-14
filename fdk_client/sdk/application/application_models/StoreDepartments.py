@@ -17,6 +17,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class StoreDepartments(BaseSchema):
+    # Catalog swagger.json
 
     
     priority_order = fields.Int(required=False)

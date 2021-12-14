@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class WalletOtpRequest(BaseSchema):
+    # Payment swagger.json
 
     
     country_code = fields.Str(required=False)

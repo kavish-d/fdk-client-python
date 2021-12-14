@@ -9,6 +9,7 @@ from .PickupStoreDetail import PickupStoreDetail
 
 
 class StoreDetailsResponse(BaseSchema):
+    # PosCart swagger.json
 
     
     items = fields.List(fields.Nested(PickupStoreDetail, required=False), required=False)

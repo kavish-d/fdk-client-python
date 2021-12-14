@@ -9,6 +9,7 @@ from .SeoSchema import SeoSchema
 
 
 class SeoComponent(BaseSchema):
+    # Content swagger.json
 
     
     seo = fields.Nested(SeoSchema, required=False)

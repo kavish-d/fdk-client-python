@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class CompanyBrandListSerializer(BaseSchema):
+    # CompanyProfile swagger.json
 
     
     items = fields.List(fields.Nested(CompanyBrandSerializer, required=False), required=False)

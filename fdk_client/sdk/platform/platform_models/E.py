@@ -21,6 +21,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class E(BaseSchema):
+    # Rewards swagger.json
 
     
     code = fields.Dict(required=False)

@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ErrorResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     error = fields.Str(required=False)

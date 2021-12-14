@@ -13,6 +13,7 @@ from .ActionQuery import ActionQuery
 
 
 class ProductAction(BaseSchema):
+    # Cart swagger.json
 
     
     type = fields.Str(required=False)

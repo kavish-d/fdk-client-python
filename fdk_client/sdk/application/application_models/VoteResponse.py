@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class VoteResponse(BaseSchema):
+    # Feedback swagger.json
 
     
     items = fields.List(fields.Nested(Vote, required=False), required=False)

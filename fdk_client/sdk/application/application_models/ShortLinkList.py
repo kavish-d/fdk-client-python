@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class ShortLinkList(BaseSchema):
+    # Share swagger.json
 
     
     items = fields.List(fields.Nested(ShortLinkRes, required=False), required=False)

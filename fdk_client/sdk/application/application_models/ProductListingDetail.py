@@ -61,6 +61,7 @@ from .ProductBrand import ProductBrand
 
 
 class ProductListingDetail(BaseSchema):
+    # Catalog swagger.json
 
     
     color = fields.Str(required=False)

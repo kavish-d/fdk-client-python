@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class AddProxyReq(BaseSchema):
+    # Partner swagger.json
 
     
     attached_path = fields.Str(required=False)

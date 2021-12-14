@@ -21,6 +21,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class SmsProviderReq(BaseSchema):
+    # Communication swagger.json
 
     
     name = fields.Str(required=False)

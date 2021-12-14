@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ApplicationAuth(BaseSchema):
+    # Configuration swagger.json
 
     
     enabled = fields.Boolean(required=False)

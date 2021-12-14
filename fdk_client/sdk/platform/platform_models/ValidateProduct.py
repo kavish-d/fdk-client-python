@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ValidateProduct(BaseSchema):
+    # Catalog swagger.json
 
     
     valid = fields.Boolean(required=False)

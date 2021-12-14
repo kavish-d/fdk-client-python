@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class DBConnectionProfile(BaseSchema):
+    # Inventory swagger.json
 
     
     inventory = fields.Str(required=False)

@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class BulkBundleRestriction(BaseSchema):
+    # Cart swagger.json
 
     
     multi_store_allowed = fields.Boolean(required=False)

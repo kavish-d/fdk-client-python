@@ -21,6 +21,7 @@ from .FormRegisterRequestSchemaPhone import FormRegisterRequestSchemaPhone
 
 
 class FormRegisterRequestSchema(BaseSchema):
+    # User swagger.json
 
     
     first_name = fields.Str(required=False)

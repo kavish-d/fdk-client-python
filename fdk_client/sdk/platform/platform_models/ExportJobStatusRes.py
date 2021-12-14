@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ExportJobStatusRes(BaseSchema):
+    # Analytics swagger.json
 
     
     status = fields.Str(required=False)

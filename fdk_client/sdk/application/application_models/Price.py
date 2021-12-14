@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Price(BaseSchema):
+    # Catalog swagger.json
 
     
     max = fields.Float(required=False)

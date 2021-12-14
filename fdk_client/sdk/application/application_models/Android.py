@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Android(BaseSchema):
+    # Configuration swagger.json
 
     
     application_id = fields.Str(required=False)

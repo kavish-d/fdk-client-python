@@ -33,6 +33,7 @@ from .Url import Url
 
 
 class FeedbackMedia(BaseSchema):
+    # Feedback swagger.json
 
     
     application = fields.Nested(ApplicationSchema, required=False)

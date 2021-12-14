@@ -15,6 +15,7 @@ from .ProductDetail import ProductDetail
 
 
 class ProductCompareResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     attributes_metadata = fields.List(fields.Nested(AttributeMetadata, required=False), required=False)

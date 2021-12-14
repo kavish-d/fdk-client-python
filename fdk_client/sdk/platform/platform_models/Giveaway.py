@@ -31,6 +31,7 @@ from .RewardsRule import RewardsRule
 
 
 class Giveaway(BaseSchema):
+    # Rewards swagger.json
 
     
     _id = fields.Str(required=False)

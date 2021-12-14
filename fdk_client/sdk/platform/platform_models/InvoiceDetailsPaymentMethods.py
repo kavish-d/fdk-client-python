@@ -17,6 +17,7 @@ from .InvoiceDetailsPaymentMethodsData import InvoiceDetailsPaymentMethodsData
 
 
 class InvoiceDetailsPaymentMethods(BaseSchema):
+    # Billing swagger.json
 
     
     id = fields.Int(required=False)

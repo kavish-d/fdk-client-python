@@ -19,6 +19,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class DeploymentMeta(BaseSchema):
+    # Configuration swagger.json
 
     
     deployed_stores = fields.List(fields.Int(required=False), required=False)

@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class StatsImported(BaseSchema):
+    # Communication swagger.json
 
     
     count = fields.Int(required=False)

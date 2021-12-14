@@ -33,6 +33,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class SendOtpResponse(BaseSchema):
+    # User swagger.json
 
     
     resend_timer = fields.Int(required=False)

@@ -17,6 +17,7 @@ from .MediaMeta import MediaMeta
 
 
 class Review(BaseSchema):
+    # Feedback swagger.json
 
     
     answer_ids = fields.List(fields.Str(required=False), required=False)

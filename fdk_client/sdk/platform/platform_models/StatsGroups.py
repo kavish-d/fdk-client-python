@@ -9,6 +9,7 @@ from .StatGroup import StatGroup
 
 
 class StatsGroups(BaseSchema):
+    # Analytics swagger.json
 
     
     groups = fields.List(fields.Nested(StatGroup, required=False), required=False)

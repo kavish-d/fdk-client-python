@@ -11,6 +11,7 @@ from .FilerList import FilerList
 
 
 class InventoryConfig(BaseSchema):
+    # Catalog swagger.json
 
     
     multivalues = fields.Boolean(required=False)

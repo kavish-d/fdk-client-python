@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ProductReturnConfig(BaseSchema):
+    # Order swagger.json
 
     
     on_same_store = fields.Boolean(required=False)

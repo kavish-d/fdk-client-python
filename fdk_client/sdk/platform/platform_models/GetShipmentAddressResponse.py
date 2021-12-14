@@ -13,6 +13,7 @@ from .DataShipmentAddress import DataShipmentAddress
 
 
 class GetShipmentAddressResponse(BaseSchema):
+    # Order swagger.json
 
     
     message = fields.Str(required=False)

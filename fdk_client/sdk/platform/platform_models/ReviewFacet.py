@@ -17,6 +17,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ReviewFacet(BaseSchema):
+    # Feedback swagger.json
 
     
     display = fields.Str(required=False)

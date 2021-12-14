@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ShipmentGst(BaseSchema):
+    # Order swagger.json
 
     
     brand_calculated_amount = fields.Float(required=False)

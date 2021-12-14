@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CampaignShortLink(BaseSchema):
+    # Share swagger.json
 
     
     source = fields.Str(required=False)

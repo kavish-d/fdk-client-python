@@ -11,6 +11,7 @@ from .OrderBeneficiaryDetails import OrderBeneficiaryDetails
 
 
 class OrderBeneficiaryResponse(BaseSchema):
+    # Payment swagger.json
 
     
     show_beneficiary_details = fields.Boolean(required=False)

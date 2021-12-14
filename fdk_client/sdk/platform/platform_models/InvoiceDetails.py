@@ -55,6 +55,7 @@ from .InvoicePaymentMethod import InvoicePaymentMethod
 
 
 class InvoiceDetails(BaseSchema):
+    # Billing swagger.json
 
     
     period = fields.Nested(InvoiceDetailsPeriod, required=False)

@@ -11,10 +11,11 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class GetShareCartLinkRequest(BaseSchema):
+    # Cart swagger.json
 
     
-    meta = fields.Dict(required=False)
-    
     id = fields.Str(required=False)
+    
+    meta = fields.Dict(required=False)
     
 

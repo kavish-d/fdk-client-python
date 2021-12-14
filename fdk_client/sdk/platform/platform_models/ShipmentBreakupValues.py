@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ShipmentBreakupValues(BaseSchema):
+    # Order swagger.json
 
     
     display = fields.Str(required=False)

@@ -29,6 +29,7 @@ from .LogMeta import LogMeta
 
 
 class Log(BaseSchema):
+    # Communication swagger.json
 
     
     email = fields.Nested(LogEmail, required=False)

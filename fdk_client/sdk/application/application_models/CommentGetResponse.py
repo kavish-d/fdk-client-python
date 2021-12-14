@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class CommentGetResponse(BaseSchema):
+    # Feedback swagger.json
 
     
     items = fields.List(fields.Nested(Comment, required=False), required=False)

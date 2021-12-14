@@ -9,6 +9,7 @@ from .Website import Website
 
 
 class BusinessDetails(BaseSchema):
+    # CompanyProfile swagger.json
 
     
     website = fields.Nested(Website, required=False)

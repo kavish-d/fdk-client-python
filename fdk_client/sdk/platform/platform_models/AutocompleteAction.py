@@ -11,6 +11,7 @@ from .AutocompletePageAction import AutocompletePageAction
 
 
 class AutocompleteAction(BaseSchema):
+    # Catalog swagger.json
 
     
     type = fields.Str(required=False)

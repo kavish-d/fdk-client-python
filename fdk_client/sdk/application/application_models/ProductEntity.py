@@ -13,6 +13,7 @@ from .EntityMeta import EntityMeta
 
 
 class ProductEntity(BaseSchema):
+    # Feedback swagger.json
 
     
     id = fields.Str(required=False)

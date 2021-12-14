@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class SignUrlRequest(BaseSchema):
+    # FileStorage swagger.json
 
     
     expiry = fields.Int(required=False)

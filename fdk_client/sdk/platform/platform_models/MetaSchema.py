@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class MetaSchema(BaseSchema):
+    # User swagger.json
 
     
     fynd_default = fields.Boolean(required=False)

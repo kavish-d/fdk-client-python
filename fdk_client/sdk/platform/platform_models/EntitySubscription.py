@@ -27,6 +27,7 @@ from .SubscriptionCharge import SubscriptionCharge
 
 
 class EntitySubscription(BaseSchema):
+    # Billing swagger.json
 
     
     _id = fields.Str(required=False)

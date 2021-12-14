@@ -11,10 +11,11 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CategoryCreateResponse(BaseSchema):
+    # Catalog swagger.json
 
     
-    uid = fields.Int(required=False)
-    
     message = fields.Str(required=False)
+    
+    uid = fields.Int(required=False)
     
 

@@ -15,6 +15,7 @@ from .PropBeanDTO import PropBeanDTO
 
 
 class DefaultHeadersDTO(BaseSchema):
+    # Inventory swagger.json
 
     
     store = fields.Nested(PropBeanDTO, required=False)

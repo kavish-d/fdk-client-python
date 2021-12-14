@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class Sections(BaseSchema):
+    # Theme swagger.json
 
     
     attributes = fields.Str(required=False)

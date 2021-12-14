@@ -23,6 +23,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class CreateQNARequest(BaseSchema):
+    # Feedback swagger.json
 
     
     choices = fields.List(fields.Str(required=False), required=False)

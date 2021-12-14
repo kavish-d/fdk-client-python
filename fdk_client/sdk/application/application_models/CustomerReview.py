@@ -37,6 +37,7 @@ from .VoteCount import VoteCount
 
 
 class CustomerReview(BaseSchema):
+    # Feedback swagger.json
 
     
     auto_detectors = fields.Nested(AutoDetectors, required=False)

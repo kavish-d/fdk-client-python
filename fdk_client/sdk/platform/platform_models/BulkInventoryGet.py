@@ -11,6 +11,7 @@ from .BulkInventoryGetItems import BulkInventoryGetItems
 
 
 class BulkInventoryGet(BaseSchema):
+    # Catalog swagger.json
 
     
     page = fields.Nested(Page, required=False)

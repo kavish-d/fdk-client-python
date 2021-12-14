@@ -23,6 +23,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class TagSchema(BaseSchema):
+    # Content swagger.json
 
     
     name = fields.Str(required=False)

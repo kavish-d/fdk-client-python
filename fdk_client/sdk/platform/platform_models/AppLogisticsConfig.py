@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class AppLogisticsConfig(BaseSchema):
+    # Configuration swagger.json
 
     
     logistics_by_seller = fields.Boolean(required=False)

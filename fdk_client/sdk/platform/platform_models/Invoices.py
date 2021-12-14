@@ -19,6 +19,7 @@ from .InvoicesData import InvoicesData
 
 
 class Invoices(BaseSchema):
+    # Billing swagger.json
 
     
     data = fields.List(fields.Nested(InvoicesData, required=False), required=False)

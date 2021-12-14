@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class EntityMeta(BaseSchema):
+    # Feedback swagger.json
 
     
     order_id = fields.Str(required=False)

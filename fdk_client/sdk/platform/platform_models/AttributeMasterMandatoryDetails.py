@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class AttributeMasterMandatoryDetails(BaseSchema):
+    # Catalog swagger.json
 
     
     l3_keys = fields.List(fields.Str(required=False), required=False)

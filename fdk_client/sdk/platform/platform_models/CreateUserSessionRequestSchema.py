@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class CreateUserSessionRequestSchema(BaseSchema):
+    # User swagger.json
 
     
     domain = fields.Str(required=False)

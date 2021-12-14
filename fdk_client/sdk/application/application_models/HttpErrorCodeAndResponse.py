@@ -11,6 +11,7 @@ from .ErrorCodeAndDescription import ErrorCodeAndDescription
 
 
 class HttpErrorCodeAndResponse(BaseSchema):
+    # Payment swagger.json
 
     
     error = fields.Nested(ErrorCodeAndDescription, required=False)

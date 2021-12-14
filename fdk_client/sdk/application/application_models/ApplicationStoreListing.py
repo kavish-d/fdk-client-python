@@ -13,6 +13,7 @@ from .Page import Page
 
 
 class ApplicationStoreListing(BaseSchema):
+    # Catalog swagger.json
 
     
     filters = fields.List(fields.Nested(StoreDepartments, required=False), required=False)

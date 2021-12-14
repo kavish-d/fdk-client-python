@@ -25,6 +25,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ShareMessages(BaseSchema):
+    # Rewards swagger.json
 
     
     email = fields.Str(required=False)

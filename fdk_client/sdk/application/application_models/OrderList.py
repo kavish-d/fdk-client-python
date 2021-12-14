@@ -13,6 +13,7 @@ from .OrderFilters import OrderFilters
 
 
 class OrderList(BaseSchema):
+    # Order swagger.json
 
     
     items = fields.List(fields.Nested(OrderSchema, required=False), required=False)

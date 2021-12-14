@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class UnhandledError(BaseSchema):
+    # Configuration swagger.json
 
     
     message = fields.Str(required=False)

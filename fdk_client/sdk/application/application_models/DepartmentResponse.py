@@ -9,6 +9,7 @@ from .Department import Department
 
 
 class DepartmentResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     items = fields.List(fields.Nested(Department, required=False), required=False)

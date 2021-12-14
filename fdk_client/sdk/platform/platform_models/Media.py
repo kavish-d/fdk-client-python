@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Media(BaseSchema):
+    # Catalog swagger.json
 
     
     type = fields.Str(required=False)

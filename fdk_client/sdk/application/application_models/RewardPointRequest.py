@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class RewardPointRequest(BaseSchema):
+    # Cart swagger.json
 
     
     points = fields.Boolean(required=False)

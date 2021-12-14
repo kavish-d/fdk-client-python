@@ -11,6 +11,7 @@ from .UserSchema import UserSchema
 
 
 class VerifyEmailOTPSuccess(BaseSchema):
+    # User swagger.json
 
     
     user = fields.Nested(UserSchema, required=False)

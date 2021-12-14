@@ -9,6 +9,7 @@ from .Access import Access
 
 
 class CheckEligibilityResponse(BaseSchema):
+    # Feedback swagger.json
 
     
     access = fields.Nested(Access, required=False)

@@ -19,6 +19,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class AppliedFilters(BaseSchema):
+    # Order swagger.json
 
     
     stage = fields.Str(required=False)

@@ -9,6 +9,7 @@ from .Currency import Currency
 
 
 class CurrenciesResponse(BaseSchema):
+    # Configuration swagger.json
 
     
     items = fields.List(fields.Nested(Currency, required=False), required=False)

@@ -29,6 +29,7 @@ from .ShipmentBreakupValues import ShipmentBreakupValues
 
 
 class PlatformShipment(BaseSchema):
+    # Order swagger.json
 
     
     status = fields.Nested(PlatformShipmentStatus, required=False)

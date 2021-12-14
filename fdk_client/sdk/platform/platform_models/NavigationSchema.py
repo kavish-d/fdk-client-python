@@ -29,6 +29,7 @@ from .NavigationReference import NavigationReference
 
 
 class NavigationSchema(BaseSchema):
+    # Content swagger.json
 
     
     _id = fields.Str(required=False)

@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Orientation(BaseSchema):
+    # Content swagger.json
 
     
     portrait = fields.List(fields.Str(required=False), required=False)

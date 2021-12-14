@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class TriggerJobResponse(BaseSchema):
+    # Communication swagger.json
 
     
     status = fields.Int(required=False)

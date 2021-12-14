@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ProductDetailFeature(BaseSchema):
+    # Configuration swagger.json
 
     
     similar = fields.List(fields.Str(required=False), required=False)

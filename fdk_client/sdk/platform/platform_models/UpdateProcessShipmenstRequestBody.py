@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class UpdateProcessShipmenstRequestBody(BaseSchema):
+    # Order swagger.json
 
     
     shipment_ids = fields.List(fields.Str(required=False), required=False)

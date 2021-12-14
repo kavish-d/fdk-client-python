@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class MediaState(BaseSchema):
+    # Feedback swagger.json
 
     
     approve = fields.Boolean(required=False)

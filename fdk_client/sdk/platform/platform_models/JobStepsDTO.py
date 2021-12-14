@@ -23,6 +23,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class JobStepsDTO(BaseSchema):
+    # Inventory swagger.json
 
     
     step_name = fields.Str(required=False)

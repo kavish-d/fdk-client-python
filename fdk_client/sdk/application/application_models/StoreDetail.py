@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class StoreDetail(BaseSchema):
+    # Catalog swagger.json
 
     
     city = fields.Str(required=False)

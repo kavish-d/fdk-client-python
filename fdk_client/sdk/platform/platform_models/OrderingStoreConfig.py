@@ -9,6 +9,7 @@ from .DeploymentMeta import DeploymentMeta
 
 
 class OrderingStoreConfig(BaseSchema):
+    # Configuration swagger.json
 
     
     deployment_meta = fields.Nested(DeploymentMeta, required=False)

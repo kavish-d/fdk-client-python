@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class BaseInfo(BaseSchema):
+    # Cart swagger.json
 
     
     name = fields.Str(required=False)

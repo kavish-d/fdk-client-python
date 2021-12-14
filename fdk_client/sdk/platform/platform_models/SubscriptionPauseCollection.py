@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class SubscriptionPauseCollection(BaseSchema):
+    # Billing swagger.json
 
     
     behavior = fields.Str(required=False)

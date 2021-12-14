@@ -29,6 +29,7 @@ from .LocationDetails import LocationDetails
 
 
 class GetTatProductResponse(BaseSchema):
+    # Logistic swagger.json
 
     
     location_details = fields.List(fields.Nested(LocationDetails, required=False), required=False)

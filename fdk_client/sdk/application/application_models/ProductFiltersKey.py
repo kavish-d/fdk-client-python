@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ProductFiltersKey(BaseSchema):
+    # Catalog swagger.json
 
     
     kind = fields.Str(required=False)

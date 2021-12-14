@@ -17,6 +17,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class OrderDiscountRuleBucket(BaseSchema):
+    # Rewards swagger.json
 
     
     high = fields.Float(required=False)

@@ -13,6 +13,7 @@ from .TicketAsset import TicketAsset
 
 
 class TicketContent(BaseSchema):
+    # Lead swagger.json
 
     
     title = fields.Str(required=False)

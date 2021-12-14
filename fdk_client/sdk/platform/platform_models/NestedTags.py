@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class NestedTags(BaseSchema):
+    # Catalog swagger.json
 
     
     tags = fields.List(fields.Str(required=False), required=False)

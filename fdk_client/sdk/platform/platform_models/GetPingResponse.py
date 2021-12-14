@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class GetPingResponse(BaseSchema):
+    # Order swagger.json
 
     
     ping = fields.Str(required=False)

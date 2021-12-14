@@ -11,10 +11,11 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class SuccessResponse(BaseSchema):
+    # Catalog swagger.json
 
     
-    success = fields.Boolean(required=False)
-    
     uid = fields.Int(required=False)
+    
+    success = fields.Boolean(required=False)
     
 

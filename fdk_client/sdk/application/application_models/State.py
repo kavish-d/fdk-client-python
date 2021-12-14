@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class State(BaseSchema):
+    # Feedback swagger.json
 
     
     active = fields.Boolean(required=False)

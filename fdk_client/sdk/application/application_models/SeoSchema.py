@@ -23,6 +23,7 @@ from .Detail import Detail
 
 
 class SeoSchema(BaseSchema):
+    # Content swagger.json
 
     
     app = fields.Str(required=False)

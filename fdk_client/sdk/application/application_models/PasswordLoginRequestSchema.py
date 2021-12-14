@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class PasswordLoginRequestSchema(BaseSchema):
+    # User swagger.json
 
     
     captcha_code = fields.Str(required=False)

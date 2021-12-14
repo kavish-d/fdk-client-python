@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class SendResetPasswordEmailRequestSchema(BaseSchema):
+    # User swagger.json
 
     
     email = fields.Str(required=False)

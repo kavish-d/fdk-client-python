@@ -11,10 +11,11 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class SetSize(BaseSchema):
+    # Catalog swagger.json
 
     
-    size = fields.Str(required=False)
-    
     pieces = fields.Int(required=False)
+    
+    size = fields.Str(required=False)
     
 

@@ -17,6 +17,7 @@ from .GeoLoc import GeoLoc
 
 
 class Location(BaseSchema):
+    # Feedback swagger.json
 
     
     country_code = fields.Str(required=False)

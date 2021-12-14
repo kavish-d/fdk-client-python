@@ -21,6 +21,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class PlatformShipmentDetailsBrand(BaseSchema):
+    # Order swagger.json
 
     
     credit_note_allowed = fields.Boolean(required=False)

@@ -33,6 +33,7 @@ from .SEO import SEO
 
 
 class PageRequest(BaseSchema):
+    # Content swagger.json
 
     
     _schedule = fields.Nested(CronSchedule, required=False)

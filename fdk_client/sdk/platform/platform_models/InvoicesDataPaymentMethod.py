@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class InvoicesDataPaymentMethod(BaseSchema):
+    # Billing swagger.json
 
     
     pg_payment_method_id = fields.Str(required=False)

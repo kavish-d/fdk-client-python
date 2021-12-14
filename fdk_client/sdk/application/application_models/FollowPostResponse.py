@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class FollowPostResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     id = fields.Str(required=False)

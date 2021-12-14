@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class StageItem(BaseSchema):
+    # Order swagger.json
 
     
     count = fields.Int(required=False)

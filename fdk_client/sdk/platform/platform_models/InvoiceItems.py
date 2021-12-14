@@ -33,6 +33,7 @@ from .InvoiceItemsPeriod import InvoiceItemsPeriod
 
 
 class InvoiceItems(BaseSchema):
+    # Billing swagger.json
 
     
     _id = fields.Str(required=False)

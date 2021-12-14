@@ -45,6 +45,7 @@ from .ActionPage import ActionPage
 
 
 class GetCollectionDetailNest(BaseSchema):
+    # Catalog swagger.json
 
     
     cron = fields.Dict(required=False)

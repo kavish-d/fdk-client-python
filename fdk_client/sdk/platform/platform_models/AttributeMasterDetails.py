@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class AttributeMasterDetails(BaseSchema):
+    # Catalog swagger.json
 
     
     display_type = fields.Str(required=False)

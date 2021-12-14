@@ -17,6 +17,7 @@ from .LaunchPage import LaunchPage
 
 
 class LandingPageFeature(BaseSchema):
+    # Configuration swagger.json
 
     
     launch_page = fields.Nested(LaunchPage, required=False)

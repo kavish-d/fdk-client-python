@@ -25,6 +25,7 @@ from .TagMeta import TagMeta
 
 
 class QNA(BaseSchema):
+    # Feedback swagger.json
 
     
     comments = fields.List(fields.Nested(Comment, required=False), required=False)

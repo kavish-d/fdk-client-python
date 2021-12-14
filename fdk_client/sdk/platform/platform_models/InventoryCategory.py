@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class InventoryCategory(BaseSchema):
+    # Configuration swagger.json
 
     
     criteria = fields.Str(required=False)

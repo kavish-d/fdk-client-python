@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class CategoryRequestSchema(BaseSchema):
+    # Content swagger.json
 
     
     slug = fields.Str(required=False)

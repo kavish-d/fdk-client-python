@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class ProductStockPrice(BaseSchema):
+    # Catalog swagger.json
 
     
     effective = fields.Float(required=False)

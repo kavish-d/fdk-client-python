@@ -11,6 +11,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class StoreLatLong(BaseSchema):
+    # Configuration swagger.json
 
     
     type = fields.Str(required=False)

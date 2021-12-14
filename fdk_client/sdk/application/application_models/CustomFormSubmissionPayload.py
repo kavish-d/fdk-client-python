@@ -11,6 +11,7 @@ from .TicketAsset import TicketAsset
 
 
 class CustomFormSubmissionPayload(BaseSchema):
+    # Lead swagger.json
 
     
     response = fields.List(fields.Nested(KeyValue, required=False), required=False)

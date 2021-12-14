@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class RemoveProxyResponse(BaseSchema):
+    # Partner swagger.json
 
     
     message = fields.Str(required=False)

@@ -43,6 +43,7 @@ from .UserDetails import UserDetails
 
 
 class DiscountJob(BaseSchema):
+    # Discount swagger.json
 
     
     _id = fields.Str(required=False)

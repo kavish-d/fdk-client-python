@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class LocationIntegrationType(BaseSchema):
+    # CompanyProfile swagger.json
 
     
     inventory = fields.Str(required=False)

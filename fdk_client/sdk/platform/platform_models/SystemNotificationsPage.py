@@ -17,6 +17,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class SystemNotificationsPage(BaseSchema):
+    # Communication swagger.json
 
     
     type = fields.Str(required=False)

@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class SafetynetCredentials(BaseSchema):
+    # Configuration swagger.json
 
     
     api_key = fields.Str(required=False)

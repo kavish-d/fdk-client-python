@@ -39,6 +39,7 @@ from .Plan import Plan
 
 
 class Subscription(BaseSchema):
+    # Billing swagger.json
 
     
     current_period = fields.Nested(SubscriptionCurrentPeriod, required=False)

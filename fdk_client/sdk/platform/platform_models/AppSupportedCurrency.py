@@ -19,6 +19,7 @@ from .DefaultCurrency import DefaultCurrency
 
 
 class AppSupportedCurrency(BaseSchema):
+    # Configuration swagger.json
 
     
     _id = fields.Str(required=False)

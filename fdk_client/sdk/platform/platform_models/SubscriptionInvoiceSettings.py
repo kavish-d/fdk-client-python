@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class SubscriptionInvoiceSettings(BaseSchema):
+    # Billing swagger.json
 
     
     generation = fields.Boolean(required=False)

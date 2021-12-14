@@ -13,6 +13,7 @@ from .ReqConfiguration import ReqConfiguration
 
 
 class BulkRequest(BaseSchema):
+    # FileStorage swagger.json
 
     
     urls = fields.List(fields.Str(required=False), required=False)

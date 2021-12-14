@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class AnnouncementsResponseSchema(BaseSchema):
+    # Content swagger.json
 
     
     announcements = fields.Dict(required=False)

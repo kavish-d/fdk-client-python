@@ -23,6 +23,7 @@ from .GoogleMap import GoogleMap
 
 
 class Tokens(BaseSchema):
+    # Configuration swagger.json
 
     
     firebase = fields.Nested(Firebase, required=False)

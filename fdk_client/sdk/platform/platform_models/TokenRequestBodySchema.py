@@ -9,6 +9,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class TokenRequestBodySchema(BaseSchema):
+    # User swagger.json
 
     
     token = fields.Str(required=False)

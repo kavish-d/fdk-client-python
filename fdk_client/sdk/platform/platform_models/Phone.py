@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Phone(BaseSchema):
+    # Billing swagger.json
 
     
     phone_number = fields.Str(required=False)

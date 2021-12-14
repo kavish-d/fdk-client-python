@@ -13,6 +13,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class SortMethod(BaseSchema):
+    # Feedback swagger.json
 
     
     name = fields.Str(required=False)

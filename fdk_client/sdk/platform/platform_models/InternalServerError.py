@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class InternalServerError(BaseSchema):
+    # Billing swagger.json
 
     
     message = fields.Str(required=False)

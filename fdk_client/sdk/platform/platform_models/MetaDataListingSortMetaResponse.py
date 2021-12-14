@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class MetaDataListingSortMetaResponse(BaseSchema):
+    # Catalog swagger.json
 
     
     key = fields.Str(required=False)

@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class SaveSubscriptionSetupIntentResponse(BaseSchema):
+    # Payment swagger.json
 
     
     success = fields.Boolean(required=False)

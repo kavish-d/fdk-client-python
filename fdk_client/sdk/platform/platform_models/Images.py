@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Images(BaseSchema):
+    # Theme swagger.json
 
     
     desktop = fields.List(fields.Str(required=False), required=False)

@@ -17,6 +17,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class PhoneNumber(BaseSchema):
+    # Lead swagger.json
 
     
     active = fields.Boolean(required=False)

@@ -15,6 +15,7 @@ from .LogisticPincodeData import LogisticPincodeData
 
 
 class GetPincodeCityResponse(BaseSchema):
+    # Logistic swagger.json
 
     
     request_uuid = fields.Str(required=False)

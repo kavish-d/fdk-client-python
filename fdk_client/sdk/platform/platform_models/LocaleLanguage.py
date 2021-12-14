@@ -13,6 +13,7 @@ from .Language import Language
 
 
 class LocaleLanguage(BaseSchema):
+    # Content swagger.json
 
     
     hi = fields.Nested(Language, required=False)

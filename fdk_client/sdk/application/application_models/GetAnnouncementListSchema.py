@@ -11,6 +11,7 @@ from .Page import Page
 
 
 class GetAnnouncementListSchema(BaseSchema):
+    # Content swagger.json
 
     
     items = fields.List(fields.Nested(AdminAnnouncementSchema, required=False), required=False)

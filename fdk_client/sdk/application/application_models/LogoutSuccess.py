@@ -9,6 +9,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class LogoutSuccess(BaseSchema):
+    # User swagger.json
 
     
     logout = fields.Boolean(required=False)

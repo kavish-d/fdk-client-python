@@ -15,6 +15,7 @@ from .TaxLinesPriceSet import TaxLinesPriceSet
 
 
 class TaxLines(BaseSchema):
+    # Order swagger.json
 
     
     title = fields.Str(required=False)

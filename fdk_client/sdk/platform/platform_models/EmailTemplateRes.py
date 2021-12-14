@@ -53,6 +53,7 @@ from .TemplateAndType import TemplateAndType
 
 
 class EmailTemplateRes(BaseSchema):
+    # Communication swagger.json
 
     
     is_system = fields.Boolean(required=False)

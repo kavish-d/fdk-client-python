@@ -29,6 +29,7 @@ from .Opts import Opts
 
 
 class CopyFileTask(BaseSchema):
+    # FileStorage swagger.json
 
     
     id = fields.Str(required=False)

@@ -13,6 +13,7 @@ from .Page import Page
 
 
 class AbandonCartsList(BaseSchema):
+    # Analytics swagger.json
 
     
     items = fields.List(fields.Nested(AbandonCartsDetail, required=False), required=False)

@@ -15,6 +15,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class LogisticParents(BaseSchema):
+    # Logistic swagger.json
 
     
     sub_type = fields.Str(required=False)

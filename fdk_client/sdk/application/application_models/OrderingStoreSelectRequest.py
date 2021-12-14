@@ -9,6 +9,7 @@ from .OrderingStoreSelect import OrderingStoreSelect
 
 
 class OrderingStoreSelectRequest(BaseSchema):
+    # Configuration swagger.json
 
     
     ordering_store = fields.Nested(OrderingStoreSelect, required=False)

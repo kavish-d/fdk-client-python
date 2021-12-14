@@ -27,6 +27,7 @@ from .CDN import CDN
 
 
 class StartResponse(BaseSchema):
+    # FileStorage swagger.json
 
     
     file_name = fields.Str(required=False)

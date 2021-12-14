@@ -27,6 +27,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class OAuthConfig(BaseSchema):
+    # Inventory swagger.json
 
     
     limit = fields.Int(required=False)

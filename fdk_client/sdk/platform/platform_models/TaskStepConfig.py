@@ -13,6 +13,7 @@ from .TaskConfig import TaskConfig
 
 
 class TaskStepConfig(BaseSchema):
+    # Inventory swagger.json
 
     
     task_configs = fields.List(fields.Nested(TaskConfig, required=False), required=False)

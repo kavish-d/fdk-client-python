@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class Author(BaseSchema):
+    # Content swagger.json
 
     
     designation = fields.Str(required=False)

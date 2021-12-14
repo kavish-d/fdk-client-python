@@ -17,6 +17,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class VoteRequest(BaseSchema):
+    # Feedback swagger.json
 
     
     action = fields.Str(required=False)

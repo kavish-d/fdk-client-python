@@ -11,6 +11,7 @@ from .AttributeDetail import AttributeDetail
 
 
 class AttributeMetadata(BaseSchema):
+    # Catalog swagger.json
 
     
     title = fields.Str(required=False)

@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class EntityChargePrice(BaseSchema):
+    # Billing swagger.json
 
     
     amount = fields.Float(required=False)

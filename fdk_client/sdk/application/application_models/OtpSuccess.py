@@ -23,6 +23,7 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 class OtpSuccess(BaseSchema):
+    # User swagger.json
 
     
     resend_timer = fields.Int(required=False)

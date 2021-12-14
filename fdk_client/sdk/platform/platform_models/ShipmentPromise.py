@@ -11,6 +11,7 @@ from .PromiseTimestamp import PromiseTimestamp
 
 
 class ShipmentPromise(BaseSchema):
+    # Cart swagger.json
 
     
     formatted = fields.Nested(PromiseFormatted, required=False)

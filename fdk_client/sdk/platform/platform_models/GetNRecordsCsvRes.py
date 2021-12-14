@@ -9,6 +9,7 @@ from .GetNRecordsCsvResItems import GetNRecordsCsvResItems
 
 
 class GetNRecordsCsvRes(BaseSchema):
+    # Communication swagger.json
 
     
     items = fields.List(fields.Nested(GetNRecordsCsvResItems, required=False), required=False)

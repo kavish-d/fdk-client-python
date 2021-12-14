@@ -13,6 +13,7 @@ from .SellerPhoneNumber import SellerPhoneNumber
 
 
 class StoreManagerSerializer(BaseSchema):
+    # Catalog swagger.json
 
     
     email = fields.Str(required=False)

@@ -39,6 +39,7 @@ from .DefaultHeadersDTO import DefaultHeadersDTO
 
 
 class FileConfig(BaseSchema):
+    # Inventory swagger.json
 
     
     delimiter = fields.Str(required=False)

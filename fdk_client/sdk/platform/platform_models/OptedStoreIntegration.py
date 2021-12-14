@@ -13,6 +13,7 @@ from .OtherEntity import OtherEntity
 
 
 class OptedStoreIntegration(BaseSchema):
+    # Configuration swagger.json
 
     
     other_opted = fields.Boolean(required=False)

@@ -15,6 +15,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class FilterOrderingStoreRequest(BaseSchema):
+    # Configuration swagger.json
 
     
     all_stores = fields.Boolean(required=False)

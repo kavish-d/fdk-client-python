@@ -21,6 +21,7 @@ from .ActionPage import ActionPage
 
 
 class ThirdLevelChild(BaseSchema):
+    # Catalog swagger.json
 
     
     _custom_json = fields.Dict(required=False)

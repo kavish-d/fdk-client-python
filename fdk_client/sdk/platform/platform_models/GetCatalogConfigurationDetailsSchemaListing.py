@@ -11,10 +11,11 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class GetCatalogConfigurationDetailsSchemaListing(BaseSchema):
+    # Catalog swagger.json
 
     
-    sort = fields.Dict(required=False)
-    
     filter = fields.Dict(required=False)
+    
+    sort = fields.Dict(required=False)
     
 

@@ -23,6 +23,7 @@ from .ItemTotal import ItemTotal
 
 
 class PlatformOrderPage(BaseSchema):
+    # Order swagger.json
 
     
     next = fields.Str(required=False)

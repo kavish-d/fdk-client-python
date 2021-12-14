@@ -19,6 +19,7 @@ from .ReviewMediaMeta import ReviewMediaMeta
 
 
 class TemplateReview(BaseSchema):
+    # Feedback swagger.json
 
     
     description = fields.Str(required=False)

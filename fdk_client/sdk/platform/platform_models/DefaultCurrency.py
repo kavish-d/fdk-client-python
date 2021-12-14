@@ -11,6 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class DefaultCurrency(BaseSchema):
+    # Configuration swagger.json
 
     
     ref = fields.Str(required=False)

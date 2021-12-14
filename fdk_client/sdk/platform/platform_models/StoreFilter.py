@@ -13,6 +13,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class StoreFilter(BaseSchema):
+    # Inventory swagger.json
 
     
     include_tags = fields.List(fields.Str(required=False), required=False)
