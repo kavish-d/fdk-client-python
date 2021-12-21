@@ -21,6 +21,8 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 
+from .TagSourceSchema import TagSourceSchema
+
 
 class TagSchema(BaseSchema):
     # Content swagger.json
@@ -41,5 +43,7 @@ class TagSchema(BaseSchema):
     attributes = fields.Dict(required=False)
     
     content = fields.Str(required=False)
+    
+    __source = fields.Nested(TagSourceSchema, required=False)
     
 

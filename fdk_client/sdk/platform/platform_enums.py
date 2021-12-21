@@ -189,7 +189,6 @@ class PageType(Enum):
 
 
 
-
 class SubscriberStatus(Enum):
     
     ACTIVE = "active"

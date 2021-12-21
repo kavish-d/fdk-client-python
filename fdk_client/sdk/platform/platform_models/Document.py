@@ -20,8 +20,6 @@ class Document(BaseSchema):
     # CompanyProfile swagger.json
 
     
-    type = fields.Str(required=False)
-    
     legal_name = fields.Str(required=False)
     
     verified = fields.Boolean(required=False)
@@ -29,5 +27,7 @@ class Document(BaseSchema):
     url = fields.Str(required=False)
     
     value = fields.Str(required=False)
+    
+    type = fields.Str(required=False)
     
 

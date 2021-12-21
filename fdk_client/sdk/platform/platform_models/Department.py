@@ -26,8 +26,8 @@ class Department(BaseSchema):
     
     name = fields.Str(required=False)
     
-    uid = fields.Int(required=False)
-    
     slug = fields.Str(required=False)
+    
+    uid = fields.Int(required=False)
     
 

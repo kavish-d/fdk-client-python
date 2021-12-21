@@ -7,11 +7,11 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 
+from .ActionPage import ActionPage
+
 from .Media import Media
 
 
-
-from .ActionPage import ActionPage
 
 
 class ProductBrand(BaseSchema):
@@ -20,10 +20,10 @@ class ProductBrand(BaseSchema):
     
     uid = fields.Int(required=False)
     
+    action = fields.Nested(ActionPage, required=False)
+    
     logo = fields.Nested(Media, required=False)
     
     name = fields.Str(required=False)
-    
-    action = fields.Nested(ActionPage, required=False)
     
 
