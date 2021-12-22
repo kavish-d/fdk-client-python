@@ -7,13 +7,13 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 
-from .ImageUrls import ImageUrls
-
-
-
-
-
 from .Child import Child
+
+
+
+
+
+from .ImageUrls import ImageUrls
 
 from .ActionPage import ActionPage
 
@@ -24,13 +24,13 @@ class CategoryItems(BaseSchema):
     
     uid = fields.Int(required=False)
     
-    banners = fields.Nested(ImageUrls, required=False)
+    childs = fields.List(fields.Nested(Child, required=False), required=False)
     
     name = fields.Str(required=False)
     
     slug = fields.Str(required=False)
     
-    childs = fields.List(fields.Nested(Child, required=False), required=False)
+    banners = fields.Nested(ImageUrls, required=False)
     
     action = fields.Nested(ActionPage, required=False)
     

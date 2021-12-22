@@ -7,23 +7,23 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 
-from .ActionPage import ActionPage
-
 from .Media import Media
 
 
+
+from .ActionPage import ActionPage
 
 
 class ProductBrand(BaseSchema):
     # Catalog swagger.json
 
     
-    uid = fields.Int(required=False)
-    
-    action = fields.Nested(ActionPage, required=False)
+    name = fields.Str(required=False)
     
     logo = fields.Nested(Media, required=False)
     
-    name = fields.Str(required=False)
+    uid = fields.Int(required=False)
+    
+    action = fields.Nested(ActionPage, required=False)
     
 

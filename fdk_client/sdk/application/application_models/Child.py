@@ -7,17 +7,17 @@ from ..application_models.BaseSchema import BaseSchema
 
 
 
+from .SecondLevelChild import SecondLevelChild
+
+
+
 
 
 from .ImageUrls import ImageUrls
 
-
-
-
-
-from .SecondLevelChild import SecondLevelChild
-
 from .ActionPage import ActionPage
+
+
 
 
 class Child(BaseSchema):
@@ -26,16 +26,16 @@ class Child(BaseSchema):
     
     uid = fields.Int(required=False)
     
-    _custom_json = fields.Dict(required=False)
-    
-    banners = fields.Nested(ImageUrls, required=False)
+    childs = fields.List(fields.Nested(SecondLevelChild, required=False), required=False)
     
     name = fields.Str(required=False)
     
     slug = fields.Str(required=False)
     
-    childs = fields.List(fields.Nested(SecondLevelChild, required=False), required=False)
+    banners = fields.Nested(ImageUrls, required=False)
     
     action = fields.Nested(ActionPage, required=False)
+    
+    _custom_json = fields.Dict(required=False)
     
 
