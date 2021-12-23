@@ -5,9 +5,9 @@ from marshmallow.validate import OneOf
 from ..application_enums import *
 from ..application_models.BaseSchema import BaseSchema
 
-
-
 from .SecondLevelChild import SecondLevelChild
+
+
 
 
 
@@ -15,27 +15,27 @@ from .SecondLevelChild import SecondLevelChild
 
 from .ImageUrls import ImageUrls
 
+
+
 from .ActionPage import ActionPage
-
-
 
 
 class Child(BaseSchema):
     # Catalog swagger.json
 
     
-    uid = fields.Int(required=False)
-    
     childs = fields.List(fields.Nested(SecondLevelChild, required=False), required=False)
     
     name = fields.Str(required=False)
     
-    slug = fields.Str(required=False)
+    _custom_json = fields.Dict(required=False)
+    
+    uid = fields.Int(required=False)
     
     banners = fields.Nested(ImageUrls, required=False)
     
-    action = fields.Nested(ActionPage, required=False)
+    slug = fields.Str(required=False)
     
-    _custom_json = fields.Dict(required=False)
+    action = fields.Nested(ActionPage, required=False)
     
 

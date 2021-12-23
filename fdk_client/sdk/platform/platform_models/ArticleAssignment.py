@@ -11,7 +11,7 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 class ArticleAssignment(BaseSchema):
-    # Catalog swagger.json
+    # Order swagger.json
 
     
     strategy = fields.Str(required=False)
