@@ -91,7 +91,7 @@ class OAuthClient:
         headers = {
             "Authorization": f"Basic {token}"
         }
-        headers = get_headers_with_signature(self._conf.domain, "post",
+        headers = await get_headers_with_signature(self._conf.domain, "post",
                                              f"/service/panel/authentication/v1.0/company/{self._conf.companyId}/oauth/token",
                                              "", headers, reqData, ["Authorization"])
         response = await AiohttpHelper().aiohttp_request("POST", url, reqData, headers)
