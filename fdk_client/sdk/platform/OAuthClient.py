@@ -4,6 +4,7 @@ from threading import Timer
 from typing import Dict
 from urllib import parse
 import base64
+import asyncio
 
 from ..common.exceptions import FDKOAuthCodeError
 from ..common.aiohttp_helper import AiohttpHelper
@@ -34,7 +35,7 @@ class OAuthClient:
         if self.retryOAuthTokenTimer:
             self.retryOAuthTokenTimer.cancel()
         if expires_in > 60:
-            self.retryOAuthTokenTimer = Timer(float(expires_in - 60), self.renewAccessToken, ())
+            self.retryOAuthTokenTimer = Timer(float(expires_in - 60), lambda: asyncio.run(self.renewAccessToken()))
             self.retryOAuthTokenTimer.start()
 
     async def startAuthorization(self, options: Dict):
