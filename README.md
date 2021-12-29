@@ -20,8 +20,8 @@ pip install fdk-client-python
 Using this method, you can `import` fdk-client-python like so:
 
 ```python
-from fdk_client.sdk.application.ApplicationClient import ApplicationClient
-from fdk_client.sdk.application.ApplicationConfig import ApplicationConfig
+from fdk_client.application.ApplicationClient import ApplicationClient
+from fdk_client.application.ApplicationConfig import ApplicationConfig
 ```
 
 ### Sample Usage - ApplicationClient
@@ -49,10 +49,10 @@ getProductDetails()
 
 
 ```python
-from fdk_client.sdk.common.aiohttp_helper import AiohttpHelper
-from fdk_client.sdk.platform.PlatformConfig import PlatformConfig
-from fdk_client.sdk.platform.PlatformClient import PlatformClient
-from fdk_client.sdk.common.utils import create_url_without_domain, get_headers_with_signature
+from fdk_client.common.aiohttp_helper import AiohttpHelper
+from fdk_client.platform.PlatformConfig import PlatformConfig
+from fdk_client.platform.PlatformClient import PlatformClient
+from fdk_client.common.utils import create_url_without_domain, get_headers_with_signature
 
 
 async def setAccessToken(platformConfig, cookies):
