@@ -1493,7 +1493,7 @@ Success
  | ---------- | ---- | -------- | ----------- |
  | display | String? |  yes  | Display text for asset |
  | value | String |  no  | To be used for details |
- | type | Any |  no  | Type of asset |
+ | type | [TicketAssetTypeEnum](#TicketAssetTypeEnum) |  no  | Type of asset |
 
 ---
 
@@ -1777,7 +1777,7 @@ Success
 
 
 
- #### [TicketAssetType](#TicketAssetType)
+ #### [TicketAssetTypeEnum](#TicketAssetTypeEnum)
  Type : string
 
  | Name | Value | Description |

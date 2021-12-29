@@ -20,6 +20,6 @@ class TicketAsset(BaseSchema):
     
     value = fields.Str(required=False)
     
-    type = fields.Raw(required=False)
+    type = fields.Str(required=False, validate=OneOf(TicketAssetTypeEnum.__members__.keys()))
     
 

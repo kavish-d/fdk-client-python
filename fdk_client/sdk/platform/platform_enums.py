@@ -37,7 +37,7 @@ class HistoryTypeEnum(Enum):
         raise Exception("Invalid HistoryTypeEnum type")
 
 
-class TicketAssetType(Enum):
+class TicketAssetTypeEnum(Enum):
     
     IMAGE = "image"
     
@@ -61,7 +61,7 @@ class TicketAssetType(Enum):
     async def is_valid(cls, value):
         if value in cls._value2member_map_:
             return None
-        raise Exception("Invalid TicketAssetType type")
+        raise Exception("Invalid TicketAssetTypeEnum type")
 
 
 class TicketSourceEnum(Enum):

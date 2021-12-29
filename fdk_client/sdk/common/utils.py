@@ -56,7 +56,12 @@ async def create_query_string(**kwargs):
         if value:
             new_key = key.replace("__", "-")
             params[new_key] = value
-    query_string = parse.urlencode(params)
+    query_keys = list(params.keys())
+    query_keys.sort()
+    final_params = {}
+    for key in query_keys:
+        final_params[key] = params[key]
+    query_string = parse.urlencode(final_params)
     return query_string
 
 

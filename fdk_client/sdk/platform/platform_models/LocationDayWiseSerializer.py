@@ -7,9 +7,9 @@ from ..platform_models.BaseSchema import BaseSchema
 
 
 
+
+
 from .LocationTimingSerializer import LocationTimingSerializer
-
-
 
 from .LocationTimingSerializer import LocationTimingSerializer
 
@@ -18,12 +18,12 @@ class LocationDayWiseSerializer(BaseSchema):
     # CompanyProfile swagger.json
 
     
-    weekday = fields.Str(required=False)
-    
-    closing = fields.Nested(LocationTimingSerializer, required=False)
-    
     open = fields.Boolean(required=False)
     
+    weekday = fields.Str(required=False)
+    
     opening = fields.Nested(LocationTimingSerializer, required=False)
+    
+    closing = fields.Nested(LocationTimingSerializer, required=False)
     
 
