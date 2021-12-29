@@ -24,7 +24,7 @@ class ConfigurationProductConfig(BaseSchema):
     # Catalog swagger.json
 
     
-    is_active = fields.Boolean(required=False)
+    title = fields.Str(required=False)
     
     key = fields.Str(required=False)
     
@@ -32,10 +32,10 @@ class ConfigurationProductConfig(BaseSchema):
     
     subtitle = fields.Str(required=False)
     
-    title = fields.Str(required=False)
+    logo = fields.Str(required=False)
     
     priority = fields.Int(required=False)
     
-    logo = fields.Str(required=False)
+    is_active = fields.Boolean(required=False)
     
 

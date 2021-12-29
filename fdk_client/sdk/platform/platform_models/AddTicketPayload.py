@@ -24,7 +24,7 @@ class AddTicketPayload(BaseSchema):
     
     status = fields.Str(required=False)
     
-    priority = fields.Str(required=False, validate=OneOf(PriorityEnum.__members__.keys()))
+    priority = fields.Str(required=False, validate=OneOf([val.value for val in PriorityEnum.__members__.values()]))
     
     category = fields.Str(required=False)
     

@@ -34,7 +34,7 @@ class SubscriberConfig(BaseSchema):
     
     association = fields.Nested(Association, required=False)
     
-    status = fields.Str(required=False, validate=OneOf(SubscriberStatus.__members__.keys()))
+    status = fields.Str(required=False, validate=OneOf([val.value for val in SubscriberStatus.__members__.values()]))
     
     email_id = fields.Str(required=False)
     

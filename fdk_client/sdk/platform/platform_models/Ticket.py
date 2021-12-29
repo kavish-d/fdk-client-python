@@ -60,7 +60,7 @@ class Ticket(BaseSchema):
     
     sub_category = fields.Nested(TicketSubCategory, required=False)
     
-    source = fields.Str(required=False, validate=OneOf(TicketSourceEnum.__members__.keys()))
+    source = fields.Str(required=False, validate=OneOf([val.value for val in TicketSourceEnum.__members__.values()]))
     
     status = fields.Nested(Status, required=False)
     

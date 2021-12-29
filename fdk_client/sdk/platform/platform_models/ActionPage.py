@@ -24,6 +24,6 @@ class ActionPage(BaseSchema):
     
     url = fields.Str(required=False)
     
-    type = fields.Str(required=False, validate=OneOf(PageType.__members__.keys()))
+    type = fields.Str(required=False, validate=OneOf([val.value for val in PageType.__members__.values()]))
     
 
