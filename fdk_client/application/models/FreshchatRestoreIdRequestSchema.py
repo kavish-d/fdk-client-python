@@ -8,14 +8,10 @@ from ..models.BaseSchema import BaseSchema
 
 
 
-
-
-class DataLoaderSourceSchema(BaseSchema):
-    # Content swagger.json
+class FreshchatRestoreIdRequestSchema(BaseSchema):
+    # User swagger.json
 
     
-    type = fields.Str(required=False)
-    
-    id = fields.Str(required=False)
+    freshchat_restore_id = fields.Str(required=False)
     
 

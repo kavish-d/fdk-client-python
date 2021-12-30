@@ -49,20 +49,6 @@ class DiscountValidator:
         id = fields.Str(required=False)
          
     
-    class fetchDiscountJobs(BaseSchema):
-        
-        company_id = fields.Int(required=False)
-        
-        application_id = fields.Str(required=False)
-         
-    
-    class getDiscountDetails(BaseSchema):
-        
-        company_id = fields.Int(required=False)
-        
-        application_id = fields.Str(required=False)
-         
-    
     class validateDiscountFile(BaseSchema):
         
         company_id = fields.Int(required=False)

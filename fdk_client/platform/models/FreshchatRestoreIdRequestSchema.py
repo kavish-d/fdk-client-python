@@ -8,14 +8,10 @@ from ..models.BaseSchema import BaseSchema
 
 
 
-
-
-class DiscountValueObject(BaseSchema):
-    # Discount swagger.json
+class FreshchatRestoreIdRequestSchema(BaseSchema):
+    # User swagger.json
 
     
-    min_items = fields.Int(required=False)
-    
-    value = fields.Int(required=False)
+    freshchat_restore_id = fields.Str(required=False)
     
 

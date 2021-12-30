@@ -584,28 +584,6 @@ class Catalog:
         query_string = await create_query_string(collection_type=collection_type, page_id=page_id, page_size=page_size)
         return await AiohttpHelper().aiohttp_request("GET", url_with_params, headers=await get_headers_with_signature(self._conf.domain, "get", await create_url_without_domain("/service/application/catalog/v1.0/follow/{collection_type}/", collection_type=collection_type, page_id=page_id, page_size=page_size), query_string, {"Authorization": "Bearer " + base64.b64encode("{}:{}".format(self._conf.applicationID, self._conf.applicationToken).encode()).decode()}, body, exclude_headers=["Authorization"]), data=body)
     
-    async def followById(self, collection_type=None, collection_id=None, body=""):
-        """Follow a particular entity such as product, brand, collection specified by its ID.
-        :param collection_type : Type of collection followed, i.e. products, brands, or collections. : type string
-        :param collection_id : The ID of the collection type. : type string
-        """
-        payload = {}
-        
-        if collection_type:
-            payload["collection_type"] = collection_type
-        
-        if collection_id:
-            payload["collection_id"] = collection_id
-        
-        # Parameter validation
-        schema = CatalogValidator.followById()
-        schema.dump(schema.load(payload))
-        
-
-        url_with_params = await create_url_with_params(self._conf.domain, "/service/application/catalog/v1.0/follow/{collection_type}/{collection_id}/", """{"required":[{"in":"path","name":"collection_type","description":"Type of collection followed, i.e. products, brands, or collections.","schema":{"type":"string"},"required":true},{"in":"path","name":"collection_id","description":"The ID of the collection type.","schema":{"type":"string"},"required":true}],"optional":[],"query":[],"headers":[]}""", collection_type=collection_type, collection_id=collection_id)
-        query_string = await create_query_string(collection_type=collection_type, collection_id=collection_id)
-        return await AiohttpHelper().aiohttp_request("POST", url_with_params, headers=await get_headers_with_signature(self._conf.domain, "post", await create_url_without_domain("/service/application/catalog/v1.0/follow/{collection_type}/{collection_id}/", collection_type=collection_type, collection_id=collection_id), query_string, {"Authorization": "Bearer " + base64.b64encode("{}:{}".format(self._conf.applicationID, self._conf.applicationToken).encode()).decode()}, body, exclude_headers=["Authorization"]), data=body)
-    
     async def unfollowById(self, collection_type=None, collection_id=None, body=""):
         """You can undo a followed product, brand or collection by its ID. This action is referred as _unfollow_.
         :param collection_type : Type of collection followed, i.e. products, brands, or collections. : type string
@@ -627,6 +605,28 @@ class Catalog:
         url_with_params = await create_url_with_params(self._conf.domain, "/service/application/catalog/v1.0/follow/{collection_type}/{collection_id}/", """{"required":[{"in":"path","name":"collection_type","description":"Type of collection followed, i.e. products, brands, or collections.","schema":{"type":"string"},"required":true},{"in":"path","name":"collection_id","description":"The ID of the collection type.","schema":{"type":"string"},"required":true}],"optional":[],"query":[],"headers":[]}""", collection_type=collection_type, collection_id=collection_id)
         query_string = await create_query_string(collection_type=collection_type, collection_id=collection_id)
         return await AiohttpHelper().aiohttp_request("DELETE", url_with_params, headers=await get_headers_with_signature(self._conf.domain, "delete", await create_url_without_domain("/service/application/catalog/v1.0/follow/{collection_type}/{collection_id}/", collection_type=collection_type, collection_id=collection_id), query_string, {"Authorization": "Bearer " + base64.b64encode("{}:{}".format(self._conf.applicationID, self._conf.applicationToken).encode()).decode()}, body, exclude_headers=["Authorization"]), data=body)
+    
+    async def followById(self, collection_type=None, collection_id=None, body=""):
+        """Follow a particular entity such as product, brand, collection specified by its ID.
+        :param collection_type : Type of collection followed, i.e. products, brands, or collections. : type string
+        :param collection_id : The ID of the collection type. : type string
+        """
+        payload = {}
+        
+        if collection_type:
+            payload["collection_type"] = collection_type
+        
+        if collection_id:
+            payload["collection_id"] = collection_id
+        
+        # Parameter validation
+        schema = CatalogValidator.followById()
+        schema.dump(schema.load(payload))
+        
+
+        url_with_params = await create_url_with_params(self._conf.domain, "/service/application/catalog/v1.0/follow/{collection_type}/{collection_id}/", """{"required":[{"in":"path","name":"collection_type","description":"Type of collection followed, i.e. products, brands, or collections.","schema":{"type":"string"},"required":true},{"in":"path","name":"collection_id","description":"The ID of the collection type.","schema":{"type":"string"},"required":true}],"optional":[],"query":[],"headers":[]}""", collection_type=collection_type, collection_id=collection_id)
+        query_string = await create_query_string(collection_type=collection_type, collection_id=collection_id)
+        return await AiohttpHelper().aiohttp_request("POST", url_with_params, headers=await get_headers_with_signature(self._conf.domain, "post", await create_url_without_domain("/service/application/catalog/v1.0/follow/{collection_type}/{collection_id}/", collection_type=collection_type, collection_id=collection_id), query_string, {"Authorization": "Bearer " + base64.b64encode("{}:{}".format(self._conf.applicationID, self._conf.applicationToken).encode()).decode()}, body, exclude_headers=["Authorization"]), data=body)
     
     async def getFollowerCountById(self, collection_type=None, collection_id=None, body=""):
         """Get the total count of followers for a given collection type and collection ID.
@@ -2107,6 +2107,39 @@ class User:
         query_string = await create_query_string()
         return await AiohttpHelper().aiohttp_request("GET", url_with_params, headers=await get_headers_with_signature(self._conf.domain, "get", await create_url_without_domain("/service/application/user/authentication/v1.0/sessions", ), query_string, {"Authorization": "Bearer " + base64.b64encode("{}:{}".format(self._conf.applicationID, self._conf.applicationToken).encode()).decode()}, body, exclude_headers=["Authorization"]), data=body)
     
+    async def getFreshchatRestoreId(self, body=""):
+        """Use this API to restore fresh chat of user from the app.
+        """
+        payload = {}
+        
+        # Parameter validation
+        schema = UserValidator.getFreshchatRestoreId()
+        schema.dump(schema.load(payload))
+        
+        # Body validation
+        from .models.FreshchatRestoreIdRequestSchema import FreshchatRestoreIdRequestSchema
+        schema = FreshchatRestoreIdRequestSchema()
+        schema.dump(schema.load(body))
+        
+
+        url_with_params = await create_url_with_params(self._conf.domain, "/service/application/user/authentication/v1.0/user_store/freshchat-restore-id", """{"required":[],"optional":[],"query":[],"headers":[]}""", )
+        query_string = await create_query_string()
+        return await AiohttpHelper().aiohttp_request("POST", url_with_params, headers=await get_headers_with_signature(self._conf.domain, "post", await create_url_without_domain("/service/application/user/authentication/v1.0/user_store/freshchat-restore-id", ), query_string, {"Authorization": "Bearer " + base64.b64encode("{}:{}".format(self._conf.applicationID, self._conf.applicationToken).encode()).decode()}, body, exclude_headers=["Authorization"]), data=body)
+    
+    async def getUserStore(self, body=""):
+        """Use this API to get userstore data using users id.
+        """
+        payload = {}
+        
+        # Parameter validation
+        schema = UserValidator.getUserStore()
+        schema.dump(schema.load(payload))
+        
+
+        url_with_params = await create_url_with_params(self._conf.domain, "/service/application/user/authentication/v1.0/user_store/store", """{"required":[],"optional":[],"query":[],"headers":[]}""", )
+        query_string = await create_query_string()
+        return await AiohttpHelper().aiohttp_request("GET", url_with_params, headers=await get_headers_with_signature(self._conf.domain, "get", await create_url_without_domain("/service/application/user/authentication/v1.0/user_store/store", ), query_string, {"Authorization": "Bearer " + base64.b64encode("{}:{}".format(self._conf.applicationID, self._conf.applicationToken).encode()).decode()}, body, exclude_headers=["Authorization"]), data=body)
+    
     async def getPlatformConfig(self, name=None, body=""):
         """Use this API to get all the platform configurations such as mobile image, desktop image, social logins, and all other text.
         :param name : Name of the application, e.g. Fynd : type string
@@ -2413,20 +2446,6 @@ class Content:
         url_with_params = await create_url_with_params(self._conf.domain, "/service/application/content/v1.0/blogs/", """{"required":[],"optional":[{"name":"page_no","in":"query","description":"The page number to navigate through the given set of results. Default value is 1. ","required":false,"schema":{"type":"integer","default":1}},{"name":"page_size","in":"query","description":"The number of items to retrieve in each page.","required":false,"schema":{"type":"integer","default":10}}],"query":[{"name":"page_no","in":"query","description":"The page number to navigate through the given set of results. Default value is 1. ","required":false,"schema":{"type":"integer","default":1}},{"name":"page_size","in":"query","description":"The number of items to retrieve in each page.","required":false,"schema":{"type":"integer","default":10}}],"headers":[]}""", page_no=page_no, page_size=page_size)
         query_string = await create_query_string(page_no=page_no, page_size=page_size)
         return await AiohttpHelper().aiohttp_request("GET", url_with_params, headers=await get_headers_with_signature(self._conf.domain, "get", await create_url_without_domain("/service/application/content/v1.0/blogs/", page_no=page_no, page_size=page_size), query_string, {"Authorization": "Bearer " + base64.b64encode("{}:{}".format(self._conf.applicationID, self._conf.applicationToken).encode()).decode()}, body, exclude_headers=["Authorization"]), data=body)
-    
-    async def getDataLoaders(self, body=""):
-        """Use this API to get all selected data loaders of the application in the form of tags.
-        """
-        payload = {}
-        
-        # Parameter validation
-        schema = ContentValidator.getDataLoaders()
-        schema.dump(schema.load(payload))
-        
-
-        url_with_params = await create_url_with_params(self._conf.domain, "/service/application/content/v1.0/data-loader", """{"required":[],"optional":[],"query":[],"headers":[]}""", )
-        query_string = await create_query_string()
-        return await AiohttpHelper().aiohttp_request("GET", url_with_params, headers=await get_headers_with_signature(self._conf.domain, "get", await create_url_without_domain("/service/application/content/v1.0/data-loader", ), query_string, {"Authorization": "Bearer " + base64.b64encode("{}:{}".format(self._conf.applicationID, self._conf.applicationToken).encode()).decode()}, body, exclude_headers=["Authorization"]), data=body)
     
     async def getFaqs(self, body=""):
         """Use this API to get a list of frequently asked questions. Users will benefit from it when facing any issue with the website.
@@ -2961,14 +2980,10 @@ This operation will return the URL of the uploaded file.
         query_string = await create_query_string(namespace=namespace)
         return await AiohttpHelper().aiohttp_request("POST", url_with_params, headers=await get_headers_with_signature(self._conf.domain, "post", await create_url_without_domain("/service/application/assets/v1.0/namespaces/{namespace}/upload/complete/", namespace=namespace), query_string, {"Authorization": "Bearer " + base64.b64encode("{}:{}".format(self._conf.applicationID, self._conf.applicationToken).encode()).decode()}, body, exclude_headers=["Authorization"]), data=body)
     
-    async def signUrls(self, company_id=None, body=""):
+    async def signUrls(self, body=""):
         """Describe here
-        :param company_id : company_id : type integer
         """
         payload = {}
-        
-        if company_id:
-            payload["company_id"] = company_id
         
         # Parameter validation
         schema = FileStorageValidator.signUrls()
@@ -2980,9 +2995,9 @@ This operation will return the URL of the uploaded file.
         schema.dump(schema.load(body))
         
 
-        url_with_params = await create_url_with_params(self._conf.domain, "/service/application/assets/v1.0/company/{company_id}/sign-urls/", """{"required":[{"name":"company_id","in":"path","description":"company_id","required":true,"schema":{"type":"integer"}}],"optional":[],"query":[],"headers":[]}""", company_id=company_id)
-        query_string = await create_query_string(company_id=company_id)
-        return await AiohttpHelper().aiohttp_request("POST", url_with_params, headers=await get_headers_with_signature(self._conf.domain, "post", await create_url_without_domain("/service/application/assets/v1.0/company/{company_id}/sign-urls/", company_id=company_id), query_string, {"Authorization": "Bearer " + base64.b64encode("{}:{}".format(self._conf.applicationID, self._conf.applicationToken).encode()).decode()}, body, exclude_headers=["Authorization"]), data=body)
+        url_with_params = await create_url_with_params(self._conf.domain, "/service/application/assets/v1.0/sign-urls/", """{"required":[],"optional":[],"query":[],"headers":[]}""", )
+        query_string = await create_query_string()
+        return await AiohttpHelper().aiohttp_request("POST", url_with_params, headers=await get_headers_with_signature(self._conf.domain, "post", await create_url_without_domain("/service/application/assets/v1.0/sign-urls/", ), query_string, {"Authorization": "Bearer " + base64.b64encode("{}:{}".format(self._conf.applicationID, self._conf.applicationToken).encode()).decode()}, body, exclude_headers=["Authorization"]), data=body)
     
 
 class Configuration:
