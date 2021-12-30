@@ -26,8 +26,8 @@ class CreateSearchKeyword(BaseSchema):
     
     _custom_json = fields.Dict(required=False)
     
-    is_active = fields.Boolean(required=False)
-    
     words = fields.List(fields.Str(required=False), required=False)
+    
+    is_active = fields.Boolean(required=False)
     
 

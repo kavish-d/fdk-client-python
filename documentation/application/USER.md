@@ -29,7 +29,7 @@ Authentication Service
 * [verifyEmailOTP](#verifyemailotp)
 * [getLoggedInUser](#getloggedinuser)
 * [getListOfActiveSessions](#getlistofactivesessions)
-* [getFreshchatRestoreId](#getfreshchatrestoreid)
+* [setFreshchatRestoreId](#setfreshchatrestoreid)
 * [getUserStore](#getuserstore)
 * [getPlatformConfig](#getplatformconfig)
 * [updateProfile](#updateprofile)
@@ -1463,7 +1463,7 @@ Success. Returns a JSON object containing an array of sessions. Refer `SessionLi
 ---
 
 
-### getFreshchatRestoreId
+### setFreshchatRestoreId
 Get freshchat restore ID
 
 
@@ -1471,7 +1471,7 @@ Get freshchat restore ID
 
 ```python
 try:
-    result = await client.user.getFreshchatRestoreId(body=body)
+    result = await client.user.setFreshchatRestoreId(body=body)
     # use result
 except Exception as e:
     print(e)

@@ -12,14 +12,14 @@ from ..models.BaseSchema import BaseSchema
 
 
 
-class ProductListingActionPage(BaseSchema):
+class ReturnConfigSchemaV2(BaseSchema):
     # Catalog swagger.json
 
     
-    type = fields.Str(required=False)
+    returnable = fields.Boolean(required=False)
     
-    params = fields.Dict(required=False)
+    time = fields.Int(required=False)
     
-    query = fields.Dict(required=False)
+    unit = fields.Str(required=False)
     
 

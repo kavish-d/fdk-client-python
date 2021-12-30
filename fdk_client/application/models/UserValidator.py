@@ -111,7 +111,7 @@ class UserValidator:
         
         pass 
     
-    class getFreshchatRestoreId(BaseSchema):
+    class setFreshchatRestoreId(BaseSchema):
         
         pass 
     
