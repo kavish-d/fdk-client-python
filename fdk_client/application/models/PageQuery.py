@@ -14,8 +14,8 @@ class PageQuery(BaseSchema):
     # Catalog swagger.json
 
     
-    category = fields.List(fields.Str(required=False), required=False)
-    
     brand = fields.List(fields.Str(required=False), required=False)
+    
+    category = fields.List(fields.Str(required=False), required=False)
     
 
