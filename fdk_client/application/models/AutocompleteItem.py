@@ -22,8 +22,8 @@ class AutocompleteItem(BaseSchema):
     
     logo = fields.Nested(Media, required=False)
     
-    display = fields.Str(required=False)
-    
     type = fields.Str(required=False)
+    
+    display = fields.Str(required=False)
     
 
