@@ -24,10 +24,10 @@ class CouponSchedule(BaseSchema):
     
     duration = fields.Int(required=False)
     
+    start = fields.Str(required=False)
+    
     next_schedule = fields.List(fields.Dict(required=False), required=False)
     
     end = fields.Str(required=False)
-    
-    start = fields.Str(required=False)
     
 
