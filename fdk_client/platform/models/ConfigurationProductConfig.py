@@ -26,10 +26,6 @@ class ConfigurationProductConfig(BaseSchema):
     
     size = fields.Nested(ProductSize, required=False)
     
-    subtitle = fields.Str(required=False)
-    
-    key = fields.Str(required=False)
-    
     title = fields.Str(required=False)
     
     logo = fields.Str(required=False)
@@ -37,5 +33,9 @@ class ConfigurationProductConfig(BaseSchema):
     is_active = fields.Boolean(required=False)
     
     priority = fields.Int(required=False)
+    
+    key = fields.Str(required=False)
+    
+    subtitle = fields.Str(required=False)
     
 
