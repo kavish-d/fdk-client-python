@@ -24,10 +24,10 @@ class GetSearchWordsData(BaseSchema):
     
     _custom_json = fields.Dict(required=False)
     
+    words = fields.List(fields.Str(required=False), required=False)
+    
     result = fields.Dict(required=False)
     
     app_id = fields.Str(required=False)
-    
-    words = fields.List(fields.Str(required=False), required=False)
     
 
