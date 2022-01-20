@@ -26,12 +26,12 @@ class CouponBreakup(BaseSchema):
     
     code = fields.Str(required=False)
     
-    uid = fields.Str(required=False)
-    
     is_applied = fields.Boolean(required=False)
+    
+    message = fields.Str(required=False)
     
     type = fields.Str(required=False)
     
-    message = fields.Str(required=False)
+    uid = fields.Str(required=False)
     
 

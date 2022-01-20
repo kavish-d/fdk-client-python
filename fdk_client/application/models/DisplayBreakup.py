@@ -22,9 +22,9 @@ class DisplayBreakup(BaseSchema):
     # Cart swagger.json
 
     
-    currency_symbol = fields.Str(required=False)
-    
     value = fields.Float(required=False)
+    
+    currency_symbol = fields.Str(required=False)
     
     display = fields.Str(required=False)
     

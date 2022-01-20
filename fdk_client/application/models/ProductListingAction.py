@@ -5,16 +5,16 @@ from marshmallow.validate import OneOf
 from ..enums import *
 from ..models.BaseSchema import BaseSchema
 
-from .AutocompletePage import AutocompletePage
+from .ProductListingActionPage import ProductListingActionPage
 
 
 
 
-class Action1(BaseSchema):
+class ProductListingAction(BaseSchema):
     # Catalog swagger.json
 
     
-    page = fields.Nested(AutocompletePage, required=False)
+    page = fields.Nested(ProductListingActionPage, required=False)
     
     type = fields.Str(required=False)
     

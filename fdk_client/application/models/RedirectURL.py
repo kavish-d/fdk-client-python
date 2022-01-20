@@ -5,17 +5,17 @@ from marshmallow.validate import OneOf
 from ..enums import *
 from ..models.BaseSchema import BaseSchema
 
-from .PageQuery import PageQuery
 
 
 
 
-class AutocompletePage(BaseSchema):
-    # Catalog swagger.json
+
+class RedirectURL(BaseSchema):
+    # Payment swagger.json
 
     
-    query = fields.Nested(PageQuery, required=False)
+    status = fields.Boolean(required=False)
     
-    type = fields.Str(required=False)
+    signup_url = fields.Str(required=False)
     
 
