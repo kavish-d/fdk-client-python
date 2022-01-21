@@ -1,4 +1,4 @@
-"""Application Models."""
+"""Platform Models."""
 
 from marshmallow import fields, Schema
 from marshmallow.validate import OneOf
@@ -12,14 +12,14 @@ from ..models.BaseSchema import BaseSchema
 
 
 
-class DetailsSchemaV2(BaseSchema):
+class UserSerializer2(BaseSchema):
     # Catalog swagger.json
 
     
-    value = fields.Str(required=False)
+    contact = fields.Str(required=False)
     
-    type = fields.Str(required=False)
+    user_id = fields.Str(required=False)
     
-    key = fields.Str(required=False)
+    username = fields.Str(required=False)
     
 

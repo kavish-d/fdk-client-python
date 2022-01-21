@@ -11,7 +11,7 @@ from ..models.BaseSchema import BaseSchema
 
 
 class ProductReturnConfigSerializer(BaseSchema):
-    # CompanyProfile swagger.json
+    # Catalog swagger.json
 
     
     store_uid = fields.Int(required=False)

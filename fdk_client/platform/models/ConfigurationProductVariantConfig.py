@@ -5,30 +5,24 @@ from marshmallow.validate import OneOf
 from ..enums import *
 from ..models.BaseSchema import BaseSchema
 
+
+
+
+
+
+
+
+
+
+
+
+
 from .ProductSize import ProductSize
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 class ConfigurationProductVariantConfig(BaseSchema):
     # Catalog swagger.json
 
-    
-    size = fields.Nested(ProductSize, required=False)
-    
-    priority = fields.Int(required=False)
-    
-    display_type = fields.Str(required=False)
     
     name = fields.Str(required=False)
     
@@ -36,6 +30,12 @@ class ConfigurationProductVariantConfig(BaseSchema):
     
     is_active = fields.Boolean(required=False)
     
+    display_type = fields.Str(required=False)
+    
     logo = fields.Str(required=False)
+    
+    priority = fields.Int(required=False)
+    
+    size = fields.Nested(ProductSize, required=False)
     
 
